@@ -5,6 +5,7 @@ script.json:
     "lines": [ { "id": "hook", "at": 0.3, "text": "What if all *rubber* disappeared for five seconds?" }, ... ] }
 
 *word* marks a word the subtitles always highlight (the asterisks are not spoken).
+A line may add "fx": "helium" (voice shifted up, same length).
 voice.json records each line's duration and per-word timings (seconds from the line start),
 which drive the subtitles in the player and the voice track in engine/audio.mjs.
 
@@ -14,6 +15,7 @@ engine/setup-voice.sh; the model directory comes from $KOKORO_DIR (default ~/.ca
 import json
 import os
 import re
+import subprocess
 import sys
 
 import numpy as np
@@ -121,6 +123,12 @@ def main(video_dir):
         audio, sr, timings = kokoro.create_timed(spoken, voice=line.get("voice", voice), speed=line.get("speed", speed), lang=lang)
         rel = f"voice/{line['id']}.wav"
         sf.write(os.path.join(video_dir, rel), audio, sr)
+        if line.get("fx") == "helium":
+            # helium raises the voice's resonances (not the pitch of the vocal folds); a
+            # same-length shift up is the closest cheap stand-in
+            out = os.path.join(video_dir, rel)
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", out, "-af", f"asetrate={sr}*1.6,aresample={sr},atempo=0.625", out + ".fx.wav"], check=True)
+            os.replace(out + ".fx.wav", out)
         duration = len(audio) / sr
         words = display_words(line["text"])
         spans = word_spans(kokoro, words, timings, audio, sr, lang)

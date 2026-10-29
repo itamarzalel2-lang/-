@@ -1,0 +1,18 @@
+{
+  "voice": "af_heart",
+  "speed": 1.05,
+  "lines": [
+    { "id": "hook", "at": 0.3, "text": "What if all the air on Earth turned into *helium*... for five seconds?" },
+    { "id": "setup", "at": 4.6, "text": "Same pressure, same temperature. Just a different gas." },
+    { "id": "listen", "at": 8.4, "text": "Listen to Times Square." },
+    { "id": "c3", "at": 10.6, "text": "Three." },
+    { "id": "c2", "at": 11.6, "text": "Two." },
+    { "id": "c1", "at": 12.6, "text": "One." },
+    { "id": "voice", "at": 14.2, "text": "Wait... what happened to my *voice*?", "fx": "helium" },
+    { "id": "everyone", "at": 16.4, "text": "Everyone in Times Square sounds like this.", "fx": "helium" },
+    { "id": "normal", "at": 19.2, "text": "Okay. Back to normal." },
+    { "id": "why", "at": 20.8, "text": "In helium, sound travels almost *three times faster*. Your vocal cords buzz at the same pitch, but the air in your throat rings much higher." },
+    { "id": "birds", "at": 29.6, "text": "And the pigeons? Helium is *seven times* lighter than air. Their wings have almost nothing to push." },
+    { "id": "cta", "at": 36.6, "text": "Follow for more. What should change next?" }
+  ]
+}

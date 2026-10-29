@@ -111,9 +111,9 @@ const RECIPES = {
     const r = rng(seed);
     return Array.from({ length: count }, () => ({ at: from + r() * (to - from), chain: ev(`0.25*sin(2*PI*(900+${Math.round(r() * 700)}*exp(-30*t))*t)*exp(-25*t)`, 0.2) }));
   },
-  crowd: ({ from, to, level = 1, fadeIn = 0.5, fadeOut = 0.6 }) => {
+  crowd: ({ from, to, level = 1, fadeIn = 0.5, fadeOut = 0.6, pitch = 1 }) => {
     const d = to - from;
-    return [{ at: from, chain: `${noise('pink', d, 0.6, 19)},bandpass=f=900:w=700,tremolo=f=3.1:d=0.3,volume=${0.35 * level},afade=t=in:d=${fadeIn},afade=t=out:st=${Math.max(0, d - fadeOut)}:d=${fadeOut}` }];
+    return [{ at: from, chain: `${noise('pink', d, 0.6, 19)},bandpass=f=${Math.round(900 * pitch)}:w=${Math.round(700 * pitch)},tremolo=f=${(3.1 * Math.sqrt(pitch)).toFixed(2)}:d=0.3,volume=${0.35 * level},afade=t=in:d=${fadeIn},afade=t=out:st=${Math.max(0, d - fadeOut)}:d=${fadeOut}` }];
   },
   alarms: ({ from, to, count = 3, seed = 41 }) => {
     // car alarms: warbling two-tone sirens starting at slightly different times
@@ -123,13 +123,13 @@ const RECIPES = {
       return { at, chain: `${ev(`0.05*sgn(sin(2*PI*(${f.toFixed(0)}*t+${(f * 0.25).toFixed(0)}*sin(2*PI*${rate.toFixed(2)}*t)/(2*PI*${rate.toFixed(2)}))))`, d)},lowpass=f=3500,volume=${(0.5 + r() * 0.5).toFixed(2)},afade=t=out:st=${Math.max(0, d - 0.4)}:d=0.4` };
     });
   },
-  horns: ({ from, to, count = 6, seed = 21 }) => {
+  horns: ({ from, to, count = 6, seed = 21, pitch = 1 }) => {
     const r = rng(seed);
     const out = [];
     for (let i = 0; i < count; i++) {
-      const d = 0.25 + r() * 0.7, f = 330 + r() * 160, at = from + r() * Math.max(0.1, to - from - d);
+      const d = 0.25 + r() * 0.7, f = (330 + r() * 160) * pitch, at = from + r() * Math.max(0.1, to - from - d);
       const vol = 0.35 + r() * 0.65;
-      out.push({ at, chain: `${ev(`0.06*(sgn(sin(2*PI*${f.toFixed(1)}*t))+sgn(sin(2*PI*${(f * 1.26).toFixed(1)}*t)))*min(1,t*30)*min(1,(${d.toFixed(3)}-t)*30)`, d)},lowpass=f=2200,volume=${vol.toFixed(2)}` });
+      out.push({ at, chain: `${ev(`0.06*(sgn(sin(2*PI*${f.toFixed(1)}*t))+sgn(sin(2*PI*${(f * 1.26).toFixed(1)}*t)))*min(1,t*30)*min(1,(${d.toFixed(3)}-t)*30)`, d)},lowpass=f=${Math.round(2200 * pitch)},volume=${vol.toFixed(2)}` });
     }
     return out;
   },

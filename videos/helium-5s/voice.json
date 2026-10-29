@@ -1,0 +1,678 @@
+{
+ "voice": "af_heart",
+ "speed": 1.05,
+ "lines": [
+  {
+   "id": "hook",
+   "at": 0.3,
+   "text": "What if all the air on Earth turned into helium... for five seconds?",
+   "file": "voice/hook.wav",
+   "duration": 3.477,
+   "words": [
+    {
+     "text": "What",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.235
+    },
+    {
+     "text": "if",
+     "hl": false,
+     "start": 0.235,
+     "end": 0.328
+    },
+    {
+     "text": "all",
+     "hl": false,
+     "start": 0.328,
+     "end": 0.514
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.514,
+     "end": 0.606
+    },
+    {
+     "text": "air",
+     "hl": false,
+     "start": 0.606,
+     "end": 0.745
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.745,
+     "end": 0.885
+    },
+    {
+     "text": "Earth",
+     "hl": false,
+     "start": 0.885,
+     "end": 1.07
+    },
+    {
+     "text": "turned",
+     "hl": false,
+     "start": 1.07,
+     "end": 1.348
+    },
+    {
+     "text": "into",
+     "hl": false,
+     "start": 1.348,
+     "end": 1.58
+    },
+    {
+     "text": "helium...",
+     "hl": true,
+     "start": 1.58,
+     "end": 2.09
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 2.47,
+     "end": 2.677
+    },
+    {
+     "text": "five",
+     "hl": false,
+     "start": 2.677,
+     "end": 2.935
+    },
+    {
+     "text": "seconds?",
+     "hl": false,
+     "start": 2.935,
+     "end": 3.4
+    }
+   ]
+  },
+  {
+   "id": "setup",
+   "at": 4.6,
+   "text": "Same pressure, same temperature. Just a different gas.",
+   "file": "voice/setup.wav",
+   "duration": 3.093,
+   "words": [
+    {
+     "text": "Same",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.346
+    },
+    {
+     "text": "pressure,",
+     "hl": false,
+     "start": 0.346,
+     "end": 0.76
+    },
+    {
+     "text": "same",
+     "hl": false,
+     "start": 0.76,
+     "end": 1.056
+    },
+    {
+     "text": "temperature.",
+     "hl": false,
+     "start": 1.056,
+     "end": 1.708
+    },
+    {
+     "text": "Just",
+     "hl": false,
+     "start": 1.708,
+     "end": 2.063
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 2.063,
+     "end": 2.24
+    },
+    {
+     "text": "different",
+     "hl": false,
+     "start": 2.24,
+     "end": 2.714
+    },
+    {
+     "text": "gas.",
+     "hl": false,
+     "start": 2.714,
+     "end": 3.01
+    }
+   ]
+  },
+  {
+   "id": "listen",
+   "at": 8.4,
+   "text": "Listen to Times Square.",
+   "file": "voice/listen.wav",
+   "duration": 1.365,
+   "words": [
+    {
+     "text": "Listen",
+     "hl": false,
+     "start": 0.06,
+     "end": 0.374
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 0.374,
+     "end": 0.53
+    },
+    {
+     "text": "Times",
+     "hl": false,
+     "start": 0.53,
+     "end": 0.844
+    },
+    {
+     "text": "Square.",
+     "hl": false,
+     "start": 0.844,
+     "end": 1.21
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "at": 10.6,
+   "text": "Three.",
+   "file": "voice/c3.wav",
+   "duration": 0.725,
+   "words": [
+    {
+     "text": "Three.",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.47
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "at": 11.6,
+   "text": "Two.",
+   "file": "voice/c2.wav",
+   "duration": 0.64,
+   "words": [
+    {
+     "text": "Two.",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.39
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "at": 12.6,
+   "text": "One.",
+   "file": "voice/c1.wav",
+   "duration": 0.597,
+   "words": [
+    {
+     "text": "One.",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.38
+    }
+   ]
+  },
+  {
+   "id": "voice",
+   "at": 14.2,
+   "text": "Wait... what happened to my voice?",
+   "file": "voice/voice.wav",
+   "duration": 1.643,
+   "words": [
+    {
+     "text": "Wait...",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.36
+    },
+    {
+     "text": "what",
+     "hl": false,
+     "start": 0.48,
+     "end": 0.658
+    },
+    {
+     "text": "happened",
+     "hl": false,
+     "start": 0.658,
+     "end": 0.97
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 0.97,
+     "end": 1.104
+    },
+    {
+     "text": "my",
+     "hl": false,
+     "start": 1.104,
+     "end": 1.283
+    },
+    {
+     "text": "voice?",
+     "hl": true,
+     "start": 1.283,
+     "end": 1.55
+    }
+   ]
+  },
+  {
+   "id": "everyone",
+   "at": 16.4,
+   "text": "Everyone in Times Square sounds like this.",
+   "file": "voice/everyone.wav",
+   "duration": 2.133,
+   "words": [
+    {
+     "text": "Everyone",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.478
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 0.478,
+     "end": 0.621
+    },
+    {
+     "text": "Times",
+     "hl": false,
+     "start": 0.621,
+     "end": 0.906
+    },
+    {
+     "text": "Square",
+     "hl": false,
+     "start": 0.906,
+     "end": 1.191
+    },
+    {
+     "text": "sounds",
+     "hl": false,
+     "start": 1.191,
+     "end": 1.524
+    },
+    {
+     "text": "like",
+     "hl": false,
+     "start": 1.524,
+     "end": 1.762
+    },
+    {
+     "text": "this.",
+     "hl": false,
+     "start": 1.762,
+     "end": 2.0
+    }
+   ]
+  },
+  {
+   "id": "normal",
+   "at": 19.2,
+   "text": "Okay. Back to normal.",
+   "file": "voice/normal.wav",
+   "duration": 1.451,
+   "words": [
+    {
+     "text": "Okay.",
+     "hl": false,
+     "start": 0.07,
+     "end": 0.74
+    },
+    {
+     "text": "Back",
+     "hl": false,
+     "start": 0.82,
+     "end": 0.943
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 0.943,
+     "end": 1.034
+    },
+    {
+     "text": "normal.",
+     "hl": false,
+     "start": 1.034,
+     "end": 1.31
+    }
+   ]
+  },
+  {
+   "id": "why",
+   "at": 20.8,
+   "text": "In helium, sound travels almost three times faster. Your vocal cords buzz at the same pitch, but the air in your throat rings much higher.",
+   "file": "voice/why.wav",
+   "duration": 8.32,
+   "words": [
+    {
+     "text": "In",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.188
+    },
+    {
+     "text": "helium,",
+     "hl": false,
+     "start": 0.188,
+     "end": 0.66
+    },
+    {
+     "text": "sound",
+     "hl": false,
+     "start": 0.82,
+     "end": 1.164
+    },
+    {
+     "text": "travels",
+     "hl": false,
+     "start": 1.164,
+     "end": 1.622
+    },
+    {
+     "text": "almost",
+     "hl": false,
+     "start": 1.622,
+     "end": 2.138
+    },
+    {
+     "text": "three",
+     "hl": true,
+     "start": 2.138,
+     "end": 2.425
+    },
+    {
+     "text": "times",
+     "hl": false,
+     "start": 2.425,
+     "end": 2.769
+    },
+    {
+     "text": "faster.",
+     "hl": true,
+     "start": 2.769,
+     "end": 3.17
+    },
+    {
+     "text": "Your",
+     "hl": false,
+     "start": 3.68,
+     "end": 3.856
+    },
+    {
+     "text": "vocal",
+     "hl": false,
+     "start": 3.856,
+     "end": 4.266
+    },
+    {
+     "text": "cords",
+     "hl": false,
+     "start": 4.266,
+     "end": 4.676
+    },
+    {
+     "text": "buzz",
+     "hl": false,
+     "start": 4.676,
+     "end": 4.911
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 4.911,
+     "end": 5.028
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 5.028,
+     "end": 5.145
+    },
+    {
+     "text": "same",
+     "hl": false,
+     "start": 5.145,
+     "end": 5.438
+    },
+    {
+     "text": "pitch,",
+     "hl": false,
+     "start": 5.438,
+     "end": 5.79
+    },
+    {
+     "text": "but",
+     "hl": false,
+     "start": 6.18,
+     "end": 6.402
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 6.402,
+     "end": 6.512
+    },
+    {
+     "text": "air",
+     "hl": false,
+     "start": 6.512,
+     "end": 6.679
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 6.679,
+     "end": 6.845
+    },
+    {
+     "text": "your",
+     "hl": false,
+     "start": 6.845,
+     "end": 7.011
+    },
+    {
+     "text": "throat",
+     "hl": false,
+     "start": 7.011,
+     "end": 7.344
+    },
+    {
+     "text": "rings",
+     "hl": false,
+     "start": 7.344,
+     "end": 7.621
+    },
+    {
+     "text": "much",
+     "hl": false,
+     "start": 7.621,
+     "end": 7.898
+    },
+    {
+     "text": "higher.",
+     "hl": false,
+     "start": 7.898,
+     "end": 8.23
+    }
+   ]
+  },
+  {
+   "id": "birds",
+   "at": 29.6,
+   "text": "And the pigeons? Helium is seven times lighter than air. Their wings have almost nothing to push.",
+   "file": "voice/birds.wav",
+   "duration": 5.525,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.199
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.199,
+     "end": 0.304
+    },
+    {
+     "text": "pigeons?",
+     "hl": false,
+     "start": 0.304,
+     "end": 0.78
+    },
+    {
+     "text": "Helium",
+     "hl": false,
+     "start": 1.1,
+     "end": 1.555
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 1.555,
+     "end": 1.669
+    },
+    {
+     "text": "seven",
+     "hl": true,
+     "start": 1.669,
+     "end": 2.01
+    },
+    {
+     "text": "times",
+     "hl": true,
+     "start": 2.01,
+     "end": 2.351
+    },
+    {
+     "text": "lighter",
+     "hl": false,
+     "start": 2.351,
+     "end": 2.692
+    },
+    {
+     "text": "than",
+     "hl": false,
+     "start": 2.692,
+     "end": 2.863
+    },
+    {
+     "text": "air.",
+     "hl": false,
+     "start": 2.863,
+     "end": 3.09
+    },
+    {
+     "text": "Their",
+     "hl": false,
+     "start": 3.53,
+     "end": 3.694
+    },
+    {
+     "text": "wings",
+     "hl": false,
+     "start": 3.694,
+     "end": 3.967
+    },
+    {
+     "text": "have",
+     "hl": false,
+     "start": 3.967,
+     "end": 4.185
+    },
+    {
+     "text": "almost",
+     "hl": false,
+     "start": 4.185,
+     "end": 4.676
+    },
+    {
+     "text": "nothing",
+     "hl": false,
+     "start": 4.676,
+     "end": 5.003
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 5.003,
+     "end": 5.167
+    },
+    {
+     "text": "push.",
+     "hl": false,
+     "start": 5.167,
+     "end": 5.44
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "at": 36.6,
+   "text": "Follow for more. What should change next?",
+   "file": "voice/cta.wav",
+   "duration": 2.283,
+   "words": [
+    {
+     "text": "Follow",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.411
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 0.411,
+     "end": 0.582
+    },
+    {
+     "text": "more.",
+     "hl": false,
+     "start": 0.582,
+     "end": 0.84
+    },
+    {
+     "text": "What",
+     "hl": false,
+     "start": 1.1,
+     "end": 1.291
+    },
+    {
+     "text": "should",
+     "hl": false,
+     "start": 1.291,
+     "end": 1.483
+    },
+    {
+     "text": "change",
+     "hl": false,
+     "start": 1.483,
+     "end": 1.865
+    },
+    {
+     "text": "next?",
+     "hl": false,
+     "start": 1.865,
+     "end": 2.2
+    }
+   ]
+  }
+ ]
+}
