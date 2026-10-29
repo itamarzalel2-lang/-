@@ -92,6 +92,13 @@ export class Overlay {
     el.style.width = el.style.height = `${2 * r}px`;
   }
 
+  /** Full-screen statement over a dimmed frame (time jumps, big reveals). sub(t) may return live text. */
+  card(html, { sub, ...opts } = {}) {
+    const el = h('ov-card', `<div class="big">${html}</div><div class="sub"></div>`);
+    const subEl = el.querySelector('.sub');
+    return this.add(el, { enter: 'fade', fadeIn: 0.3, fadeOut: 0.3, ...opts, render: sub ? (t, _e, local) => { subEl.innerHTML = sub(t, local); } : undefined });
+  }
+
   end(html, opts) { return this.add(h('ov-end', html), { enter: 'rise', ...opts }); }
   handle(text) { return this.add(h('ov-handle', text), { from: 0, fadeIn: 0 }); }
 }

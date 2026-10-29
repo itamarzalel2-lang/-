@@ -55,6 +55,66 @@ class BoxBuilder {
 
 const col = (hex) => new THREE.Color(hex);
 
+// Lighting presets. sky = gradient stops from zenith (0) via horizon (0.5) to nadir (1).
+const TIME_ALIAS = { 'rush hour': 'dusk', sunset: 'dusk', noon: 'day', afternoon: 'day', midnight: 'night' };
+export const PRESETS = {
+  dusk: {
+    sky: [[0, '#0b0f3a'], [0.42, '#3b2a78'], [0.5, '#c45a8c'], [0.53, '#f29a6b'], [1, '#2a1a40']],
+    fog: ['#4a3270', 0.0036], hemi: ['#8fa0ff', '#2a1830', 1.1], sunLight: ['#ffb08a', 1.3], sunDir: [-300, 120, -60],
+    sunDisk: 0, stars: 0, windows: 1, billboards: 1, lamps: 1, points: 1,
+  },
+  day: {
+    sky: [[0, '#1f5fcf'], [0.3, '#4f93e8'], [0.47, '#a9cdf2'], [0.5, '#dce9f5'], [0.52, '#c9d3dc'], [1, '#8c96a0']],
+    fog: ['#bcd0e6', 0.0024], hemi: ['#d6e6ff', '#6b6458', 1.5], sunLight: ['#fff2dc', 3.0], sunDir: [60, 210, 260],
+    sunDisk: 1, sunDiskColor: '#fffbe8', stars: 0, windows: 0.18, billboards: 0.8, lamps: 0, points: 0,
+  },
+  night: {
+    sky: [[0, '#02030a'], [0.4, '#0a0c22'], [0.5, '#2a1f45'], [0.53, '#3a2a50'], [1, '#05040c']],
+    fog: ['#1a1530', 0.0038], hemi: ['#4a5aa0', '#0a0812', 0.55], sunLight: ['#9fb4ff', 0.45], sunDir: [-200, 260, 120],
+    sunDisk: 0, stars: 0.25, windows: 1.15, billboards: 1.1, lamps: 1.1, points: 1.25,
+  },
+};
+
+const SKY_VERT = /* glsl */ `
+  varying vec3 vDir;
+  void main() {
+    vDir = normalize(position);
+    vec4 p = modelViewMatrix * vec4(position, 1.0);
+    gl_Position = projectionMatrix * p;
+  }`;
+const SKY_FRAG = /* glsl */ `
+  uniform sampler2D mapA;
+  uniform sampler2D mapB;
+  uniform float blend;
+  uniform vec3 sunDir;
+  uniform float sunDisk;
+  uniform float sunGlow;
+  uniform vec3 sunColor;
+  uniform float stars;
+  varying vec3 vDir;
+  float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
+  void main() {
+    vec3 d = normalize(vDir);
+    float v = 0.5 + asin(clamp(d.y, -1.0, 1.0)) / 3.14159265;
+    vec3 c = mix(texture2D(mapA, vec2(0.5, v)).rgb, texture2D(mapB, vec2(0.5, v)).rgb, blend);
+    // sun: hard disk + soft glow
+    float cs = dot(d, normalize(sunDir));
+    // the halo is sunlight scattered by air: sunGlow 0 = vacuum, a bare disk
+    c += sunColor * sunDisk * (smoothstep(0.99955, 0.99975, cs) * 6.0 + sunGlow * (pow(max(cs, 0.0), 400.0) * 1.2 + pow(max(cs, 0.0), 12.0) * 0.12));
+    // stars: one random point per small cell of the upper hemisphere
+    if (stars > 0.0 && d.y > 0.02) {
+      vec2 p = vec2(atan(d.z, d.x), asin(d.y)) * 220.0;
+      vec2 cell = floor(p);
+      float h = hash(cell);
+      if (h > 0.985) {
+        vec2 sp = cell + vec2(hash(cell + 7.1), hash(cell + 3.7));
+        float k = smoothstep(0.22, 0.0, length(p - sp));
+        c += vec3(0.9, 0.95, 1.0) * k * stars * (0.5 + 2.5 * fract(h * 97.0)) * smoothstep(0.02, 0.2, d.y);
+      }
+    }
+    gl_FragColor = vec4(c, 1.0);
+  }`;
+
 export function timesSquare(opts = {}) {
   const o = {
     blocks: 36, billboards: 'lit', cars: 352, cabs: 'yellow', crowd: true, time: 'rush hour', seed: 7, clear: [],
@@ -66,24 +126,35 @@ export function timesSquare(opts = {}) {
   const animated = [];
 
   // ---------- sky, fog, light ----------
-  const sky = new THREE.Mesh(
-    new THREE.SphereGeometry(1800, 32, 16),
-    new THREE.MeshBasicMaterial({
-      map: gradientTexture([[0, '#0b0f3a'], [0.42, '#3b2a78'], [0.5, '#c45a8c'], [0.53, '#f29a6b'], [1, '#2a1a40']]),
-      side: THREE.BackSide, fog: false, depthWrite: false,
-    }),
-  );
+  const P = PRESETS[TIME_ALIAS[o.time] ?? o.time] ?? PRESETS.dusk;
+  const skyMat = new THREE.ShaderMaterial({
+    vertexShader: SKY_VERT, fragmentShader: SKY_FRAG,
+    uniforms: {
+      mapA: { value: gradientTexture(P.sky) }, mapB: { value: gradientTexture(P.sky) }, blend: { value: 0 },
+      sunDir: { value: new THREE.Vector3(...P.sunDir).normalize() }, sunDisk: { value: P.sunDisk }, sunGlow: { value: 1 }, sunColor: { value: col(P.sunDiskColor ?? '#fff6e0') },
+      stars: { value: P.stars },
+    },
+    side: THREE.BackSide, fog: false, depthWrite: false,
+  });
+  const sky = new THREE.Mesh(new THREE.SphereGeometry(1800, 48, 24), skyMat);
+  sky.renderOrder = -1;
   group.add(sky);
-  const fog = new THREE.FogExp2(col('#4a3270'), 0.0036);
-  group.add(new THREE.HemisphereLight(col('#8fa0ff'), col('#2a1830'), 1.1));
-  const sun = new THREE.DirectionalLight(col('#ffb08a'), 1.3);
-  sun.position.set(-300, 120, -60);
+  const fog = new THREE.FogExp2(col(P.fog[0]), P.fog[1]);
+  const hemi = new THREE.HemisphereLight(col(P.hemi[0]), col(P.hemi[1]), P.hemi[2]);
+  group.add(hemi);
+  const sun = new THREE.DirectionalLight(col(P.sunLight[0]), P.sunLight[1]);
+  sun.position.copy(new THREE.Vector3(...P.sunDir).normalize().multiplyScalar(400));
   group.add(sun);
+  const points = [];
   for (const [c, x, z] of [['#ff3d9a', -14, -30], ['#36c8ff', 12, -90], ['#ff8a3d', -16, 10], ['#9b5bff', 14, -150]]) {
-    const pl = new THREE.PointLight(col(c), 320, 80, 1.6);
+    const pl = new THREE.PointLight(col(c), 320 * P.points, 80, 1.6);
     pl.position.set(x, 14, z);
     group.add(pl);
+    points.push(pl);
   }
+  // everything that glows by itself, so a scene can dim the whole city (setArtificial)
+  const glow = [];
+  const glowing = (mat, prop, base) => { glow.push({ mat, prop, base: base ?? (mat[prop].clone ? mat[prop].clone() : mat[prop]) }); return mat; };
 
   // ---------- ground, slabs, steps ----------
   const asphalt = new THREE.Mesh(
@@ -104,9 +175,9 @@ export function timesSquare(opts = {}) {
   // red glowing steps on the plaza (north end of the bowtie)
   const steps = new BoxBuilder();
   for (let k = 0; k < 10; k++) steps.box(6, 18, 0, 0.45 * (k + 1), -47.5 - k * 1.5, -46 - k * 1.5, col('#ff2a3a'));
-  const stepsMesh = new THREE.Mesh(steps.geometry(), new THREE.MeshStandardMaterial({
+  const stepsMesh = new THREE.Mesh(steps.geometry(), glowing(new THREE.MeshStandardMaterial({
     vertexColors: true, emissive: col('#ff1030'), emissiveIntensity: 0.7, roughness: 0.3,
-  }));
+  }), 'emissiveIntensity'));
   group.add(stepsMesh);
 
   // ---------- road markings ----------
@@ -182,10 +253,10 @@ export function timesSquare(opts = {}) {
       }
     }
   }
-  const wallMat = new THREE.MeshStandardMaterial({
-    map: facade.map, emissiveMap: facade.emissive, emissive: col('#ffffff'), emissiveIntensity: 1.15,
+  const wallMat = glowing(new THREE.MeshStandardMaterial({
+    map: facade.map, emissiveMap: facade.emissive, emissive: col('#ffffff'), emissiveIntensity: 1.15 * P.windows,
     vertexColors: true, roughness: 0.75, metalness: 0.05,
-  });
+  }), 'emissiveIntensity');
   group.add(new THREE.Mesh(walls.geometry(), wallMat));
   group.add(new THREE.Mesh(roofs.geometry(), new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.9 })));
 
@@ -198,7 +269,7 @@ export function timesSquare(opts = {}) {
   towerTop.box(6, 20, 112, 113, -193, -179, col('#2b2a36'));
   towerTop.box(12.6, 13.4, 113, 135, -186.4, -185.6, col('#c8c8d8'));
   group.add(new THREE.Mesh(towerTop.geometry(), new THREE.MeshStandardMaterial({ vertexColors: true })));
-  const ball = new THREE.Mesh(new THREE.IcosahedronGeometry(1.6, 2), new THREE.MeshBasicMaterial({ color: new THREE.Color(1.6, 1.5, 1.3), toneMapped: false }));
+  const ball = new THREE.Mesh(new THREE.IcosahedronGeometry(1.6, 2), glowing(new THREE.MeshBasicMaterial({ color: new THREE.Color(1.6, 1.5, 1.3), toneMapped: false }), 'color'));
   ball.position.set(13, 136.5, -186);
   group.add(ball);
 
@@ -208,7 +279,8 @@ export function timesSquare(opts = {}) {
   const frameMat = new THREE.MeshStandardMaterial({ color: col('#121219'), roughness: 0.6 });
   const addBoard = (cx, cy, cz, w, h, yaw, k = 1.15) => {
     const map = billboardTexture(boardSeed++, w / h);
-    const mat = new THREE.MeshBasicMaterial({ map, color: new THREE.Color(k, k, k), toneMapped: false });
+    const kk = k * P.billboards;
+    const mat = glowing(new THREE.MeshBasicMaterial({ map, color: new THREE.Color(kk, kk, kk), toneMapped: false }), 'color');
     const plane = new THREE.Mesh(new THREE.PlaneGeometry(w, h), mat);
     const frame = new THREE.Mesh(new THREE.BoxGeometry(w + 0.6, h + 0.6, 0.5), frameMat);
     const g = new THREE.Group();
@@ -240,7 +312,7 @@ export function timesSquare(opts = {}) {
 
   // zipper tickers
   const tick = tickerTexture('  RUSH HOUR · 18:42 · TIMES SQUARE · NYC  ', '#ffd23f');
-  const tickMat = new THREE.MeshBasicMaterial({ map: tick, color: new THREE.Color(1.3, 1.3, 1.3), toneMapped: false });
+  const tickMat = glowing(new THREE.MeshBasicMaterial({ map: tick, color: new THREE.Color(1.3, 1.3, 1.3), toneMapped: false }), 'color');
   tick.repeat.set(2, 1);
   const tickBand = new THREE.Mesh(new THREE.PlaneGeometry(20, 1.6), tickMat);
   tickBand.position.set(13, 7.2, -175.4);
@@ -253,7 +325,7 @@ export function timesSquare(opts = {}) {
     if (f.z1 < -250 || f.z0 > 110) continue;
     shop.box(f.x + (f.side < 0 ? 0 : -0.3), f.x + (f.side < 0 ? 0.3 : 0), 0.6, 4.2, f.z0 + 1, f.z1 - 1, pick(r, [col('#ffe0a0'), col('#fff4dd'), col('#ffd0e8'), col('#c8ecff')]));
   }
-  group.add(new THREE.Mesh(shop.geometry(), new THREE.MeshBasicMaterial({ vertexColors: true, toneMapped: false })));
+  group.add(new THREE.Mesh(shop.geometry(), glowing(new THREE.MeshBasicMaterial({ vertexColors: true, toneMapped: false }), 'color')));
 
   // street lamps along both curbs
   const poles = new BoxBuilder(), heads = new BoxBuilder();
@@ -268,7 +340,8 @@ export function timesSquare(opts = {}) {
   }
   group.add(new THREE.Mesh(solid.geometry(), new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.85 })));
   group.add(new THREE.Mesh(poles.geometry(), new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.6 })));
-  group.add(new THREE.Mesh(heads.geometry(), new THREE.MeshBasicMaterial({ color: new THREE.Color(2, 1.8, 1.4), toneMapped: false })));
+  const lampK = P.lamps;
+  group.add(new THREE.Mesh(heads.geometry(), glowing(new THREE.MeshBasicMaterial({ color: new THREE.Color(2 * lampK, 1.8 * lampK, 1.4 * lampK), toneMapped: false }), 'color')));
 
   // ---------- traffic lanes for traffic.js ----------
   const lanes = [];
@@ -293,8 +366,21 @@ export function timesSquare(opts = {}) {
   ];
   const standZones = [{ x: [6.5, 17.5], steps: true, z: [-61, -46.5] }];
 
+  const pointBase = points.map((p) => p.intensity);
   return {
     group, fog, lanes, queues, crowdZones, standZones, carCount: o.cars, cabs: o.cabs, options: o,
+    preset: P, sky: skyMat.uniforms, hemi, sun, points,
+    /** Scale every self-lit thing (windows, billboards, shops, lamps, ball, steps, point lights): 1 = normal, 0 = blackout. */
+    setArtificial(k) {
+      for (const g of glow) {
+        if (typeof g.base === 'number') g.mat[g.prop] = g.base * k;
+        else g.mat[g.prop].copy(g.base).multiplyScalar(k);
+      }
+      points.forEach((p, i) => { p.intensity = pointBase[i] * k; });
+    },
+    /** Cross-fade the sky to another gradient: stops like [[0, '#000'], [0.5, '#123'], ...]. */
+    skyTo(stops) { skyMat.uniforms.mapB.value = gradientTexture(stops); },
+    gradient: gradientTexture,
     stepHeight: (z) => (z > -46 || z < -61 ? 0 : 0.45 * (Math.floor((-46 - z) / 1.5) + 1)),
     update(t) { for (const f of animated) f(t); },
   };

@@ -12,17 +12,19 @@ function box(w, h, d, y) {
   return new THREE.BoxGeometry(w, h, d).translate(0, y, 0);
 }
 
-export function buildCrowd({ zones, standZones = [], count = 420, standing = 40, seed = 5, stepHeight = () => 0 }) {
+export function buildCrowd({ zones, standZones = [], count = 420, standing = 40, seed = 5, stepHeight = () => 0, avoid = [] }) {
   const r = rng(seed);
   const total = zones.reduce((a, z) => a + z.weight, 0);
   const people = [];
   for (let i = 0; i < count; i++) {
     let u = r() * total, zone = zones[0];
     for (const z of zones) { if ((u -= z.weight) <= 0) { zone = z; break; } }
-    people.push({
-      x: zone.x[0] + r() * (zone.x[1] - zone.x[0]),
-      range: zone.z, v: 1.0 + r() * 0.6, off: r() * 400, stand: false,
-    });
+    let x = zone.x[0] + r() * (zone.x[1] - zone.x[0]);
+    // keep walkers out of the camera's way: [[x, z, r]] keep-out circles
+    for (const [ax, az, ar] of avoid) {
+      if (Math.abs(x - ax) < ar && az > zone.z[0] - ar && az < zone.z[1] + ar) x = ax + (x < ax ? -1 : 1) * (ar + r() * 2);
+    }
+    people.push({ x, range: zone.z, v: 1.0 + r() * 0.6, off: r() * 400, stand: false });
   }
   for (let i = 0; i < standing; i++) {
     const z = pick(r, standZones);
@@ -66,11 +68,12 @@ export function buildCrowd({ zones, standZones = [], count = 420, standing = 40,
   group.add(torso, head, hair, legs, arms, shoes);
 
   const _b = new THREE.Matrix4(), _m = new THREE.Matrix4(), _q = new THREE.Quaternion(), _e = new THREE.Euler();
-  const _v = new THREE.Vector3(), _s = new THREE.Vector3(), _r = new THREE.Matrix4();
+  const _v = new THREE.Vector3(), _s = new THREE.Vector3(), _r = new THREE.Matrix4(), _e2 = new THREE.Euler();
 
   /**
-   * opts: { stopAt, lookYaw, soles (0..1 visible), soleDrop (m) }
+   * opts: { stopAt, lookYaw, soles (0..1 visible), soleDrop (m), pose?(i, t, person) }
    * After stopAt everyone slows to a halt, some flinch, and all turn to lookYaw.
+   * pose returns { x, y, z, pitch, yaw, roll, legsX, legsZ, armsX, armsZ } (all optional).
    */
   function update(t, opts = {}) {
     const stopAt = opts.stopAt ?? Infinity;
@@ -106,12 +109,14 @@ export function buildCrowd({ zones, standZones = [], count = 420, standing = 40,
       const swing = Math.sin(phase) * 0.55 * walk;
       const bob = Math.abs(Math.sin(phase)) * 0.035 * walk;
       const y0 = (p.stand ? stepHeight(z) : 0.15) + bob + hop - drop;
-      _e.set(0, yaw, 0);
+      // free pose hook (rotations pivot on the feet): float, fall over, do the splits...
+      const ps = opts.pose ? opts.pose(i, t, p) : null;
+      _e.set(ps?.pitch ?? 0, yaw + (ps?.yaw ?? 0), ps?.roll ?? 0, 'YXZ');
       _q.setFromEuler(_e);
-      _b.compose(_v.set(x, y0, z), _q, _s.setScalar(p.scale));
-      const at = (mesh, idx, tx, ty, tz, rx = 0) => {
+      _b.compose(_v.set(x + (ps?.x ?? 0), y0 + (ps?.y ?? 0), z + (ps?.z ?? 0)), _q, _s.setScalar(p.scale));
+      const at = (mesh, idx, tx, ty, tz, rx = 0, rz = 0) => {
         _m.makeTranslation(tx, ty, tz).premultiply(_b);
-        if (rx) _m.multiply(_r.makeRotationX(rx));
+        if (rx || rz) _m.multiply(_r.makeRotationFromEuler(_e2.set(rx, 0, rz)));
         mesh.setMatrixAt(idx, _m);
       };
       at(torso, i, 0, 1.16, 0);
@@ -119,11 +124,12 @@ export function buildCrowd({ zones, standZones = [], count = 420, standing = 40,
       at(hair, i, 0, 1.76, -0.01);
       for (let k = 0; k < 2; k++) {
         const sgn = k ? 1 : -1;
-        at(legs, i * 2 + k, sgn * 0.11, 0.86, 0, sgn * swing);
-        at(arms, i * 2 + k, sgn * 0.3, 1.42, 0, -sgn * swing * 0.8);
-        // shoe follows the foot of the swinging leg
-        const fy = 0.86 - 0.8 * Math.cos(swing), fz = -0.8 * Math.sin(sgn * swing);
-        _m.makeTranslation(sgn * 0.11, fy - 0.06, fz + 0.04).premultiply(_b);
+        at(legs, i * 2 + k, sgn * 0.11, 0.86, 0, sgn * (swing + (ps?.legsX ?? 0)), sgn * (ps?.legsZ ?? 0));
+        at(arms, i * 2 + k, sgn * 0.3, 1.42, 0, -sgn * swing * 0.8 - (ps?.armsX ?? 0), sgn * (ps?.armsZ ?? 0));
+        // shoe sits at the end of the leg, whatever the leg is doing
+        _m.makeTranslation(sgn * 0.11, 0.86, 0).premultiply(_b);
+        _m.multiply(_r.makeRotationFromEuler(_e2.set(sgn * (swing + (ps?.legsX ?? 0)), 0, sgn * (ps?.legsZ ?? 0))));
+        _m.multiply(_r.makeTranslation(0, -0.86, 0.04));
         _m.multiply(_r.makeScale(soles, soles, soles));
         shoes.setMatrixAt(i * 2 + k, _m);
       }
@@ -132,5 +138,14 @@ export function buildCrowd({ zones, standZones = [], count = 420, standing = 40,
     shoes.visible = soles > 0.001;
   }
 
-  return { group, people, update };
+  /** Change what person i wears: { torso, arms } colours (null = back to the original). */
+  function outfit(i, { torso, arms } = {}) {
+    const p = people[i];
+    torsoMesh.setColorAt(i, torso ?? p.jacket);
+    for (let k = 0; k < 2; k++) armsMesh.setColorAt(i * 2 + k, arms ?? p.jacket);
+    torsoMesh.instanceColor.needsUpdate = armsMesh.instanceColor.needsUpdate = true;
+  }
+  const torsoMesh = torso, armsMesh = arms;
+
+  return { group, people, update, outfit };
 }

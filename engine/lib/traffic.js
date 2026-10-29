@@ -25,8 +25,6 @@ function carGeometry() {
     part(1.85, 0.62, 4.5, 0, 0.24, 0, 1), // body
     part(1.62, 0.5, 2.35, 0, 0.8, -0.25, 0.07), // glass cabin
     part(1.56, 0.07, 2.15, 0, 1.08, -0.3, 1), // roof
-    part(1.9, 0.22, 0.18, 0, 0.02, 2.3, 0.18), // front bumper
-    part(1.9, 0.22, 0.18, 0, 0.02, -2.3, 0.18), // rear bumper
     part(1.87, 0.12, 1.0, 0, -0.04, 1.38, 0.1), // wheel-arch shadow band
     part(1.87, 0.12, 1.0, 0, -0.04, -1.38, 0.1),
   ]);
@@ -35,7 +33,14 @@ function carGeometry() {
 const PAINT = ['#f2f2f4', '#15161c', '#9aa0aa', '#5a6070', '#1f3a7a', '#a8202a', '#5b1c2c', '#cfd3da', '#2e4d3b', '#c46d1d'];
 const CAB = '#f7c600';
 
-export function buildTraffic({ lanes, queues, count = 352, cabShare = 0.4, seed = 11 }) {
+function bumperGeometry() {
+  return mergeGeometries([
+    new THREE.BoxGeometry(1.9, 0.22, 0.18).translate(0, 0.02, 2.3),
+    new THREE.BoxGeometry(1.9, 0.22, 0.18).translate(0, 0.02, -2.3),
+  ]);
+}
+
+export function buildTraffic({ lanes, queues, count = 352, cabShare = 0.4, seed = 11, squareWheels = false }) {
   const r = rng(seed);
   const cars = [];
   // distribute: queues first (4 per queue), then the square's lanes, then the rest
@@ -85,10 +90,17 @@ export function buildTraffic({ lanes, queues, count = 352, cabShare = 0.4, seed 
   const lightGeo = new THREE.BoxGeometry(0.34, 0.13, 0.05);
   const heads = new THREE.InstancedMesh(lightGeo, new THREE.MeshBasicMaterial({ color: new THREE.Color(2.2, 2.1, 1.7), toneMapped: false }), N * 2);
   const tails = new THREE.InstancedMesh(lightGeo, new THREE.MeshBasicMaterial({ color: 0xffffff, toneMapped: false }), N * 2);
+  const bumpers = new THREE.InstancedMesh(bumperGeometry(), new THREE.MeshStandardMaterial({ color: '#2a2b31', roughness: 0.6 }), N);
+  // optional square wheels (same footprint as the tyre: 0.66 m)
+  const sqTyres = squareWheels ? new THREE.InstancedMesh(new THREE.BoxGeometry(CAR.tyreW, 2 * CAR.tyreR, 2 * CAR.tyreR), tyres.material, N * 4) : null;
+  const sqRims = squareWheels ? new THREE.InstancedMesh(new THREE.BoxGeometry(CAR.tyreW + 0.03, 0.4, 0.4), rims.material, N * 4) : null;
   cars.forEach((c, i) => bodies.setColorAt(i, c.color));
-  for (const m of [bodies, tyres, rims, signs, heads, tails]) m.frustumCulled = false;
+  const all = [bodies, bumpers, tyres, rims, signs, heads, tails, sqTyres, sqRims].filter(Boolean);
+  for (const m of all) m.frustumCulled = false;
   const group = new THREE.Group();
-  group.add(bodies, tyres, rims, signs, heads, tails);
+  group.add(...all);
+  const lightBase = [signs, heads].map((m) => m.material.color.clone());
+  let lightK = 1;
 
   // ---------- motion ----------
   let brakeAt = Infinity;
@@ -135,6 +147,7 @@ export function buildTraffic({ lanes, queues, count = 352, cabShare = 0.4, seed 
 
   const _m = new THREE.Matrix4(), _base = new THREE.Matrix4(), _q = new THREE.Quaternion(), _e = new THREE.Euler();
   const _v = new THREE.Vector3(), _s = new THREE.Vector3(), _o = new THREE.Matrix4(), _r = new THREE.Matrix4(), _sq = new THREE.Matrix4();
+  const _c = new THREE.Color();
   const brakeRed = new THREE.Color(2.6, 0.12, 0.12), idleRed = new THREE.Color(1.2, 0.05, 0.06);
 
   // World transform of car i at time t (without ride height).
@@ -160,33 +173,46 @@ export function buildTraffic({ lanes, queues, count = 352, cabShare = 0.4, seed 
       const c = cars[i];
       const p = pose(c, t);
       const y = wheel.ride + (wheel.bounce ? wheel.bounce(i, t) : 0);
-      _e.set(0, p.yaw, 0);
+      const off = wheel.offset ? wheel.offset(i, t, p) : null; // free extra motion: floating, flying, bobbing
+      _e.set(off?.pitch ?? 0, p.yaw + (off?.yaw ?? 0), off?.roll ?? 0, 'YXZ');
       _q.setFromEuler(_e);
-      _base.compose(_v.set(p.x, y, p.z), _q, _s.set(1, 1, 1));
+      _base.compose(_v.set(p.x + (off?.x ?? 0), y + (off?.y ?? 0), p.z + (off?.z ?? 0)), _q, _s.set(1, 1, 1));
       bodies.setMatrixAt(i, _base);
+      bumpers.setMatrixAt(i, _base);
       if (c.cab) signs.setMatrixAt(si++, _m.makeTranslation(0, 1.24, -0.3).premultiply(_base));
       for (let k = 0; k < 2; k++) {
         const x = k ? 0.6 : -0.6;
         heads.setMatrixAt(i * 2 + k, _m.makeTranslation(x, 0.36, 2.26).premultiply(_base));
         tails.setMatrixAt(i * 2 + k, _m.makeTranslation(x, 0.4, -2.26).premultiply(_base));
-        tails.setColorAt(i * 2 + k, t > brakeAt ? brakeRed : idleRed); // everyone stands on the brake
+        tails.setColorAt(i * 2 + k, _c.copy(t > brakeAt ? brakeRed : idleRed).multiplyScalar(lightK)); // everyone stands on the brake
       }
       // wheels: roll with distance travelled on whatever is touching the road
-      const spin = c.spin0 + p.dist / (wheel.tyreScale > 0.5 ? CAR.tyreR : CAR.rimR);
+      const spin = c.spin0 + p.dist / (wheel.spinRadius ?? (wheel.tyreScale > 0.5 ? CAR.tyreR : CAR.rimR));
       for (let w = 0; w < 4; w++) {
         const [wx, wz] = WHEELS[w];
         _r.makeRotationX(spin);
         _o.makeTranslation(wx, 0, wz).premultiply(_base);
         rims.setMatrixAt(i * 4 + w, _m.copy(_o).multiply(_r));
         const ts = wheel.tyreScale;
-        _sq.makeScale(ts * (wheel.squashX ?? 1), ts * wheel.squashY, ts * wheel.squashZ).setPosition(0, wheel.tyreDY ?? 0, 0);
+        _sq.makeScale(ts * (wheel.squashX ?? 1), ts * (wheel.squashY ?? 1), ts * (wheel.squashZ ?? 1)).setPosition(0, wheel.tyreDY ?? 0, 0);
         tyres.setMatrixAt(i * 4 + w, _m.copy(_o).multiply(_sq).multiply(_r));
+        if (sqTyres) {
+          const sq = wheel.square ?? 0; // 0 round .. 1 square (cross-fades by scale)
+          _sq.makeScale(sq, sq, sq);
+          sqTyres.setMatrixAt(i * 4 + w, _m.copy(_o).multiply(_r).multiply(_sq));
+          sqRims.setMatrixAt(i * 4 + w, _m.copy(_o).multiply(_r).multiply(_sq));
+        }
       }
     }
-    for (const m of [bodies, tyres, rims, signs, heads]) m.instanceMatrix.needsUpdate = true;
-    tails.instanceMatrix.needsUpdate = true;
+    for (const m of all) m.instanceMatrix.needsUpdate = true;
     tails.instanceColor.needsUpdate = true;
     tyres.visible = wheel.tyreScale > 0.001;
+    if (sqTyres) {
+      sqTyres.visible = sqRims.visible = (wheel.square ?? 0) > 0.001;
+      rims.visible = tyres.visible = tyres.visible && (wheel.square ?? 0) < 0.999;
+    }
+    bumpers.visible = wheel.bumpers ?? true;
+    signs.visible = wheel.signs ?? true;
   }
 
   // World position of wheel w's contact patch at time t.
@@ -198,5 +224,11 @@ export function buildTraffic({ lanes, queues, count = 352, cabShare = 0.4, seed 
     return { x: p.x + wx * cs + wz * sn, y: 0.02, z: p.z - wx * sn + wz * cs, speed: p.speed, yaw: p.yaw };
   }
 
-  return { group, cars, count: N, brake, update, pose, contact, get brakeAt() { return brakeAt; } };
+  /** Headlights, tail lights and cab signs: 1 = on, 0 = dead. */
+  function setLights(k) {
+    lightK = k;
+    [signs, heads].forEach((m, j) => m.material.color.copy(lightBase[j]).multiplyScalar(k));
+  }
+
+  return { group, cars, count: N, brake, update, pose, contact, setLights, meshes: { bodies, bumpers, tyres, rims, signs, heads, tails }, get brakeAt() { return brakeAt; } };
 }

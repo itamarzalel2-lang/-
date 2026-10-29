@@ -4,3 +4,5 @@ out/**/check/
 out/**/*.wav
 .DS_Store
 out/*.log
+out/queue.txt
+out/done.txt
