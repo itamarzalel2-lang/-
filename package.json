@@ -1,0 +1,18 @@
+{
+  "name": "what-if-shorts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "\"What if X for 5 seconds?\" vertical shorts, rendered from code (Three.js) on your own machine.",
+  "scripts": {
+    "preview": "node engine/preview.mjs",
+    "check": "node engine/check.mjs",
+    "render": "node engine/render.mjs"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}
