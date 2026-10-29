@@ -8,3 +8,5 @@ out/queue.txt
 out/done.txt
 out/runner.sh
 out/*.mp4.part
+# intermediate renders (final, narrated versions are added with git add -f)
+out/*.mp4
