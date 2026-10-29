@@ -64,13 +64,16 @@ if (!encodeOnly) {
 fs.rmSync(textDir, { recursive: true, force: true });
 fs.mkdirSync(textDir, { recursive: true });
 {
-  const { page } = await openPlayer(browser, url, video, { dpr, extra: '&overlayonly' });
+  const pages = await Promise.all(Array.from({ length: workers }, () => openPlayer(browser, url, video, { dpr, extra: '&overlayonly' })));
   const t0 = Date.now();
-  for (let i = 0; i < total; i++) {
-    await page.evaluate((t) => window.__player.renderAt(t), i / fps);
-    fs.writeFileSync(name(textDir, i, 'png'), await page.screenshot({ omitBackground: true, clip: { x: 0, y: 0, width: 540, height: 960 } }));
-    if (i % 30 === 0 || i === total - 1) progress('text', i + 1, t0);
-  }
+  let done = 0;
+  await Promise.all(pages.map(async ({ page }, w) => {
+    for (let i = w; i < total; i += workers) {
+      await page.evaluate((t) => window.__player.renderAt(t), i / fps);
+      fs.writeFileSync(name(textDir, i, 'png'), await page.screenshot({ omitBackground: true, clip: { x: 0, y: 0, width: 540, height: 960 } }));
+      if (++done % 30 === 0 || done === total) progress('text', done, t0);
+    }
+  }));
   console.log('');
 }
 if (!voice) console.warn('  (no voice.json: no narration; run node engine/voice.mjs first)');

@@ -1,0 +1,66 @@
+{
+  "voice": "af_heart",
+  "speed": 1.05,
+  "lines": [
+    {
+      "id": "hook",
+      "at": 0.3,
+      "text": "What if every person on Earth lost their *color vision*... for five seconds?"
+    },
+    {
+      "id": "setup",
+      "at": 4.45,
+      "text": "Five million *cones* in your eyes see color. Over ninety million *rods* see in the dark."
+    },
+    {
+      "id": "c3",
+      "at": 11.0,
+      "text": "Three."
+    },
+    {
+      "id": "c2",
+      "at": 12.0,
+      "text": "Two."
+    },
+    {
+      "id": "c1",
+      "at": 13.0,
+      "text": "One."
+    },
+    {
+      "id": "worse",
+      "at": 14.8,
+      "text": "You'd expect black and white. It's *worse*."
+    },
+    {
+      "id": "replay",
+      "at": 18.4,
+      "text": "Let's look again."
+    },
+    {
+      "id": "blind",
+      "at": 19.9,
+      "text": "Rods are built for the night. In daylight they're *overwhelmed*, and the world turns blinding."
+    },
+    {
+      "id": "red",
+      "at": 25.3,
+      "text": "Rods barely see red, so every red sign goes *dark*."
+    },
+    {
+      "id": "center",
+      "at": 28.9,
+      "text": "And the spot you're looking at? *Blank*. The very center of your eye has no rods at all."
+    },
+    {
+      "id": "real",
+      "at": 34.4,
+      "text": "About one in thirty thousand people live like this every day."
+    },
+    {
+      "id": "cta",
+      "at": 38.4,
+      "text": "Follow for more. What should vanish next?"
+    }
+  ]
+}

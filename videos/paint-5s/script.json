@@ -1,0 +1,18 @@
+{
+  "voice": "af_heart",
+  "speed": 1.05,
+  "lines": [
+    { "id": "hook", "at": 0.3, "text": "What if all the *paint* in the world disappeared... for five seconds?" },
+    { "id": "setup", "at": 4.5, "text": "Yellow cabs. Lane lines. Crosswalks. New York runs on paint." },
+    { "id": "c3", "at": 10.6, "text": "Three." },
+    { "id": "c2", "at": 11.6, "text": "Two." },
+    { "id": "c1", "at": 12.6, "text": "One." },
+    { "id": "metal", "at": 14.2, "text": "Every car turns to *bare metal*." },
+    { "id": "lanes", "at": 16.6, "text": "And the lane lines are gone. Nobody knows where to drive." },
+    { "id": "look", "at": 20.0, "text": "Look at that cab." },
+    { "id": "thin", "at": 21.6, "text": "A car's whole paint job is about as thick as a *sheet of paper*." },
+    { "id": "taxi", "at": 25.8, "text": "That thin film is the only thing that makes it a taxi. City rules say a medallion cab must be *yellow*." },
+    { "id": "back", "at": 32.6, "text": "Five seconds later, every stripe and every cab is back." },
+    { "id": "cta", "at": 36.6, "text": "Follow for more. What should vanish next?" }
+  ]
+}

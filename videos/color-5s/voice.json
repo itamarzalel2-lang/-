@@ -1,0 +1,732 @@
+{
+ "voice": "af_heart",
+ "speed": 1.05,
+ "lines": [
+  {
+   "id": "hook",
+   "at": 0.3,
+   "text": "What if every person on Earth lost their color vision... for five seconds?",
+   "file": "voice/hook.wav",
+   "duration": 3.989,
+   "words": [
+    {
+     "text": "What",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.266
+    },
+    {
+     "text": "if",
+     "hl": false,
+     "start": 0.266,
+     "end": 0.374
+    },
+    {
+     "text": "every",
+     "hl": false,
+     "start": 0.374,
+     "end": 0.644
+    },
+    {
+     "text": "person",
+     "hl": false,
+     "start": 0.644,
+     "end": 1.023
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 1.023,
+     "end": 1.185
+    },
+    {
+     "text": "Earth",
+     "hl": false,
+     "start": 1.185,
+     "end": 1.401
+    },
+    {
+     "text": "lost",
+     "hl": false,
+     "start": 1.401,
+     "end": 1.671
+    },
+    {
+     "text": "their",
+     "hl": false,
+     "start": 1.671,
+     "end": 1.833
+    },
+    {
+     "text": "color",
+     "hl": true,
+     "start": 1.833,
+     "end": 2.104
+    },
+    {
+     "text": "vision...",
+     "hl": true,
+     "start": 2.104,
+     "end": 2.59
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 2.99,
+     "end": 3.194
+    },
+    {
+     "text": "five",
+     "hl": false,
+     "start": 3.194,
+     "end": 3.45
+    },
+    {
+     "text": "seconds?",
+     "hl": false,
+     "start": 3.45,
+     "end": 3.91
+    }
+   ]
+  },
+  {
+   "id": "setup",
+   "at": 4.45,
+   "text": "Five million cones in your eyes see color. Over ninety million rods see in the dark.",
+   "file": "voice/setup.wav",
+   "duration": 4.715,
+   "words": [
+    {
+     "text": "Five",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.381
+    },
+    {
+     "text": "million",
+     "hl": false,
+     "start": 0.381,
+     "end": 0.761
+    },
+    {
+     "text": "cones",
+     "hl": true,
+     "start": 0.761,
+     "end": 1.086
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 1.086,
+     "end": 1.248
+    },
+    {
+     "text": "your",
+     "hl": false,
+     "start": 1.248,
+     "end": 1.411
+    },
+    {
+     "text": "eyes",
+     "hl": false,
+     "start": 1.411,
+     "end": 1.628
+    },
+    {
+     "text": "see",
+     "hl": false,
+     "start": 1.628,
+     "end": 1.845
+    },
+    {
+     "text": "color.",
+     "hl": false,
+     "start": 1.845,
+     "end": 2.17
+    },
+    {
+     "text": "Over",
+     "hl": false,
+     "start": 2.62,
+     "end": 2.863
+    },
+    {
+     "text": "ninety",
+     "hl": false,
+     "start": 2.863,
+     "end": 3.202
+    },
+    {
+     "text": "million",
+     "hl": false,
+     "start": 3.202,
+     "end": 3.542
+    },
+    {
+     "text": "rods",
+     "hl": true,
+     "start": 3.542,
+     "end": 3.833
+    },
+    {
+     "text": "see",
+     "hl": false,
+     "start": 3.833,
+     "end": 4.028
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 4.028,
+     "end": 4.173
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 4.173,
+     "end": 4.27
+    },
+    {
+     "text": "dark.",
+     "hl": false,
+     "start": 4.27,
+     "end": 4.61
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "at": 11.0,
+   "text": "Three.",
+   "file": "voice/c3.wav",
+   "duration": 0.725,
+   "words": [
+    {
+     "text": "Three.",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.47
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "at": 12.0,
+   "text": "Two.",
+   "file": "voice/c2.wav",
+   "duration": 0.64,
+   "words": [
+    {
+     "text": "Two.",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.39
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "at": 13.0,
+   "text": "One.",
+   "file": "voice/c1.wav",
+   "duration": 0.597,
+   "words": [
+    {
+     "text": "One.",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.38
+    }
+   ]
+  },
+  {
+   "id": "worse",
+   "at": 14.8,
+   "text": "You'd expect black and white. It's worse.",
+   "file": "voice/worse.wav",
+   "duration": 2.176,
+   "words": [
+    {
+     "text": "You'd",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.23
+    },
+    {
+     "text": "expect",
+     "hl": false,
+     "start": 0.23,
+     "end": 0.59
+    },
+    {
+     "text": "black",
+     "hl": false,
+     "start": 0.59,
+     "end": 0.815
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 0.815,
+     "end": 0.95
+    },
+    {
+     "text": "white.",
+     "hl": false,
+     "start": 0.95,
+     "end": 1.22
+    },
+    {
+     "text": "It's",
+     "hl": false,
+     "start": 1.51,
+     "end": 1.7
+    },
+    {
+     "text": "worse.",
+     "hl": true,
+     "start": 1.7,
+     "end": 2.08
+    }
+   ]
+  },
+  {
+   "id": "replay",
+   "at": 18.4,
+   "text": "Let's look again.",
+   "file": "voice/replay.wav",
+   "duration": 1.045,
+   "words": [
+    {
+     "text": "Let's",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.313
+    },
+    {
+     "text": "look",
+     "hl": false,
+     "start": 0.313,
+     "end": 0.54
+    },
+    {
+     "text": "again.",
+     "hl": false,
+     "start": 0.54,
+     "end": 0.88
+    }
+   ]
+  },
+  {
+   "id": "blind",
+   "at": 19.9,
+   "text": "Rods are built for the night. In daylight they're overwhelmed, and the world turns blinding.",
+   "file": "voice/blind.wav",
+   "duration": 5.077,
+   "words": [
+    {
+     "text": "Rods",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.345
+    },
+    {
+     "text": "are",
+     "hl": false,
+     "start": 0.345,
+     "end": 0.497
+    },
+    {
+     "text": "built",
+     "hl": false,
+     "start": 0.497,
+     "end": 0.751
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 0.751,
+     "end": 0.954
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.954,
+     "end": 1.055
+    },
+    {
+     "text": "night.",
+     "hl": false,
+     "start": 1.055,
+     "end": 1.36
+    },
+    {
+     "text": "In",
+     "hl": false,
+     "start": 1.82,
+     "end": 1.99
+    },
+    {
+     "text": "daylight",
+     "hl": false,
+     "start": 1.99,
+     "end": 2.443
+    },
+    {
+     "text": "they're",
+     "hl": false,
+     "start": 2.443,
+     "end": 2.67
+    },
+    {
+     "text": "overwhelmed,",
+     "hl": true,
+     "start": 2.67,
+     "end": 3.35
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 3.6,
+     "end": 3.752
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 3.752,
+     "end": 3.854
+    },
+    {
+     "text": "world",
+     "hl": false,
+     "start": 3.854,
+     "end": 4.158
+    },
+    {
+     "text": "turns",
+     "hl": false,
+     "start": 4.158,
+     "end": 4.463
+    },
+    {
+     "text": "blinding.",
+     "hl": false,
+     "start": 4.463,
+     "end": 4.97
+    }
+   ]
+  },
+  {
+   "id": "red",
+   "at": 25.3,
+   "text": "Rods barely see red, so every red sign goes dark.",
+   "file": "voice/red.wav",
+   "duration": 3.136,
+   "words": [
+    {
+     "text": "Rods",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.361
+    },
+    {
+     "text": "barely",
+     "hl": false,
+     "start": 0.361,
+     "end": 0.673
+    },
+    {
+     "text": "see",
+     "hl": false,
+     "start": 0.673,
+     "end": 0.88
+    },
+    {
+     "text": "red,",
+     "hl": false,
+     "start": 0.88,
+     "end": 1.14
+    },
+    {
+     "text": "so",
+     "hl": false,
+     "start": 1.4,
+     "end": 1.616
+    },
+    {
+     "text": "every",
+     "hl": false,
+     "start": 1.616,
+     "end": 1.886
+    },
+    {
+     "text": "red",
+     "hl": false,
+     "start": 1.886,
+     "end": 2.102
+    },
+    {
+     "text": "sign",
+     "hl": false,
+     "start": 2.102,
+     "end": 2.372
+    },
+    {
+     "text": "goes",
+     "hl": false,
+     "start": 2.372,
+     "end": 2.642
+    },
+    {
+     "text": "dark.",
+     "hl": true,
+     "start": 2.642,
+     "end": 3.02
+    }
+   ]
+  },
+  {
+   "id": "center",
+   "at": 28.9,
+   "text": "And the spot you're looking at? Blank. The very center of your eye has no rods at all.",
+   "file": "voice/center.wav",
+   "duration": 4.693,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.185
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.185,
+     "end": 0.281
+    },
+    {
+     "text": "spot",
+     "hl": false,
+     "start": 0.281,
+     "end": 0.571
+    },
+    {
+     "text": "you're",
+     "hl": false,
+     "start": 0.571,
+     "end": 0.716
+    },
+    {
+     "text": "looking",
+     "hl": false,
+     "start": 0.716,
+     "end": 1.005
+    },
+    {
+     "text": "at?",
+     "hl": false,
+     "start": 1.005,
+     "end": 1.15
+    },
+    {
+     "text": "Blank.",
+     "hl": true,
+     "start": 1.57,
+     "end": 1.91
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 2.32,
+     "end": 2.428
+    },
+    {
+     "text": "very",
+     "hl": false,
+     "start": 2.428,
+     "end": 2.698
+    },
+    {
+     "text": "center",
+     "hl": false,
+     "start": 2.698,
+     "end": 3.023
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 3.023,
+     "end": 3.131
+    },
+    {
+     "text": "your",
+     "hl": false,
+     "start": 3.131,
+     "end": 3.293
+    },
+    {
+     "text": "eye",
+     "hl": false,
+     "start": 3.293,
+     "end": 3.455
+    },
+    {
+     "text": "has",
+     "hl": false,
+     "start": 3.455,
+     "end": 3.671
+    },
+    {
+     "text": "no",
+     "hl": false,
+     "start": 3.671,
+     "end": 3.887
+    },
+    {
+     "text": "rods",
+     "hl": false,
+     "start": 3.887,
+     "end": 4.212
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 4.212,
+     "end": 4.32
+    },
+    {
+     "text": "all.",
+     "hl": false,
+     "start": 4.32,
+     "end": 4.59
+    }
+   ]
+  },
+  {
+   "id": "real",
+   "at": 34.4,
+   "text": "About one in thirty thousand people live like this every day.",
+   "file": "voice/real.wav",
+   "duration": 3.435,
+   "words": [
+    {
+     "text": "About",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.38
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 0.38,
+     "end": 0.607
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 0.607,
+     "end": 0.777
+    },
+    {
+     "text": "thirty",
+     "hl": false,
+     "start": 0.777,
+     "end": 1.118
+    },
+    {
+     "text": "thousand",
+     "hl": false,
+     "start": 1.118,
+     "end": 1.572
+    },
+    {
+     "text": "people",
+     "hl": false,
+     "start": 1.572,
+     "end": 1.969
+    },
+    {
+     "text": "live",
+     "hl": false,
+     "start": 1.969,
+     "end": 2.252
+    },
+    {
+     "text": "like",
+     "hl": false,
+     "start": 2.252,
+     "end": 2.536
+    },
+    {
+     "text": "this",
+     "hl": false,
+     "start": 2.536,
+     "end": 2.763
+    },
+    {
+     "text": "every",
+     "hl": false,
+     "start": 2.763,
+     "end": 3.046
+    },
+    {
+     "text": "day.",
+     "hl": false,
+     "start": 3.046,
+     "end": 3.33
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "at": 38.4,
+   "text": "Follow for more. What should vanish next?",
+   "file": "voice/cta.wav",
+   "duration": 2.261,
+   "words": [
+    {
+     "text": "Follow",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.411
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 0.411,
+     "end": 0.582
+    },
+    {
+     "text": "more.",
+     "hl": false,
+     "start": 0.582,
+     "end": 0.84
+    },
+    {
+     "text": "What",
+     "hl": false,
+     "start": 1.11,
+     "end": 1.314
+    },
+    {
+     "text": "should",
+     "hl": false,
+     "start": 1.314,
+     "end": 1.518
+    },
+    {
+     "text": "vanish",
+     "hl": false,
+     "start": 1.518,
+     "end": 1.823
+    },
+    {
+     "text": "next?",
+     "hl": false,
+     "start": 1.823,
+     "end": 2.18
+    }
+   ]
+  }
+ ]
+}

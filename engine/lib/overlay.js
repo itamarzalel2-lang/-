@@ -63,12 +63,15 @@ export class Overlay {
     return this.add(el, { enter: 'pop', fadeIn: 0.22, ...opts });
   }
 
-  counter({ label, countTo, countDur = 1.2, ...opts }) {
+  counter({ label, countTo, countDur = 1.2, decimals = 0, ...opts }) {
     const el = h('ov-counter', `<div class="box"><div class="lbl">${label}</div><div class="val">0</div></div>`);
     const val = el.querySelector('.val');
     return this.add(el, {
       enter: 'pop', ...opts,
-      render: (t, _el, local) => { val.textContent = Math.round(countTo * easeOutCubic(clamp(local / countDur))).toLocaleString('en-US'); },
+      render: (t, _el, local) => {
+        const v = countTo * easeOutCubic(clamp(local / countDur));
+        val.textContent = v.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+      },
     });
   }
 

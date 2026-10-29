@@ -1,0 +1,702 @@
+{
+ "voice": "af_heart",
+ "speed": 1.05,
+ "lines": [
+  {
+   "id": "hook",
+   "at": 0.3,
+   "text": "What if all the paint in the world disappeared... for five seconds?",
+   "file": "voice/hook.wav",
+   "duration": 3.435,
+   "words": [
+    {
+     "text": "What",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.24
+    },
+    {
+     "text": "if",
+     "hl": false,
+     "start": 0.24,
+     "end": 0.334
+    },
+    {
+     "text": "all",
+     "hl": false,
+     "start": 0.334,
+     "end": 0.524
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.524,
+     "end": 0.619
+    },
+    {
+     "text": "paint",
+     "hl": true,
+     "start": 0.619,
+     "end": 0.903
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 0.903,
+     "end": 1.045
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.045,
+     "end": 1.14
+    },
+    {
+     "text": "world",
+     "hl": false,
+     "start": 1.14,
+     "end": 1.424
+    },
+    {
+     "text": "disappeared...",
+     "hl": false,
+     "start": 1.424,
+     "end": 2.04
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 2.42,
+     "end": 2.627
+    },
+    {
+     "text": "five",
+     "hl": false,
+     "start": 2.627,
+     "end": 2.885
+    },
+    {
+     "text": "seconds?",
+     "hl": false,
+     "start": 2.885,
+     "end": 3.35
+    }
+   ]
+  },
+  {
+   "id": "setup",
+   "at": 4.5,
+   "text": "Yellow cabs. Lane lines. Crosswalks. New York runs on paint.",
+   "file": "voice/setup.wav",
+   "duration": 4.096,
+   "words": [
+    {
+     "text": "Yellow",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.43
+    },
+    {
+     "text": "cabs.",
+     "hl": false,
+     "start": 0.43,
+     "end": 0.83
+    },
+    {
+     "text": "Lane",
+     "hl": false,
+     "start": 1.01,
+     "end": 1.297
+    },
+    {
+     "text": "lines.",
+     "hl": false,
+     "start": 1.297,
+     "end": 1.7
+    },
+    {
+     "text": "Crosswalks.",
+     "hl": false,
+     "start": 1.91,
+     "end": 2.53
+    },
+    {
+     "text": "New",
+     "hl": false,
+     "start": 2.81,
+     "end": 3.0
+    },
+    {
+     "text": "York",
+     "hl": false,
+     "start": 3.0,
+     "end": 3.286
+    },
+    {
+     "text": "runs",
+     "hl": false,
+     "start": 3.286,
+     "end": 3.524
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 3.524,
+     "end": 3.667
+    },
+    {
+     "text": "paint.",
+     "hl": false,
+     "start": 3.667,
+     "end": 4.0
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "at": 10.6,
+   "text": "Three.",
+   "file": "voice/c3.wav",
+   "duration": 0.725,
+   "words": [
+    {
+     "text": "Three.",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.47
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "at": 11.6,
+   "text": "Two.",
+   "file": "voice/c2.wav",
+   "duration": 0.64,
+   "words": [
+    {
+     "text": "Two.",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.39
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "at": 12.6,
+   "text": "One.",
+   "file": "voice/c1.wav",
+   "duration": 0.597,
+   "words": [
+    {
+     "text": "One.",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.38
+    }
+   ]
+  },
+  {
+   "id": "metal",
+   "at": 14.2,
+   "text": "Every car turns to bare metal.",
+   "file": "voice/metal.wav",
+   "duration": 1.707,
+   "words": [
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.295
+    },
+    {
+     "text": "car",
+     "hl": false,
+     "start": 0.295,
+     "end": 0.55
+    },
+    {
+     "text": "turns",
+     "hl": false,
+     "start": 0.55,
+     "end": 0.856
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 0.856,
+     "end": 1.009
+    },
+    {
+     "text": "bare",
+     "hl": true,
+     "start": 1.009,
+     "end": 1.213
+    },
+    {
+     "text": "metal.",
+     "hl": true,
+     "start": 1.213,
+     "end": 1.57
+    }
+   ]
+  },
+  {
+   "id": "lanes",
+   "at": 16.6,
+   "text": "And the lane lines are gone. Nobody knows where to drive.",
+   "file": "voice/lanes.wav",
+   "duration": 3.093,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.195
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.195,
+     "end": 0.298
+    },
+    {
+     "text": "lane",
+     "hl": false,
+     "start": 0.298,
+     "end": 0.557
+    },
+    {
+     "text": "lines",
+     "hl": false,
+     "start": 0.557,
+     "end": 0.867
+    },
+    {
+     "text": "are",
+     "hl": false,
+     "start": 0.867,
+     "end": 1.022
+    },
+    {
+     "text": "gone.",
+     "hl": false,
+     "start": 1.022,
+     "end": 1.28
+    },
+    {
+     "text": "Nobody",
+     "hl": false,
+     "start": 1.64,
+     "end": 2.071
+    },
+    {
+     "text": "knows",
+     "hl": false,
+     "start": 2.071,
+     "end": 2.31
+    },
+    {
+     "text": "where",
+     "hl": false,
+     "start": 2.31,
+     "end": 2.501
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 2.501,
+     "end": 2.645
+    },
+    {
+     "text": "drive.",
+     "hl": false,
+     "start": 2.645,
+     "end": 2.98
+    }
+   ]
+  },
+  {
+   "id": "look",
+   "at": 20.0,
+   "text": "Look at that cab.",
+   "file": "voice/look.wav",
+   "duration": 1.024,
+   "words": [
+    {
+     "text": "Look",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.245
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 0.245,
+     "end": 0.348
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 0.348,
+     "end": 0.553
+    },
+    {
+     "text": "cab.",
+     "hl": false,
+     "start": 0.553,
+     "end": 0.81
+    }
+   ]
+  },
+  {
+   "id": "thin",
+   "at": 21.6,
+   "text": "A car's whole paint job is about as thick as a sheet of paper.",
+   "file": "voice/thin.wav",
+   "duration": 3.52,
+   "words": [
+    {
+     "text": "A",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.202
+    },
+    {
+     "text": "car's",
+     "hl": false,
+     "start": 0.202,
+     "end": 0.546
+    },
+    {
+     "text": "whole",
+     "hl": false,
+     "start": 0.546,
+     "end": 0.832
+    },
+    {
+     "text": "paint",
+     "hl": false,
+     "start": 0.832,
+     "end": 1.176
+    },
+    {
+     "text": "job",
+     "hl": false,
+     "start": 1.176,
+     "end": 1.519
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 1.519,
+     "end": 1.634
+    },
+    {
+     "text": "about",
+     "hl": false,
+     "start": 1.634,
+     "end": 1.978
+    },
+    {
+     "text": "as",
+     "hl": false,
+     "start": 1.978,
+     "end": 2.092
+    },
+    {
+     "text": "thick",
+     "hl": false,
+     "start": 2.092,
+     "end": 2.322
+    },
+    {
+     "text": "as",
+     "hl": false,
+     "start": 2.322,
+     "end": 2.436
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 2.436,
+     "end": 2.608
+    },
+    {
+     "text": "sheet",
+     "hl": true,
+     "start": 2.608,
+     "end": 2.894
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 2.894,
+     "end": 3.009
+    },
+    {
+     "text": "paper.",
+     "hl": true,
+     "start": 3.009,
+     "end": 3.41
+    }
+   ]
+  },
+  {
+   "id": "taxi",
+   "at": 25.8,
+   "text": "That thin film is the only thing that makes it a taxi. City rules say a medallion cab must be yellow.",
+   "file": "voice/taxi.wav",
+   "duration": 6.123,
+   "words": [
+    {
+     "text": "That",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.268
+    },
+    {
+     "text": "thin",
+     "hl": false,
+     "start": 0.268,
+     "end": 0.507
+    },
+    {
+     "text": "film",
+     "hl": false,
+     "start": 0.507,
+     "end": 0.805
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 0.805,
+     "end": 0.924
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.924,
+     "end": 1.043
+    },
+    {
+     "text": "only",
+     "hl": false,
+     "start": 1.043,
+     "end": 1.401
+    },
+    {
+     "text": "thing",
+     "hl": false,
+     "start": 1.401,
+     "end": 1.639
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 1.639,
+     "end": 1.877
+    },
+    {
+     "text": "makes",
+     "hl": false,
+     "start": 1.877,
+     "end": 2.235
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 2.235,
+     "end": 2.354
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 2.354,
+     "end": 2.533
+    },
+    {
+     "text": "taxi.",
+     "hl": false,
+     "start": 2.533,
+     "end": 2.95
+    },
+    {
+     "text": "City",
+     "hl": false,
+     "start": 3.46,
+     "end": 3.734
+    },
+    {
+     "text": "rules",
+     "hl": false,
+     "start": 3.734,
+     "end": 4.064
+    },
+    {
+     "text": "say",
+     "hl": false,
+     "start": 4.064,
+     "end": 4.283
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 4.283,
+     "end": 4.448
+    },
+    {
+     "text": "medallion",
+     "hl": false,
+     "start": 4.448,
+     "end": 4.942
+    },
+    {
+     "text": "cab",
+     "hl": false,
+     "start": 4.942,
+     "end": 5.162
+    },
+    {
+     "text": "must",
+     "hl": false,
+     "start": 5.162,
+     "end": 5.436
+    },
+    {
+     "text": "be",
+     "hl": false,
+     "start": 5.436,
+     "end": 5.656
+    },
+    {
+     "text": "yellow.",
+     "hl": true,
+     "start": 5.656,
+     "end": 6.04
+    }
+   ]
+  },
+  {
+   "id": "back",
+   "at": 32.6,
+   "text": "Five seconds later, every stripe and every cab is back.",
+   "file": "voice/back.wav",
+   "duration": 3.285,
+   "words": [
+    {
+     "text": "Five",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.335
+    },
+    {
+     "text": "seconds",
+     "hl": false,
+     "start": 0.335,
+     "end": 0.695
+    },
+    {
+     "text": "later,",
+     "hl": false,
+     "start": 0.695,
+     "end": 1.01
+    },
+    {
+     "text": "every",
+     "hl": false,
+     "start": 1.33,
+     "end": 1.627
+    },
+    {
+     "text": "stripe",
+     "hl": false,
+     "start": 1.627,
+     "end": 2.042
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 2.042,
+     "end": 2.22
+    },
+    {
+     "text": "every",
+     "hl": false,
+     "start": 2.22,
+     "end": 2.517
+    },
+    {
+     "text": "cab",
+     "hl": false,
+     "start": 2.517,
+     "end": 2.755
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 2.755,
+     "end": 2.873
+    },
+    {
+     "text": "back.",
+     "hl": false,
+     "start": 2.873,
+     "end": 3.17
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "at": 36.6,
+   "text": "Follow for more. What should vanish next?",
+   "file": "voice/cta.wav",
+   "duration": 2.261,
+   "words": [
+    {
+     "text": "Follow",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.411
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 0.411,
+     "end": 0.582
+    },
+    {
+     "text": "more.",
+     "hl": false,
+     "start": 0.582,
+     "end": 0.84
+    },
+    {
+     "text": "What",
+     "hl": false,
+     "start": 1.11,
+     "end": 1.314
+    },
+    {
+     "text": "should",
+     "hl": false,
+     "start": 1.314,
+     "end": 1.518
+    },
+    {
+     "text": "vanish",
+     "hl": false,
+     "start": 1.518,
+     "end": 1.823
+    },
+    {
+     "text": "next?",
+     "hl": false,
+     "start": 1.823,
+     "end": 2.18
+    }
+   ]
+  }
+ ]
+}

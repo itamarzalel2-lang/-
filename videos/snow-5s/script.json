@@ -1,0 +1,18 @@
+{
+  "voice": "af_heart",
+  "speed": 1.05,
+  "lines": [
+    { "id": "hook", "at": 0.3, "text": "What if a whole year of *snow* fell on New York... in five seconds?" },
+    { "id": "setup", "at": 4.5, "text": "Central Park gets about *thirty inches* of snow in an average year." },
+    { "id": "c3", "at": 10.6, "text": "Three." },
+    { "id": "c2", "at": 11.6, "text": "Two." },
+    { "id": "c1", "at": 12.6, "text": "One." },
+    { "id": "white", "at": 14.2, "text": "*Whiteout*." },
+    { "id": "buried", "at": 15.8, "text": "Seventy-six centimeters. Cars buried up to their doors." },
+    { "id": "twist", "at": 19.6, "text": "But here's the twist." },
+    { "id": "melt", "at": 21.2, "text": "Melt all of that snow... and you'd get only about *seven centimeters* of water." },
+    { "id": "air", "at": 26.4, "text": "Fresh snow is mostly *air*. Around ninety percent." },
+    { "id": "compare", "at": 30.0, "text": "A year of rain would flood this street over a meter deep." },
+    { "id": "cta", "at": 34.6, "text": "Follow for more. What should fall next?" }
+  ]
+}

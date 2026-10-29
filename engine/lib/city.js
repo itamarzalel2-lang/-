@@ -220,10 +220,12 @@ export function timesSquare(opts = {}) {
   const m4 = new THREE.Matrix4();
   marks.forEach(([x, z, w, l], i) => markMesh.setMatrixAt(i, m4.makeScale(w, 1, l).setPosition(x, 0.012, z)));
   group.add(markMesh);
+  const markings = [markMesh];
   for (const ax of AVENUES_X) {
     const line = new THREE.Mesh(new THREE.PlaneGeometry(0.35, 600).rotateX(-Math.PI / 2), new THREE.MeshStandardMaterial({ color: col('#e8c23a') }));
     line.position.set(ax, 0.012, 0);
     group.add(line);
+    markings.push(line);
   }
 
   // ---------- buildings ----------
@@ -389,7 +391,7 @@ export function timesSquare(opts = {}) {
   const pointBase = points.map((p) => p.intensity);
   return {
     group, fog, lanes, queues, crowdZones, standZones, carCount: o.cars, cabs: o.cabs, options: o,
-    preset: P, sky: skyMat.uniforms, hemi, sun, points, billboards: boards.children, facades: corridorFacades, walls: wallMat,
+    preset: P, sky: skyMat.uniforms, hemi, sun, points, billboards: boards.children, facades: corridorFacades, walls: wallMat, markings,
     /** Scale every self-lit thing (windows, billboards, shops, lamps, ball, steps, point lights): 1 = normal, 0 = blackout. */
     setArtificial(k) {
       for (const g of glow) {

@@ -41,7 +41,8 @@ const camera = new THREE.PerspectiveCamera(config.fov, W / H, 0.05, 4000);
 scene.add(camera);
 const overlay = new Overlay(document.getElementById('overlay'));
 
-const ctx = { THREE, renderer, scene, camera, overlay, config, W, H, dpr };
+// scenes may push extra post-processing passes (applied to the final image) into ctx.post
+const ctx = { THREE, renderer, scene, camera, overlay, config, W, H, dpr, post: [] };
 const update = await mod.setup(ctx);
 
 // Optional: swap PBR materials for Lambert (much cheaper on CPU-only WebGL, similar look here)
@@ -75,6 +76,7 @@ composer.addPass(new RenderPass(scene, camera));
 const b = config.bloom;
 if (b && params.get('bloom') !== '0') composer.addPass(new UnrealBloomPass(new THREE.Vector2(W * dpr, H * dpr), b.strength, b.radius, b.threshold));
 composer.addPass(new OutputPass());
+for (const p of ctx.post) composer.addPass(p);
 if (config.fxaa && !Number(params.get('msaa') ?? config.msaa)) {
   const fxaa = new ShaderPass(FXAAShader);
   fxaa.material.uniforms.resolution.value.set(1 / (W * dpr), 1 / (H * dpr));
