@@ -14,6 +14,12 @@ When the user sends a one-line premise ("What if all X disappeared for 5 seconds
 - Don't put a number on screen without a source. A calculation (e.g. tire sidewall) counts as a source if the inputs are written down.
 - Prefer official sources (agencies, manufacturers, research). Phrase on-screen numbers conservatively ("~").
 
+## 2.5 Narration: the most important part
+- Every video has a voiceover in English. Write `videos/<slug>/script.json` (lines with `at` in seconds; `*word*` = a word the subtitles always highlight). The facts and their sources go **in the narration**, not in fact cards on screen.
+- The countdown is three separate lines ("Three." / "Two." / "One.") exactly 3, 2 and 1 seconds before the event, synced to the timer.
+- `node engine/voice.mjs <slug>` (one-time setup: `bash engine/setup-voice.sh`) → `voice/*.wav` + `voice.json` with per-word timings. It warns when a line runs into the next one; fix `at` and run it again.
+- Subtitles are generated automatically from the narration (bottom third, the spoken word in yellow). No `overlay.fact` / `overlay.end`.
+
 ## 3. The scene is code
 - `videos/<slug>/scene.js` exports `config` (duration, fps, fov, bloom), `audio` (cues), and `setup(ctx)`, which returns `update(t)`.
 - **Everything must be a pure function of time `t`.** No `Math.random()`: use `rng(seed)` / `hash01(...)` from `engine/lib/util.js`. That lets frames render in parallel and in any order.
@@ -23,7 +29,9 @@ When the user sends a one-line premise ("What if all X disappeared for 5 seconds
   - `crowd.js`: pedestrians that walk, stop, turn, and have rubber soles.
   - `fx.js`: closed-form particles (sparks, smoke, air burst).
   - `camera.js`: `cameraPath` (PCHIP, no overshoot through the ground), `shots` (hard cuts), `follow` (a camera that rides alongside a car), `handheld`.
-  - `overlay.js`: title, timer, fact cards with a source line, captions, counter, a flash, and a `tag` (a red ring and label pinned to a 3D object).
+  - `overlay.js`: title, timer, counter, chip (REPLAY), card (time jump), and a `tag` (a red ring and label pinned to a 3D object).
+  - `subtitles.js`: word-by-word subtitles from `voice.json`.
+  - `util.js` → `remap()`: story time → simulation time, for slow-motion replays.
   - `props.js`: a first-person hand holding a phone.
 - A new location or object goes in `engine/lib/` as a reusable module, not inside the scene.
 
@@ -35,7 +43,8 @@ When the user sends a one-line premise ("What if all X disappeared for 5 seconds
 
 ## 5. Render
 - `npm run render -- <slug>` → `out/<slug>.mp4` (H.264 + AAC, faststart, ready to upload).
-- `--workers N` sets parallelism, `--resume` continues an interrupted render.
+- Pass 1 renders the 3D scene with no text (slow). Pass 2 renders all the text (title, timer, subtitles) on a transparent page (fast). Then the soundtrack and the voice are mixed (the effects duck under the speech), and everything is encoded.
+- A text or narration change → `--encode-only` (no 3D re-render). `--workers N` sets parallelism, `--resume` continues an interrupted render.
 - On a Linux server with no GPU, WebGL runs in software (SwiftShader) and is slow. On a Mac/PC the GPU is used.
 - Add the premise to `ideas.md` with status `made`.
 

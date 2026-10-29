@@ -1,0 +1,705 @@
+{
+ "voice": "af_heart",
+ "speed": 1.05,
+ "lines": [
+  {
+   "id": "hook",
+   "at": 0.3,
+   "text": "What if friction disappeared... for five seconds?",
+   "file": "voice/hook.wav",
+   "duration": 2.603,
+   "words": [
+    {
+     "text": "What",
+     "hl": false,
+     "start": 0.06,
+     "end": 0.241
+    },
+    {
+     "text": "if",
+     "hl": false,
+     "start": 0.241,
+     "end": 0.331
+    },
+    {
+     "text": "friction",
+     "hl": true,
+     "start": 0.331,
+     "end": 0.693
+    },
+    {
+     "text": "disappeared...",
+     "hl": false,
+     "start": 0.693,
+     "end": 1.28
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 1.59,
+     "end": 1.794
+    },
+    {
+     "text": "five",
+     "hl": false,
+     "start": 1.794,
+     "end": 2.05
+    },
+    {
+     "text": "seconds?",
+     "hl": false,
+     "start": 2.05,
+     "end": 2.51
+    }
+   ]
+  },
+  {
+   "id": "setup",
+   "at": 4.4,
+   "text": "Every step you take, every turn of a wheel, every knot you tie... it all runs on friction.",
+   "file": "voice/setup.wav",
+   "duration": 5.141,
+   "words": [
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.285
+    },
+    {
+     "text": "step",
+     "hl": false,
+     "start": 0.285,
+     "end": 0.529
+    },
+    {
+     "text": "you",
+     "hl": false,
+     "start": 0.529,
+     "end": 0.676
+    },
+    {
+     "text": "take,",
+     "hl": false,
+     "start": 0.676,
+     "end": 0.97
+    },
+    {
+     "text": "every",
+     "hl": false,
+     "start": 1.21,
+     "end": 1.455
+    },
+    {
+     "text": "turn",
+     "hl": false,
+     "start": 1.455,
+     "end": 1.7
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 1.7,
+     "end": 1.799
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.799,
+     "end": 1.946
+    },
+    {
+     "text": "wheel,",
+     "hl": false,
+     "start": 1.946,
+     "end": 2.24
+    },
+    {
+     "text": "every",
+     "hl": false,
+     "start": 2.35,
+     "end": 2.603
+    },
+    {
+     "text": "knot",
+     "hl": false,
+     "start": 2.603,
+     "end": 2.855
+    },
+    {
+     "text": "you",
+     "hl": false,
+     "start": 2.855,
+     "end": 3.006
+    },
+    {
+     "text": "tie...",
+     "hl": false,
+     "start": 3.006,
+     "end": 3.36
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 3.8,
+     "end": 3.907
+    },
+    {
+     "text": "all",
+     "hl": false,
+     "start": 3.907,
+     "end": 4.121
+    },
+    {
+     "text": "runs",
+     "hl": false,
+     "start": 4.121,
+     "end": 4.388
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 4.388,
+     "end": 4.549
+    },
+    {
+     "text": "friction.",
+     "hl": false,
+     "start": 4.549,
+     "end": 5.03
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "at": 10.4,
+   "text": "Three.",
+   "file": "voice/c3.wav",
+   "duration": 0.725,
+   "words": [
+    {
+     "text": "Three.",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.47
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "at": 11.4,
+   "text": "Two.",
+   "file": "voice/c2.wav",
+   "duration": 0.64,
+   "words": [
+    {
+     "text": "Two.",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.39
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "at": 12.4,
+   "text": "One.",
+   "file": "voice/c1.wav",
+   "duration": 0.597,
+   "words": [
+    {
+     "text": "One.",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.38
+    }
+   ]
+  },
+  {
+   "id": "slip",
+   "at": 14.0,
+   "text": "Everyone who was walking... slips.",
+   "file": "voice/slip.wav",
+   "duration": 1.984,
+   "words": [
+    {
+     "text": "Everyone",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.425
+    },
+    {
+     "text": "who",
+     "hl": false,
+     "start": 0.425,
+     "end": 0.6
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.6,
+     "end": 0.732
+    },
+    {
+     "text": "walking...",
+     "hl": false,
+     "start": 0.732,
+     "end": 1.17
+    },
+    {
+     "text": "slips.",
+     "hl": true,
+     "start": 1.46,
+     "end": 1.89
+    }
+   ]
+  },
+  {
+   "id": "cars",
+   "at": 16.4,
+   "text": "And the cars? The brakes do nothing.",
+   "file": "voice/cars.wav",
+   "duration": 2.005,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.07,
+     "end": 0.237
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.237,
+     "end": 0.349
+    },
+    {
+     "text": "cars?",
+     "hl": false,
+     "start": 0.349,
+     "end": 0.74
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.91,
+     "end": 1.005
+    },
+    {
+     "text": "brakes",
+     "hl": false,
+     "start": 1.005,
+     "end": 1.338
+    },
+    {
+     "text": "do",
+     "hl": false,
+     "start": 1.338,
+     "end": 1.528
+    },
+    {
+     "text": "nothing.",
+     "hl": false,
+     "start": 1.528,
+     "end": 1.86
+    }
+   ]
+  },
+  {
+   "id": "replay",
+   "at": 18.6,
+   "text": "Look closer.",
+   "file": "voice/replay.wav",
+   "duration": 0.939,
+   "words": [
+    {
+     "text": "Look",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.277
+    },
+    {
+     "text": "closer.",
+     "hl": false,
+     "start": 0.277,
+     "end": 0.73
+    }
+   ]
+  },
+  {
+   "id": "walk",
+   "at": 19.9,
+   "text": "Walking means pushing your foot backward against the ground. With no grip, your feet just slide apart.",
+   "file": "voice/walk.wav",
+   "duration": 5.525,
+   "words": [
+    {
+     "text": "Walking",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.414
+    },
+    {
+     "text": "means",
+     "hl": false,
+     "start": 0.414,
+     "end": 0.726
+    },
+    {
+     "text": "pushing",
+     "hl": false,
+     "start": 0.726,
+     "end": 1.038
+    },
+    {
+     "text": "your",
+     "hl": false,
+     "start": 1.038,
+     "end": 1.194
+    },
+    {
+     "text": "foot",
+     "hl": false,
+     "start": 1.194,
+     "end": 1.402
+    },
+    {
+     "text": "backward",
+     "hl": false,
+     "start": 1.402,
+     "end": 1.766
+    },
+    {
+     "text": "against",
+     "hl": false,
+     "start": 1.766,
+     "end": 2.13
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.13,
+     "end": 2.234
+    },
+    {
+     "text": "ground.",
+     "hl": false,
+     "start": 2.234,
+     "end": 2.65
+    },
+    {
+     "text": "With",
+     "hl": false,
+     "start": 3.17,
+     "end": 3.329
+    },
+    {
+     "text": "no",
+     "hl": false,
+     "start": 3.329,
+     "end": 3.542
+    },
+    {
+     "text": "grip,",
+     "hl": false,
+     "start": 3.542,
+     "end": 3.86
+    },
+    {
+     "text": "your",
+     "hl": false,
+     "start": 4.08,
+     "end": 4.226
+    },
+    {
+     "text": "feet",
+     "hl": false,
+     "start": 4.226,
+     "end": 4.469
+    },
+    {
+     "text": "just",
+     "hl": false,
+     "start": 4.469,
+     "end": 4.76
+    },
+    {
+     "text": "slide",
+     "hl": false,
+     "start": 4.76,
+     "end": 5.051
+    },
+    {
+     "text": "apart.",
+     "hl": false,
+     "start": 5.051,
+     "end": 5.44
+    }
+   ]
+  },
+  {
+   "id": "still",
+   "at": 26.2,
+   "text": "But the people standing perfectly still? They're fine. No push, no slip.",
+   "file": "voice/still.wav",
+   "duration": 4.288,
+   "words": [
+    {
+     "text": "But",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.224
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.224,
+     "end": 0.316
+    },
+    {
+     "text": "people",
+     "hl": false,
+     "start": 0.316,
+     "end": 0.637
+    },
+    {
+     "text": "standing",
+     "hl": false,
+     "start": 0.637,
+     "end": 1.005
+    },
+    {
+     "text": "perfectly",
+     "hl": true,
+     "start": 1.005,
+     "end": 1.464
+    },
+    {
+     "text": "still?",
+     "hl": true,
+     "start": 1.464,
+     "end": 1.74
+    },
+    {
+     "text": "They're",
+     "hl": false,
+     "start": 2.07,
+     "end": 2.306
+    },
+    {
+     "text": "fine.",
+     "hl": false,
+     "start": 2.306,
+     "end": 2.66
+    },
+    {
+     "text": "No",
+     "hl": false,
+     "start": 2.99,
+     "end": 3.479
+    },
+    {
+     "text": "push,",
+     "hl": false,
+     "start": 3.479,
+     "end": 4.09
+    },
+    {
+     "text": "no",
+     "hl": false,
+     "start": 4.17,
+     "end": 4.174
+    },
+    {
+     "text": "slip.",
+     "hl": false,
+     "start": 4.174,
+     "end": 4.18
+    }
+   ]
+  },
+  {
+   "id": "knots",
+   "at": 30.6,
+   "text": "And every knot on Earth would come undone. Knots only hold because of friction.",
+   "file": "voice/knots.wav",
+   "duration": 4.459,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.224
+    },
+    {
+     "text": "every",
+     "hl": false,
+     "start": 0.224,
+     "end": 0.514
+    },
+    {
+     "text": "knot",
+     "hl": false,
+     "start": 0.514,
+     "end": 0.804
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.804,
+     "end": 0.978
+    },
+    {
+     "text": "Earth",
+     "hl": false,
+     "start": 0.978,
+     "end": 1.21
+    },
+    {
+     "text": "would",
+     "hl": false,
+     "start": 1.21,
+     "end": 1.442
+    },
+    {
+     "text": "come",
+     "hl": false,
+     "start": 1.442,
+     "end": 1.674
+    },
+    {
+     "text": "undone.",
+     "hl": false,
+     "start": 1.674,
+     "end": 2.08
+    },
+    {
+     "text": "Knots",
+     "hl": false,
+     "start": 2.53,
+     "end": 2.844
+    },
+    {
+     "text": "only",
+     "hl": false,
+     "start": 2.844,
+     "end": 3.157
+    },
+    {
+     "text": "hold",
+     "hl": false,
+     "start": 3.157,
+     "end": 3.471
+    },
+    {
+     "text": "because",
+     "hl": false,
+     "start": 3.471,
+     "end": 3.785
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 3.785,
+     "end": 3.889
+    },
+    {
+     "text": "friction.",
+     "hl": false,
+     "start": 3.889,
+     "end": 4.36
+    }
+   ]
+  },
+  {
+   "id": "back",
+   "at": 35.6,
+   "text": "Then the grip comes back.",
+   "file": "voice/back.wav",
+   "duration": 1.28,
+   "words": [
+    {
+     "text": "Then",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.26
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.26,
+     "end": 0.364
+    },
+    {
+     "text": "grip",
+     "hl": false,
+     "start": 0.364,
+     "end": 0.626
+    },
+    {
+     "text": "comes",
+     "hl": false,
+     "start": 0.626,
+     "end": 0.888
+    },
+    {
+     "text": "back.",
+     "hl": false,
+     "start": 0.888,
+     "end": 1.15
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "at": 37.8,
+   "text": "Follow for more. What should vanish next?",
+   "file": "voice/cta.wav",
+   "duration": 2.261,
+   "words": [
+    {
+     "text": "Follow",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.411
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 0.411,
+     "end": 0.582
+    },
+    {
+     "text": "more.",
+     "hl": false,
+     "start": 0.582,
+     "end": 0.84
+    },
+    {
+     "text": "What",
+     "hl": false,
+     "start": 1.11,
+     "end": 1.314
+    },
+    {
+     "text": "should",
+     "hl": false,
+     "start": 1.314,
+     "end": 1.518
+    },
+    {
+     "text": "vanish",
+     "hl": false,
+     "start": 1.518,
+     "end": 1.823
+    },
+    {
+     "text": "next?",
+     "hl": false,
+     "start": 1.823,
+     "end": 2.18
+    }
+   ]
+  }
+ ]
+}

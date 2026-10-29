@@ -113,12 +113,6 @@ export async function setup({ scene, camera, overlay }) {
   ]);
 
   overlay.title('What if <span class="hl">gravity</span> switched off for 5 seconds?', { from: 0, fadeIn: 0, to: D + 1 });
-  overlay.fact({
-    kicker: 'Fact',
-    text: 'Every car’s springs are squeezed <span class="hl">~17 cm</span> by its own weight.',
-    source: 'Ride frequency of passenger cars ≈ 1–1.5 Hz → static deflection g/(2πf)² ≈ 17 cm at 1.2 Hz',
-    from: 5.4, to: 10.6,
-  });
   overlay.timer({
     from: 10.7, to: D - 3,
     label: (t) => { const s = simAt(t); return s < OFF ? 'Gravity off in' : s < ON ? 'No gravity for' : 'Gravity is back'; },
@@ -126,20 +120,7 @@ export async function setup({ scene, camera, overlay }) {
     mode: (t) => { const s = simAt(t); return s < OFF ? '' : s < ON ? 'gone' : 'back'; },
   });
   overlay.add(Object.assign(document.createElement('div'), { className: 'ov-chip', innerHTML: '◀◀ REPLAY · <b>0.5×</b>' }), { from: REPLAY[0], to: REPLAY[1], fadeIn: 0.15, fadeOut: 0.15, enter: 'pop' });
-  overlay.fact({
-    kicker: 'Physics',
-    text: 'Nothing pulls them back down. After 5 seconds every car is <span class="hl">~4 m</span> up.',
-    source: 'Released spring ≈ √(g·δ) ≈ 1.3 m/s, minus dampers and wheel mass ≈ 0.8 m/s × 5 s',
-    from: 21.6, to: 28.8,
-  });
-  overlay.fact({
-    kicker: 'Physics',
-    text: 'A 4 m drop hits like a <span class="hl">~32 km/h</span> crash. 352 of them at once.',
-    source: 'Free fall: v = √(2·g·h) = √(2 × 9.81 × 4) ≈ 8.9 m/s ≈ 32 km/h',
-    from: 32.4, to: D + 1, top: 330,
-  });
   overlay.counter({ label: 'Cars dropped from ~4 m', countTo: 352, countDur: 1.2, from: 34.5, to: D + 1 });
-  overlay.end('Comment what should <span class="hl">vanish</span> next', { from: 38.8, to: D + 1 });
 
   return function update(t) {
     const s = simAt(t);

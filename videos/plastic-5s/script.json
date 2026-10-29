@@ -2,15 +2,65 @@
   "voice": "af_heart",
   "speed": 1.05,
   "lines": [
-    { "id": "hook", "at": 0.3, "text": "What if all the *plastic* on Earth disappeared... for five seconds?" },
-    { "id": "setup", "at": 4.4, "text": "It's everywhere. Phones, cars, signs... and probably the clothes you're wearing right now." },
-    { "id": "count", "at": 10.9, "text": "Three... two... one." },
-    { "id": "event", "at": 14.3, "text": "Bumpers, signs, billboards... *gone*." },
-    { "id": "people", "at": 18.7, "text": "But look at the people." },
-    { "id": "poly", "at": 20.5, "text": "More than half of all fabric made today is *polyester*. And polyester is plastic." },
-    { "id": "jackets", "at": 25.6, "text": "So about half of Times Square just lost its *jacket*." },
-    { "id": "cars", "at": 29.8, "text": "And every car? Half its volume is plastic, but less than a tenth of its weight." },
-    { "id": "back", "at": 35.0, "text": "Five seconds later, it all comes back." },
-    { "id": "cta", "at": 37.9, "text": "Follow for more. What should vanish next?" }
+    {
+      "id": "hook",
+      "at": 0.3,
+      "text": "What if all the *plastic* on Earth disappeared... for five seconds?"
+    },
+    {
+      "id": "setup",
+      "at": 4.4,
+      "text": "It's everywhere. Phones, cars, signs... and probably the clothes you're wearing right now."
+    },
+    {
+      "id": "c3",
+      "at": 10.8,
+      "text": "Three."
+    },
+    {
+      "id": "c2",
+      "at": 11.8,
+      "text": "Two."
+    },
+    {
+      "id": "c1",
+      "at": 12.8,
+      "text": "One."
+    },
+    {
+      "id": "event",
+      "at": 14.3,
+      "text": "Bumpers, signs, billboards... *gone*."
+    },
+    {
+      "id": "people",
+      "at": 18.7,
+      "text": "But look at the people."
+    },
+    {
+      "id": "poly",
+      "at": 20.5,
+      "text": "More than half of all fabric made today is *polyester*. And polyester is plastic."
+    },
+    {
+      "id": "jackets",
+      "at": 25.6,
+      "text": "So about half of Times Square just lost its *jacket*."
+    },
+    {
+      "id": "cars",
+      "at": 29.8,
+      "text": "And every car? Half its volume is plastic, but less than a tenth of its weight."
+    },
+    {
+      "id": "back",
+      "at": 35.0,
+      "text": "Five seconds later, it all comes back."
+    },
+    {
+      "id": "cta",
+      "at": 37.9,
+      "text": "Follow for more. What should vanish next?"
+    }
   ]
 }

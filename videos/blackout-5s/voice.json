@@ -1,0 +1,654 @@
+{
+ "voice": "af_heart",
+ "speed": 1.05,
+ "lines": [
+  {
+   "id": "hook",
+   "at": 0.3,
+   "text": "What if every light in New York switched off... for five seconds?",
+   "file": "voice/hook.wav",
+   "duration": 3.328,
+   "words": [
+    {
+     "text": "What",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.223
+    },
+    {
+     "text": "if",
+     "hl": false,
+     "start": 0.223,
+     "end": 0.31
+    },
+    {
+     "text": "every",
+     "hl": false,
+     "start": 0.31,
+     "end": 0.527
+    },
+    {
+     "text": "light",
+     "hl": false,
+     "start": 0.527,
+     "end": 0.743
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 0.743,
+     "end": 0.873
+    },
+    {
+     "text": "New",
+     "hl": false,
+     "start": 0.873,
+     "end": 1.047
+    },
+    {
+     "text": "York",
+     "hl": false,
+     "start": 1.047,
+     "end": 1.307
+    },
+    {
+     "text": "switched",
+     "hl": false,
+     "start": 1.307,
+     "end": 1.61
+    },
+    {
+     "text": "off...",
+     "hl": false,
+     "start": 1.61,
+     "end": 1.87
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 2.32,
+     "end": 2.522
+    },
+    {
+     "text": "five",
+     "hl": false,
+     "start": 2.522,
+     "end": 2.775
+    },
+    {
+     "text": "seconds?",
+     "hl": false,
+     "start": 2.775,
+     "end": 3.23
+    }
+   ]
+  },
+  {
+   "id": "setup",
+   "at": 4.5,
+   "text": "Times Square at night. Thousands of screens, and a sky so bright you can barely see a single star.",
+   "file": "voice/setup.wav",
+   "duration": 5.547,
+   "words": [
+    {
+     "text": "Times",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.342
+    },
+    {
+     "text": "Square",
+     "hl": false,
+     "start": 0.342,
+     "end": 0.654
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 0.654,
+     "end": 0.758
+    },
+    {
+     "text": "night.",
+     "hl": false,
+     "start": 0.758,
+     "end": 1.07
+    },
+    {
+     "text": "Thousands",
+     "hl": false,
+     "start": 1.61,
+     "end": 2.056
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 2.056,
+     "end": 2.155
+    },
+    {
+     "text": "screens,",
+     "hl": false,
+     "start": 2.155,
+     "end": 2.6
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 2.85,
+     "end": 2.991
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 2.991,
+     "end": 3.133
+    },
+    {
+     "text": "sky",
+     "hl": false,
+     "start": 3.133,
+     "end": 3.368
+    },
+    {
+     "text": "so",
+     "hl": false,
+     "start": 3.368,
+     "end": 3.556
+    },
+    {
+     "text": "bright",
+     "hl": false,
+     "start": 3.556,
+     "end": 3.839
+    },
+    {
+     "text": "you",
+     "hl": false,
+     "start": 3.839,
+     "end": 3.98
+    },
+    {
+     "text": "can",
+     "hl": false,
+     "start": 3.98,
+     "end": 4.169
+    },
+    {
+     "text": "barely",
+     "hl": false,
+     "start": 4.169,
+     "end": 4.451
+    },
+    {
+     "text": "see",
+     "hl": false,
+     "start": 4.451,
+     "end": 4.639
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 4.639,
+     "end": 4.781
+    },
+    {
+     "text": "single",
+     "hl": false,
+     "start": 4.781,
+     "end": 5.11
+    },
+    {
+     "text": "star.",
+     "hl": true,
+     "start": 5.11,
+     "end": 5.44
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "at": 11.4,
+   "text": "Three.",
+   "file": "voice/c3.wav",
+   "duration": 0.725,
+   "words": [
+    {
+     "text": "Three.",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.47
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "at": 12.4,
+   "text": "Two.",
+   "file": "voice/c2.wav",
+   "duration": 0.64,
+   "words": [
+    {
+     "text": "Two.",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.39
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "at": 13.4,
+   "text": "One.",
+   "file": "voice/c1.wav",
+   "duration": 0.597,
+   "words": [
+    {
+     "text": "One.",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.38
+    }
+   ]
+  },
+  {
+   "id": "dark",
+   "at": 15.0,
+   "text": "Darkness.",
+   "file": "voice/dark.wav",
+   "duration": 0.832,
+   "words": [
+    {
+     "text": "Darkness.",
+     "hl": true,
+     "start": 0.03,
+     "end": 0.62
+    }
+   ]
+  },
+  {
+   "id": "blind",
+   "at": 16.6,
+   "text": "Every car is driving blind.",
+   "file": "voice/blind.wav",
+   "duration": 1.749,
+   "words": [
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.322
+    },
+    {
+     "text": "car",
+     "hl": false,
+     "start": 0.322,
+     "end": 0.604
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 0.604,
+     "end": 0.717
+    },
+    {
+     "text": "driving",
+     "hl": false,
+     "start": 0.717,
+     "end": 1.169
+    },
+    {
+     "text": "blind.",
+     "hl": false,
+     "start": 1.169,
+     "end": 1.62
+    }
+   ]
+  },
+  {
+   "id": "thing",
+   "at": 20.8,
+   "text": "Now here's the thing.",
+   "file": "voice/thing.wav",
+   "duration": 1.109,
+   "words": [
+    {
+     "text": "Now",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.258
+    },
+    {
+     "text": "here's",
+     "hl": false,
+     "start": 0.258,
+     "end": 0.542
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.542,
+     "end": 0.656
+    },
+    {
+     "text": "thing.",
+     "hl": false,
+     "start": 0.656,
+     "end": 0.94
+    }
+   ]
+  },
+  {
+   "id": "sky",
+   "at": 22.2,
+   "text": "With every light off, the sky above New York is full of stars. Like this.",
+   "file": "voice/sky.wav",
+   "duration": 4.117,
+   "words": [
+    {
+     "text": "With",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.193
+    },
+    {
+     "text": "every",
+     "hl": false,
+     "start": 0.193,
+     "end": 0.431
+    },
+    {
+     "text": "light",
+     "hl": false,
+     "start": 0.431,
+     "end": 0.669
+    },
+    {
+     "text": "off,",
+     "hl": false,
+     "start": 0.669,
+     "end": 0.86
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.03,
+     "end": 1.139
+    },
+    {
+     "text": "sky",
+     "hl": false,
+     "start": 1.139,
+     "end": 1.413
+    },
+    {
+     "text": "above",
+     "hl": false,
+     "start": 1.413,
+     "end": 1.687
+    },
+    {
+     "text": "New",
+     "hl": false,
+     "start": 1.687,
+     "end": 1.906
+    },
+    {
+     "text": "York",
+     "hl": false,
+     "start": 1.906,
+     "end": 2.234
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 2.234,
+     "end": 2.344
+    },
+    {
+     "text": "full",
+     "hl": false,
+     "start": 2.344,
+     "end": 2.563
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 2.563,
+     "end": 2.672
+    },
+    {
+     "text": "stars.",
+     "hl": false,
+     "start": 2.672,
+     "end": 3.11
+    },
+    {
+     "text": "Like",
+     "hl": false,
+     "start": 3.53,
+     "end": 3.78
+    },
+    {
+     "text": "this.",
+     "hl": true,
+     "start": 3.78,
+     "end": 4.03
+    }
+   ]
+  },
+  {
+   "id": "but",
+   "at": 26.8,
+   "text": "But you wouldn't see a single one.",
+   "file": "voice/but.wav",
+   "duration": 1.493,
+   "words": [
+    {
+     "text": "But",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.198
+    },
+    {
+     "text": "you",
+     "hl": false,
+     "start": 0.198,
+     "end": 0.316
+    },
+    {
+     "text": "wouldn't",
+     "hl": false,
+     "start": 0.316,
+     "end": 0.592
+    },
+    {
+     "text": "see",
+     "hl": false,
+     "start": 0.592,
+     "end": 0.749
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.749,
+     "end": 0.867
+    },
+    {
+     "text": "single",
+     "hl": false,
+     "start": 0.867,
+     "end": 1.143
+    },
+    {
+     "text": "one.",
+     "hl": false,
+     "start": 1.143,
+     "end": 1.34
+    }
+   ]
+  },
+  {
+   "id": "eyes",
+   "at": 29.0,
+   "text": "Your eyes need twenty to thirty minutes to adapt to the dark. Five seconds isn't even close.",
+   "file": "voice/eyes.wav",
+   "duration": 5.141,
+   "words": [
+    {
+     "text": "Your",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.204
+    },
+    {
+     "text": "eyes",
+     "hl": false,
+     "start": 0.204,
+     "end": 0.409
+    },
+    {
+     "text": "need",
+     "hl": false,
+     "start": 0.409,
+     "end": 0.665
+    },
+    {
+     "text": "twenty",
+     "hl": true,
+     "start": 0.665,
+     "end": 1.024
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 1.024,
+     "end": 1.178
+    },
+    {
+     "text": "thirty",
+     "hl": false,
+     "start": 1.178,
+     "end": 1.485
+    },
+    {
+     "text": "minutes",
+     "hl": true,
+     "start": 1.485,
+     "end": 1.844
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 1.844,
+     "end": 1.998
+    },
+    {
+     "text": "adapt",
+     "hl": false,
+     "start": 1.998,
+     "end": 2.305
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 2.305,
+     "end": 2.459
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.459,
+     "end": 2.561
+    },
+    {
+     "text": "dark.",
+     "hl": false,
+     "start": 2.561,
+     "end": 2.92
+    },
+    {
+     "text": "Five",
+     "hl": false,
+     "start": 3.44,
+     "end": 3.693
+    },
+    {
+     "text": "seconds",
+     "hl": false,
+     "start": 3.693,
+     "end": 4.098
+    },
+    {
+     "text": "isn't",
+     "hl": false,
+     "start": 4.098,
+     "end": 4.402
+    },
+    {
+     "text": "even",
+     "hl": false,
+     "start": 4.402,
+     "end": 4.706
+    },
+    {
+     "text": "close.",
+     "hl": false,
+     "start": 4.706,
+     "end": 5.06
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "at": 35.9,
+   "text": "Follow for more. What should vanish next?",
+   "file": "voice/cta.wav",
+   "duration": 2.261,
+   "words": [
+    {
+     "text": "Follow",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.411
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 0.411,
+     "end": 0.582
+    },
+    {
+     "text": "more.",
+     "hl": false,
+     "start": 0.582,
+     "end": 0.84
+    },
+    {
+     "text": "What",
+     "hl": false,
+     "start": 1.11,
+     "end": 1.314
+    },
+    {
+     "text": "should",
+     "hl": false,
+     "start": 1.314,
+     "end": 1.518
+    },
+    {
+     "text": "vanish",
+     "hl": false,
+     "start": 1.518,
+     "end": 1.823
+    },
+    {
+     "text": "next?",
+     "hl": false,
+     "start": 1.823,
+     "end": 2.18
+    }
+   ]
+  }
+ ]
+}

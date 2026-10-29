@@ -1,0 +1,654 @@
+{
+ "voice": "af_heart",
+ "speed": 1.05,
+ "lines": [
+  {
+   "id": "hook",
+   "at": 0.3,
+   "text": "What if gravity just switched off... for five seconds?",
+   "file": "voice/hook.wav",
+   "duration": 2.944,
+   "words": [
+    {
+     "text": "What",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.217
+    },
+    {
+     "text": "if",
+     "hl": false,
+     "start": 0.217,
+     "end": 0.305
+    },
+    {
+     "text": "gravity",
+     "hl": true,
+     "start": 0.305,
+     "end": 0.659
+    },
+    {
+     "text": "just",
+     "hl": false,
+     "start": 0.659,
+     "end": 0.925
+    },
+    {
+     "text": "switched",
+     "hl": false,
+     "start": 0.925,
+     "end": 1.235
+    },
+    {
+     "text": "off...",
+     "hl": false,
+     "start": 1.235,
+     "end": 1.5
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 1.92,
+     "end": 2.122
+    },
+    {
+     "text": "five",
+     "hl": false,
+     "start": 2.122,
+     "end": 2.375
+    },
+    {
+     "text": "seconds?",
+     "hl": false,
+     "start": 2.375,
+     "end": 2.83
+    }
+   ]
+  },
+  {
+   "id": "setup",
+   "at": 4.4,
+   "text": "Every car here sits on springs, squeezed about seventeen centimeters by its own weight.",
+   "file": "voice/setup.wav",
+   "duration": 4.864,
+   "words": [
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 0.02,
+     "end": 0.325
+    },
+    {
+     "text": "car",
+     "hl": false,
+     "start": 0.325,
+     "end": 0.63
+    },
+    {
+     "text": "here",
+     "hl": false,
+     "start": 0.63,
+     "end": 0.874
+    },
+    {
+     "text": "sits",
+     "hl": false,
+     "start": 0.874,
+     "end": 1.179
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 1.179,
+     "end": 1.362
+    },
+    {
+     "text": "springs,",
+     "hl": false,
+     "start": 1.362,
+     "end": 1.85
+    },
+    {
+     "text": "squeezed",
+     "hl": false,
+     "start": 2.22,
+     "end": 2.591
+    },
+    {
+     "text": "about",
+     "hl": false,
+     "start": 2.591,
+     "end": 2.869
+    },
+    {
+     "text": "seventeen",
+     "hl": true,
+     "start": 2.869,
+     "end": 3.379
+    },
+    {
+     "text": "centimeters",
+     "hl": true,
+     "start": 3.379,
+     "end": 3.982
+    },
+    {
+     "text": "by",
+     "hl": false,
+     "start": 3.982,
+     "end": 4.167
+    },
+    {
+     "text": "its",
+     "hl": false,
+     "start": 4.167,
+     "end": 4.306
+    },
+    {
+     "text": "own",
+     "hl": false,
+     "start": 4.306,
+     "end": 4.492
+    },
+    {
+     "text": "weight.",
+     "hl": false,
+     "start": 4.492,
+     "end": 4.77
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "at": 11.0,
+   "text": "Three.",
+   "file": "voice/c3.wav",
+   "duration": 0.725,
+   "words": [
+    {
+     "text": "Three.",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.47
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "at": 12.0,
+   "text": "Two.",
+   "file": "voice/c2.wav",
+   "duration": 0.64,
+   "words": [
+    {
+     "text": "Two.",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.39
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "at": 13.0,
+   "text": "One.",
+   "file": "voice/c1.wav",
+   "duration": 0.597,
+   "words": [
+    {
+     "text": "One.",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.38
+    }
+   ]
+  },
+  {
+   "id": "springs",
+   "at": 14.5,
+   "text": "The springs let go.",
+   "file": "voice/springs.wav",
+   "duration": 1.216,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.06,
+     "end": 0.171
+    },
+    {
+     "text": "springs",
+     "hl": false,
+     "start": 0.171,
+     "end": 0.56
+    },
+    {
+     "text": "let",
+     "hl": true,
+     "start": 0.56,
+     "end": 0.782
+    },
+    {
+     "text": "go.",
+     "hl": true,
+     "start": 0.782,
+     "end": 1.06
+    }
+   ]
+  },
+  {
+   "id": "float",
+   "at": 16.1,
+   "text": "And nothing pulls anything back down.",
+   "file": "voice/float.wav",
+   "duration": 1.941,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.213
+    },
+    {
+     "text": "nothing",
+     "hl": false,
+     "start": 0.213,
+     "end": 0.539
+    },
+    {
+     "text": "pulls",
+     "hl": false,
+     "start": 0.539,
+     "end": 0.811
+    },
+    {
+     "text": "anything",
+     "hl": false,
+     "start": 0.811,
+     "end": 1.246
+    },
+    {
+     "text": "back",
+     "hl": false,
+     "start": 1.246,
+     "end": 1.464
+    },
+    {
+     "text": "down.",
+     "hl": false,
+     "start": 1.464,
+     "end": 1.79
+    }
+   ]
+  },
+  {
+   "id": "replay",
+   "at": 19.0,
+   "text": "Slow it down.",
+   "file": "voice/replay.wav",
+   "duration": 1.003,
+   "words": [
+    {
+     "text": "Slow",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.321
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 0.321,
+     "end": 0.433
+    },
+    {
+     "text": "down.",
+     "hl": false,
+     "start": 0.433,
+     "end": 0.77
+    }
+   ]
+  },
+  {
+   "id": "physics",
+   "at": 20.6,
+   "text": "A released spring throws each car up at almost a meter per second. Five seconds later, they're four meters in the air.",
+   "file": "voice/physics.wav",
+   "duration": 6.933,
+   "words": [
+    {
+     "text": "A",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.202
+    },
+    {
+     "text": "released",
+     "hl": false,
+     "start": 0.202,
+     "end": 0.634
+    },
+    {
+     "text": "spring",
+     "hl": false,
+     "start": 0.634,
+     "end": 0.959
+    },
+    {
+     "text": "throws",
+     "hl": false,
+     "start": 0.959,
+     "end": 1.283
+    },
+    {
+     "text": "each",
+     "hl": false,
+     "start": 1.283,
+     "end": 1.553
+    },
+    {
+     "text": "car",
+     "hl": false,
+     "start": 1.553,
+     "end": 1.823
+    },
+    {
+     "text": "up",
+     "hl": false,
+     "start": 1.823,
+     "end": 1.985
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 1.985,
+     "end": 2.093
+    },
+    {
+     "text": "almost",
+     "hl": false,
+     "start": 2.093,
+     "end": 2.579
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 2.579,
+     "end": 2.741
+    },
+    {
+     "text": "meter",
+     "hl": false,
+     "start": 2.741,
+     "end": 3.066
+    },
+    {
+     "text": "per",
+     "hl": false,
+     "start": 3.066,
+     "end": 3.228
+    },
+    {
+     "text": "second.",
+     "hl": false,
+     "start": 3.228,
+     "end": 3.66
+    },
+    {
+     "text": "Five",
+     "hl": false,
+     "start": 4.24,
+     "end": 4.468
+    },
+    {
+     "text": "seconds",
+     "hl": false,
+     "start": 4.468,
+     "end": 4.832
+    },
+    {
+     "text": "later,",
+     "hl": false,
+     "start": 4.832,
+     "end": 5.15
+    },
+    {
+     "text": "they're",
+     "hl": false,
+     "start": 5.42,
+     "end": 5.644
+    },
+    {
+     "text": "four",
+     "hl": true,
+     "start": 5.644,
+     "end": 5.924
+    },
+    {
+     "text": "meters",
+     "hl": true,
+     "start": 5.924,
+     "end": 6.316
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 6.316,
+     "end": 6.484
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 6.484,
+     "end": 6.596
+    },
+    {
+     "text": "air.",
+     "hl": false,
+     "start": 6.596,
+     "end": 6.82
+    }
+   ]
+  },
+  {
+   "id": "back",
+   "at": 29.3,
+   "text": "Then gravity comes back.",
+   "file": "voice/back.wav",
+   "duration": 1.429,
+   "words": [
+    {
+     "text": "Then",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.277
+    },
+    {
+     "text": "gravity",
+     "hl": false,
+     "start": 0.277,
+     "end": 0.732
+    },
+    {
+     "text": "comes",
+     "hl": false,
+     "start": 0.732,
+     "end": 1.016
+    },
+    {
+     "text": "back.",
+     "hl": false,
+     "start": 1.016,
+     "end": 1.3
+    }
+   ]
+  },
+  {
+   "id": "crash",
+   "at": 31.8,
+   "text": "A four meter drop hits like a crash at thirty-two kilometers an hour. Three hundred and fifty-two times.",
+   "file": "voice/crash.wav",
+   "duration": 6.016,
+   "words": [
+    {
+     "text": "A",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.191
+    },
+    {
+     "text": "four",
+     "hl": false,
+     "start": 0.191,
+     "end": 0.461
+    },
+    {
+     "text": "meter",
+     "hl": false,
+     "start": 0.461,
+     "end": 0.784
+    },
+    {
+     "text": "drop",
+     "hl": false,
+     "start": 0.784,
+     "end": 1.106
+    },
+    {
+     "text": "hits",
+     "hl": false,
+     "start": 1.106,
+     "end": 1.376
+    },
+    {
+     "text": "like",
+     "hl": false,
+     "start": 1.376,
+     "end": 1.645
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.645,
+     "end": 1.806
+    },
+    {
+     "text": "crash",
+     "hl": false,
+     "start": 1.806,
+     "end": 2.075
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 2.075,
+     "end": 2.183
+    },
+    {
+     "text": "thirty-two",
+     "hl": true,
+     "start": 2.183,
+     "end": 2.721
+    },
+    {
+     "text": "kilometers",
+     "hl": false,
+     "start": 2.721,
+     "end": 3.313
+    },
+    {
+     "text": "an",
+     "hl": false,
+     "start": 3.313,
+     "end": 3.421
+    },
+    {
+     "text": "hour.",
+     "hl": false,
+     "start": 3.421,
+     "end": 3.69
+    },
+    {
+     "text": "Three",
+     "hl": false,
+     "start": 4.26,
+     "end": 4.525
+    },
+    {
+     "text": "hundred",
+     "hl": false,
+     "start": 4.525,
+     "end": 4.949
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 4.949,
+     "end": 5.108
+    },
+    {
+     "text": "fifty-two",
+     "hl": false,
+     "start": 5.108,
+     "end": 5.639
+    },
+    {
+     "text": "times.",
+     "hl": false,
+     "start": 5.639,
+     "end": 6.01
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "at": 38.6,
+   "text": "Follow for more. What should vanish next?",
+   "file": "voice/cta.wav",
+   "duration": 2.261,
+   "words": [
+    {
+     "text": "Follow",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.411
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 0.411,
+     "end": 0.582
+    },
+    {
+     "text": "more.",
+     "hl": false,
+     "start": 0.582,
+     "end": 0.84
+    },
+    {
+     "text": "What",
+     "hl": false,
+     "start": 1.11,
+     "end": 1.314
+    },
+    {
+     "text": "should",
+     "hl": false,
+     "start": 1.314,
+     "end": 1.518
+    },
+    {
+     "text": "vanish",
+     "hl": false,
+     "start": 1.518,
+     "end": 1.823
+    },
+    {
+     "text": "next?",
+     "hl": false,
+     "start": 1.823,
+     "end": 2.18
+    }
+   ]
+  }
+ ]
+}

@@ -1,11 +1,11 @@
-// Step 5 — your machine renders it. Steps the scene frame by frame in headless Chromium,
-// draws the narration subtitles in a second (fast, transparent) pass, mixes the soundtrack
-// with the voice and encodes a 1080x1920 MP4 ready for TikTok/Reels/Shorts.
+// Step 5 — your machine renders it. Steps the 3D scene frame by frame in headless Chromium,
+// draws all the text (title, timer, tags, narration subtitles) in a second fast transparent
+// pass, mixes the soundtrack with the voice and encodes a 1080x1920 MP4 for TikTok/Reels/Shorts.
 //
 //   node engine/render.mjs <video> [--workers 3] [--fps 30] [--dpr 2] [--resume] [--encode-only]
 //
 // --resume       keep frames already on disk (continue an interrupted render)
-// --encode-only  reuse the 3D frames; redo subtitles, audio and the MP4 (e.g. after new narration)
+// --encode-only  reuse the 3D frames; redo the text, audio and the MP4 (after new narration or text edits)
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -19,7 +19,7 @@ const video = a._[0];
 if (!video) { console.error('usage: node engine/render.mjs <video> [--workers N] [--fps 30] [--resume] [--encode-only]'); process.exit(1); }
 const outDir = path.join(ROOT, 'out', video);
 const framesDir = path.join(outDir, 'frames');
-const subsDir = path.join(outDir, 'subs');
+const textDir = path.join(outDir, 'text');
 const encodeOnly = Boolean(a['encode-only']);
 if (!a.resume && !encodeOnly) fs.rmSync(framesDir, { recursive: true, force: true });
 fs.mkdirSync(framesDir, { recursive: true });
@@ -32,7 +32,7 @@ const browser = await launch();
 const workers = Number(a.workers || Math.max(1, Math.min(4, Math.floor(os.cpus().length / 2))));
 const dpr = Number(a.dpr || 2);
 
-const first = await openPlayer(browser, url, video, { dpr, extra: '&nosubs' });
+const first = await openPlayer(browser, url, video, { dpr, extra: '&nooverlay' });
 const { config, audio } = first.info;
 const fps = Number(a.fps || config.fps);
 const total = Math.round(config.duration * fps);
@@ -42,9 +42,9 @@ const progress = (label, done, t0) => {
   process.stdout.write(`\r  ${label} ${String(done).padStart(String(total).length)} / ${total} frames  ·  ${el.toFixed(0)}s elapsed  ·  ~${eta.toFixed(0)}s left   `);
 };
 
-// ---- pass 1: the 3D scene with its overlays (no subtitles)
+// ---- pass 1: the 3D scene, no text
 if (!encodeOnly) {
-  const pages = [first, ...(await Promise.all(Array.from({ length: workers - 1 }, () => openPlayer(browser, url, video, { dpr, extra: '&nosubs' }))))];
+  const pages = [first, ...(await Promise.all(Array.from({ length: workers - 1 }, () => openPlayer(browser, url, video, { dpr, extra: '&nooverlay' }))))];
   console.log(`${video}: ${total} frames @ ${fps} fps, ${first.info.size.join('x')}, ${workers} worker(s)`);
   let done = 0;
   const t0 = Date.now();
@@ -60,42 +60,33 @@ if (!encodeOnly) {
   console.log(`\n  frames done in ${((Date.now() - t0) / 1000).toFixed(0)}s`);
 }
 
-// ---- pass 2: subtitles on a transparent page
-if (voice) {
-  fs.rmSync(subsDir, { recursive: true, force: true });
-  fs.mkdirSync(subsDir, { recursive: true });
-  const page = await browser.newPage({ viewport: { width: 540, height: 960 }, deviceScaleFactor: dpr });
-  await page.goto(`${url}/engine/subs.html?video=${encodeURIComponent(video)}`);
-  await page.waitForFunction(() => window.__ready === true, null, { timeout: 60000 });
-  // an empty frame is the same transparent image every time: write it once, link the rest
-  const blank = path.join(subsDir, 'blank.png');
+// ---- pass 2: all the text on a transparent page (cheap: no WebGL drawing)
+fs.rmSync(textDir, { recursive: true, force: true });
+fs.mkdirSync(textDir, { recursive: true });
+{
+  const { page } = await openPlayer(browser, url, video, { dpr, extra: '&overlayonly' });
   const t0 = Date.now();
   for (let i = 0; i < total; i++) {
-    const shown = await page.evaluate((t) => window.__subs.renderAt(t), i / fps);
-    if (shown) fs.writeFileSync(name(subsDir, i, 'png'), await page.screenshot({ omitBackground: true, clip: { x: 0, y: 0, width: 540, height: 960 } }));
-    else {
-      if (!fs.existsSync(blank)) fs.writeFileSync(blank, await page.screenshot({ omitBackground: true, clip: { x: 0, y: 0, width: 540, height: 960 } }));
-      fs.copyFileSync(blank, name(subsDir, i, 'png'));
-    }
-    if (i % 30 === 0) progress('subtitles', i + 1, t0);
+    await page.evaluate((t) => window.__player.renderAt(t), i / fps);
+    fs.writeFileSync(name(textDir, i, 'png'), await page.screenshot({ omitBackground: true, clip: { x: 0, y: 0, width: 540, height: 960 } }));
+    if (i % 30 === 0 || i === total - 1) progress('text', i + 1, t0);
   }
   console.log('');
-} else {
-  console.warn('  (no voice.json: no narration or subtitles; run node engine/voice.mjs first)');
 }
+if (!voice) console.warn('  (no voice.json: no narration; run node engine/voice.mjs first)');
 await browser.close();
 server.close();
 
 // ---- audio + encode
 const wav = path.join(outDir, 'audio.wav');
 const mp4 = path.join(ROOT, 'out', `${video}.mp4`);
-const enc = ['-v', 'error', '-y', '-framerate', String(fps), '-i', path.join(framesDir, '%05d.jpg')];
-if (voice) enc.push('-framerate', String(fps), '-i', path.join(subsDir, '%05d.png'));
+const enc = ['-v', 'error', '-y', '-framerate', String(fps), '-i', path.join(framesDir, '%05d.jpg'), '-framerate', String(fps), '-i', path.join(textDir, '%05d.png')];
 if (audio.length || voice) {
   buildAudio(audio, config.duration, wav, voice, path.join(ROOT, 'videos', video));
   enc.push('-i', wav, '-c:a', 'aac', '-b:a', '192k');
 }
-if (voice) enc.push('-filter_complex', '[0:v][1:v]overlay=0:0:format=auto[v]', '-map', '[v]', '-map', '2:a');
+enc.push('-filter_complex', '[0:v][1:v]overlay=0:0:format=auto[v]', '-map', '[v]');
+if (audio.length || voice) enc.push('-map', '2:a');
 enc.push('-c:v', 'libx264', '-preset', 'slow', '-crf', '18', '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-movflags', '+faststart', '-t', String(config.duration), mp4);
 execFileSync('ffmpeg', enc);
 console.log(`  wrote ${path.relative(process.cwd(), mp4)} (${(fs.statSync(mp4).size / 1e6).toFixed(1)} MB)`);

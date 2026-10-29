@@ -1,0 +1,645 @@
+{
+ "voice": "af_heart",
+ "speed": 1.05,
+ "lines": [
+  {
+   "id": "hook",
+   "at": 0.3,
+   "text": "What if every wheel on Earth turned square... for five seconds?",
+   "file": "voice/hook.wav",
+   "duration": 3.2,
+   "words": [
+    {
+     "text": "What",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.237
+    },
+    {
+     "text": "if",
+     "hl": false,
+     "start": 0.237,
+     "end": 0.331
+    },
+    {
+     "text": "every",
+     "hl": false,
+     "start": 0.331,
+     "end": 0.565
+    },
+    {
+     "text": "wheel",
+     "hl": false,
+     "start": 0.565,
+     "end": 0.799
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.799,
+     "end": 0.94
+    },
+    {
+     "text": "Earth",
+     "hl": false,
+     "start": 0.94,
+     "end": 1.127
+    },
+    {
+     "text": "turned",
+     "hl": false,
+     "start": 1.127,
+     "end": 1.408
+    },
+    {
+     "text": "square...",
+     "hl": true,
+     "start": 1.408,
+     "end": 1.83
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 2.19,
+     "end": 2.397
+    },
+    {
+     "text": "five",
+     "hl": false,
+     "start": 2.397,
+     "end": 2.655
+    },
+    {
+     "text": "seconds?",
+     "hl": false,
+     "start": 2.655,
+     "end": 3.12
+    }
+   ]
+  },
+  {
+   "id": "setup",
+   "at": 4.4,
+   "text": "Times Square. Three hundred and fifty-two cars, rolling along at about eighteen kilometers an hour.",
+   "file": "voice/setup.wav",
+   "duration": 5.781,
+   "words": [
+    {
+     "text": "Times",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.362
+    },
+    {
+     "text": "Square.",
+     "hl": false,
+     "start": 0.362,
+     "end": 0.75
+    },
+    {
+     "text": "Three",
+     "hl": false,
+     "start": 1.24,
+     "end": 1.484
+    },
+    {
+     "text": "hundred",
+     "hl": false,
+     "start": 1.484,
+     "end": 1.874
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 1.874,
+     "end": 2.021
+    },
+    {
+     "text": "fifty-two",
+     "hl": false,
+     "start": 2.021,
+     "end": 2.508
+    },
+    {
+     "text": "cars,",
+     "hl": false,
+     "start": 2.508,
+     "end": 2.85
+    },
+    {
+     "text": "rolling",
+     "hl": false,
+     "start": 3.12,
+     "end": 3.52
+    },
+    {
+     "text": "along",
+     "hl": false,
+     "start": 3.52,
+     "end": 3.805
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 3.805,
+     "end": 3.92
+    },
+    {
+     "text": "about",
+     "hl": false,
+     "start": 3.92,
+     "end": 4.262
+    },
+    {
+     "text": "eighteen",
+     "hl": true,
+     "start": 4.262,
+     "end": 4.662
+    },
+    {
+     "text": "kilometers",
+     "hl": false,
+     "start": 4.662,
+     "end": 5.29
+    },
+    {
+     "text": "an",
+     "hl": false,
+     "start": 5.29,
+     "end": 5.404
+    },
+    {
+     "text": "hour.",
+     "hl": false,
+     "start": 5.404,
+     "end": 5.69
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "at": 11.0,
+   "text": "Three.",
+   "file": "voice/c3.wav",
+   "duration": 0.725,
+   "words": [
+    {
+     "text": "Three.",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.47
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "at": 12.0,
+   "text": "Two.",
+   "file": "voice/c2.wav",
+   "duration": 0.64,
+   "words": [
+    {
+     "text": "Two.",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.39
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "at": 13.0,
+   "text": "One.",
+   "file": "voice/c1.wav",
+   "duration": 0.597,
+   "words": [
+    {
+     "text": "One.",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.38
+    }
+   ]
+  },
+  {
+   "id": "event",
+   "at": 15.0,
+   "text": "Every quarter turn lifts the car... and slams it back down.",
+   "file": "voice/event.wav",
+   "duration": 3.264,
+   "words": [
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.269
+    },
+    {
+     "text": "quarter",
+     "hl": false,
+     "start": 0.269,
+     "end": 0.636
+    },
+    {
+     "text": "turn",
+     "hl": false,
+     "start": 0.636,
+     "end": 0.866
+    },
+    {
+     "text": "lifts",
+     "hl": false,
+     "start": 0.866,
+     "end": 1.141
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.141,
+     "end": 1.233
+    },
+    {
+     "text": "car...",
+     "hl": false,
+     "start": 1.233,
+     "end": 1.6
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 1.97,
+     "end": 2.14
+    },
+    {
+     "text": "slams",
+     "hl": true,
+     "start": 2.14,
+     "end": 2.48
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 2.48,
+     "end": 2.593
+    },
+    {
+     "text": "back",
+     "hl": false,
+     "start": 2.593,
+     "end": 2.82
+    },
+    {
+     "text": "down.",
+     "hl": false,
+     "start": 2.82,
+     "end": 3.16
+    }
+   ]
+  },
+  {
+   "id": "replay",
+   "at": 19.1,
+   "text": "Slow motion.",
+   "file": "voice/replay.wav",
+   "duration": 1.024,
+   "words": [
+    {
+     "text": "Slow",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.335
+    },
+    {
+     "text": "motion.",
+     "hl": false,
+     "start": 0.335,
+     "end": 0.79
+    }
+   ]
+  },
+  {
+   "id": "physics",
+   "at": 20.5,
+   "text": "Each corner raises the axle almost fourteen centimeters. At this speed, that's seven slams every second.",
+   "file": "voice/physics.wav",
+   "duration": 6.699,
+   "words": [
+    {
+     "text": "Each",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.301
+    },
+    {
+     "text": "corner",
+     "hl": false,
+     "start": 0.301,
+     "end": 0.666
+    },
+    {
+     "text": "raises",
+     "hl": false,
+     "start": 0.666,
+     "end": 1.032
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.032,
+     "end": 1.136
+    },
+    {
+     "text": "axle",
+     "hl": false,
+     "start": 1.136,
+     "end": 1.449
+    },
+    {
+     "text": "almost",
+     "hl": false,
+     "start": 1.449,
+     "end": 1.919
+    },
+    {
+     "text": "fourteen",
+     "hl": true,
+     "start": 1.919,
+     "end": 2.389
+    },
+    {
+     "text": "centimeters.",
+     "hl": true,
+     "start": 2.389,
+     "end": 3.12
+    },
+    {
+     "text": "At",
+     "hl": false,
+     "start": 3.64,
+     "end": 3.751
+    },
+    {
+     "text": "this",
+     "hl": false,
+     "start": 3.751,
+     "end": 3.972
+    },
+    {
+     "text": "speed,",
+     "hl": false,
+     "start": 3.972,
+     "end": 4.36
+    },
+    {
+     "text": "that's",
+     "hl": false,
+     "start": 4.69,
+     "end": 5.005
+    },
+    {
+     "text": "seven",
+     "hl": false,
+     "start": 5.005,
+     "end": 5.383
+    },
+    {
+     "text": "slams",
+     "hl": false,
+     "start": 5.383,
+     "end": 5.761
+    },
+    {
+     "text": "every",
+     "hl": false,
+     "start": 5.761,
+     "end": 6.076
+    },
+    {
+     "text": "second.",
+     "hl": false,
+     "start": 6.076,
+     "end": 6.58
+    }
+   ]
+  },
+  {
+   "id": "twist",
+   "at": 27.6,
+   "text": "But here's the weird part. A square wheel can roll perfectly smoothly, on a road made of upside-down catenary curves.",
+   "file": "voice/twist.wav",
+   "duration": 7.019,
+   "words": [
+    {
+     "text": "But",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.238
+    },
+    {
+     "text": "here's",
+     "hl": false,
+     "start": 0.238,
+     "end": 0.486
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.486,
+     "end": 0.585
+    },
+    {
+     "text": "weird",
+     "hl": false,
+     "start": 0.585,
+     "end": 0.833
+    },
+    {
+     "text": "part.",
+     "hl": false,
+     "start": 0.833,
+     "end": 1.18
+    },
+    {
+     "text": "A",
+     "hl": false,
+     "start": 1.73,
+     "end": 1.894
+    },
+    {
+     "text": "square",
+     "hl": false,
+     "start": 1.894,
+     "end": 2.223
+    },
+    {
+     "text": "wheel",
+     "hl": false,
+     "start": 2.223,
+     "end": 2.497
+    },
+    {
+     "text": "can",
+     "hl": true,
+     "start": 2.497,
+     "end": 2.716
+    },
+    {
+     "text": "roll",
+     "hl": false,
+     "start": 2.716,
+     "end": 2.99
+    },
+    {
+     "text": "perfectly",
+     "hl": false,
+     "start": 2.99,
+     "end": 3.537
+    },
+    {
+     "text": "smoothly,",
+     "hl": false,
+     "start": 3.537,
+     "end": 4.03
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 4.37,
+     "end": 4.539
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 4.539,
+     "end": 4.707
+    },
+    {
+     "text": "road",
+     "hl": false,
+     "start": 4.707,
+     "end": 4.988
+    },
+    {
+     "text": "made",
+     "hl": false,
+     "start": 4.988,
+     "end": 5.269
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 5.269,
+     "end": 5.381
+    },
+    {
+     "text": "upside-down",
+     "hl": false,
+     "start": 5.381,
+     "end": 6.055
+    },
+    {
+     "text": "catenary",
+     "hl": true,
+     "start": 6.055,
+     "end": 6.617
+    },
+    {
+     "text": "curves.",
+     "hl": false,
+     "start": 6.617,
+     "end": 7.01
+    }
+   ]
+  },
+  {
+   "id": "proof",
+   "at": 35.4,
+   "text": "A mathematician actually built one.",
+   "file": "voice/proof.wav",
+   "duration": 2.155,
+   "words": [
+    {
+     "text": "A",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.207
+    },
+    {
+     "text": "mathematician",
+     "hl": false,
+     "start": 0.207,
+     "end": 0.933
+    },
+    {
+     "text": "actually",
+     "hl": false,
+     "start": 0.933,
+     "end": 1.492
+    },
+    {
+     "text": "built",
+     "hl": false,
+     "start": 1.492,
+     "end": 1.771
+    },
+    {
+     "text": "one.",
+     "hl": false,
+     "start": 1.771,
+     "end": 2.05
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "at": 37.9,
+   "text": "Follow for more. What should change next?",
+   "file": "voice/cta.wav",
+   "duration": 2.283,
+   "words": [
+    {
+     "text": "Follow",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.411
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 0.411,
+     "end": 0.582
+    },
+    {
+     "text": "more.",
+     "hl": false,
+     "start": 0.582,
+     "end": 0.84
+    },
+    {
+     "text": "What",
+     "hl": false,
+     "start": 1.1,
+     "end": 1.291
+    },
+    {
+     "text": "should",
+     "hl": false,
+     "start": 1.291,
+     "end": 1.483
+    },
+    {
+     "text": "change",
+     "hl": false,
+     "start": 1.483,
+     "end": 1.865
+    },
+    {
+     "text": "next?",
+     "hl": false,
+     "start": 1.865,
+     "end": 2.2
+    }
+   ]
+  }
+ ]
+}

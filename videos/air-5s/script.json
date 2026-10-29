@@ -13,9 +13,19 @@
       "text": "Right now, about *ten tonnes* of air is pressing down on every square meter of you."
     },
     {
-      "id": "count",
+      "id": "c3",
       "at": 11.2,
-      "text": "Three... two... one."
+      "text": "Three."
+    },
+    {
+      "id": "c2",
+      "at": 12.2,
+      "text": "Two."
+    },
+    {
+      "id": "c1",
+      "at": 13.2,
+      "text": "One."
     },
     {
       "id": "silent",
@@ -29,12 +39,12 @@
     },
     {
       "id": "birds",
-      "at": 21.3,
+      "at": 21.5,
       "text": "Pigeons drop like stones. Their wings have nothing to push."
     },
     {
       "id": "sky",
-      "at": 24.7,
+      "at": 25.0,
       "text": "The sky turns *black* at noon. Blue sky is just sunlight bouncing off air."
     },
     {

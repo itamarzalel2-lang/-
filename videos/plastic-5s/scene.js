@@ -99,20 +99,7 @@ export async function setup({ scene, camera, overlay }) {
     mode: (t) => { const s = simAt(t); return s < GONE ? '' : s < BACK ? 'gone' : 'back'; },
   });
   overlay.add(Object.assign(document.createElement('div'), { className: 'ov-chip', innerHTML: '◀◀ REPLAY · <b>0.25×</b>' }), { from: PEOPLE[0], to: PEOPLE[1], fadeIn: 0.15, fadeOut: 0.15, enter: 'pop' });
-  overlay.fact({
-    kicker: 'Fact',
-    text: '<span class="hl">57%</span> of all fiber made in 2023 was polyester. Polyester is plastic.',
-    source: 'Textile Exchange, Materials Market Report 2024',
-    from: 21.2, to: 29.4,
-  });
-  overlay.fact({
-    kicker: 'Fact',
-    text: 'Plastics are <span class="hl">~50%</span> of a new car’s volume, but under 10% of its weight.',
-    source: 'American Chemistry Council, Chemistry and Automobiles (2023/2024)',
-    from: 30.2, to: PEOPLE[1], top: 690,
-  });
   const bumperTag = overlay.tag('Bumper: plastic', { from: 30.4, to: PEOPLE[1] - 0.1 });
-  overlay.end('Comment what should <span class="hl">vanish</span> next', { from: 38.1, to: D + 1 });
 
   return function update(t) {
     const s = simAt(t);

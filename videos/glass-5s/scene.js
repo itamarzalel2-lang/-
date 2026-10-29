@@ -127,32 +127,12 @@ export async function setup({ scene, camera, overlay }) {
   ]);
 
   overlay.title('What if all <span class="hl">glass</span> turned liquid for 5 seconds?', { from: 0, fadeIn: 0, to: D + 1 });
-  overlay.fact({
-    kicker: 'Fact',
-    text: 'The Empire State Building has <span class="hl">6,514</span> windows.',
-    source: 'CNN “Empire State Building Fast Facts” · Kawneer project page',
-    from: 5.6, to: 10.4,
-  });
   overlay.timer({
     from: 10.4, to: 21.4,
     label: (t) => (t < MELT ? 'Glass melts in' : t < SOLID ? 'Liquid for' : 'Solid again'),
     value: (t) => (t < MELT ? `${(MELT - t).toFixed(1)}<small>s</small>` : t < SOLID ? `${(t - MELT).toFixed(1)}<small>/ 5.0s</small>` : '5.0<small>s ✓</small>'),
     mode: (t) => (t < MELT ? '' : t < SOLID ? 'gone' : 'back'),
   });
-  overlay.fact({
-    kicker: 'Myth',
-    text: 'Old church windows are thicker at the bottom because glass <span class="hl">flows</span>?',
-    source: 'A popular claim (see below)',
-    badge: 'claim ?',
-    from: 22.0, to: 27.2,
-  });
-  overlay.fact({
-    kicker: 'Busted',
-    text: 'At room temperature, glass would need <span class="hl">longer than the age of the universe</span> to visibly sag.',
-    source: 'E. D. Zanotto, American Journal of Physics 66, 392 (1998) · confirmed by Gulbiten, Mauro et al. (2017)',
-    from: 27.6, to: 35.6,
-  });
-  overlay.end('Comment what should <span class="hl">melt</span> next', { from: 36.4, to: D + 1 });
 
   return function update(t) {
     city.update(t);

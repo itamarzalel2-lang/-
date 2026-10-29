@@ -16,7 +16,7 @@ function chunk(words, maxWords, maxChars) {
 }
 
 export class Subtitles {
-  constructor(root, voice, { top = 452, maxWords = 3, maxChars = 18, hide = [] } = {}) {
+  constructor(root, voice, { top = 636, maxWords = 3, maxChars = 18, hide = [] } = {}) {
     this.el = document.createElement('div');
     this.el.className = 'ov-sub';
     this.el.style.top = `${top}px`;

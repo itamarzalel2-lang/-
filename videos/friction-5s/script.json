@@ -2,16 +2,70 @@
   "voice": "af_heart",
   "speed": 1.05,
   "lines": [
-    { "id": "hook", "at": 0.3, "text": "What if *friction* disappeared... for five seconds?" },
-    { "id": "setup", "at": 4.4, "text": "Every step you take, every turn of a wheel, every knot you tie... it all runs on friction." },
-    { "id": "count", "at": 10.6, "text": "Three... two... one." },
-    { "id": "slip", "at": 14.0, "text": "Everyone who was walking... *slips*." },
-    { "id": "cars", "at": 16.4, "text": "And the cars? The brakes do nothing." },
-    { "id": "replay", "at": 18.6, "text": "Look closer." },
-    { "id": "walk", "at": 19.9, "text": "Walking means pushing your foot backward against the ground. With no grip, your feet just slide apart." },
-    { "id": "still", "at": 26.2, "text": "But the people standing *perfectly still*? They're fine. No push, no slip." },
-    { "id": "knots", "at": 30.6, "text": "And every knot on Earth would come undone. Knots only hold because of friction." },
-    { "id": "back", "at": 35.6, "text": "Then the grip comes back." },
-    { "id": "cta", "at": 37.8, "text": "Follow for more. What should vanish next?" }
+    {
+      "id": "hook",
+      "at": 0.3,
+      "text": "What if *friction* disappeared... for five seconds?"
+    },
+    {
+      "id": "setup",
+      "at": 4.4,
+      "text": "Every step you take, every turn of a wheel, every knot you tie... it all runs on friction."
+    },
+    {
+      "id": "c3",
+      "at": 10.4,
+      "text": "Three."
+    },
+    {
+      "id": "c2",
+      "at": 11.4,
+      "text": "Two."
+    },
+    {
+      "id": "c1",
+      "at": 12.4,
+      "text": "One."
+    },
+    {
+      "id": "slip",
+      "at": 14.0,
+      "text": "Everyone who was walking... *slips*."
+    },
+    {
+      "id": "cars",
+      "at": 16.4,
+      "text": "And the cars? The brakes do nothing."
+    },
+    {
+      "id": "replay",
+      "at": 18.6,
+      "text": "Look closer."
+    },
+    {
+      "id": "walk",
+      "at": 19.9,
+      "text": "Walking means pushing your foot backward against the ground. With no grip, your feet just slide apart."
+    },
+    {
+      "id": "still",
+      "at": 26.2,
+      "text": "But the people standing *perfectly still*? They're fine. No push, no slip."
+    },
+    {
+      "id": "knots",
+      "at": 30.6,
+      "text": "And every knot on Earth would come undone. Knots only hold because of friction."
+    },
+    {
+      "id": "back",
+      "at": 35.6,
+      "text": "Then the grip comes back."
+    },
+    {
+      "id": "cta",
+      "at": 37.8,
+      "text": "Follow for more. What should vanish next?"
+    }
   ]
 }

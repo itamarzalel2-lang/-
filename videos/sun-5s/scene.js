@@ -84,23 +84,11 @@ export async function setup({ scene, camera, overlay, renderer }) {
 
   // ---------------------------------------------------------------- overlay
   overlay.title('What if the <span class="hl">Sun</span> disappeared for 5 seconds?', { from: 0, fadeIn: 0, to: D + 1 });
-  overlay.fact({
-    kicker: 'Fact · Times Square',
-    text: '<span class="hl">~220,000</span> people walk through here on an average day.',
-    source: 'Times Square Alliance pedestrian counts · 2024 average',
-    from: 5.4, to: 10.8,
-  });
   overlay.timer({
     from: 11.0, to: CARD[0],
     label: (t) => (t < GONE ? 'Sun disappears in' : t < BACK ? 'Sun gone for' : 'Sun is back'),
     value: (t) => (t < GONE ? `${(GONE - t).toFixed(1)}<small>s</small>` : t < BACK ? `${(t - GONE).toFixed(1)}<small>/ 5.0s</small>` : '5.0<small>s ✓</small>'),
     mode: (t) => (t < GONE ? '' : t < BACK ? 'gone' : 'back'),
-  });
-  overlay.fact({
-    kicker: 'Physics',
-    text: 'Sunlight takes <span class="hl">~8 min 20 s</span> to reach us. You’re seeing the Sun as it <i>was</i>.',
-    source: 'Smithsonian National Air and Space Museum',
-    from: 19.6, to: 25.3,
   });
   overlay.card('8 minutes 20 seconds later…', {
     from: CARD[0], to: CARD[1], fadeIn: 0.25, fadeOut: 0.12,
@@ -115,13 +103,6 @@ export async function setup({ scene, camera, overlay, renderer }) {
     value: (t) => (t < LIGHT ? `${(t - DARK).toFixed(1)}<small>/ 5.0s</small>` : '5.0<small>s ✓</small>'),
     mode: (t) => (t < LIGHT ? 'gone' : 'back'),
   });
-  overlay.fact({
-    kicker: 'Physics',
-    text: 'Gravity moves at the speed of light too. For 8 min 20 s, Earth kept orbiting <span class="hl">an empty spot</span>.',
-    source: 'LIGO/Virgo + Fermi, GW170817: gravity and light arrived 1.7 s apart after ~130 million years',
-    from: 33.4, to: 38.8,
-  });
-  overlay.end('Comment what should <span class="hl">vanish</span> next', { from: 39.2, to: D + 1 });
 
   const base = { sun: city.sun.intensity, hemi: city.hemi.intensity };
 

@@ -1,0 +1,615 @@
+{
+ "voice": "af_heart",
+ "speed": 1.05,
+ "lines": [
+  {
+   "id": "hook",
+   "at": 0.3,
+   "text": "What if the Sun just vanished... for five seconds?",
+   "file": "voice/hook.wav",
+   "duration": 2.688,
+   "words": [
+    {
+     "text": "What",
+     "hl": false,
+     "start": 0.06,
+     "end": 0.251
+    },
+    {
+     "text": "if",
+     "hl": false,
+     "start": 0.251,
+     "end": 0.347
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.347,
+     "end": 0.443
+    },
+    {
+     "text": "Sun",
+     "hl": true,
+     "start": 0.443,
+     "end": 0.634
+    },
+    {
+     "text": "just",
+     "hl": false,
+     "start": 0.634,
+     "end": 0.921
+    },
+    {
+     "text": "vanished...",
+     "hl": false,
+     "start": 0.921,
+     "end": 1.4
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 1.69,
+     "end": 1.886
+    },
+    {
+     "text": "five",
+     "hl": false,
+     "start": 1.886,
+     "end": 2.13
+    },
+    {
+     "text": "seconds?",
+     "hl": false,
+     "start": 2.13,
+     "end": 2.57
+    }
+   ]
+  },
+  {
+   "id": "setup",
+   "at": 4.4,
+   "text": "Times Square. A sunny afternoon. About 220,000 people walk through here every day.",
+   "file": "voice/setup.wav",
+   "duration": 5.824,
+   "words": [
+    {
+     "text": "Times",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.362
+    },
+    {
+     "text": "Square.",
+     "hl": false,
+     "start": 0.362,
+     "end": 0.75
+    },
+    {
+     "text": "A",
+     "hl": false,
+     "start": 1.12,
+     "end": 1.284
+    },
+    {
+     "text": "sunny",
+     "hl": false,
+     "start": 1.284,
+     "end": 1.558
+    },
+    {
+     "text": "afternoon.",
+     "hl": false,
+     "start": 1.558,
+     "end": 2.16
+    },
+    {
+     "text": "About",
+     "hl": false,
+     "start": 2.62,
+     "end": 2.912
+    },
+    {
+     "text": "220,000",
+     "hl": true,
+     "start": 2.912,
+     "end": 4.224
+    },
+    {
+     "text": "people",
+     "hl": false,
+     "start": 4.224,
+     "end": 4.564
+    },
+    {
+     "text": "walk",
+     "hl": false,
+     "start": 4.564,
+     "end": 4.807
+    },
+    {
+     "text": "through",
+     "hl": false,
+     "start": 4.807,
+     "end": 5.05
+    },
+    {
+     "text": "here",
+     "hl": false,
+     "start": 5.05,
+     "end": 5.244
+    },
+    {
+     "text": "every",
+     "hl": false,
+     "start": 5.244,
+     "end": 5.487
+    },
+    {
+     "text": "day.",
+     "hl": false,
+     "start": 5.487,
+     "end": 5.73
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "at": 11.5,
+   "text": "Three.",
+   "file": "voice/c3.wav",
+   "duration": 0.725,
+   "words": [
+    {
+     "text": "Three.",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.47
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "at": 12.5,
+   "text": "Two.",
+   "file": "voice/c2.wav",
+   "duration": 0.64,
+   "words": [
+    {
+     "text": "Two.",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.39
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "at": 13.5,
+   "text": "One.",
+   "file": "voice/c1.wav",
+   "duration": 0.597,
+   "words": [
+    {
+     "text": "One.",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.38
+    }
+   ]
+  },
+  {
+   "id": "nothing",
+   "at": 15.0,
+   "text": "And... nothing happens.",
+   "file": "voice/nothing.wav",
+   "duration": 1.323,
+   "words": [
+    {
+     "text": "And...",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.39
+    },
+    {
+     "text": "nothing",
+     "hl": true,
+     "start": 0.39,
+     "end": 0.75
+    },
+    {
+     "text": "happens.",
+     "hl": false,
+     "start": 0.75,
+     "end": 1.23
+    }
+   ]
+  },
+  {
+   "id": "why",
+   "at": 17.2,
+   "text": "The Sun is gone, but it's still shining. Sunlight takes eight minutes and twenty seconds to reach us.",
+   "file": "voice/why.wav",
+   "duration": 5.44,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.195
+    },
+    {
+     "text": "Sun",
+     "hl": false,
+     "start": 0.195,
+     "end": 0.484
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 0.484,
+     "end": 0.628
+    },
+    {
+     "text": "gone,",
+     "hl": false,
+     "start": 0.628,
+     "end": 0.99
+    },
+    {
+     "text": "but",
+     "hl": false,
+     "start": 1.2,
+     "end": 1.392
+    },
+    {
+     "text": "it's",
+     "hl": false,
+     "start": 1.392,
+     "end": 1.536
+    },
+    {
+     "text": "still",
+     "hl": false,
+     "start": 1.536,
+     "end": 1.776
+    },
+    {
+     "text": "shining.",
+     "hl": false,
+     "start": 1.776,
+     "end": 2.16
+    },
+    {
+     "text": "Sunlight",
+     "hl": false,
+     "start": 2.66,
+     "end": 3.046
+    },
+    {
+     "text": "takes",
+     "hl": false,
+     "start": 3.046,
+     "end": 3.335
+    },
+    {
+     "text": "eight",
+     "hl": true,
+     "start": 3.335,
+     "end": 3.528
+    },
+    {
+     "text": "minutes",
+     "hl": false,
+     "start": 3.528,
+     "end": 3.865
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 3.865,
+     "end": 4.01
+    },
+    {
+     "text": "twenty",
+     "hl": false,
+     "start": 4.01,
+     "end": 4.348
+    },
+    {
+     "text": "seconds",
+     "hl": true,
+     "start": 4.348,
+     "end": 4.733
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 4.733,
+     "end": 4.878
+    },
+    {
+     "text": "reach",
+     "hl": false,
+     "start": 4.878,
+     "end": 5.167
+    },
+    {
+     "text": "us.",
+     "hl": false,
+     "start": 5.167,
+     "end": 5.36
+    }
+   ]
+  },
+  {
+   "id": "later",
+   "at": 25.7,
+   "text": "So, eight minutes later...",
+   "file": "voice/later.wav",
+   "duration": 1.493,
+   "words": [
+    {
+     "text": "So,",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.37
+    },
+    {
+     "text": "eight",
+     "hl": false,
+     "start": 0.47,
+     "end": 0.64
+    },
+    {
+     "text": "minutes",
+     "hl": false,
+     "start": 0.64,
+     "end": 0.938
+    },
+    {
+     "text": "later...",
+     "hl": false,
+     "start": 0.938,
+     "end": 1.32
+    }
+   ]
+  },
+  {
+   "id": "dark",
+   "at": 28.3,
+   "text": "the light runs out. Five seconds of darkness, in the middle of the day.",
+   "file": "voice/dark.wav",
+   "duration": 3.861,
+   "words": [
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.156
+    },
+    {
+     "text": "light",
+     "hl": false,
+     "start": 0.156,
+     "end": 0.448
+    },
+    {
+     "text": "runs",
+     "hl": false,
+     "start": 0.448,
+     "end": 0.739
+    },
+    {
+     "text": "out.",
+     "hl": false,
+     "start": 0.739,
+     "end": 1.03
+    },
+    {
+     "text": "Five",
+     "hl": false,
+     "start": 1.48,
+     "end": 1.67
+    },
+    {
+     "text": "seconds",
+     "hl": false,
+     "start": 1.67,
+     "end": 1.974
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 1.974,
+     "end": 2.05
+    },
+    {
+     "text": "darkness,",
+     "hl": true,
+     "start": 2.05,
+     "end": 2.43
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 2.53,
+     "end": 2.715
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.715,
+     "end": 2.838
+    },
+    {
+     "text": "middle",
+     "hl": false,
+     "start": 2.838,
+     "end": 3.207
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 3.207,
+     "end": 3.33
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 3.33,
+     "end": 3.453
+    },
+    {
+     "text": "day.",
+     "hl": false,
+     "start": 3.453,
+     "end": 3.76
+    }
+   ]
+  },
+  {
+   "id": "twist",
+   "at": 33.2,
+   "text": "And gravity is late too. For eight minutes, Earth kept circling an empty spot.",
+   "file": "voice/twist.wav",
+   "duration": 4.395,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.208
+    },
+    {
+     "text": "gravity",
+     "hl": false,
+     "start": 0.208,
+     "end": 0.657
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 0.657,
+     "end": 0.769
+    },
+    {
+     "text": "late",
+     "hl": false,
+     "start": 0.769,
+     "end": 1.05
+    },
+    {
+     "text": "too.",
+     "hl": false,
+     "start": 1.05,
+     "end": 1.33
+    },
+    {
+     "text": "For",
+     "hl": false,
+     "start": 1.78,
+     "end": 1.945
+    },
+    {
+     "text": "eight",
+     "hl": false,
+     "start": 1.945,
+     "end": 2.11
+    },
+    {
+     "text": "minutes,",
+     "hl": false,
+     "start": 2.11,
+     "end": 2.44
+    },
+    {
+     "text": "Earth",
+     "hl": false,
+     "start": 2.6,
+     "end": 2.812
+    },
+    {
+     "text": "kept",
+     "hl": false,
+     "start": 2.812,
+     "end": 3.078
+    },
+    {
+     "text": "circling",
+     "hl": false,
+     "start": 3.078,
+     "end": 3.503
+    },
+    {
+     "text": "an",
+     "hl": false,
+     "start": 3.503,
+     "end": 3.609
+    },
+    {
+     "text": "empty",
+     "hl": true,
+     "start": 3.609,
+     "end": 3.928
+    },
+    {
+     "text": "spot.",
+     "hl": false,
+     "start": 3.928,
+     "end": 4.3
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "at": 39.0,
+   "text": "Follow for more. What should vanish next?",
+   "file": "voice/cta.wav",
+   "duration": 2.261,
+   "words": [
+    {
+     "text": "Follow",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.411
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 0.411,
+     "end": 0.582
+    },
+    {
+     "text": "more.",
+     "hl": false,
+     "start": 0.582,
+     "end": 0.84
+    },
+    {
+     "text": "What",
+     "hl": false,
+     "start": 1.11,
+     "end": 1.314
+    },
+    {
+     "text": "should",
+     "hl": false,
+     "start": 1.314,
+     "end": 1.518
+    },
+    {
+     "text": "vanish",
+     "hl": true,
+     "start": 1.518,
+     "end": 1.823
+    },
+    {
+     "text": "next?",
+     "hl": false,
+     "start": 1.823,
+     "end": 2.18
+    }
+   ]
+  }
+ ]
+}

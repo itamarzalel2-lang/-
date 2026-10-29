@@ -150,19 +150,6 @@ export async function setup({ scene, camera, overlay }) {
   });
   overlay.add(Object.assign(document.createElement('div'), { className: 'ov-chip', innerHTML: '◀◀ REPLAY · <b>0.35×</b>' }), { from: REPLAY[0], to: REPLAY[1], fadeIn: 0.15, fadeOut: 0.15, enter: 'pop' });
   const liftTag = overlay.tag('+14 cm', { from: 20.4, to: REPLAY[1] - 0.2 });
-  overlay.fact({
-    kicker: 'Geometry',
-    text: 'A square wheel lifts its axle <span class="hl">~14 cm</span> every quarter turn: <span class="hl">7.6 slams</span> a second at 18 km/h.',
-    source: 'Corner vs side of a 66 cm square: (√2 − 1) × 33 cm ≈ 13.7 cm · 5 m/s ÷ 0.66 m per quarter turn',
-    from: 21.4, to: REPLAY[1], top: 690,
-  });
-  overlay.fact({
-    kicker: 'Math',
-    text: 'On a road of upside-down <span class="hl">catenaries</span>, a square wheel rolls perfectly smoothly.',
-    source: 'Stan Wagon, Macalester College: square-wheeled trike on an inverted-catenary road (1997)',
-    from: 31.0, to: CAT[1], top: 690,
-  });
-  overlay.end('Comment what should <span class="hl">change</span> next', { from: 38.1, to: D + 1 });
 
   return function update(t) {
     const s = simAt(t);

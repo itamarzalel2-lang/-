@@ -1,0 +1,654 @@
+{
+ "voice": "af_heart",
+ "speed": 1.05,
+ "lines": [
+  {
+   "id": "hook",
+   "at": 0.3,
+   "text": "What if all the plastic on Earth disappeared... for five seconds?",
+   "file": "voice/hook.wav",
+   "duration": 3.371,
+   "words": [
+    {
+     "text": "What",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.244
+    },
+    {
+     "text": "if",
+     "hl": false,
+     "start": 0.244,
+     "end": 0.341
+    },
+    {
+     "text": "all",
+     "hl": false,
+     "start": 0.341,
+     "end": 0.535
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.535,
+     "end": 0.632
+    },
+    {
+     "text": "plastic",
+     "hl": true,
+     "start": 0.632,
+     "end": 1.02
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 1.02,
+     "end": 1.165
+    },
+    {
+     "text": "Earth",
+     "hl": false,
+     "start": 1.165,
+     "end": 1.359
+    },
+    {
+     "text": "disappeared...",
+     "hl": false,
+     "start": 1.359,
+     "end": 1.99
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 2.37,
+     "end": 2.574
+    },
+    {
+     "text": "five",
+     "hl": false,
+     "start": 2.574,
+     "end": 2.83
+    },
+    {
+     "text": "seconds?",
+     "hl": false,
+     "start": 2.83,
+     "end": 3.29
+    }
+   ]
+  },
+  {
+   "id": "setup",
+   "at": 4.4,
+   "text": "It's everywhere. Phones, cars, signs... and probably the clothes you're wearing right now.",
+   "file": "voice/setup.wav",
+   "duration": 5.141,
+   "words": [
+    {
+     "text": "It's",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.235
+    },
+    {
+     "text": "everywhere.",
+     "hl": false,
+     "start": 0.235,
+     "end": 0.884
+    },
+    {
+     "text": "Phones,",
+     "hl": false,
+     "start": 0.884,
+     "end": 1.339
+    },
+    {
+     "text": "cars,",
+     "hl": false,
+     "start": 1.339,
+     "end": 1.793
+    },
+    {
+     "text": "signs...",
+     "hl": false,
+     "start": 1.793,
+     "end": 2.378
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 2.378,
+     "end": 2.572
+    },
+    {
+     "text": "probably",
+     "hl": false,
+     "start": 2.572,
+     "end": 3.222
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 3.222,
+     "end": 3.352
+    },
+    {
+     "text": "clothes",
+     "hl": false,
+     "start": 3.352,
+     "end": 3.806
+    },
+    {
+     "text": "you're",
+     "hl": false,
+     "start": 3.806,
+     "end": 4.001
+    },
+    {
+     "text": "wearing",
+     "hl": false,
+     "start": 4.001,
+     "end": 4.391
+    },
+    {
+     "text": "right",
+     "hl": false,
+     "start": 4.391,
+     "end": 4.715
+    },
+    {
+     "text": "now.",
+     "hl": false,
+     "start": 4.715,
+     "end": 5.04
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "at": 10.8,
+   "text": "Three.",
+   "file": "voice/c3.wav",
+   "duration": 0.725,
+   "words": [
+    {
+     "text": "Three.",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.47
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "at": 11.8,
+   "text": "Two.",
+   "file": "voice/c2.wav",
+   "duration": 0.64,
+   "words": [
+    {
+     "text": "Two.",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.39
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "at": 12.8,
+   "text": "One.",
+   "file": "voice/c1.wav",
+   "duration": 0.597,
+   "words": [
+    {
+     "text": "One.",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.38
+    }
+   ]
+  },
+  {
+   "id": "event",
+   "at": 14.3,
+   "text": "Bumpers, signs, billboards... gone.",
+   "file": "voice/event.wav",
+   "duration": 2.283,
+   "words": [
+    {
+     "text": "Bumpers,",
+     "hl": false,
+     "start": 0.09,
+     "end": 0.594
+    },
+    {
+     "text": "signs,",
+     "hl": false,
+     "start": 0.594,
+     "end": 1.035
+    },
+    {
+     "text": "billboards...",
+     "hl": false,
+     "start": 1.035,
+     "end": 1.855
+    },
+    {
+     "text": "gone.",
+     "hl": true,
+     "start": 1.855,
+     "end": 2.17
+    }
+   ]
+  },
+  {
+   "id": "people",
+   "at": 18.7,
+   "text": "But look at the people.",
+   "file": "voice/people.wav",
+   "duration": 1.109,
+   "words": [
+    {
+     "text": "But",
+     "hl": false,
+     "start": 0.09,
+     "end": 0.26
+    },
+    {
+     "text": "look",
+     "hl": false,
+     "start": 0.26,
+     "end": 0.43
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 0.43,
+     "end": 0.515
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.515,
+     "end": 0.6
+    },
+    {
+     "text": "people.",
+     "hl": false,
+     "start": 0.6,
+     "end": 0.94
+    }
+   ]
+  },
+  {
+   "id": "poly",
+   "at": 20.5,
+   "text": "More than half of all fabric made today is polyester. And polyester is plastic.",
+   "file": "voice/poly.wav",
+   "duration": 4.821,
+   "words": [
+    {
+     "text": "More",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.31
+    },
+    {
+     "text": "than",
+     "hl": false,
+     "start": 0.31,
+     "end": 0.472
+    },
+    {
+     "text": "half",
+     "hl": false,
+     "start": 0.472,
+     "end": 0.688
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 0.688,
+     "end": 0.796
+    },
+    {
+     "text": "all",
+     "hl": false,
+     "start": 0.796,
+     "end": 1.012
+    },
+    {
+     "text": "fabric",
+     "hl": false,
+     "start": 1.012,
+     "end": 1.39
+    },
+    {
+     "text": "made",
+     "hl": false,
+     "start": 1.39,
+     "end": 1.66
+    },
+    {
+     "text": "today",
+     "hl": false,
+     "start": 1.66,
+     "end": 1.984
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 1.984,
+     "end": 2.092
+    },
+    {
+     "text": "polyester.",
+     "hl": true,
+     "start": 2.092,
+     "end": 2.74
+    },
+    {
+     "text": "And",
+     "hl": false,
+     "start": 3.16,
+     "end": 3.346
+    },
+    {
+     "text": "polyester",
+     "hl": false,
+     "start": 3.346,
+     "end": 4.028
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 4.028,
+     "end": 4.152
+    },
+    {
+     "text": "plastic.",
+     "hl": false,
+     "start": 4.152,
+     "end": 4.71
+    }
+   ]
+  },
+  {
+   "id": "jackets",
+   "at": 25.6,
+   "text": "So about half of Times Square just lost its jacket.",
+   "file": "voice/jackets.wav",
+   "duration": 2.837,
+   "words": [
+    {
+     "text": "So",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.25
+    },
+    {
+     "text": "about",
+     "hl": false,
+     "start": 0.25,
+     "end": 0.566
+    },
+    {
+     "text": "half",
+     "hl": false,
+     "start": 0.566,
+     "end": 0.776
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 0.776,
+     "end": 0.882
+    },
+    {
+     "text": "Times",
+     "hl": false,
+     "start": 0.882,
+     "end": 1.197
+    },
+    {
+     "text": "Square",
+     "hl": false,
+     "start": 1.197,
+     "end": 1.513
+    },
+    {
+     "text": "just",
+     "hl": false,
+     "start": 1.513,
+     "end": 1.828
+    },
+    {
+     "text": "lost",
+     "hl": false,
+     "start": 1.828,
+     "end": 2.091
+    },
+    {
+     "text": "its",
+     "hl": false,
+     "start": 2.091,
+     "end": 2.249
+    },
+    {
+     "text": "jacket.",
+     "hl": true,
+     "start": 2.249,
+     "end": 2.67
+    }
+   ]
+  },
+  {
+   "id": "cars",
+   "at": 29.8,
+   "text": "And every car? Half its volume is plastic, but less than a tenth of its weight.",
+   "file": "voice/cars.wav",
+   "duration": 4.288,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.06,
+     "end": 0.223
+    },
+    {
+     "text": "every",
+     "hl": false,
+     "start": 0.223,
+     "end": 0.494
+    },
+    {
+     "text": "car?",
+     "hl": false,
+     "start": 0.494,
+     "end": 0.82
+    },
+    {
+     "text": "Half",
+     "hl": false,
+     "start": 1.18,
+     "end": 1.386
+    },
+    {
+     "text": "its",
+     "hl": false,
+     "start": 1.386,
+     "end": 1.54
+    },
+    {
+     "text": "volume",
+     "hl": false,
+     "start": 1.54,
+     "end": 2.004
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 2.004,
+     "end": 2.107
+    },
+    {
+     "text": "plastic,",
+     "hl": false,
+     "start": 2.107,
+     "end": 2.57
+    },
+    {
+     "text": "but",
+     "hl": false,
+     "start": 2.8,
+     "end": 2.985
+    },
+    {
+     "text": "less",
+     "hl": false,
+     "start": 2.985,
+     "end": 3.171
+    },
+    {
+     "text": "than",
+     "hl": false,
+     "start": 3.171,
+     "end": 3.31
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 3.31,
+     "end": 3.449
+    },
+    {
+     "text": "tenth",
+     "hl": false,
+     "start": 3.449,
+     "end": 3.68
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 3.68,
+     "end": 3.773
+    },
+    {
+     "text": "its",
+     "hl": false,
+     "start": 3.773,
+     "end": 3.912
+    },
+    {
+     "text": "weight.",
+     "hl": false,
+     "start": 3.912,
+     "end": 4.19
+    }
+   ]
+  },
+  {
+   "id": "back",
+   "at": 35.0,
+   "text": "Five seconds later, it all comes back.",
+   "file": "voice/back.wav",
+   "duration": 2.24,
+   "words": [
+    {
+     "text": "Five",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.337
+    },
+    {
+     "text": "seconds",
+     "hl": false,
+     "start": 0.337,
+     "end": 0.702
+    },
+    {
+     "text": "later,",
+     "hl": false,
+     "start": 0.702,
+     "end": 1.02
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 1.2,
+     "end": 1.315
+    },
+    {
+     "text": "all",
+     "hl": false,
+     "start": 1.315,
+     "end": 1.545
+    },
+    {
+     "text": "comes",
+     "hl": false,
+     "start": 1.545,
+     "end": 1.833
+    },
+    {
+     "text": "back.",
+     "hl": false,
+     "start": 1.833,
+     "end": 2.12
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "at": 37.9,
+   "text": "Follow for more. What should vanish next?",
+   "file": "voice/cta.wav",
+   "duration": 2.261,
+   "words": [
+    {
+     "text": "Follow",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.411
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 0.411,
+     "end": 0.582
+    },
+    {
+     "text": "more.",
+     "hl": false,
+     "start": 0.582,
+     "end": 0.84
+    },
+    {
+     "text": "What",
+     "hl": false,
+     "start": 1.11,
+     "end": 1.314
+    },
+    {
+     "text": "should",
+     "hl": false,
+     "start": 1.314,
+     "end": 1.518
+    },
+    {
+     "text": "vanish",
+     "hl": false,
+     "start": 1.518,
+     "end": 1.823
+    },
+    {
+     "text": "next?",
+     "hl": false,
+     "start": 1.823,
+     "end": 2.18
+    }
+   ]
+  }
+ ]
+}

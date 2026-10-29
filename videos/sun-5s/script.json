@@ -2,14 +2,60 @@
   "voice": "af_heart",
   "speed": 1.05,
   "lines": [
-    { "id": "hook", "at": 0.3, "text": "What if the *Sun* just vanished... for five seconds?" },
-    { "id": "setup", "at": 4.4, "text": "Times Square. A sunny afternoon. About *220,000* people walk through here every day." },
-    { "id": "count", "at": 11.2, "text": "The Sun disappears in three... two... one." },
-    { "id": "nothing", "at": 15.0, "text": "And... *nothing* happens." },
-    { "id": "why", "at": 17.2, "text": "The Sun is gone, but it's still shining. Sunlight takes *eight minutes and twenty seconds* to reach us." },
-    { "id": "later", "at": 25.7, "text": "So, eight minutes later..." },
-    { "id": "dark", "at": 28.3, "text": "the light runs out. Five seconds of *darkness*, in the middle of the day." },
-    { "id": "twist", "at": 33.2, "text": "And gravity is late too. For eight minutes, Earth kept circling an *empty* spot." },
-    { "id": "cta", "at": 39.0, "text": "Follow for more. What should *vanish* next?" }
+    {
+      "id": "hook",
+      "at": 0.3,
+      "text": "What if the *Sun* just vanished... for five seconds?"
+    },
+    {
+      "id": "setup",
+      "at": 4.4,
+      "text": "Times Square. A sunny afternoon. About *220,000* people walk through here every day."
+    },
+    {
+      "id": "c3",
+      "at": 11.5,
+      "text": "Three."
+    },
+    {
+      "id": "c2",
+      "at": 12.5,
+      "text": "Two."
+    },
+    {
+      "id": "c1",
+      "at": 13.5,
+      "text": "One."
+    },
+    {
+      "id": "nothing",
+      "at": 15.0,
+      "text": "And... *nothing* happens."
+    },
+    {
+      "id": "why",
+      "at": 17.2,
+      "text": "The Sun is gone, but it's still shining. Sunlight takes *eight minutes and twenty seconds* to reach us."
+    },
+    {
+      "id": "later",
+      "at": 25.7,
+      "text": "So, eight minutes later..."
+    },
+    {
+      "id": "dark",
+      "at": 28.3,
+      "text": "the light runs out. Five seconds of *darkness*, in the middle of the day."
+    },
+    {
+      "id": "twist",
+      "at": 33.2,
+      "text": "And gravity is late too. For eight minutes, Earth kept circling an *empty* spot."
+    },
+    {
+      "id": "cta",
+      "at": 39.0,
+      "text": "Follow for more. What should *vanish* next?"
+    }
   ]
 }

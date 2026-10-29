@@ -121,19 +121,6 @@ export async function setup({ scene, camera, overlay }) {
     mode: (t) => { const s = simAt(t); return s < OFF ? '' : s < ON ? 'gone' : 'back'; },
   });
   overlay.add(Object.assign(document.createElement('div'), { className: 'ov-chip', innerHTML: '◀◀ REPLAY · <b>0.25×</b>' }), { from: REPLAY[0], to: REPLAY[1], fadeIn: 0.15, fadeOut: 0.15, enter: 'pop' });
-  overlay.fact({
-    kicker: 'Physics',
-    text: 'No push = no slip. Standing <span class="hl">perfectly still</span> needs no friction at all.',
-    source: 'Newton’s first law: with no sideways force, nothing starts to slide',
-    from: 26.6, to: 30.3,
-  });
-  overlay.fact({
-    kicker: 'Physics',
-    text: 'Knots hold only because of <span class="hl">friction</span>. Without it, every knot slips loose.',
-    source: 'Patil et al., “Topological mechanics of knots and tangles”, Science 367 (2020)',
-    from: 31.0, to: REPLAY[1],
-  });
-  overlay.end('Comment what should <span class="hl">vanish</span> next', { from: 38.0, to: D + 1 });
 
   return function update(t) {
     const s = simAt(t);

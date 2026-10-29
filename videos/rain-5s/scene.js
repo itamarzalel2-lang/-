@@ -104,12 +104,6 @@ export async function setup({ scene, camera, overlay }) {
   ]);
 
   overlay.title('What if a whole year of <span class="hl">rain</span> fell in 5 seconds?', { from: 0, fadeIn: 0, to: D + 1 });
-  overlay.fact({
-    kicker: 'Fact',
-    text: 'Central Park averages <span class="hl">49.5 inches</span> of rain and snow a year: 1.26 m of water.',
-    source: 'NOAA NCEI 1991–2020 climate normals, Central Park',
-    from: 5.6, to: 10.7,
-  });
   overlay.timer({
     from: 10.8, to: 27.0,
     label: (t) => (t < START ? 'A year of rain in' : t < END ? 'Raining for' : 'Water level'),
@@ -117,19 +111,6 @@ export async function setup({ scene, camera, overlay }) {
     mode: (t) => (t < START ? '' : 'gone'),
   });
   overlay.counter({ label: 'Water level (cm)', countTo: 126, countDur: 5, from: START, to: END + 0.4 });
-  overlay.fact({
-    kicker: 'Safety',
-    text: 'Just <span class="hl">2 feet</span> of moving water can float most cars, trucks and SUVs.',
-    source: 'U.S. National Weather Service, “Turn Around Don’t Drown”',
-    from: 21.2, to: 27.0, top: 690,
-  });
-  overlay.fact({
-    kicker: 'Fact',
-    text: 'NYC sewers are built for <span class="hl">1.75 in/hour</span>. This was ~20,000× that.',
-    source: 'NYC DEP design standard · 49.5 in ÷ 5 s = 35,640 in/h ÷ 1.75 ≈ 20,000',
-    from: 28.2, to: 34.4,
-  });
-  overlay.end('Comment what should <span class="hl">fall</span> next', { from: 34.8, to: D + 1 });
 
   return function update(t) {
     city.update(t);

@@ -32,7 +32,7 @@ def display_words(text):
     return out
 
 
-def word_spans(kokoro, words, timings, duration, lang):
+def word_spans(kokoro, words, timings, audio, sr, lang):
     """Start/end of every display word, from phoneme timings when the model has them."""
     if timings:
         # phoneme words are separated by spaces; a display word ("352") may phonemize
@@ -55,10 +55,59 @@ def word_spans(kokoro, words, timings, duration, lang):
                 spans.append((g[0].start, g[-1].end))
                 k += c
             return spans
-    # fallback: spread the words over the line by length
-    weights = np.array([len(w["text"]) + 2 for w in words], dtype=float)
-    edges = np.concatenate([[0], np.cumsum(weights)]) / weights.sum() * duration
-    return [(float(edges[i]), float(edges[i + 1])) for i in range(len(words))]
+    return align_by_pauses(kokoro, words, audio, sr, lang)
+
+
+def speech_segments(audio, sr, min_gap=0.07):
+    """(start, end) seconds of the voiced stretches, split at pauses of at least min_gap."""
+    hop = int(sr * 0.01)
+    frames = len(audio) // hop
+    energy = np.array([np.sqrt(np.mean(audio[i * hop:(i + 1) * hop] ** 2)) for i in range(frames)])
+    voiced = energy > max(0.01, 0.08 * np.percentile(energy, 95))
+    segs, start, quiet = [], None, 0
+    for i, v in enumerate(voiced):
+        if v:
+            if start is None:
+                start = i
+            quiet = 0
+        elif start is not None:
+            quiet += 1
+            if quiet * 0.01 >= min_gap:
+                segs.append((start * 0.01, (i - quiet + 1) * 0.01))
+                start, quiet = None, 0
+    if start is not None:
+        segs.append((start * 0.01, frames * 0.01))
+    return segs
+
+
+def align_by_pauses(kokoro, words, audio, sr, lang):
+    """Word times from the audio itself: phrases (split at punctuation) map onto the voiced
+    stretches between pauses, and words share their stretch by how many phonemes they have."""
+    weight = [max(1, len(kokoro.tokenizer.phonemize(w["text"], lang).replace(" ", ""))) for w in words]
+    phrases, cur = [], []
+    for i, w in enumerate(words):
+        cur.append(i)
+        if re.search(r"[.,!?;:…]$", w["text"]):
+            phrases.append(cur)
+            cur = []
+    if cur:
+        phrases.append(cur)
+    segs = speech_segments(audio, sr)
+    if len(segs) > len(phrases):  # merge the shortest gaps until the counts match
+        while len(segs) > len(phrases):
+            k = min(range(len(segs) - 1), key=lambda j: segs[j + 1][0] - segs[j][1])
+            segs[k:k + 2] = [(segs[k][0], segs[k + 1][1])]
+    if len(segs) != len(phrases):  # fewer pauses than punctuation: treat it as one stretch
+        segs, phrases = [(segs[0][0] if segs else 0.0, segs[-1][1] if segs else len(audio) / sr)], [list(range(len(words)))]
+    spans = [None] * len(words)
+    for (a, b), idx in zip(segs, phrases):
+        tot = sum(weight[i] for i in idx)
+        t = a
+        for i in idx:
+            d = (b - a) * weight[i] / tot
+            spans[i] = (round(t, 3), round(t + d, 3))
+            t += d
+    return spans
 
 
 def main(video_dir):
@@ -74,7 +123,7 @@ def main(video_dir):
         sf.write(os.path.join(video_dir, rel), audio, sr)
         duration = len(audio) / sr
         words = display_words(line["text"])
-        spans = word_spans(kokoro, words, timings, duration, lang)
+        spans = word_spans(kokoro, words, timings, audio, sr, lang)
         lines.append({
             "id": line["id"], "at": line["at"], "text": spoken, "file": rel, "duration": round(duration, 3),
             "words": [{**w, "start": round(s, 3), "end": round(e, 3)} for w, (s, e) in zip(words, spans)],

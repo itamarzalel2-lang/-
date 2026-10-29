@@ -97,12 +97,6 @@ export async function setup({ scene, camera, overlay }) {
   ]);
 
   overlay.title('What if all <span class="hl">air</span> disappeared for 5 seconds?', { from: 0, fadeIn: 0, to: D + 1 });
-  overlay.fact({
-    kicker: 'Fact',
-    text: 'You carry <span class="hl">~10 tonnes</span> of air above every square meter.',
-    source: 'Standard sea-level pressure 101,325 Pa ÷ 9.81 m/s² ≈ 10,300 kg per m²',
-    from: 5.2, to: 10.9,
-  });
   overlay.timer({
     from: 11.0, to: D - 2.5,
     label: (t) => { const s = simAt(t); return s < GONE ? 'Air disappears in' : s < BACK ? 'No air for' : 'Air is back'; },
@@ -110,19 +104,6 @@ export async function setup({ scene, camera, overlay }) {
     mode: (t) => { const s = simAt(t); return s < GONE ? '' : s < BACK ? 'gone' : 'back'; },
   });
   overlay.add(Object.assign(document.createElement('div'), { className: 'ov-chip', innerHTML: '◀◀ REPLAY · <b>0.26×</b>' }), { from: REPLAY[0], to: REPLAY[1], fadeIn: 0.15, fadeOut: 0.15, enter: 'pop' });
-  overlay.fact({
-    kicker: 'Physics',
-    text: 'Nothing left to scatter sunlight: the sky turns <span class="hl">black at noon</span>.',
-    source: 'Rayleigh scattering · Royal Museums Greenwich, “Why is the sky blue?”',
-    from: 24.8, to: 29.3,
-  });
-  overlay.fact({
-    kicker: 'Body',
-    text: 'You’d stay conscious ~10 s. But the spit on your tongue starts to <span class="hl">boil</span>.',
-    source: 'NASA test subject Jim LeBlanc, 1966 vacuum-chamber accident (Guinness World Records) · Bioastronautics Data Book',
-    from: 30.6, to: REPLAY[1],
-  });
-  overlay.end('Comment what should <span class="hl">vanish</span> next', { from: 40.2, to: D + 1 });
 
   const base = { sun: city.sun.intensity, hemi: city.hemi.intensity };
 

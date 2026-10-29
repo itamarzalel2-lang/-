@@ -81,12 +81,6 @@ export async function setup({ scene, camera, overlay }) {
   ]);
 
   overlay.title('What if the <span class="hl">Moon</span> came 10× closer for 5 seconds?', { from: 0, fadeIn: 0, to: D + 1 });
-  overlay.fact({
-    kicker: 'Fact',
-    text: 'The Moon is on average <span class="hl">384,400 km</span> away.',
-    source: 'NASA, Moon fact sheet',
-    from: 5.4, to: 10.0,
-  });
   overlay.timer({
     from: 10.0, to: REPLAY[1],
     label: (t) => { const s = simAt(t); return s < NEAR ? 'Moon 10× closer in' : s < FAR ? 'Moon close for' : 'Moon is back'; },
@@ -94,25 +88,6 @@ export async function setup({ scene, camera, overlay }) {
     mode: (t) => { const s = simAt(t); return s < NEAR ? '' : s < FAR ? 'gone' : 'back'; },
   });
   overlay.add(Object.assign(document.createElement('div'), { className: 'ov-chip', innerHTML: '◀◀ REPLAY · <b>0.3×</b>' }), { from: REPLAY[0], to: REPLAY[1], fadeIn: 0.15, fadeOut: 0.15, enter: 'pop' });
-  overlay.fact({
-    kicker: 'Physics',
-    text: 'Tidal pull grows with 1/distance³: 10× closer = <span class="hl">1,000×</span> the tides.',
-    source: 'NOAA National Ocean Service, “Tides and Water Levels”',
-    from: 20.0, to: 26.4, top: 690,
-  });
-  overlay.fact({
-    kicker: 'Physics',
-    text: 'But a tide needs <span class="hl">~6 hours</span> to rise. In 5 seconds the oceans barely notice.',
-    source: 'NOAA: most coasts get two highs and two lows every 24 h 50 min',
-    from: 26.8, to: REPLAY[1], top: 690,
-  });
-  overlay.fact({
-    kicker: 'Fact',
-    text: 'At 38,440 km it would be <span class="hl">closer than TV satellites</span> (42,164 km from Earth’s center).',
-    source: 'Geostationary orbit radius 42,164 km · 384,400 ÷ 10 = 38,440 km',
-    from: 33.0, to: D + 1, top: 330,
-  });
-  overlay.end('Comment what should <span class="hl">come closer</span> next', { from: 36.6, to: D + 1 });
 
   return function update(t) {
     const s = simAt(t);

@@ -1,0 +1,627 @@
+{
+ "voice": "af_heart",
+ "speed": 1.05,
+ "lines": [
+  {
+   "id": "hook",
+   "at": 0.3,
+   "text": "What if the Moon came ten times closer... for five seconds?",
+   "file": "voice/hook.wav",
+   "duration": 3.392,
+   "words": [
+    {
+     "text": "What",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.258
+    },
+    {
+     "text": "if",
+     "hl": false,
+     "start": 0.258,
+     "end": 0.363
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.363,
+     "end": 0.467
+    },
+    {
+     "text": "Moon",
+     "hl": true,
+     "start": 0.467,
+     "end": 0.727
+    },
+    {
+     "text": "came",
+     "hl": false,
+     "start": 0.727,
+     "end": 0.988
+    },
+    {
+     "text": "ten",
+     "hl": false,
+     "start": 0.988,
+     "end": 1.196
+    },
+    {
+     "text": "times",
+     "hl": false,
+     "start": 1.196,
+     "end": 1.509
+    },
+    {
+     "text": "closer...",
+     "hl": false,
+     "start": 1.509,
+     "end": 2.03
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 2.42,
+     "end": 2.618
+    },
+    {
+     "text": "five",
+     "hl": false,
+     "start": 2.618,
+     "end": 2.865
+    },
+    {
+     "text": "seconds?",
+     "hl": false,
+     "start": 2.865,
+     "end": 3.31
+    }
+   ]
+  },
+  {
+   "id": "setup",
+   "at": 4.4,
+   "text": "Right now it's about 384,000 kilometers away... and it looks tiny.",
+   "file": "voice/setup.wav",
+   "duration": 4.757,
+   "words": [
+    {
+     "text": "Right",
+     "hl": false,
+     "start": 0.06,
+     "end": 0.306
+    },
+    {
+     "text": "now",
+     "hl": false,
+     "start": 0.306,
+     "end": 0.502
+    },
+    {
+     "text": "it's",
+     "hl": false,
+     "start": 0.502,
+     "end": 0.649
+    },
+    {
+     "text": "about",
+     "hl": false,
+     "start": 0.649,
+     "end": 0.944
+    },
+    {
+     "text": "384,000",
+     "hl": true,
+     "start": 0.944,
+     "end": 2.467
+    },
+    {
+     "text": "kilometers",
+     "hl": false,
+     "start": 2.467,
+     "end": 3.007
+    },
+    {
+     "text": "away...",
+     "hl": false,
+     "start": 3.007,
+     "end": 3.4
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 3.85,
+     "end": 3.988
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 3.988,
+     "end": 4.079
+    },
+    {
+     "text": "looks",
+     "hl": false,
+     "start": 4.079,
+     "end": 4.309
+    },
+    {
+     "text": "tiny.",
+     "hl": false,
+     "start": 4.309,
+     "end": 4.63
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "at": 10.6,
+   "text": "Three.",
+   "file": "voice/c3.wav",
+   "duration": 0.725,
+   "words": [
+    {
+     "text": "Three.",
+     "hl": false,
+     "start": 0.05,
+     "end": 0.47
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "at": 11.6,
+   "text": "Two.",
+   "file": "voice/c2.wav",
+   "duration": 0.64,
+   "words": [
+    {
+     "text": "Two.",
+     "hl": false,
+     "start": 0.03,
+     "end": 0.39
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "at": 12.6,
+   "text": "One.",
+   "file": "voice/c1.wav",
+   "duration": 0.597,
+   "words": [
+    {
+     "text": "One.",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.38
+    }
+   ]
+  },
+  {
+   "id": "whoa",
+   "at": 14.1,
+   "text": "Whoa.",
+   "file": "voice/whoa.wav",
+   "duration": 0.661,
+   "words": [
+    {
+     "text": "Whoa.",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.41
+    }
+   ]
+  },
+  {
+   "id": "size",
+   "at": 15.4,
+   "text": "Ten times wider. A hundred times brighter.",
+   "file": "voice/size.wav",
+   "duration": 2.603,
+   "words": [
+    {
+     "text": "Ten",
+     "hl": false,
+     "start": 0.02,
+     "end": 0.265
+    },
+    {
+     "text": "times",
+     "hl": false,
+     "start": 0.265,
+     "end": 0.632
+    },
+    {
+     "text": "wider.",
+     "hl": false,
+     "start": 0.632,
+     "end": 1.06
+    },
+    {
+     "text": "A",
+     "hl": false,
+     "start": 1.37,
+     "end": 1.503
+    },
+    {
+     "text": "hundred",
+     "hl": false,
+     "start": 1.503,
+     "end": 1.858
+    },
+    {
+     "text": "times",
+     "hl": false,
+     "start": 1.858,
+     "end": 2.125
+    },
+    {
+     "text": "brighter.",
+     "hl": false,
+     "start": 2.125,
+     "end": 2.48
+    }
+   ]
+  },
+  {
+   "id": "physics",
+   "at": 19.4,
+   "text": "Its pull on the oceans grows with the cube of distance. Ten times closer means a thousand times stronger tides.",
+   "file": "voice/physics.wav",
+   "duration": 6.763,
+   "words": [
+    {
+     "text": "Its",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.225
+    },
+    {
+     "text": "pull",
+     "hl": false,
+     "start": 0.225,
+     "end": 0.472
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.472,
+     "end": 0.657
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.657,
+     "end": 0.78
+    },
+    {
+     "text": "oceans",
+     "hl": false,
+     "start": 0.78,
+     "end": 1.212
+    },
+    {
+     "text": "grows",
+     "hl": false,
+     "start": 1.212,
+     "end": 1.583
+    },
+    {
+     "text": "with",
+     "hl": false,
+     "start": 1.583,
+     "end": 1.768
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.768,
+     "end": 1.891
+    },
+    {
+     "text": "cube",
+     "hl": true,
+     "start": 1.891,
+     "end": 2.261
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 2.261,
+     "end": 2.385
+    },
+    {
+     "text": "distance.",
+     "hl": false,
+     "start": 2.385,
+     "end": 2.94
+    },
+    {
+     "text": "Ten",
+     "hl": false,
+     "start": 3.45,
+     "end": 3.685
+    },
+    {
+     "text": "times",
+     "hl": false,
+     "start": 3.685,
+     "end": 4.037
+    },
+    {
+     "text": "closer",
+     "hl": false,
+     "start": 4.037,
+     "end": 4.448
+    },
+    {
+     "text": "means",
+     "hl": false,
+     "start": 4.448,
+     "end": 4.801
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 4.801,
+     "end": 4.977
+    },
+    {
+     "text": "thousand",
+     "hl": false,
+     "start": 4.977,
+     "end": 5.447
+    },
+    {
+     "text": "times",
+     "hl": false,
+     "start": 5.447,
+     "end": 5.799
+    },
+    {
+     "text": "stronger",
+     "hl": false,
+     "start": 5.799,
+     "end": 6.269
+    },
+    {
+     "text": "tides.",
+     "hl": false,
+     "start": 6.269,
+     "end": 6.68
+    }
+   ]
+  },
+  {
+   "id": "twist",
+   "at": 26.6,
+   "text": "But in five seconds? Nothing happens. Water needs hours to pile up into a tide.",
+   "file": "voice/twist.wav",
+   "duration": 5.035,
+   "words": [
+    {
+     "text": "But",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.234
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 0.234,
+     "end": 0.38
+    },
+    {
+     "text": "five",
+     "hl": false,
+     "start": 0.38,
+     "end": 0.623
+    },
+    {
+     "text": "seconds?",
+     "hl": false,
+     "start": 0.623,
+     "end": 1.06
+    },
+    {
+     "text": "Nothing",
+     "hl": false,
+     "start": 1.29,
+     "end": 1.663
+    },
+    {
+     "text": "happens.",
+     "hl": false,
+     "start": 1.663,
+     "end": 2.16
+    },
+    {
+     "text": "Water",
+     "hl": false,
+     "start": 2.56,
+     "end": 2.899
+    },
+    {
+     "text": "needs",
+     "hl": false,
+     "start": 2.899,
+     "end": 3.237
+    },
+    {
+     "text": "hours",
+     "hl": true,
+     "start": 3.237,
+     "end": 3.519
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 3.519,
+     "end": 3.689
+    },
+    {
+     "text": "pile",
+     "hl": false,
+     "start": 3.689,
+     "end": 3.971
+    },
+    {
+     "text": "up",
+     "hl": false,
+     "start": 3.971,
+     "end": 4.14
+    },
+    {
+     "text": "into",
+     "hl": false,
+     "start": 4.14,
+     "end": 4.422
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 4.422,
+     "end": 4.591
+    },
+    {
+     "text": "tide.",
+     "hl": false,
+     "start": 4.591,
+     "end": 4.93
+    }
+   ]
+  },
+  {
+   "id": "sats",
+   "at": 32.6,
+   "text": "And it would be closer to us than our TV satellites.",
+   "file": "voice/sats.wav",
+   "duration": 2.773,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.04,
+     "end": 0.19
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 0.19,
+     "end": 0.29
+    },
+    {
+     "text": "would",
+     "hl": false,
+     "start": 0.29,
+     "end": 0.49
+    },
+    {
+     "text": "be",
+     "hl": false,
+     "start": 0.49,
+     "end": 0.69
+    },
+    {
+     "text": "closer",
+     "hl": false,
+     "start": 0.69,
+     "end": 1.04
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 1.04,
+     "end": 1.19
+    },
+    {
+     "text": "us",
+     "hl": false,
+     "start": 1.19,
+     "end": 1.34
+    },
+    {
+     "text": "than",
+     "hl": false,
+     "start": 1.34,
+     "end": 1.49
+    },
+    {
+     "text": "our",
+     "hl": false,
+     "start": 1.49,
+     "end": 1.69
+    },
+    {
+     "text": "TV",
+     "hl": true,
+     "start": 1.69,
+     "end": 2.09
+    },
+    {
+     "text": "satellites.",
+     "hl": true,
+     "start": 2.09,
+     "end": 2.69
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "at": 36.2,
+   "text": "Follow for more. What should come closer next?",
+   "file": "voice/cta.wav",
+   "duration": 2.432,
+   "words": [
+    {
+     "text": "Follow",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.411
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 0.411,
+     "end": 0.582
+    },
+    {
+     "text": "more.",
+     "hl": false,
+     "start": 0.582,
+     "end": 0.84
+    },
+    {
+     "text": "What",
+     "hl": false,
+     "start": 1.13,
+     "end": 1.318
+    },
+    {
+     "text": "should",
+     "hl": false,
+     "start": 1.318,
+     "end": 1.505
+    },
+    {
+     "text": "come",
+     "hl": false,
+     "start": 1.505,
+     "end": 1.693
+    },
+    {
+     "text": "closer",
+     "hl": false,
+     "start": 1.693,
+     "end": 2.022
+    },
+    {
+     "text": "next?",
+     "hl": false,
+     "start": 2.022,
+     "end": 2.35
+    }
+   ]
+  }
+ ]
+}

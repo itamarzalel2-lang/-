@@ -2,14 +2,60 @@
   "voice": "af_heart",
   "speed": 1.05,
   "lines": [
-    { "id": "hook", "at": 0.3, "text": "What if a whole year of *rain* fell on New York... in five seconds?" },
-    { "id": "setup", "at": 4.5, "text": "New York gets about *forty-nine inches* of rain a year. That's a meter and a quarter of water." },
-    { "id": "count", "at": 10.9, "text": "Three... two... one." },
-    { "id": "event", "at": 15.2, "text": "All of it... at *once*." },
-    { "id": "scary", "at": 19.2, "text": "And here's the scary part." },
-    { "id": "float", "at": 21.0, "text": "Just *two feet* of moving water can float most cars." },
-    { "id": "boats", "at": 24.4, "text": "Every car in Times Square is now a boat." },
-    { "id": "sewers", "at": 27.4, "text": "New York's sewers handle about one and three quarter inches an hour. This was *twenty thousand* times more." },
-    { "id": "cta", "at": 34.6, "text": "Follow for more. What should fall next?" }
+    {
+      "id": "hook",
+      "at": 0.3,
+      "text": "What if a whole year of *rain* fell on New York... in five seconds?"
+    },
+    {
+      "id": "setup",
+      "at": 4.5,
+      "text": "New York gets about *forty-nine inches* of rain a year. That's a meter and a quarter of water."
+    },
+    {
+      "id": "c3",
+      "at": 10.6,
+      "text": "Three."
+    },
+    {
+      "id": "c2",
+      "at": 11.6,
+      "text": "Two."
+    },
+    {
+      "id": "c1",
+      "at": 12.6,
+      "text": "One."
+    },
+    {
+      "id": "event",
+      "at": 15.2,
+      "text": "All of it... at *once*."
+    },
+    {
+      "id": "scary",
+      "at": 19.2,
+      "text": "And here's the scary part."
+    },
+    {
+      "id": "float",
+      "at": 21.0,
+      "text": "Just *two feet* of moving water can float most cars."
+    },
+    {
+      "id": "boats",
+      "at": 24.4,
+      "text": "Every car in Times Square is now a boat."
+    },
+    {
+      "id": "sewers",
+      "at": 27.4,
+      "text": "New York's sewers handle about one and three quarter inches an hour. This was *twenty thousand* times more."
+    },
+    {
+      "id": "cta",
+      "at": 34.6,
+      "text": "Follow for more. What should fall next?"
+    }
   ]
 }

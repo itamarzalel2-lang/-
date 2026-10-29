@@ -14,6 +14,13 @@ import { Overlay } from './lib/overlay.js';
 const params = new URLSearchParams(location.search);
 const name = params.get('video');
 const capture = params.has('capture');
+// render passes: 'nooverlay' = the 3D scene only; 'overlayonly' = text only, transparent
+const noOverlay = params.has('nooverlay'), overlayOnly = params.has('overlayonly');
+if (noOverlay) document.getElementById('overlay').style.display = 'none';
+if (overlayOnly) {
+  document.getElementById('gl').style.display = 'none';
+  for (const el of [document.documentElement, document.body, document.getElementById('stage')]) el.style.background = 'transparent';
+}
 const dpr = Number(params.get('dpr') || (capture ? 2 : Math.min(devicePixelRatio, 2)));
 const W = 540, H = 960;
 
@@ -80,14 +87,15 @@ try {
   const r = await fetch(`/videos/${name}/voice.json`);
   if (r.ok) voice = await r.json();
 } catch { /* no narration yet */ }
-// (the full render draws subtitles in a separate pass, see engine/subs.html)
-const subtitles = voice && !params.has('nosubs') ? new Subtitles(document.getElementById('overlay'), voice, mod.subtitles ?? {}) : null;
+const subtitles = voice && !noOverlay ? new Subtitles(document.getElementById('overlay'), voice, mod.subtitles ?? {}) : null;
 
 function renderAt(t) {
-  update(t);
-  overlay.update(t);
-  subtitles?.update(t);
-  composer.render();
+  update(t); // also in the text pass: tags follow objects in the scene
+  if (!noOverlay) {
+    overlay.update(t);
+    subtitles?.update(t);
+  }
+  if (!overlayOnly) composer.render();
 }
 
 await document.fonts.ready;

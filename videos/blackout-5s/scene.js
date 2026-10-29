@@ -80,12 +80,6 @@ export async function setup({ scene, camera, overlay, renderer }) {
   ]);
 
   overlay.title('What if every <span class="hl">light</span> in NYC went out for 5 seconds?', { from: 0, fadeIn: 0, to: D + 1 });
-  overlay.fact({
-    kicker: 'Fact',
-    text: 'In 2003 a blackout cut power to <span class="hl">~50 million</span> people across the US and Canada.',
-    source: 'U.S.–Canada Power System Outage Task Force, Final Report (2004)',
-    from: 6.2, to: 11.4,
-  });
   overlay.timer({
     from: 11.4, to: STARS[0],
     label: (t) => { const s = simAt(t); return s < OFF ? 'Lights out in' : s < ON ? 'Dark for' : 'Lights are back'; },
@@ -95,13 +89,6 @@ export async function setup({ scene, camera, overlay, renderer }) {
   const chip = (html, from, to) => overlay.add(Object.assign(document.createElement('div'), { className: 'ov-chip', innerHTML: html }), { from, to, fadeIn: 0.15, fadeOut: 0.15, enter: 'pop' });
   chip('WHAT’S ACTUALLY UP THERE', 22.0, SEE);
   chip('WHAT YOU’D SEE', SEE, STARS[1]);
-  overlay.fact({
-    kicker: 'Body',
-    text: 'Your eyes need <span class="hl">20–30 minutes</span> in the dark to reach full sensitivity.',
-    source: 'American Meteorological Society Glossary, “dark adaptation” · Scientific American',
-    from: 29.2, to: STARS[1],
-  });
-  overlay.end('Comment what should <span class="hl">vanish</span> next', { from: 36.1, to: D + 1 });
 
   return function update(t) {
     const s = simAt(t);
