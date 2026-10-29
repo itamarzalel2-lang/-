@@ -6,3 +6,5 @@ out/**/*.wav
 out/*.log
 out/queue.txt
 out/done.txt
+out/runner.sh
+out/*.mp4.part

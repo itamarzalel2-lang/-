@@ -91,8 +91,14 @@ const SKY_FRAG = /* glsl */ `
   uniform float sunGlow;
   uniform vec3 sunColor;
   uniform float stars;
+  uniform float milky;
   varying vec3 vDir;
   float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
+  float vnoise(vec2 p) {
+    vec2 i = floor(p), f = fract(p);
+    f = f * f * (3.0 - 2.0 * f);
+    return mix(mix(hash(i), hash(i + vec2(1.0, 0.0)), f.x), mix(hash(i + vec2(0.0, 1.0)), hash(i + vec2(1.0, 1.0)), f.x), f.y);
+  }
   void main() {
     vec3 d = normalize(vDir);
     float v = 0.5 + asin(clamp(d.y, -1.0, 1.0)) / 3.14159265;
@@ -108,8 +114,22 @@ const SKY_FRAG = /* glsl */ `
       float h = hash(cell);
       if (h > 0.985) {
         vec2 sp = cell + vec2(hash(cell + 7.1), hash(cell + 3.7));
-        float k = smoothstep(0.22, 0.0, length(p - sp));
+        float k = smoothstep(0.3, 0.0, length(p - sp));
         c += vec3(0.9, 0.95, 1.0) * k * stars * (0.5 + 2.5 * fract(h * 97.0)) * smoothstep(0.02, 0.2, d.y);
+      }
+    }
+    // the Milky Way: a soft band of light across the sky, with more stars inside it
+    if (milky > 0.0 && d.y > 0.0) {
+      float b = dot(d, normalize(vec3(1.0, 0.0, 0.12))); // a band arching overhead, north to south
+      float band = exp(-b * b / 0.018);
+      vec2 q = vec2(atan(d.z, d.x), asin(d.y)) * 40.0;
+      float n = vnoise(q * 0.35) * 0.55 + vnoise(q * 0.9) * 0.3 + vnoise(q * 2.4) * 0.15;
+      c += vec3(0.55, 0.6, 0.8) * band * pow(n, 1.6) * 0.32 * milky * smoothstep(0.0, 0.25, d.y);
+      vec2 p2 = vec2(atan(d.z, d.x), asin(d.y)) * 520.0;
+      float h2 = hash(floor(p2));
+      if (h2 > 0.992 - 0.03 * band) {
+        vec2 sp = floor(p2) + vec2(hash(floor(p2) + 1.3), hash(floor(p2) + 9.7));
+        c += vec3(0.9, 0.93, 1.0) * smoothstep(0.42, 0.0, length(p2 - sp)) * milky * (1.0 + 2.5 * fract(h2 * 31.0));
       }
     }
     gl_FragColor = vec4(c, 1.0);
@@ -132,7 +152,7 @@ export function timesSquare(opts = {}) {
     uniforms: {
       mapA: { value: gradientTexture(P.sky) }, mapB: { value: gradientTexture(P.sky) }, blend: { value: 0 },
       sunDir: { value: new THREE.Vector3(...P.sunDir).normalize() }, sunDisk: { value: P.sunDisk }, sunGlow: { value: 1 }, sunColor: { value: col(P.sunDiskColor ?? '#fff6e0') },
-      stars: { value: P.stars },
+      stars: { value: P.stars }, milky: { value: 0 },
     },
     side: THREE.BackSide, fog: false, depthWrite: false,
   });
@@ -369,7 +389,7 @@ export function timesSquare(opts = {}) {
   const pointBase = points.map((p) => p.intensity);
   return {
     group, fog, lanes, queues, crowdZones, standZones, carCount: o.cars, cabs: o.cabs, options: o,
-    preset: P, sky: skyMat.uniforms, hemi, sun, points,
+    preset: P, sky: skyMat.uniforms, hemi, sun, points, billboards: boards.children, facades: corridorFacades, walls: wallMat,
     /** Scale every self-lit thing (windows, billboards, shops, lamps, ball, steps, point lights): 1 = normal, 0 = blackout. */
     setArtificial(k) {
       for (const g of glow) {

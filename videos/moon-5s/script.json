@@ -1,0 +1,15 @@
+{
+  "voice": "af_heart",
+  "speed": 1.05,
+  "lines": [
+    { "id": "hook", "at": 0.3, "text": "What if the *Moon* came ten times closer... for five seconds?" },
+    { "id": "setup", "at": 4.4, "text": "Right now it's about *384,000* kilometers away... and it looks tiny." },
+    { "id": "count", "at": 10.2, "text": "Ten times closer in three... two... one." },
+    { "id": "whoa", "at": 14.1, "text": "Whoa." },
+    { "id": "size", "at": 15.4, "text": "Ten times wider. A hundred times brighter." },
+    { "id": "physics", "at": 19.4, "text": "Its pull on the oceans grows with the *cube* of distance. Ten times closer means a thousand times stronger tides." },
+    { "id": "twist", "at": 26.6, "text": "But in five seconds? Nothing happens. Water needs *hours* to pile up into a tide." },
+    { "id": "sats", "at": 32.6, "text": "And it would be closer to us than our *TV satellites*." },
+    { "id": "cta", "at": 36.2, "text": "Follow for more. What should come closer next?" }
+  ]
+}

@@ -112,7 +112,7 @@ export function buildTraffic({ lanes, queues, count = 352, cabShare = 0.4, seed 
 
   // Everyone brakes at `at`. Stopping distances are capped per lane so nobody
   // rear-ends the car in front (identical spacing logic to a real queue).
-  function brake(at) {
+  function brake(at, { grip = 1 } = {}) {
     brakeAt = at;
     const byLane = new Map();
     for (const c of cars) {
@@ -125,7 +125,7 @@ export function buildTraffic({ lanes, queues, count = 352, cabShare = 0.4, seed 
       list.sort((a, b) => lane.dir * (b.sB - a.sB)); // front-most first
       let frontStop = Infinity;
       for (const c of list) {
-        let d = (c.v * c.v) / (2 * c.decel);
+        let d = (c.v * c.v) / (2 * c.decel * grip);
         const room = lane.dir * (frontStop - c.sB) - (CAR.length + 0.9);
         if (room < d) d = Math.max(0.3, room);
         c.dStop = d;

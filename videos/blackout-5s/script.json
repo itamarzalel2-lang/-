@@ -1,0 +1,16 @@
+{
+  "voice": "af_heart",
+  "speed": 1.05,
+  "lines": [
+    { "id": "hook", "at": 0.3, "text": "What if every light in New York switched off... for five seconds?" },
+    { "id": "setup", "at": 4.5, "text": "Times Square at night. Thousands of screens, and a sky so bright you can barely see a single *star*." },
+    { "id": "count", "at": 11.6, "text": "Lights out in three... two... one." },
+    { "id": "dark", "at": 15.0, "text": "*Darkness*." },
+    { "id": "blind", "at": 16.6, "text": "Every car is driving blind." },
+    { "id": "thing", "at": 20.8, "text": "Now here's the thing." },
+    { "id": "sky", "at": 22.2, "text": "With every light off, the sky above New York is full of stars. Like *this*." },
+    { "id": "but", "at": 26.8, "text": "But you wouldn't see a single one." },
+    { "id": "eyes", "at": 29.0, "text": "Your eyes need *twenty to thirty minutes* to adapt to the dark. Five seconds isn't even close." },
+    { "id": "cta", "at": 35.9, "text": "Follow for more. What should vanish next?" }
+  ]
+}

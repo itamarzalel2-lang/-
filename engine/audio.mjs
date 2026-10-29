@@ -115,6 +115,14 @@ const RECIPES = {
     const d = to - from;
     return [{ at: from, chain: `${noise('pink', d, 0.6, 19)},bandpass=f=900:w=700,tremolo=f=3.1:d=0.3,volume=${0.35 * level},afade=t=in:d=${fadeIn},afade=t=out:st=${Math.max(0, d - fadeOut)}:d=${fadeOut}` }];
   },
+  alarms: ({ from, to, count = 3, seed = 41 }) => {
+    // car alarms: warbling two-tone sirens starting at slightly different times
+    const r = rng(seed);
+    return Array.from({ length: count }, (_, i) => {
+      const at = from + r() * 0.8, d = to - at, f = 900 + r() * 500, rate = 4 + r() * 4;
+      return { at, chain: `${ev(`0.05*sgn(sin(2*PI*(${f.toFixed(0)}*t+${(f * 0.25).toFixed(0)}*sin(2*PI*${rate.toFixed(2)}*t)/(2*PI*${rate.toFixed(2)}))))`, d)},lowpass=f=3500,volume=${(0.5 + r() * 0.5).toFixed(2)},afade=t=out:st=${Math.max(0, d - 0.4)}:d=0.4` };
+    });
+  },
   horns: ({ from, to, count = 6, seed = 21 }) => {
     const r = rng(seed);
     const out = [];
@@ -135,16 +143,35 @@ function measureLufs(file) {
   return Number(m[1]);
 }
 
-export function buildAudio(cues, duration, outFile) {
+/**
+ * cues: sound design (RECIPES). voice: voice.json contents (optional) with files relative
+ * to voiceDir. The narration sits on top: everything else is ducked while it speaks.
+ */
+export function buildAudio(cues, duration, outFile, voice = null, voiceDir = null) {
   const parts = cues.flatMap((c) => {
     const recipe = RECIPES[c.type];
     if (!recipe) throw new Error(`unknown audio cue type: ${c.type}`);
     return recipe(c).map((p) => (c.gain ? { ...p, chain: `${p.chain},volume=${c.gain}` } : p));
   });
   const graph = parts.map((p, i) => `${p.chain},adelay=delays=${Math.round(p.at * 1000)}:all=1,apad[s${i}]`);
-  graph.push(`${parts.map((_, i) => `[s${i}]`).join('')}amix=inputs=${parts.length}:normalize=0:duration=longest,atrim=0:${duration}[out]`);
+  const fx = `${parts.map((_, i) => `[s${i}]`).join('')}amix=inputs=${parts.length}:normalize=0:duration=longest,atrim=0:${duration}`;
+  const inputs = [];
+  const lines = voice?.lines ?? [];
+  if (lines.length) {
+    lines.forEach((l, i) => {
+      inputs.push('-i', `${voiceDir}/${l.file}`);
+      graph.push(`[${i}:a]aresample=${SR},volume=1.7,adelay=delays=${Math.round(l.at * 1000)}:all=1,apad[v${i}]`);
+    });
+    graph.push(`${lines.map((_, i) => `[v${i}]`).join('')}amix=inputs=${lines.length}:normalize=0:duration=longest,atrim=0:${duration},asplit[vox][key]`);
+    graph.push(`${fx}[fx]`);
+    // duck the sound design under the voice, then lay the voice on top
+    graph.push('[fx][key]sidechaincompress=threshold=0.015:ratio=7:attack=15:release=380[duck]');
+    graph.push(`[duck][vox]amix=inputs=2:normalize=0:duration=longest,atrim=0:${duration}[out]`);
+  } else {
+    graph.push(`${fx}[out]`);
+  }
   const raw = outFile.replace(/\.wav$/, '') + '.mix.wav';
-  execFileSync('ffmpeg', ['-v', 'error', '-y', '-filter_complex', graph.join(';'), '-map', '[out]', '-t', String(duration), raw]);
+  execFileSync('ffmpeg', ['-v', 'error', '-y', ...inputs, '-filter_complex', graph.join(';'), '-map', '[out]', '-t', String(duration), raw]);
   // One static gain to -14 LUFS (the usual target for TikTok/Reels/Shorts), then a peak
   // limiter. Unlike dynamic loudnorm this keeps the dynamics: the big moments stay big.
   const gain = Math.max(-20, Math.min(20, -14 - measureLufs(raw)));

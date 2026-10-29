@@ -138,6 +138,17 @@ export function buildCrowd({ zones, standZones = [], count = 420, standing = 40,
     shoes.visible = soles > 0.001;
   }
 
+  /** Where walker/stander i stands at time t (no pose), e.g. to point a camera at them. */
+  function where(i, t, stopAt = Infinity) {
+    const p = people[i];
+    if (p.stand) return { x: p.x, z: p.z, y: stepHeight(p.z) };
+    const L = p.range[1] - p.range[0];
+    let d = p.off + p.v * Math.min(t, stopAt);
+    if (t > stopAt) { const tau = Math.min(t - stopAt, 0.7); d += p.v * tau - (p.v * tau * tau) / 1.4; }
+    const u = ((d % (2 * L)) + 2 * L) % (2 * L);
+    return { x: p.x, z: p.range[0] + (u < L ? u : 2 * L - u), y: 0.15, dir: u < L ? 1 : -1 };
+  }
+
   /** Change what person i wears: { torso, arms } colours (null = back to the original). */
   function outfit(i, { torso, arms } = {}) {
     const p = people[i];
@@ -147,5 +158,5 @@ export function buildCrowd({ zones, standZones = [], count = 420, standing = 40,
   }
   const torsoMesh = torso, armsMesh = arms;
 
-  return { group, people, update, outfit };
+  return { group, people, update, outfit, where };
 }

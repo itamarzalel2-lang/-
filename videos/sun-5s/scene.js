@@ -1,91 +1,111 @@
 // What if the Sun disappeared for 5 seconds?
 // Twist: nothing happens. Its light is still 8 min 20 s away, so the dark arrives
-// late and lasts exactly 5 seconds. Sources: ./sources.md
+// late and lasts exactly 5 seconds. Narration: ./script.json. Sources: ./sources.md
 import { timesSquare } from '/engine/lib/city.js';
 import { buildTraffic } from '/engine/lib/traffic.js';
 import { buildCrowd } from '/engine/lib/crowd.js';
-import { cameraPath, handheld, shots } from '/engine/lib/camera.js';
+import { cameraPath, handheld, shots, applyCamera } from '/engine/lib/camera.js';
 import { clamp, smoothstep, easeOutCubic } from '/engine/lib/util.js';
 
-const GONE = 3.5; // the Sun vanishes (we can't tell)
-const BACK = GONE + 5; // ...and returns
-const DARK = 10.0; // its missing light arrives (after the "8 min 20 s later" card)
+const GONE = 14.5; // the Sun vanishes (we can't tell)
+const BACK = GONE + 5; // ...and returns, unseen
+const CARD = [25.4, 27.6]; // "8 minutes 20 seconds later"
+const DARK = 27.6; // its missing light arrives
 const LIGHT = DARK + 5;
-const D = 17.5;
+const D = 43;
 
 export const config = {
   fps: 30,
   duration: D,
   fov: 60,
   bloom: { strength: 0.45, radius: 0.5, threshold: 0.9 },
-  exposure: 1.0,
 };
 
+export const subtitles = { hide: [CARD] };
+
 export const audio = [
-  { type: 'ambience', from: 0, to: D, level: 0.9 },
-  { type: 'crowd', from: 0, to: DARK + 0.2, level: 1 },
-  { type: 'tick', at: [0.5, 1.5, 2.5] },
-  { type: 'riser', from: 1.6, to: GONE },
-  { type: 'hit', at: 4.4 },
-  { type: 'whoosh', at: 8.3 },
-  { type: 'tick', at: [8.9, 9.1, 9.3, 9.5, 9.7] },
+  { type: 'ambience', from: 0, to: D, level: 0.8 },
+  { type: 'crowd', from: 0, to: DARK + 0.2, level: 0.9 },
+  { type: 'whoosh', at: 3.9 },
+  { type: 'tick', at: [11.6, 12.6, 13.6] },
+  { type: 'riser', from: 12.0, to: GONE },
+  { type: 'hit', at: GONE },
+  { type: 'whoosh', at: CARD[0] - 0.3 },
+  { type: 'tick', at: [25.9, 26.2, 26.5, 26.8, 27.1, 27.4] },
   { type: 'boom', at: DARK, gain: 0.8 },
   { type: 'drone', from: DARK, to: LIGHT + 0.3 },
-  { type: 'crowd', from: DARK + 0.6, to: LIGHT, level: 1.6 },
-  { type: 'horns', from: DARK + 0.8, to: LIGHT, count: 6 },
+  { type: 'crowd', from: DARK + 0.6, to: LIGHT, level: 1.5 },
+  { type: 'horns', from: DARK + 0.8, to: LIGHT, count: 5 },
   { type: 'powerup', at: LIGHT - 0.6 },
+  { type: 'crowd', from: LIGHT, to: D, level: 0.9 },
 ];
 
 export async function setup({ scene, camera, overlay, renderer }) {
-  const city = timesSquare({ time: 'day', clear: [[6, -30, 22]] });
+  const city = timesSquare({ time: 'day', clear: [[6, -30, 22], [-1, -6, 14]] });
   scene.add(city.group);
   scene.fog = city.fog;
   scene.fog.density = 0.0015;
-  // put the Sun due south (+z) at ~38 degrees, straight down the corridor
-  const sunDir = [0, 0.62, 0.78];
-  city.sky.sunDir.value.set(...sunDir).normalize();
+  // the Sun due south (+z) at ~38 degrees, straight down the corridor
+  city.sky.sunDir.value.set(0, 0.62, 0.78).normalize();
   city.sun.position.set(0, 0.62 * 400, 0.78 * 400);
   city.skyTo([[0, '#000003'], [0.4, '#03040c'], [0.5, '#151022'], [0.53, '#100c1a'], [1, '#05040a']]);
 
   const traffic = buildTraffic({ lanes: city.lanes, queues: city.queues, count: city.carCount });
   scene.add(traffic.group);
   traffic.brake(DARK + 0.35);
-  const crowd = buildCrowd({ zones: city.crowdZones, standZones: city.standZones, count: 430, standing: 46, stepHeight: city.stepHeight, avoid: [[6, -30, 3]] });
+  const crowd = buildCrowd({ zones: city.crowdZones, standZones: city.standZones, count: 430, standing: 46, stepHeight: city.stepHeight, avoid: [[6, -30, 3], [-1, -6, 2.5], [12, -40, 3.5], [10, -36, 3], [8, -32, 3]] });
   scene.add(crowd.group);
 
-  // south of the red steps (z -62..-46), looking south (+z) at the Sun
   const POV = [6, 1.7, -30];
   const cam = shots([
-    { id: 'main', to: Infinity, cam: cameraPath([
+    { id: 'aerial', to: 4.3, cam: cameraPath([
       { t: 0, pos: [4, 150, -150], look: [3, 50, 160], fov: 52 },
-      { t: 3.2, pos: POV, look: [4, 38, 90], fov: 60 },
-      { t: 8.4, pos: [6.2, 1.7, -30.4], look: [4, 40, 90], fov: 60 },
-      { t: DARK + 0.5, pos: [6.2, 1.7, -30.4], look: [3, 30, 90], fov: 60 },
-      { t: LIGHT, pos: [6.4, 1.7, -31], look: [2, 34, 90], fov: 58 },
-      { t: D, pos: [6.6, 2.4, -33], look: [2, 36, 90], fov: 56 },
+      { t: 4.3, pos: [6, 14, -60], look: [4, 30, 90], fov: 58 },
+    ]) },
+    { id: 'plaza', to: 11.0, cam: cameraPath([
+      { t: 4.3, pos: [12, 1.7, -40], look: [2, 6, 40], fov: 60 },
+      { t: 11, pos: [8, 1.7, -32], look: [3, 14, 60], fov: 60 },
+    ]) },
+    { id: 'up', to: 25.4, cam: cameraPath([
+      { t: 11, pos: POV, look: [4, 38, 90], fov: 60 },
+      { t: GONE, pos: [6, 1.7, -30.4], look: [4, 40, 90], fov: 58 },
+      { t: 19, pos: [6.2, 1.7, -30.8], look: [5, 24, 90], fov: 62 },
+      { t: 25.4, pos: [6.6, 1.7, -31.4], look: [4, 36, 90], fov: 60 },
+    ]) },
+    { id: 'dark', to: LIGHT + 0.6, cam: cameraPath([
+      { t: DARK, pos: [-1, 1.6, -6], look: [2, 26, 90], fov: 62 },
+      { t: LIGHT + 0.6, pos: [-1.2, 1.6, -5], look: [2, 30, 90], fov: 60 },
+    ]) },
+    { id: 'rise', to: Infinity, cam: cameraPath([
+      { t: LIGHT + 0.6, pos: [-1, 2, -5], look: [3, 30, 90], fov: 60 },
+      { t: D, pos: [6, 70, -90], look: [3, 20, 120], fov: 54 },
     ]) },
   ]);
 
   // ---------------------------------------------------------------- overlay
   overlay.title('What if the <span class="hl">Sun</span> disappeared for 5 seconds?', { from: 0, fadeIn: 0, to: D + 1 });
+  overlay.fact({
+    kicker: 'Fact · Times Square',
+    text: '<span class="hl">~220,000</span> people walk through here on an average day.',
+    source: 'Times Square Alliance pedestrian counts · 2024 average',
+    from: 5.4, to: 10.8,
+  });
   overlay.timer({
-    from: 0.5, to: 8.75,
+    from: 11.0, to: CARD[0],
     label: (t) => (t < GONE ? 'Sun disappears in' : t < BACK ? 'Sun gone for' : 'Sun is back'),
     value: (t) => (t < GONE ? `${(GONE - t).toFixed(1)}<small>s</small>` : t < BACK ? `${(t - GONE).toFixed(1)}<small>/ 5.0s</small>` : '5.0<small>s ✓</small>'),
     mode: (t) => (t < GONE ? '' : t < BACK ? 'gone' : 'back'),
   });
-  overlay.caption('The Sun is gone.', { from: 4.2, to: 6.1, top: 560 });
-  overlay.caption('You <span class="hl">can’t tell.</span>', { from: 4.9, to: 6.1, top: 612 });
   overlay.fact({
     kicker: 'Physics',
     text: 'Sunlight takes <span class="hl">~8 min 20 s</span> to reach us. You’re seeing the Sun as it <i>was</i>.',
     source: 'Smithsonian National Air and Space Museum',
-    from: 6.2, to: 8.6,
+    from: 19.6, to: 25.3,
   });
   overlay.card('8 minutes 20 seconds later…', {
-    from: 8.6, to: DARK, fadeIn: 0.25, fadeOut: 0.12,
+    from: CARD[0], to: CARD[1], fadeIn: 0.25, fadeOut: 0.12,
     sub: (t) => {
-      const s = Math.round(5 + 495 * easeOutCubic(clamp((t - 8.75) / 1.0)));
+      const s = Math.round(5 + 495 * easeOutCubic(clamp((t - CARD[0] - 0.2) / 1.6)));
       return `+${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
     },
   });
@@ -99,17 +119,16 @@ export async function setup({ scene, camera, overlay, renderer }) {
     kicker: 'Physics',
     text: 'Gravity moves at the speed of light too. For 8 min 20 s, Earth kept orbiting <span class="hl">an empty spot</span>.',
     source: 'LIGO/Virgo + Fermi, GW170817: gravity and light arrived 1.7 s apart after ~130 million years',
-    from: DARK + 0.9, to: LIGHT - 0.2,
+    from: 33.4, to: 38.8,
   });
-  overlay.caption('It comes back <span class="hl">8 min 20 s late</span>, too.', { from: LIGHT + 0.3, to: D + 1, top: 560 });
-  overlay.end('Comment what should <span class="hl">vanish</span> next', { from: LIGHT + 1.0, to: D + 1 });
+  overlay.end('Comment what should <span class="hl">vanish</span> next', { from: 39.2, to: D + 1 });
 
   const base = { sun: city.sun.intensity, hemi: city.hemi.intensity };
 
   return function update(t) {
     city.update(t);
 
-    // light: dark from DARK to LIGHT (the photons that never left the Sun)
+    // light: dark from DARK to LIGHT (the photons that were never emitted)
     const dark = smoothstep(DARK, DARK + 0.04, t) * (1 - smoothstep(LIGHT, LIGHT + 0.04, t)); // light simply stops arriving
     city.sky.blend.value = dark;
     city.sky.sunDisk.value = 1 - dark;
@@ -123,16 +142,8 @@ export async function setup({ scene, camera, overlay, renderer }) {
     traffic.setLights(0.35 + dark * 0.65);
     scene.fog.color.setRGB(0.74 - 0.72 * dark, 0.82 - 0.8 * dark, 0.9 - 0.86 * dark);
 
-    // camera
     const c = cam(t);
-    const shake = handheld(t, { amp: t > 3 ? 0.004 : 0.0015, kicks: [{ at: DARK, amp: 0.012, decay: 3 }] });
-    camera.position.copy(c.pos);
-    camera.lookAt(c.look);
-    camera.rotateX(shake.sy);
-    camera.rotateY(shake.sx);
-    camera.rotateZ(shake.roll);
-    camera.fov = c.fov;
-    camera.updateProjectionMatrix();
+    applyCamera(camera, c, handheld(t, { amp: c.id === 'aerial' || c.id === 'rise' ? 0.0015 : 0.004, kicks: [{ at: DARK, amp: 0.012, decay: 3 }] }));
 
     traffic.update(t, { ride: 0.33, tyreScale: 1 });
     crowd.update(t, { stopAt: DARK + 0.3, lookYaw: Math.PI });

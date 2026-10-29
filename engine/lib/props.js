@@ -49,7 +49,7 @@ export function povPhone({ skin = '#d9a07a', caseColor = '#e8333f' } = {}) {
 
 /** A flock of blocky pigeons circling `center`. After `dropAt` they stop flapping and fall; at `recoverAt` they fly again. */
 export function pigeons({ count = 40, center = [0, 60, -40], radius = 30, seed = 4 } = {}) {
-  const body = new THREE.InstancedMesh(new THREE.BoxGeometry(0.22, 0.2, 0.42), new THREE.MeshStandardMaterial({ color: '#7d8494', roughness: 0.8 }), count);
+  const body = new THREE.InstancedMesh(new THREE.BoxGeometry(0.22, 0.2, 0.42), new THREE.MeshStandardMaterial({ color: '#a3aabb', roughness: 0.8 }), count);
   const wings = new THREE.InstancedMesh(new THREE.BoxGeometry(0.42, 0.03, 0.22).translate(0.21, 0, 0), new THREE.MeshStandardMaterial({ color: '#a7aebd', roughness: 0.8 }), count * 2);
   body.frustumCulled = wings.frustumCulled = false;
   const group = new THREE.Group();
@@ -105,7 +105,7 @@ export function moon({ angularDiameter = 0.52, direction = [0, 0.35, -1], distan
   }
   const map = new THREE.CanvasTexture(c);
   map.colorSpace = THREE.SRGBColorSpace;
-  const mesh = new THREE.Mesh(new THREE.SphereGeometry(1, 48, 32), new THREE.MeshBasicMaterial({ map, color: new THREE.Color(1.25, 1.25, 1.2), toneMapped: false, fog: false }));
+  const mesh = new THREE.Mesh(new THREE.SphereGeometry(1, 48, 32), new THREE.MeshBasicMaterial({ map, color: new THREE.Color(1.05, 1.05, 1.0), fog: false }));
   const dir = new THREE.Vector3(...direction).normalize();
   const set = (deg) => {
     mesh.scale.setScalar(distance * Math.tan(((deg / 2) * Math.PI) / 180));

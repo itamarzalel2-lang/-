@@ -82,3 +82,17 @@ export function follow(traffic, i, { offset = [2.4, 0.5, 2.6], target = [0.84, 0
     return { pos: world(p, off), look: world(p, target), fov };
   };
 }
+
+/** Put the camera at a cameraPath/shots sample, plus an optional handheld() shake and roll. */
+export function applyCamera(camera, c, shake = null, roll = 0) {
+  camera.position.copy(c.pos);
+  camera.lookAt(c.look);
+  if (shake) {
+    camera.rotateX(shake.sy);
+    camera.rotateY(shake.sx);
+    camera.rotateZ(shake.roll);
+  }
+  if (roll) camera.rotateZ(roll);
+  camera.fov = c.fov;
+  camera.updateProjectionMatrix();
+}

@@ -1,0 +1,16 @@
+{
+  "voice": "af_heart",
+  "speed": 1.05,
+  "lines": [
+    { "id": "hook", "at": 0.3, "text": "What if all the *glass* in the world turned liquid... for five seconds?" },
+    { "id": "setup", "at": 4.5, "text": "Manhattan is wrapped in it. The Empire State Building alone has *6,514* windows." },
+    { "id": "count", "at": 10.6, "text": "Three... two... one." },
+    { "id": "pour", "at": 14.0, "text": "Every window starts to *pour*." },
+    { "id": "honey", "at": 16.0, "text": "Sliding down the towers like syrup." },
+    { "id": "freeze", "at": 18.9, "text": "And then... it freezes in place." },
+    { "id": "myth", "at": 21.6, "text": "You've probably heard that old church windows are thicker at the bottom, because glass slowly flows." },
+    { "id": "busted", "at": 27.4, "text": "That's a *myth*. At room temperature, glass would need longer than the age of the universe to sag." },
+    { "id": "real", "at": 33.6, "text": "Those windows were just made uneven." },
+    { "id": "cta", "at": 36.2, "text": "Follow for more. What should melt next?" }
+  ]
+}

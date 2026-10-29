@@ -1,0 +1,16 @@
+{
+  "voice": "af_heart",
+  "speed": 1.05,
+  "lines": [
+    { "id": "hook", "at": 0.3, "text": "What if *gravity* just switched off... for five seconds?" },
+    { "id": "setup", "at": 4.4, "text": "Every car here sits on springs, squeezed about *seventeen centimeters* by its own weight." },
+    { "id": "count", "at": 10.8, "text": "Gravity off in three... two... one." },
+    { "id": "springs", "at": 14.5, "text": "The springs *let go*." },
+    { "id": "float", "at": 16.1, "text": "And nothing pulls anything back down." },
+    { "id": "replay", "at": 19.0, "text": "Slow it down." },
+    { "id": "physics", "at": 20.6, "text": "A released spring throws each car up at almost a meter per second. Five seconds later, they're *four meters* in the air." },
+    { "id": "back", "at": 29.3, "text": "Then gravity comes back." },
+    { "id": "crash", "at": 31.8, "text": "A four meter drop hits like a crash at *thirty-two* kilometers an hour. Three hundred and fifty-two times." },
+    { "id": "cta", "at": 38.6, "text": "Follow for more. What should vanish next?" }
+  ]
+}

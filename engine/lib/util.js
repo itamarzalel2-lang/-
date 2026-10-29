@@ -54,3 +54,22 @@ export function lerpAngle(a, b, u) {
   if (d < -Math.PI) d += 2 * Math.PI;
   return a + d * u;
 }
+
+/**
+ * Story time -> simulation time, for replays and slow motion.
+ * keys: [[t, s], ...] sorted by t; linear between keys, and a key with the same t as the
+ * previous one makes a hard jump (a cut back in time). Outside the keys time runs at 1x.
+ *   remap([[0, 0], [16, 16], [16, 4.6], [22, 6.4]]) -> plays 0..16, then replays 4.6..6.4 at 0.3x
+ */
+export function remap(keys) {
+  return (t) => {
+    if (t <= keys[0][0]) return keys[0][1] + (t - keys[0][0]);
+    for (let i = keys.length - 1; i > 0; i--) {
+      const [ta, sa] = keys[i - 1], [tb, sb] = keys[i];
+      if (t >= ta && t < tb && tb > ta) return sa + ((t - ta) / (tb - ta)) * (sb - sa);
+      if (t >= tb && i === keys.length - 1) return sb + (t - tb);
+    }
+    const [tl, sl] = keys[keys.length - 1];
+    return sl + (t - tl);
+  };
+}

@@ -1,0 +1,56 @@
+{
+  "voice": "af_heart",
+  "speed": 1.05,
+  "lines": [
+    {
+      "id": "hook",
+      "at": 0.3,
+      "text": "What if all the *air* on Earth disappeared... for five seconds?"
+    },
+    {
+      "id": "setup",
+      "at": 4.7,
+      "text": "Right now, about *ten tonnes* of air is pressing down on every square meter of you."
+    },
+    {
+      "id": "count",
+      "at": 11.2,
+      "text": "Three... two... one."
+    },
+    {
+      "id": "silent",
+      "at": 16.3,
+      "text": "Total *silence*. Sound is just moving air."
+    },
+    {
+      "id": "replay",
+      "at": 19.3,
+      "text": "Let's watch that again. Slowly."
+    },
+    {
+      "id": "birds",
+      "at": 21.3,
+      "text": "Pigeons drop like stones. Their wings have nothing to push."
+    },
+    {
+      "id": "sky",
+      "at": 24.7,
+      "text": "The sky turns *black* at noon. Blue sky is just sunlight bouncing off air."
+    },
+    {
+      "id": "twist",
+      "at": 29.6,
+      "text": "And you? You'd stay awake for about ten seconds. But the spit on your tongue would start to *boil*."
+    },
+    {
+      "id": "back",
+      "at": 37.0,
+      "text": "Then the air slams back. Your ears *pop*."
+    },
+    {
+      "id": "cta",
+      "at": 40.0,
+      "text": "Follow for more. What should vanish next?"
+    }
+  ]
+}

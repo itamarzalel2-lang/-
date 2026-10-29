@@ -22,12 +22,13 @@ export async function launch() {
   return chromium.launch({ args });
 }
 
-export async function openPlayer(browser, baseUrl, video, { dpr = 2 } = {}) {
+export async function openPlayer(browser, baseUrl, video, { dpr = 2, extra = '' } = {}) {
   const page = await browser.newPage({ viewport: { width: 540, height: 960 }, deviceScaleFactor: dpr });
   const errors = [];
   page.on('pageerror', (e) => errors.push(e));
-  page.on('console', (m) => { if (m.type() === 'error') errors.push(new Error(m.text())); });
-  await page.goto(`${baseUrl}/engine/player.html?video=${encodeURIComponent(video)}&capture&dpr=${dpr}`);
+  // a missing voice.json just means "no narration yet"
+  page.on('console', (m) => { if (m.type() === 'error' && !m.location()?.url?.endsWith('/voice.json')) errors.push(new Error(m.text())); });
+  await page.goto(`${baseUrl}/engine/player.html?video=${encodeURIComponent(video)}&capture&dpr=${dpr}${extra}`);
   try {
     await page.waitForFunction(() => window.__ready === true, null, { timeout: 120000 });
   } catch (e) {
