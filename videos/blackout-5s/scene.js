@@ -11,10 +11,10 @@ import { smoothstep, remap } from '/engine/lib/util.js';
 const OFF = 14.4;
 const ON = OFF + 5;
 // story time
-const STARS = [20.6, 35.6]; // back inside the dark moment, almost frozen (sim 16.0 .. 17.2)
+const STARS = [20.6, 29.2]; // back inside the dark moment, almost frozen (sim 16.0 .. 16.8)
 const SEE = 26.6; // "what you'd actually see"
 const D = 39;
-const simAt = remap([[0, 0], [STARS[0], STARS[0]], [STARS[0], 16.0], [STARS[1], 17.2], [STARS[1], 19.9], [D, 19.9 + D - STARS[1]]]);
+const simAt = remap([[0, 0], [STARS[0], STARS[0]], [STARS[0], 16.0], [STARS[1], 16.8], [STARS[1], 19.9], [D, 19.9 + D - STARS[1]]]);
 
 export const config = {
   fps: 30,
