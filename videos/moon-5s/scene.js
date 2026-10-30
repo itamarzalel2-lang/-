@@ -41,7 +41,7 @@ export const audio = [
 ];
 
 export async function setup({ scene, camera, overlay }) {
-  const city = timesSquare({ time: 'night', clear: [[-21, 25, 14], [-21, -40, 42]] });
+  const city = timesSquare({ time: 'night', clear: [[-21, 25, 14], [-21, 8, 10], [-21, -40, 42]] });
   scene.add(city.group);
   scene.fog = city.fog;
   const base = { hemi: city.hemi.intensity, sun: city.sun.intensity };
