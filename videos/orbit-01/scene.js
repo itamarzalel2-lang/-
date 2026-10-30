@@ -242,7 +242,7 @@ export async function setup({ g, overlay, W, H, dpr }) {
       paper(g, 50, 16, 440, 420, { rot: -0.01, lh: 32, top: 70 });
       const font = `400 21px ${FONTS.hand}`;
       writeText(g, 'DAY        O2 tank (kg)', 80, 56, 1, { font, color: '#1d1d1d' });
-      const rows = [3, 4, 5, 10, 20, 30].map((d) => [d, 312 - 1.7 * (d - 3)]); // story.md: 312.0 kg on Day 3, -1.7 kg/day
+      const rows = [[1, 312.0], [2, 310.3], [3, 308.6], [10, 296.7], [20, 279.7], [30, 262.7]];
       rows.forEach(([d, v], i) => {
         const t0 = at('saw') + 0.3 + i * 0.35;
         writeText(g, String(d).padStart(2, ' '), 92, 92 + i * 27, clamp((t - t0) / 0.25), { font, color: '#283063' });
