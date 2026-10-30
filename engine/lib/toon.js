@@ -417,6 +417,7 @@ export function interior(g, t, { back = 'wall', night = 0, alarm = 0, seed = 3, 
     for (let k = 0; k < 8; k++) { const a = k / 8 * Math.PI * 2; g.fillStyle = '#5b574f'; g.beginPath(); g.arc(cx + Math.cos(a) * (rr + 6), cy + Math.sin(a) * (rr + 6), 2, 0, 7); g.fill(); }
   } else if (back === 'hatch') {
     hatchDoor(g, bx0 + bw.w / 2, by0 + bw.h * 0.5, 82, t, hatch);
+    if (hatch.gauge) miniGauge(g, 390, 132, hatch.gauge === 'off');
   } else {
     for (let k = 0; k < 2; k++) poly(g, [[bx0 + 16 + k * 134, by0 + 18], [bx0 + 130 + k * 134, by0 + 18], [bx0 + 130 + k * 134, by1 - 18], [bx0 + 16 + k * 134, by1 - 18]], '#ddd6c8', '#a59e8e', 1.4);
   }
@@ -467,6 +468,18 @@ export function hatchDoor(g, cx, cy, r, t, { num = '3', open = 0, wheel = 0, lab
     g.restore();
     g.restore();
   }
+}
+
+/** The small Hatch 3 gauge on the wall beside the hatch (off = taken off: a hole and a cable end). */
+function miniGauge(g, x, y, off) {
+  if (off) {
+    roundRect(g, x - 16, y - 16, 32, 32, 4); g.fillStyle = '#2b2925'; g.fill(); g.strokeStyle = '#7a756b'; g.lineWidth = 2; g.stroke();
+    g.strokeStyle = '#1b1b1b'; g.lineWidth = 3; g.beginPath(); g.moveTo(x - 4, y + 2); g.quadraticCurveTo(x + 2, y - 8, x + 8, y + 6); g.stroke();
+    return;
+  }
+  roundRect(g, x - 17, y - 17, 34, 34, 4); g.fillStyle = '#9d978a'; g.fill(); g.strokeStyle = '#6a655c'; g.lineWidth = 1.5; g.stroke();
+  g.fillStyle = '#f4f1e8'; g.beginPath(); g.arc(x, y, 12, 0, 7); g.fill(); g.strokeStyle = '#333'; g.lineWidth = 1.5; g.stroke();
+  g.strokeStyle = '#c42b22'; g.lineWidth = 2; g.beginPath(); g.moveTo(x, y); g.lineTo(x - 7, y + 7); g.stroke();
 }
 
 /** Pressure gauge (kPa). v = needle value 0..120. */
@@ -704,8 +717,8 @@ export function envelope(g, x, y, w, h, { n = '1', open = 0, rot = 0 } = {}) {
   g.restore();
 }
 
-/** Radio panel with a channel display and a speaker; lit = speaker light 0..1. */
-export function radio(g, x, y, { ch = '4', lit = 0 } = {}) {
+/** Radio panel with a channel display and a speaker; lit = speaker light 0..1, lamp9 = the channel 9 lamp 0..1. */
+export function radio(g, x, y, { ch = '4', lit = 0, lamp9 = 0 } = {}) {
   g.textAlign = 'center';
   roundRect(g, x, y, 170, 120, 10); g.fillStyle = '#3a3f47'; g.fill(); g.strokeStyle = INK; g.lineWidth = 2.5; g.stroke();
   roundRect(g, x + 14, y + 14, 70, 44, 6); g.fillStyle = '#0d1a10'; g.fill();
@@ -715,7 +728,74 @@ export function radio(g, x, y, { ch = '4', lit = 0 } = {}) {
   g.fillStyle = lit > 0 ? `rgba(80,255,120,${0.4 + 0.6 * lit})` : '#2a3a2c';
   g.beginPath(); g.arc(x + 30, y + 88, 7, 0, 7); g.fill();
   for (let i = 0; i < 3; i++) { g.fillStyle = '#8a8f98'; g.beginPath(); g.arc(x + 70 + i * 30, y + 88, 9, 0, 7); g.fill(); g.strokeStyle = INK; g.lineWidth = 1.5; g.stroke(); }
+  // channel 9 lamp, left of the panel (centre x - 33, y + 25)
+  const lx = x - 33, ly = y + 25;
+  roundRect(g, lx - 23, ly - 15, 46, 30, 6); g.fillStyle = '#23262b'; g.fill(); g.strokeStyle = INK; g.lineWidth = 2; g.stroke();
+  if (lamp9 > 0) {
+    const gr = g.createRadialGradient(lx, ly, 2, lx, ly, 50);
+    gr.addColorStop(0, `rgba(255,70,50,${0.6 * lamp9})`); gr.addColorStop(1, 'rgba(255,70,50,0)');
+    g.fillStyle = gr; g.beginPath(); g.arc(lx, ly, 50, 0, 7); g.fill();
+  }
+  g.fillStyle = lamp9 > 0 ? `rgb(255,${Math.round(90 - 40 * lamp9)},60)` : '#4a2a26';
+  g.font = `900 17px ${FONTS.display}`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('CH9', lx, ly + 1);
 }
+
+/** Light beam from a flashlight at (x0, y0) onto a spot (x1, y1) of radius r. */
+export function beam(g, x0, y0, x1, y1, r = 120, a = 0.42) {
+  g.save(); g.globalCompositeOperation = 'lighter';
+  const gr = g.createRadialGradient(x1, y1, 10, x1, y1, r);
+  gr.addColorStop(0, `rgba(255,240,200,${a})`); gr.addColorStop(1, 'rgba(255,240,200,0)');
+  g.fillStyle = gr;
+  const ang = Math.atan2(y1 - y0, x1 - x0), nx = -Math.sin(ang), ny = Math.cos(ang);
+  g.beginPath(); g.moveTo(x0, y0); g.lineTo(x1 + nx * r * 0.9, y1 + ny * r * 0.9); g.lineTo(x1 - nx * r * 0.9, y1 - ny * r * 0.9); g.closePath(); g.fill();
+  g.beginPath(); g.arc(x1, y1, r, 0, 7); g.fill();
+  g.restore();
+}
+
+/** Darkness everywhere except a soft round spot (a flashlight on a dark wall; keeps true colors). */
+export function spotlight(g, x, y, r, dark = 0.85) {
+  g.save();
+  g.beginPath(); g.rect(-400, -400, 1400, 1300); g.arc(x, y, r, 0, Math.PI * 2, true);
+  g.fillStyle = `rgba(8,12,30,${dark})`; g.fill('evenodd');
+  const gr = g.createRadialGradient(x, y, r * 0.55, x, y, r);
+  gr.addColorStop(0, 'rgba(8,12,30,0)'); gr.addColorStop(1, `rgba(8,12,30,${dark})`);
+  g.fillStyle = gr; g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.fill();
+  g.fillStyle = 'rgba(255,230,170,0.08)'; g.beginPath(); g.arc(x, y, r * 0.8, 0, Math.PI * 2); g.fill();
+  g.restore();
+}
+
+/** The wall behind a removed gauge: an open cavity, the cable going in, and its cut end. reveal 0..1 follows the cable. */
+export function gaugeCavity(g, cx, cy, t, { reveal = 1, light = 1 } = {}) {
+  g.fillStyle = '#d8d1c3'; g.fillRect(-40, -40, 620, 520);
+  roundRect(g, cx - 170, cy - 120, 340, 240, 14); g.fillStyle = '#2b2925'; g.fill(); g.strokeStyle = '#7a756b'; g.lineWidth = 5; g.stroke();
+  // insulation and brackets inside
+  g.fillStyle = '#c9a85a';
+  for (let i = 0; i < 6; i++) { g.globalAlpha = 0.35; g.beginPath(); g.ellipse(cx - 120 + i * 48, cy + 80 + 8 * Math.sin(i * 2.1), 30, 16, 0, 0, 7); g.fill(); }
+  g.globalAlpha = 1;
+  g.strokeStyle = '#55524b'; g.lineWidth = 6; g.beginPath(); g.moveTo(cx - 160, cy - 40); g.lineTo(cx + 160, cy - 40); g.stroke();
+  // the gauge's back plate (left) and its cable
+  g.fillStyle = '#6d6a63'; g.beginPath(); g.arc(cx - 110, cy - 10, 34, 0, 7); g.fill(); g.strokeStyle = INK; g.lineWidth = 2; g.stroke();
+  const P = (u) => { // cubic along the cable
+    const p0 = [cx - 110, cy + 20], p1 = [cx - 60, cy + 90], p2 = [cx + 30, cy - 70], p3 = [cx + 95, cy + 10];
+    const k = 1 - u;
+    return [k ** 3 * p0[0] + 3 * k * k * u * p1[0] + 3 * k * u * u * p2[0] + u ** 3 * p3[0], k ** 3 * p0[1] + 3 * k * k * u * p1[1] + 3 * k * u * u * p2[1] + u ** 3 * p3[1]];
+  };
+  for (const [col, w, dy] of [['#2a2a2a', 8, 0], ['#6b6b6b', 2.5, -2]]) {
+    g.strokeStyle = col; g.lineWidth = w; g.lineCap = 'round'; g.beginPath();
+    for (let i = 0; i <= 40; i++) { const [px, py] = P(i / 40); i ? g.lineTo(px, py + dy) : g.moveTo(px, py + dy); }
+    g.stroke();
+  }
+  // the end: cut, copper strands, a strip of tape. Nothing on the other side.
+  const [ex, ey] = P(1);
+  g.strokeStyle = '#e09040'; g.lineWidth = 2;
+  for (let k = -2; k <= 2; k++) { g.beginPath(); g.moveTo(ex, ey); g.quadraticCurveTo(ex + 10, ey + k * 2, ex + 20, ey + k * 5 + 2 * Math.sin(k * 1.7)); g.stroke(); }
+  g.fillStyle = '#efe7c8'; g.save(); g.translate(ex - 10, ey); g.rotate(0.4); g.fillRect(-9, -8, 16, 16); g.strokeStyle = '#a89f80'; g.lineWidth = 1; g.strokeRect(-9, -8, 16, 16); g.restore();
+  // darkness except where the flashlight follows the cable
+  if (light < 1) { g.fillStyle = `rgba(8,12,34,${0.7 * (1 - light)})`; g.fillRect(-40, -40, 620, 520); }
+  const [bx, by] = P(clamp(reveal));
+  return [bx, by];
+}
+
 
 /** A sleeping bag strapped to a wall, with a head poking out. */
 export function sleepBag(g, x, y, s, t, { who = 'sam', face = 'sleep', look = 0 } = {}) {

@@ -5,7 +5,7 @@ script.json:
     "lines": [ { "id": "hook", "at": 0.3, "text": "What if all *rubber* disappeared for five seconds?" }, ... ] }
 
 *word* marks a word the subtitles always highlight (the asterisks are not spoken).
-A line may add "fx": "helium" (voice shifted up, same length).
+A line may add "fx": "helium" (voice shifted up, same length) or "radio" (through a speaker).
 "at" is optional: a line without it starts "gap" seconds (script-level, default 0.25) after the
 previous line ends, plus its own "pause". "voice" may blend Kokoro voices: "bm_fable*0.6+am_michael*0.4".
 voice.json records each line's duration and per-word timings (seconds from the line start),
@@ -140,6 +140,11 @@ def main(video_dir):
             # same-length shift up is the closest cheap stand-in
             out = os.path.join(video_dir, rel)
             subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", out, "-af", f"asetrate={sr}*1.6,aresample={sr},atempo=0.625", out + ".fx.wav"], check=True)
+            os.replace(out + ".fx.wav", out)
+        elif line.get("fx") == "radio":
+            # a voice through a small speaker: narrow band, squashed, a little grit
+            out = os.path.join(video_dir, rel)
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", out, "-af", "highpass=f=380,lowpass=f=3000,acompressor=threshold=0.08:ratio=8:attack=2:release=60,acrusher=bits=10:mix=0.25,volume=1.5", out + ".fx.wav"], check=True)
             os.replace(out + ".fx.wav", out)
         duration = len(audio) / sr
         words = display_words(line["text"])

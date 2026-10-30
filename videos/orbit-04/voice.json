@@ -1,0 +1,1518 @@
+{
+ "voice": "bm_fable*0.6+am_michael*0.4",
+ "speed": 1.06,
+ "lines": [
+  {
+   "id": "wall",
+   "at": 0.52,
+   "text": "The wire went into the wall.",
+   "file": "voice/wall.wav",
+   "duration": 2.069,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.224
+    },
+    {
+     "text": "wire",
+     "hl": false,
+     "start": 0.224,
+     "end": 0.51
+    },
+    {
+     "text": "went",
+     "hl": false,
+     "start": 0.51,
+     "end": 0.796
+    },
+    {
+     "text": "into",
+     "hl": false,
+     "start": 0.796,
+     "end": 1.082
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.082,
+     "end": 1.197
+    },
+    {
+     "text": "wall.",
+     "hl": false,
+     "start": 1.197,
+     "end": 1.54
+    }
+   ]
+  },
+  {
+   "id": "stop2",
+   "at": 3.309,
+   "text": "And stopped.",
+   "file": "voice/stop2.wav",
+   "duration": 1.216,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.319
+    },
+    {
+     "text": "stopped.",
+     "hl": false,
+     "start": 0.319,
+     "end": 0.85
+    }
+   ]
+  },
+  {
+   "id": "never",
+   "at": 5.145,
+   "text": "The gauge was never connected to anything.",
+   "file": "voice/never.wav",
+   "duration": 2.816,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.238
+    },
+    {
+     "text": "gauge",
+     "hl": false,
+     "start": 0.238,
+     "end": 0.591
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.591,
+     "end": 0.768
+    },
+    {
+     "text": "never",
+     "hl": false,
+     "start": 0.768,
+     "end": 1.063
+    },
+    {
+     "text": "connected",
+     "hl": false,
+     "start": 1.063,
+     "end": 1.593
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 1.593,
+     "end": 1.77
+    },
+    {
+     "text": "anything.",
+     "hl": true,
+     "start": 1.77,
+     "end": 2.3
+    }
+   ]
+  },
+  {
+   "id": "made",
+   "at": 8.581,
+   "text": "Someone made that needle point to zero.",
+   "file": "voice/made.wav",
+   "duration": 2.731,
+   "words": [
+    {
+     "text": "Someone",
+     "hl": false,
+     "start": 0.09,
+     "end": 0.458
+    },
+    {
+     "text": "made",
+     "hl": false,
+     "start": 0.458,
+     "end": 0.72
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 0.72,
+     "end": 0.93
+    },
+    {
+     "text": "needle",
+     "hl": false,
+     "start": 0.93,
+     "end": 1.297
+    },
+    {
+     "text": "point",
+     "hl": false,
+     "start": 1.297,
+     "end": 1.612
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 1.612,
+     "end": 1.77
+    },
+    {
+     "text": "zero.",
+     "hl": false,
+     "start": 1.77,
+     "end": 2.19
+    }
+   ]
+  },
+  {
+   "id": "maybe",
+   "at": 11.532,
+   "text": "Which meant that behind Hatch 3, there might be air.",
+   "file": "voice/maybe.wav",
+   "duration": 3.328,
+   "words": [
+    {
+     "text": "Which",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.372
+    },
+    {
+     "text": "meant",
+     "hl": false,
+     "start": 0.372,
+     "end": 0.623
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 0.623,
+     "end": 0.824
+    },
+    {
+     "text": "behind",
+     "hl": false,
+     "start": 0.824,
+     "end": 1.227
+    },
+    {
+     "text": "Hatch",
+     "hl": false,
+     "start": 1.227,
+     "end": 1.478
+    },
+    {
+     "text": "3,",
+     "hl": false,
+     "start": 1.478,
+     "end": 1.78
+    },
+    {
+     "text": "there",
+     "hl": false,
+     "start": 2.0,
+     "end": 2.188
+    },
+    {
+     "text": "might",
+     "hl": false,
+     "start": 2.188,
+     "end": 2.424
+    },
+    {
+     "text": "be",
+     "hl": false,
+     "start": 2.424,
+     "end": 2.612
+    },
+    {
+     "text": "air.",
+     "hl": false,
+     "start": 2.612,
+     "end": 2.8
+    }
+   ]
+  },
+  {
+   "id": "alive",
+   "at": 15.08,
+   "text": "And someone might be alive.",
+   "file": "voice/alive.wav",
+   "duration": 2.027,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.276
+    },
+    {
+     "text": "someone",
+     "hl": false,
+     "start": 0.276,
+     "end": 0.639
+    },
+    {
+     "text": "might",
+     "hl": false,
+     "start": 0.639,
+     "end": 0.899
+    },
+    {
+     "text": "be",
+     "hl": false,
+     "start": 0.899,
+     "end": 1.107
+    },
+    {
+     "text": "alive.",
+     "hl": true,
+     "start": 1.107,
+     "end": 1.47
+    }
+   ]
+  },
+  {
+   "id": "thirty",
+   "at": 17.327,
+   "text": "Someone who had knocked for thirty nights. And then stopped.",
+   "file": "voice/thirty.wav",
+   "duration": 3.52,
+   "words": [
+    {
+     "text": "Someone",
+     "hl": false,
+     "start": 0.08,
+     "end": 0.43
+    },
+    {
+     "text": "who",
+     "hl": false,
+     "start": 0.43,
+     "end": 0.63
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 0.63,
+     "end": 0.83
+    },
+    {
+     "text": "knocked",
+     "hl": false,
+     "start": 0.83,
+     "end": 1.13
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 1.13,
+     "end": 1.33
+    },
+    {
+     "text": "thirty",
+     "hl": false,
+     "start": 1.33,
+     "end": 1.63
+    },
+    {
+     "text": "nights.",
+     "hl": false,
+     "start": 1.63,
+     "end": 1.98
+    },
+    {
+     "text": "And",
+     "hl": false,
+     "start": 2.22,
+     "end": 2.38
+    },
+    {
+     "text": "then",
+     "hl": false,
+     "start": 2.38,
+     "end": 2.593
+    },
+    {
+     "text": "stopped.",
+     "hl": false,
+     "start": 2.593,
+     "end": 3.02
+    }
+   ]
+  },
+  {
+   "id": "report",
+   "at": 21.367,
+   "text": "I called Ground. Ground, the Hatch 3 gauge is fake.",
+   "file": "voice/report.wav",
+   "duration": 3.84,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.261
+    },
+    {
+     "text": "called",
+     "hl": false,
+     "start": 0.261,
+     "end": 0.582
+    },
+    {
+     "text": "Ground.",
+     "hl": false,
+     "start": 0.582,
+     "end": 1.01
+    },
+    {
+     "text": "Ground,",
+     "hl": false,
+     "start": 1.38,
+     "end": 3.19
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 3.3,
+     "end": 3.301
+    },
+    {
+     "text": "Hatch",
+     "hl": false,
+     "start": 3.301,
+     "end": 3.303
+    },
+    {
+     "text": "3",
+     "hl": false,
+     "start": 3.303,
+     "end": 3.305
+    },
+    {
+     "text": "gauge",
+     "hl": false,
+     "start": 3.305,
+     "end": 3.307
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 3.307,
+     "end": 3.308
+    },
+    {
+     "text": "fake.",
+     "hl": false,
+     "start": 3.308,
+     "end": 3.31
+    }
+   ]
+  },
+  {
+   "id": "copy",
+   "at": 25.427,
+   "text": "Ground copies. Continue.",
+   "file": "voice/copy.wav",
+   "duration": 2.133,
+   "words": [
+    {
+     "text": "Ground",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.518
+    },
+    {
+     "text": "copies.",
+     "hl": false,
+     "start": 0.518,
+     "end": 0.95
+    },
+    {
+     "text": "Continue.",
+     "hl": false,
+     "start": 1.05,
+     "end": 1.65
+    }
+   ]
+  },
+  {
+   "id": "d90",
+   "at": 28.08,
+   "text": "Day ninety. Envelope three.",
+   "file": "voice/d90.wav",
+   "duration": 2.304,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.347
+    },
+    {
+     "text": "ninety.",
+     "hl": false,
+     "start": 0.347,
+     "end": 0.82
+    },
+    {
+     "text": "Envelope",
+     "hl": false,
+     "start": 0.96,
+     "end": 1.497
+    },
+    {
+     "text": "three.",
+     "hl": false,
+     "start": 1.497,
+     "end": 1.79
+    }
+   ]
+  },
+  {
+   "id": "env3",
+   "at": 30.604,
+   "text": "Channel 9. Don't answer. Whatever it says.",
+   "file": "voice/env3.wav",
+   "duration": 2.965,
+   "words": [
+    {
+     "text": "Channel",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.534
+    },
+    {
+     "text": "9.",
+     "hl": false,
+     "start": 0.534,
+     "end": 0.897
+    },
+    {
+     "text": "Don't",
+     "hl": false,
+     "start": 0.897,
+     "end": 1.26
+    },
+    {
+     "text": "answer.",
+     "hl": false,
+     "start": 1.26,
+     "end": 1.623
+    },
+    {
+     "text": "Whatever",
+     "hl": false,
+     "start": 1.623,
+     "end": 2.046
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 2.046,
+     "end": 2.167
+    },
+    {
+     "text": "says.",
+     "hl": false,
+     "start": 2.167,
+     "end": 2.47
+    }
+   ]
+  },
+  {
+   "id": "twice",
+   "at": 33.789,
+   "text": "He underlined it twice.",
+   "file": "voice/twice.wav",
+   "duration": 2.005,
+   "words": [
+    {
+     "text": "He",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.324
+    },
+    {
+     "text": "underlined",
+     "hl": false,
+     "start": 0.324,
+     "end": 0.998
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 0.998,
+     "end": 1.121
+    },
+    {
+     "text": "twice.",
+     "hl": false,
+     "start": 1.121,
+     "end": 1.55
+    }
+   ]
+  },
+  {
+   "id": "why",
+   "at": 36.014,
+   "text": "Why would Hale write the same rule twice?",
+   "file": "voice/why.wav",
+   "duration": 2.645,
+   "words": [
+    {
+     "text": "Why",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.362
+    },
+    {
+     "text": "would",
+     "hl": false,
+     "start": 0.362,
+     "end": 0.583
+    },
+    {
+     "text": "Hale",
+     "hl": false,
+     "start": 0.583,
+     "end": 0.86
+    },
+    {
+     "text": "write",
+     "hl": false,
+     "start": 0.86,
+     "end": 1.137
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.137,
+     "end": 1.248
+    },
+    {
+     "text": "same",
+     "hl": false,
+     "start": 1.248,
+     "end": 1.525
+    },
+    {
+     "text": "rule",
+     "hl": false,
+     "start": 1.525,
+     "end": 1.802
+    },
+    {
+     "text": "twice?",
+     "hl": false,
+     "start": 1.802,
+     "end": 2.19
+    }
+   ]
+  },
+  {
+   "id": "unless",
+   "at": 38.879,
+   "text": "Unless he knew something was going to call.",
+   "file": "voice/unless.wav",
+   "duration": 2.688,
+   "words": [
+    {
+     "text": "Unless",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.457
+    },
+    {
+     "text": "he",
+     "hl": false,
+     "start": 0.457,
+     "end": 0.616
+    },
+    {
+     "text": "knew",
+     "hl": false,
+     "start": 0.616,
+     "end": 0.828
+    },
+    {
+     "text": "something",
+     "hl": false,
+     "start": 0.828,
+     "end": 1.198
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 1.198,
+     "end": 1.357
+    },
+    {
+     "text": "going",
+     "hl": false,
+     "start": 1.357,
+     "end": 1.674
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 1.674,
+     "end": 1.833
+    },
+    {
+     "text": "call.",
+     "hl": false,
+     "start": 1.833,
+     "end": 2.15
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "at": 42.087,
+   "text": "Hale wrote rule one. Never open Hatch 3.",
+   "file": "voice/h1.wav",
+   "duration": 3.328,
+   "words": [
+    {
+     "text": "Hale",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.415
+    },
+    {
+     "text": "wrote",
+     "hl": false,
+     "start": 0.415,
+     "end": 0.69
+    },
+    {
+     "text": "rule",
+     "hl": false,
+     "start": 0.69,
+     "end": 0.965
+    },
+    {
+     "text": "one.",
+     "hl": false,
+     "start": 0.965,
+     "end": 1.24
+    },
+    {
+     "text": "Never",
+     "hl": false,
+     "start": 1.49,
+     "end": 1.785
+    },
+    {
+     "text": "open",
+     "hl": false,
+     "start": 1.785,
+     "end": 2.14
+    },
+    {
+     "text": "Hatch",
+     "hl": false,
+     "start": 2.14,
+     "end": 2.435
+    },
+    {
+     "text": "3.",
+     "hl": false,
+     "start": 2.435,
+     "end": 2.79
+    }
+   ]
+  },
+  {
+   "id": "h2",
+   "at": 45.635,
+   "text": "Hale wrote: trust the numbers.",
+   "file": "voice/h2.wav",
+   "duration": 2.133,
+   "words": [
+    {
+     "text": "Hale",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.372
+    },
+    {
+     "text": "wrote:",
+     "hl": false,
+     "start": 0.372,
+     "end": 0.65
+    },
+    {
+     "text": "trust",
+     "hl": false,
+     "start": 0.78,
+     "end": 1.106
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.106,
+     "end": 1.215
+    },
+    {
+     "text": "numbers.",
+     "hl": false,
+     "start": 1.215,
+     "end": 1.65
+    }
+   ]
+  },
+  {
+   "id": "hknew",
+   "at": 47.988,
+   "text": "Did Hale know?",
+   "file": "voice/hknew.wav",
+   "duration": 1.429,
+   "words": [
+    {
+     "text": "Did",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.364
+    },
+    {
+     "text": "Hale",
+     "hl": false,
+     "start": 0.364,
+     "end": 0.657
+    },
+    {
+     "text": "know?",
+     "hl": true,
+     "start": 0.657,
+     "end": 0.95
+    }
+   ]
+  },
+  {
+   "id": "leave",
+   "at": 49.637,
+   "text": "And if he knew, why did he leave me here?",
+   "file": "voice/leave.wav",
+   "duration": 2.432,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.258
+    },
+    {
+     "text": "if",
+     "hl": false,
+     "start": 0.258,
+     "end": 0.351
+    },
+    {
+     "text": "he",
+     "hl": false,
+     "start": 0.351,
+     "end": 0.489
+    },
+    {
+     "text": "knew,",
+     "hl": false,
+     "start": 0.489,
+     "end": 0.72
+    },
+    {
+     "text": "why",
+     "hl": false,
+     "start": 0.83,
+     "end": 1.001
+    },
+    {
+     "text": "did",
+     "hl": false,
+     "start": 1.001,
+     "end": 1.172
+    },
+    {
+     "text": "he",
+     "hl": false,
+     "start": 1.172,
+     "end": 1.301
+    },
+    {
+     "text": "leave",
+     "hl": false,
+     "start": 1.301,
+     "end": 1.515
+    },
+    {
+     "text": "me",
+     "hl": false,
+     "start": 1.515,
+     "end": 1.686
+    },
+    {
+     "text": "here?",
+     "hl": false,
+     "start": 1.686,
+     "end": 1.9
+    }
+   ]
+  },
+  {
+   "id": "nights",
+   "at": 52.589,
+   "text": "Every night, I pressed my ear to the hatch.",
+   "file": "voice/nights.wav",
+   "duration": 2.837,
+   "words": [
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.385
+    },
+    {
+     "text": "night,",
+     "hl": false,
+     "start": 0.385,
+     "end": 0.69
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.87,
+     "end": 1.036
+    },
+    {
+     "text": "pressed",
+     "hl": false,
+     "start": 1.036,
+     "end": 1.367
+    },
+    {
+     "text": "my",
+     "hl": false,
+     "start": 1.367,
+     "end": 1.587
+    },
+    {
+     "text": "ear",
+     "hl": false,
+     "start": 1.587,
+     "end": 1.753
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 1.753,
+     "end": 1.919
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.919,
+     "end": 2.029
+    },
+    {
+     "text": "hatch.",
+     "hl": false,
+     "start": 2.029,
+     "end": 2.36
+    }
+   ]
+  },
+  {
+   "id": "nothing",
+   "at": 55.646,
+   "text": "Nothing. No knocks. Just the fans.",
+   "file": "voice/nothing.wav",
+   "duration": 2.624,
+   "words": [
+    {
+     "text": "Nothing.",
+     "hl": false,
+     "start": 0.13,
+     "end": 1.04
+    },
+    {
+     "text": "No",
+     "hl": false,
+     "start": 1.12,
+     "end": 1.164
+    },
+    {
+     "text": "knocks.",
+     "hl": false,
+     "start": 1.164,
+     "end": 1.24
+    },
+    {
+     "text": "Just",
+     "hl": false,
+     "start": 1.32,
+     "end": 1.663
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.663,
+     "end": 1.777
+    },
+    {
+     "text": "fans.",
+     "hl": false,
+     "start": 1.777,
+     "end": 2.12
+    }
+   ]
+  },
+  {
+   "id": "d100",
+   "at": 58.79,
+   "text": "Day one hundred. I circled a date on the calendar.",
+   "file": "voice/d100.wav",
+   "duration": 3.477,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.325
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 0.325,
+     "end": 0.529
+    },
+    {
+     "text": "hundred.",
+     "hl": false,
+     "start": 0.529,
+     "end": 0.99
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 1.3,
+     "end": 1.451
+    },
+    {
+     "text": "circled",
+     "hl": false,
+     "start": 1.451,
+     "end": 1.853
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.853,
+     "end": 2.004
+    },
+    {
+     "text": "date",
+     "hl": false,
+     "start": 2.004,
+     "end": 2.256
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 2.256,
+     "end": 2.407
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.407,
+     "end": 2.507
+    },
+    {
+     "text": "calendar.",
+     "hl": false,
+     "start": 2.507,
+     "end": 2.96
+    }
+   ]
+  },
+  {
+   "id": "circle",
+   "at": 62.487,
+   "text": "Day 186. The day the oxygen runs out.",
+   "file": "voice/circle.wav",
+   "duration": 3.776,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.15,
+     "end": 0.341
+    },
+    {
+     "text": "186.",
+     "hl": false,
+     "start": 0.341,
+     "end": 1.44
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 1.77,
+     "end": 1.873
+    },
+    {
+     "text": "day",
+     "hl": false,
+     "start": 1.873,
+     "end": 2.079
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.079,
+     "end": 2.181
+    },
+    {
+     "text": "oxygen",
+     "hl": false,
+     "start": 2.181,
+     "end": 2.696
+    },
+    {
+     "text": "runs",
+     "hl": false,
+     "start": 2.696,
+     "end": 2.953
+    },
+    {
+     "text": "out.",
+     "hl": false,
+     "start": 2.953,
+     "end": 3.21
+    }
+   ]
+  },
+  {
+   "id": "away",
+   "at": 66.483,
+   "text": "Eighty-six days away. The ship was 265 days away.",
+   "file": "voice/away.wav",
+   "duration": 4.587,
+   "words": [
+    {
+     "text": "Eighty-six",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.696
+    },
+    {
+     "text": "days",
+     "hl": false,
+     "start": 0.696,
+     "end": 0.984
+    },
+    {
+     "text": "away.",
+     "hl": false,
+     "start": 0.984,
+     "end": 1.33
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 1.73,
+     "end": 1.837
+    },
+    {
+     "text": "ship",
+     "hl": false,
+     "start": 1.837,
+     "end": 2.052
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 2.052,
+     "end": 2.213
+    },
+    {
+     "text": "265",
+     "hl": false,
+     "start": 2.213,
+     "end": 3.5
+    },
+    {
+     "text": "days",
+     "hl": false,
+     "start": 3.5,
+     "end": 3.768
+    },
+    {
+     "text": "away.",
+     "hl": false,
+     "start": 3.768,
+     "end": 4.09
+    }
+   ]
+  },
+  {
+   "id": "counting",
+   "at": 71.29,
+   "text": "Every number on that station was counting down.",
+   "file": "voice/counting.wav",
+   "duration": 3.136,
+   "words": [
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.418
+    },
+    {
+     "text": "number",
+     "hl": false,
+     "start": 0.418,
+     "end": 0.764
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.764,
+     "end": 0.937
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 0.937,
+     "end": 1.168
+    },
+    {
+     "text": "station",
+     "hl": false,
+     "start": 1.168,
+     "end": 1.63
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 1.63,
+     "end": 1.803
+    },
+    {
+     "text": "counting",
+     "hl": false,
+     "start": 1.803,
+     "end": 2.264
+    },
+    {
+     "text": "down.",
+     "hl": false,
+     "start": 2.264,
+     "end": 2.61
+    }
+   ]
+  },
+  {
+   "id": "d104",
+   "at": 74.946,
+   "text": "Day one hundred four. Seven in the evening.",
+   "file": "voice/d104.wav",
+   "duration": 3.008,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.313
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 0.313,
+     "end": 0.505
+    },
+    {
+     "text": "hundred",
+     "hl": false,
+     "start": 0.505,
+     "end": 0.891
+    },
+    {
+     "text": "four.",
+     "hl": false,
+     "start": 0.891,
+     "end": 1.18
+    },
+    {
+     "text": "Seven",
+     "hl": false,
+     "start": 1.4,
+     "end": 1.744
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 1.744,
+     "end": 1.916
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.916,
+     "end": 2.031
+    },
+    {
+     "text": "evening.",
+     "hl": false,
+     "start": 2.031,
+     "end": 2.49
+    }
+   ]
+  },
+  {
+   "id": "lamp",
+   "at": 78.174,
+   "text": "A light came on that I had never seen lit before.",
+   "file": "voice/lamp.wav",
+   "duration": 3.264,
+   "words": [
+    {
+     "text": "A",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.281
+    },
+    {
+     "text": "light",
+     "hl": false,
+     "start": 0.281,
+     "end": 0.549
+    },
+    {
+     "text": "came",
+     "hl": false,
+     "start": 0.549,
+     "end": 0.818
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.818,
+     "end": 0.979
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 0.979,
+     "end": 1.193
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 1.193,
+     "end": 1.354
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 1.354,
+     "end": 1.569
+    },
+    {
+     "text": "never",
+     "hl": false,
+     "start": 1.569,
+     "end": 1.838
+    },
+    {
+     "text": "seen",
+     "hl": false,
+     "start": 1.838,
+     "end": 2.106
+    },
+    {
+     "text": "lit",
+     "hl": false,
+     "start": 2.106,
+     "end": 2.321
+    },
+    {
+     "text": "before.",
+     "hl": false,
+     "start": 2.321,
+     "end": 2.75
+    }
+   ]
+  },
+  {
+   "id": "ch9",
+   "at": 81.658,
+   "text": "Channel 9.",
+   "file": "voice/ch9.wav",
+   "duration": 1.365,
+   "words": [
+    {
+     "text": "Channel",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.531
+    },
+    {
+     "text": "9.",
+     "hl": false,
+     "start": 0.531,
+     "end": 0.9
+    }
+   ]
+  },
+  {
+   "id": "neverused",
+   "at": 83.243,
+   "text": "Ground had never used channel 9.",
+   "file": "voice/neverused.wav",
+   "duration": 2.475,
+   "words": [
+    {
+     "text": "Ground",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.5
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 0.5,
+     "end": 0.706
+    },
+    {
+     "text": "never",
+     "hl": false,
+     "start": 0.706,
+     "end": 0.963
+    },
+    {
+     "text": "used",
+     "hl": false,
+     "start": 0.963,
+     "end": 1.271
+    },
+    {
+     "text": "channel",
+     "hl": false,
+     "start": 1.271,
+     "end": 1.631
+    },
+    {
+     "text": "9.",
+     "hl": false,
+     "start": 1.631,
+     "end": 1.94
+    }
+   ]
+  },
+  {
+   "id": "click",
+   "at": 85.938,
+   "text": "The radio clicked. And a voice said:",
+   "file": "voice/click.wav",
+   "duration": 2.603,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.234
+    },
+    {
+     "text": "radio",
+     "hl": false,
+     "start": 0.234,
+     "end": 0.749
+    },
+    {
+     "text": "clicked.",
+     "hl": false,
+     "start": 0.749,
+     "end": 1.15
+    },
+    {
+     "text": "And",
+     "hl": false,
+     "start": 1.32,
+     "end": 1.463
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.463,
+     "end": 1.605
+    },
+    {
+     "text": "voice",
+     "hl": false,
+     "start": 1.605,
+     "end": 1.843
+    },
+    {
+     "text": "said:",
+     "hl": false,
+     "start": 1.843,
+     "end": 2.08
+    }
+   ]
+  },
+  {
+   "id": "voice",
+   "at": 89.361,
+   "text": "This is Ground. Open Hatch 3.",
+   "file": "voice/voice.wav",
+   "duration": 2.517,
+   "words": [
+    {
+     "text": "This",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.339
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 0.339,
+     "end": 0.443
+    },
+    {
+     "text": "Ground.",
+     "hl": false,
+     "start": 0.443,
+     "end": 0.86
+    },
+    {
+     "text": "Open",
+     "hl": true,
+     "start": 1.0,
+     "end": 1.353
+    },
+    {
+     "text": "Hatch",
+     "hl": true,
+     "start": 1.353,
+     "end": 1.647
+    },
+    {
+     "text": "3.",
+     "hl": true,
+     "start": 1.647,
+     "end": 2.0
+    }
+   ]
+  }
+ ]
+}

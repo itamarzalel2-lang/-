@@ -1,0 +1,1680 @@
+{
+ "voice": "bm_fable*0.6+am_michael*0.4",
+ "speed": 1.06,
+ "lines": [
+  {
+   "id": "from",
+   "at": 0.52,
+   "text": "It came from Hatch 3.",
+   "file": "voice/from.wav",
+   "duration": 1.856,
+   "words": [
+    {
+     "text": "It",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.224
+    },
+    {
+     "text": "came",
+     "hl": false,
+     "start": 0.224,
+     "end": 0.508
+    },
+    {
+     "text": "from",
+     "hl": false,
+     "start": 0.508,
+     "end": 0.735
+    },
+    {
+     "text": "Hatch",
+     "hl": false,
+     "start": 0.735,
+     "end": 1.019
+    },
+    {
+     "text": "3.",
+     "hl": false,
+     "start": 1.019,
+     "end": 1.36
+    }
+   ]
+  },
+  {
+   "id": "noair",
+   "at": 2.596,
+   "text": "From a room with no air.",
+   "file": "voice/noair.wav",
+   "duration": 1.963,
+   "words": [
+    {
+     "text": "From",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.335
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.335,
+     "end": 0.511
+    },
+    {
+     "text": "room",
+     "hl": false,
+     "start": 0.511,
+     "end": 0.804
+    },
+    {
+     "text": "with",
+     "hl": false,
+     "start": 0.804,
+     "end": 0.98
+    },
+    {
+     "text": "no",
+     "hl": true,
+     "start": 0.98,
+     "end": 1.215
+    },
+    {
+     "text": "air.",
+     "hl": true,
+     "start": 1.215,
+     "end": 1.45
+    }
+   ]
+  },
+  {
+   "id": "still",
+   "at": 5.179,
+   "text": "I didn't move. I didn't breathe.",
+   "file": "voice/still.wav",
+   "duration": 2.219,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.258
+    },
+    {
+     "text": "didn't",
+     "hl": false,
+     "start": 0.258,
+     "end": 0.534
+    },
+    {
+     "text": "move.",
+     "hl": false,
+     "start": 0.534,
+     "end": 0.81
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.89,
+     "end": 1.049
+    },
+    {
+     "text": "didn't",
+     "hl": false,
+     "start": 1.049,
+     "end": 1.368
+    },
+    {
+     "text": "breathe.",
+     "hl": false,
+     "start": 1.368,
+     "end": 1.74
+    }
+   ]
+  },
+  {
+   "id": "stare",
+   "at": 7.618,
+   "text": "I just floated there with a flashlight, staring at a door that had nothing behind it.",
+   "file": "voice/stare.wav",
+   "duration": 4.885,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.257
+    },
+    {
+     "text": "just",
+     "hl": false,
+     "start": 0.257,
+     "end": 0.531
+    },
+    {
+     "text": "floated",
+     "hl": false,
+     "start": 0.531,
+     "end": 0.896
+    },
+    {
+     "text": "there",
+     "hl": false,
+     "start": 0.896,
+     "end": 1.079
+    },
+    {
+     "text": "with",
+     "hl": false,
+     "start": 1.079,
+     "end": 1.216
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.216,
+     "end": 1.353
+    },
+    {
+     "text": "flashlight,",
+     "hl": false,
+     "start": 1.353,
+     "end": 1.81
+    },
+    {
+     "text": "staring",
+     "hl": false,
+     "start": 2.18,
+     "end": 2.532
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 2.532,
+     "end": 2.632
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 2.632,
+     "end": 2.783
+    },
+    {
+     "text": "door",
+     "hl": false,
+     "start": 2.783,
+     "end": 3.034
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 3.034,
+     "end": 3.235
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 3.235,
+     "end": 3.436
+    },
+    {
+     "text": "nothing",
+     "hl": false,
+     "start": 3.436,
+     "end": 3.737
+    },
+    {
+     "text": "behind",
+     "hl": false,
+     "start": 3.737,
+     "end": 4.139
+    },
+    {
+     "text": "it.",
+     "hl": false,
+     "start": 4.139,
+     "end": 4.29
+    }
+   ]
+  },
+  {
+   "id": "zero",
+   "at": 12.723,
+   "text": "The gauge still said zero.",
+   "file": "voice/zero.wav",
+   "duration": 2.176,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.237
+    },
+    {
+     "text": "gauge",
+     "hl": false,
+     "start": 0.237,
+     "end": 0.619
+    },
+    {
+     "text": "still",
+     "hl": false,
+     "start": 0.619,
+     "end": 0.937
+    },
+    {
+     "text": "said",
+     "hl": false,
+     "start": 0.937,
+     "end": 1.191
+    },
+    {
+     "text": "zero.",
+     "hl": false,
+     "start": 1.191,
+     "end": 1.7
+    }
+   ]
+  },
+  {
+   "id": "nosleep",
+   "at": 15.119,
+   "text": "I didn't sleep again that night.",
+   "file": "voice/nosleep.wav",
+   "duration": 2.176,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.287
+    },
+    {
+     "text": "didn't",
+     "hl": false,
+     "start": 0.287,
+     "end": 0.601
+    },
+    {
+     "text": "sleep",
+     "hl": false,
+     "start": 0.601,
+     "end": 0.915
+    },
+    {
+     "text": "again",
+     "hl": false,
+     "start": 0.915,
+     "end": 1.177
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 1.177,
+     "end": 1.386
+    },
+    {
+     "text": "night.",
+     "hl": false,
+     "start": 1.386,
+     "end": 1.7
+    }
+   ]
+  },
+  {
+   "id": "morning",
+   "at": 17.815,
+   "text": "In the morning, I called Ground on channel 4.",
+   "file": "voice/morning.wav",
+   "duration": 3.093,
+   "words": [
+    {
+     "text": "In",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.252
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.252,
+     "end": 0.334
+    },
+    {
+     "text": "morning,",
+     "hl": false,
+     "start": 0.334,
+     "end": 0.7
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.84,
+     "end": 1.0
+    },
+    {
+     "text": "called",
+     "hl": false,
+     "start": 1.0,
+     "end": 1.321
+    },
+    {
+     "text": "Ground",
+     "hl": false,
+     "start": 1.321,
+     "end": 1.695
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 1.695,
+     "end": 1.855
+    },
+    {
+     "text": "channel",
+     "hl": false,
+     "start": 1.855,
+     "end": 2.229
+    },
+    {
+     "text": "4.",
+     "hl": false,
+     "start": 2.229,
+     "end": 2.55
+    }
+   ]
+  },
+  {
+   "id": "report",
+   "at": 21.128,
+   "text": "Ground, I heard knocking. From Module 3.",
+   "file": "voice/report.wav",
+   "duration": 3.072,
+   "words": [
+    {
+     "text": "Ground,",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.584
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.584,
+     "end": 0.754
+    },
+    {
+     "text": "heard",
+     "hl": false,
+     "start": 0.754,
+     "end": 1.038
+    },
+    {
+     "text": "knocking.",
+     "hl": false,
+     "start": 1.038,
+     "end": 1.492
+    },
+    {
+     "text": "From",
+     "hl": false,
+     "start": 1.492,
+     "end": 1.719
+    },
+    {
+     "text": "Module",
+     "hl": false,
+     "start": 1.719,
+     "end": 2.23
+    },
+    {
+     "text": "3.",
+     "hl": false,
+     "start": 2.23,
+     "end": 2.57
+    }
+   ]
+  },
+  {
+   "id": "first",
+   "at": 24.42,
+   "text": "For the first time in forty days, Ground said more than three words.",
+   "file": "voice/first.wav",
+   "duration": 4.139,
+   "words": [
+    {
+     "text": "For",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.314
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.314,
+     "end": 0.411
+    },
+    {
+     "text": "first",
+     "hl": false,
+     "start": 0.411,
+     "end": 0.702
+    },
+    {
+     "text": "time",
+     "hl": false,
+     "start": 0.702,
+     "end": 0.944
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 0.944,
+     "end": 1.09
+    },
+    {
+     "text": "forty",
+     "hl": false,
+     "start": 1.09,
+     "end": 1.429
+    },
+    {
+     "text": "days,",
+     "hl": false,
+     "start": 1.429,
+     "end": 1.72
+    },
+    {
+     "text": "Ground",
+     "hl": false,
+     "start": 2.01,
+     "end": 2.385
+    },
+    {
+     "text": "said",
+     "hl": false,
+     "start": 2.385,
+     "end": 2.599
+    },
+    {
+     "text": "more",
+     "hl": false,
+     "start": 2.599,
+     "end": 2.867
+    },
+    {
+     "text": "than",
+     "hl": false,
+     "start": 2.867,
+     "end": 3.027
+    },
+    {
+     "text": "three",
+     "hl": false,
+     "start": 3.027,
+     "end": 3.295
+    },
+    {
+     "text": "words.",
+     "hl": false,
+     "start": 3.295,
+     "end": 3.67
+    }
+   ]
+  },
+  {
+   "id": "thermal",
+   "at": 28.779,
+   "text": "Thermal expansion. Ignore it. Continue.",
+   "file": "voice/thermal.wav",
+   "duration": 2.965,
+   "words": [
+    {
+     "text": "Thermal",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.492
+    },
+    {
+     "text": "expansion.",
+     "hl": false,
+     "start": 0.492,
+     "end": 1.06
+    },
+    {
+     "text": "Ignore",
+     "hl": false,
+     "start": 1.23,
+     "end": 1.601
+    },
+    {
+     "text": "it.",
+     "hl": false,
+     "start": 1.601,
+     "end": 1.76
+    },
+    {
+     "text": "Continue.",
+     "hl": false,
+     "start": 1.93,
+     "end": 2.45
+    }
+   ]
+  },
+  {
+   "id": "true1",
+   "at": 31.964,
+   "text": "And that's real. One lap around the Earth takes ninety minutes.",
+   "file": "voice/true1.wav",
+   "duration": 3.84,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.282
+    },
+    {
+     "text": "that's",
+     "hl": false,
+     "start": 0.282,
+     "end": 0.535
+    },
+    {
+     "text": "real.",
+     "hl": false,
+     "start": 0.535,
+     "end": 0.89
+    },
+    {
+     "text": "One",
+     "hl": false,
+     "start": 1.2,
+     "end": 1.409
+    },
+    {
+     "text": "lap",
+     "hl": false,
+     "start": 1.409,
+     "end": 1.617
+    },
+    {
+     "text": "around",
+     "hl": false,
+     "start": 1.617,
+     "end": 1.982
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.982,
+     "end": 2.086
+    },
+    {
+     "text": "Earth",
+     "hl": false,
+     "start": 2.086,
+     "end": 2.295
+    },
+    {
+     "text": "takes",
+     "hl": false,
+     "start": 2.295,
+     "end": 2.608
+    },
+    {
+     "text": "ninety",
+     "hl": false,
+     "start": 2.608,
+     "end": 2.973
+    },
+    {
+     "text": "minutes.",
+     "hl": false,
+     "start": 2.973,
+     "end": 3.39
+    }
+   ]
+  },
+  {
+   "id": "true2",
+   "at": 36.024,
+   "text": "Forty-five in the sun. Forty-five in the shadow. The metal heats up, cools down, and creaks.",
+   "file": "voice/true2.wav",
+   "duration": 5.589,
+   "words": [
+    {
+     "text": "Forty-five",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.713
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 0.713,
+     "end": 0.856
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.856,
+     "end": 0.951
+    },
+    {
+     "text": "sun.",
+     "hl": false,
+     "start": 0.951,
+     "end": 1.19
+    },
+    {
+     "text": "Forty-five",
+     "hl": false,
+     "start": 1.4,
+     "end": 1.975
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 1.975,
+     "end": 2.119
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.119,
+     "end": 2.215
+    },
+    {
+     "text": "shadow.",
+     "hl": false,
+     "start": 2.215,
+     "end": 2.55
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 2.95,
+     "end": 3.036
+    },
+    {
+     "text": "metal",
+     "hl": false,
+     "start": 3.036,
+     "end": 3.292
+    },
+    {
+     "text": "heats",
+     "hl": false,
+     "start": 3.292,
+     "end": 3.549
+    },
+    {
+     "text": "up,",
+     "hl": false,
+     "start": 3.549,
+     "end": 3.72
+    },
+    {
+     "text": "cools",
+     "hl": false,
+     "start": 3.89,
+     "end": 4.39
+    },
+    {
+     "text": "down,",
+     "hl": false,
+     "start": 4.39,
+     "end": 4.89
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 4.98,
+     "end": 5.021
+    },
+    {
+     "text": "creaks.",
+     "hl": false,
+     "start": 5.021,
+     "end": 5.13
+    }
+   ]
+  },
+  {
+   "id": "but",
+   "at": 41.833,
+   "text": "But metal doesn't knock three times.",
+   "file": "voice/but.wav",
+   "duration": 2.411,
+   "words": [
+    {
+     "text": "But",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.335
+    },
+    {
+     "text": "metal",
+     "hl": false,
+     "start": 0.335,
+     "end": 0.658
+    },
+    {
+     "text": "doesn't",
+     "hl": false,
+     "start": 0.658,
+     "end": 1.035
+    },
+    {
+     "text": "knock",
+     "hl": false,
+     "start": 1.035,
+     "end": 1.304
+    },
+    {
+     "text": "three",
+     "hl": true,
+     "start": 1.304,
+     "end": 1.573
+    },
+    {
+     "text": "times.",
+     "hl": true,
+     "start": 1.573,
+     "end": 1.95
+    }
+   ]
+  },
+  {
+   "id": "d41",
+   "at": 44.764,
+   "text": "Day forty-one. Three in the morning.",
+   "file": "voice/d41.wav",
+   "duration": 2.475,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.328
+    },
+    {
+     "text": "forty-one.",
+     "hl": false,
+     "start": 0.328,
+     "end": 0.89
+    },
+    {
+     "text": "Three",
+     "hl": false,
+     "start": 0.96,
+     "end": 1.226
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 1.226,
+     "end": 1.385
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.385,
+     "end": 1.492
+    },
+    {
+     "text": "morning.",
+     "hl": false,
+     "start": 1.492,
+     "end": 1.97
+    }
+   ]
+  },
+  {
+   "id": "kk1",
+   "at": 47.759,
+   "text": "Knock. Knock. Knock.",
+   "file": "voice/kk1.wav",
+   "duration": 1.685,
+   "words": [
+    {
+     "text": "Knock.",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.473
+    },
+    {
+     "text": "Knock.",
+     "hl": false,
+     "start": 0.473,
+     "end": 0.837
+    },
+    {
+     "text": "Knock.",
+     "hl": false,
+     "start": 0.837,
+     "end": 1.2
+    }
+   ]
+  },
+  {
+   "id": "d42",
+   "at": 49.964,
+   "text": "Day forty-two. Three in the morning.",
+   "file": "voice/d42.wav",
+   "duration": 2.56,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.15,
+     "end": 0.352
+    },
+    {
+     "text": "forty-two.",
+     "hl": false,
+     "start": 0.352,
+     "end": 0.96
+    },
+    {
+     "text": "Three",
+     "hl": false,
+     "start": 1.13,
+     "end": 1.369
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 1.369,
+     "end": 1.513
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.513,
+     "end": 1.609
+    },
+    {
+     "text": "morning.",
+     "hl": false,
+     "start": 1.609,
+     "end": 2.04
+    }
+   ]
+  },
+  {
+   "id": "kk2",
+   "at": 53.044,
+   "text": "Knock. Knock. Knock.",
+   "file": "voice/kk2.wav",
+   "duration": 1.685,
+   "words": [
+    {
+     "text": "Knock.",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.473
+    },
+    {
+     "text": "Knock.",
+     "hl": false,
+     "start": 0.473,
+     "end": 0.837
+    },
+    {
+     "text": "Knock.",
+     "hl": false,
+     "start": 0.837,
+     "end": 1.2
+    }
+   ]
+  },
+  {
+   "id": "every",
+   "at": 55.149,
+   "text": "Every night. Exactly at three.",
+   "file": "voice/every.wav",
+   "duration": 2.411,
+   "words": [
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.386
+    },
+    {
+     "text": "night.",
+     "hl": false,
+     "start": 0.386,
+     "end": 0.73
+    },
+    {
+     "text": "Exactly",
+     "hl": false,
+     "start": 0.84,
+     "end": 1.396
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 1.396,
+     "end": 1.519
+    },
+    {
+     "text": "three.",
+     "hl": false,
+     "start": 1.519,
+     "end": 1.89
+    }
+   ]
+  },
+  {
+   "id": "math",
+   "at": 58.08,
+   "text": "So I did the math on the oxygen.",
+   "file": "voice/math.wav",
+   "duration": 2.453,
+   "words": [
+    {
+     "text": "So",
+     "hl": false,
+     "start": 0.08,
+     "end": 0.307
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.307,
+     "end": 0.477
+    },
+    {
+     "text": "did",
+     "hl": false,
+     "start": 0.477,
+     "end": 0.703
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.703,
+     "end": 0.817
+    },
+    {
+     "text": "math",
+     "hl": false,
+     "start": 0.817,
+     "end": 1.043
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 1.043,
+     "end": 1.213
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.213,
+     "end": 1.327
+    },
+    {
+     "text": "oxygen.",
+     "hl": false,
+     "start": 1.327,
+     "end": 1.95
+    }
+   ]
+  },
+  {
+   "id": "empty",
+   "at": 60.753,
+   "text": "At 1.7 kilos a day, the tank would be empty on day 186.",
+   "file": "voice/empty.wav",
+   "duration": 5.355,
+   "words": [
+    {
+     "text": "At",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.222
+    },
+    {
+     "text": "1.7",
+     "hl": false,
+     "start": 0.222,
+     "end": 0.985
+    },
+    {
+     "text": "kilos",
+     "hl": false,
+     "start": 0.985,
+     "end": 1.393
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.393,
+     "end": 1.545
+    },
+    {
+     "text": "day,",
+     "hl": false,
+     "start": 1.545,
+     "end": 1.8
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.16,
+     "end": 2.267
+    },
+    {
+     "text": "tank",
+     "hl": false,
+     "start": 2.267,
+     "end": 2.535
+    },
+    {
+     "text": "would",
+     "hl": false,
+     "start": 2.535,
+     "end": 2.749
+    },
+    {
+     "text": "be",
+     "hl": false,
+     "start": 2.749,
+     "end": 2.963
+    },
+    {
+     "text": "empty",
+     "hl": false,
+     "start": 2.963,
+     "end": 3.284
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 3.284,
+     "end": 3.445
+    },
+    {
+     "text": "day",
+     "hl": false,
+     "start": 3.445,
+     "end": 3.659
+    },
+    {
+     "text": "186.",
+     "hl": false,
+     "start": 3.659,
+     "end": 4.89
+    }
+   ]
+  },
+  {
+   "id": "ship",
+   "at": 66.328,
+   "text": "The next ship comes on day 365.",
+   "file": "voice/ship.wav",
+   "duration": 3.371,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.228
+    },
+    {
+     "text": "next",
+     "hl": false,
+     "start": 0.228,
+     "end": 0.554
+    },
+    {
+     "text": "ship",
+     "hl": false,
+     "start": 0.554,
+     "end": 0.77
+    },
+    {
+     "text": "comes",
+     "hl": false,
+     "start": 0.77,
+     "end": 1.041
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 1.041,
+     "end": 1.204
+    },
+    {
+     "text": "day",
+     "hl": false,
+     "start": 1.204,
+     "end": 1.421
+    },
+    {
+     "text": "365.",
+     "hl": false,
+     "start": 1.421,
+     "end": 2.83
+    }
+   ]
+  },
+  {
+   "id": "d60",
+   "at": 70.219,
+   "text": "Day sixty. Envelope two.",
+   "file": "voice/d60.wav",
+   "duration": 2.261,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.53
+    },
+    {
+     "text": "sixty.",
+     "hl": false,
+     "start": 0.53,
+     "end": 1.31
+    },
+    {
+     "text": "Envelope",
+     "hl": false,
+     "start": 1.41,
+     "end": 1.644
+    },
+    {
+     "text": "two.",
+     "hl": false,
+     "start": 1.644,
+     "end": 1.75
+    }
+   ]
+  },
+  {
+   "id": "env2",
+   "at": 72.7,
+   "text": "If the numbers and Ground ever disagree, trust the numbers.",
+   "file": "voice/env2.wav",
+   "duration": 3.733,
+   "words": [
+    {
+     "text": "If",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.234
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.234,
+     "end": 0.349
+    },
+    {
+     "text": "numbers",
+     "hl": false,
+     "start": 0.349,
+     "end": 0.749
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 0.749,
+     "end": 0.921
+    },
+    {
+     "text": "Ground",
+     "hl": false,
+     "start": 0.921,
+     "end": 1.322
+    },
+    {
+     "text": "ever",
+     "hl": false,
+     "start": 1.322,
+     "end": 1.551
+    },
+    {
+     "text": "disagree,",
+     "hl": false,
+     "start": 1.551,
+     "end": 2.18
+    },
+    {
+     "text": "trust",
+     "hl": false,
+     "start": 2.43,
+     "end": 2.745
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.745,
+     "end": 2.85
+    },
+    {
+     "text": "numbers.",
+     "hl": false,
+     "start": 2.85,
+     "end": 3.27
+    }
+   ]
+  },
+  {
+   "id": "nums",
+   "at": 76.653,
+   "text": "The numbers said someone was breathing.",
+   "file": "voice/nums.wav",
+   "duration": 2.624,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.245
+    },
+    {
+     "text": "numbers",
+     "hl": false,
+     "start": 0.245,
+     "end": 0.682
+    },
+    {
+     "text": "said",
+     "hl": false,
+     "start": 0.682,
+     "end": 0.932
+    },
+    {
+     "text": "someone",
+     "hl": false,
+     "start": 0.932,
+     "end": 1.37
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 1.37,
+     "end": 1.558
+    },
+    {
+     "text": "breathing.",
+     "hl": false,
+     "start": 1.558,
+     "end": 2.12
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "at": 79.497,
+   "text": "Ground said I was alone.",
+   "file": "voice/ground.wav",
+   "duration": 1.963,
+   "words": [
+    {
+     "text": "Ground",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.515
+    },
+    {
+     "text": "said",
+     "hl": false,
+     "start": 0.515,
+     "end": 0.735
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.735,
+     "end": 0.9
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.9,
+     "end": 1.065
+    },
+    {
+     "text": "alone.",
+     "hl": false,
+     "start": 1.065,
+     "end": 1.45
+    }
+   ]
+  },
+  {
+   "id": "d61",
+   "at": 81.98,
+   "text": "Day sixty-one. Two fifty-nine in the morning.",
+   "file": "voice/d61.wav",
+   "duration": 3.115,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.333
+    },
+    {
+     "text": "sixty-one.",
+     "hl": false,
+     "start": 0.333,
+     "end": 0.97
+    },
+    {
+     "text": "Two",
+     "hl": false,
+     "start": 1.19,
+     "end": 1.384
+    },
+    {
+     "text": "fifty-nine",
+     "hl": false,
+     "start": 1.384,
+     "end": 1.919
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 1.919,
+     "end": 2.065
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.065,
+     "end": 2.162
+    },
+    {
+     "text": "morning.",
+     "hl": false,
+     "start": 2.162,
+     "end": 2.6
+    }
+   ]
+  },
+  {
+   "id": "wait",
+   "at": 85.315,
+   "text": "This time I was awake. Waiting at the hatch.",
+   "file": "voice/wait.wav",
+   "duration": 2.944,
+   "words": [
+    {
+     "text": "This",
+     "hl": false,
+     "start": 0.15,
+     "end": 0.35
+    },
+    {
+     "text": "time",
+     "hl": false,
+     "start": 0.35,
+     "end": 0.6
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.6,
+     "end": 0.75
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.75,
+     "end": 0.9
+    },
+    {
+     "text": "awake.",
+     "hl": false,
+     "start": 0.9,
+     "end": 1.25
+    },
+    {
+     "text": "Waiting",
+     "hl": false,
+     "start": 1.52,
+     "end": 1.911
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 1.911,
+     "end": 2.023
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.023,
+     "end": 2.135
+    },
+    {
+     "text": "hatch.",
+     "hl": false,
+     "start": 2.135,
+     "end": 2.47
+    }
+   ]
+  },
+  {
+   "id": "three",
+   "at": 88.479,
+   "text": "Three o'clock came. Nothing.",
+   "file": "voice/three.wav",
+   "duration": 2.197,
+   "words": [
+    {
+     "text": "Three",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.383
+    },
+    {
+     "text": "o'clock",
+     "hl": false,
+     "start": 0.383,
+     "end": 0.78
+    },
+    {
+     "text": "came.",
+     "hl": false,
+     "start": 0.78,
+     "end": 1.12
+    },
+    {
+     "text": "Nothing.",
+     "hl": false,
+     "start": 1.24,
+     "end": 1.71
+    }
+   ]
+  },
+  {
+   "id": "seven",
+   "at": 91.296,
+   "text": "Then at three-oh-seven, the knocks came back.",
+   "file": "voice/seven.wav",
+   "duration": 2.859,
+   "words": [
+    {
+     "text": "Then",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.35
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 0.35,
+     "end": 0.454
+    },
+    {
+     "text": "three-oh-seven,",
+     "hl": false,
+     "start": 0.454,
+     "end": 1.24
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.37,
+     "end": 1.468
+    },
+    {
+     "text": "knocks",
+     "hl": false,
+     "start": 1.468,
+     "end": 1.761
+    },
+    {
+     "text": "came",
+     "hl": false,
+     "start": 1.761,
+     "end": 2.006
+    },
+    {
+     "text": "back.",
+     "hl": false,
+     "start": 2.006,
+     "end": 2.25
+    }
+   ]
+  },
+  {
+   "id": "diff",
+   "at": 94.375,
+   "text": "But they were different.",
+   "file": "voice/diff.wav",
+   "duration": 1.643,
+   "words": [
+    {
+     "text": "But",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.337
+    },
+    {
+     "text": "they",
+     "hl": false,
+     "start": 0.337,
+     "end": 0.508
+    },
+    {
+     "text": "were",
+     "hl": false,
+     "start": 0.508,
+     "end": 0.678
+    },
+    {
+     "text": "different.",
+     "hl": false,
+     "start": 0.678,
+     "end": 1.19
+    }
+   ]
+  },
+  {
+   "id": "sos",
+   "at": 100.138,
+   "text": "Three short. Three long. Three short.",
+   "file": "voice/sos.wav",
+   "duration": 2.581,
+   "words": [
+    {
+     "text": "Three",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.357
+    },
+    {
+     "text": "short.",
+     "hl": false,
+     "start": 0.357,
+     "end": 0.66
+    },
+    {
+     "text": "Three",
+     "hl": false,
+     "start": 0.83,
+     "end": 1.095
+    },
+    {
+     "text": "long.",
+     "hl": false,
+     "start": 1.095,
+     "end": 1.36
+    },
+    {
+     "text": "Three",
+     "hl": false,
+     "start": 1.47,
+     "end": 1.728
+    },
+    {
+     "text": "short.",
+     "hl": false,
+     "start": 1.728,
+     "end": 2.09
+    }
+   ]
+  },
+  {
+   "id": "knew",
+   "at": 102.939,
+   "text": "And I knew exactly what it meant.",
+   "file": "voice/knew.wav",
+   "duration": 2.283,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.293
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.293,
+     "end": 0.455
+    },
+    {
+     "text": "knew",
+     "hl": false,
+     "start": 0.455,
+     "end": 0.672
+    },
+    {
+     "text": "exactly",
+     "hl": true,
+     "start": 0.672,
+     "end": 1.16
+    },
+    {
+     "text": "what",
+     "hl": false,
+     "start": 1.16,
+     "end": 1.376
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 1.376,
+     "end": 1.485
+    },
+    {
+     "text": "meant.",
+     "hl": false,
+     "start": 1.485,
+     "end": 1.81
+    }
+   ]
+  }
+ ]
+}

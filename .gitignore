@@ -15,3 +15,5 @@ out/**/text/
 out/**/subs/
 out/*.zip
 out/what-if-videos/
+out/series-queue.sh
+out/series-done.txt
