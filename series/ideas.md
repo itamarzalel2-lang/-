@@ -26,7 +26,7 @@ Kokoro can't clone a voice. An exact copy would need a cloning service (for exam
 
 | # | Series | Rules (from a letter) | The three numbers | Part 1 ends on | Status |
 |---|---|---|---|---|---|
-| 1 | **Alone in Orbit: Day 1 to Day 365** | Never open Hatch 3. Check the three numbers every morning. If anything calls on channel 9, don't answer. | O2 / WATER / POWER | Day 40: three knocks on Hatch 3, from a room with no air. | in production (`series/alone-in-orbit/`) |
+| 1 | **Alone in Orbit: Day 1 to Day 365** | Never open Hatch 3. Check the three numbers every morning. If anything calls on channel 9, don't answer. | O2 / WATER / POWER | Day 40: three knocks on Hatch 3, from a room with no air. | made: 14 parts (`series/alone-in-orbit/`, `videos/orbit-01..14`) |
 | 2 | **The Lighthouse: Night 1 to Night 365** | The light never goes out. Count the ships every night. If the radio says your name, don't answer. | OIL / FOOD / SHIPS | Night 47: one more ship than yesterday, and it isn't on any chart since 1952. | idea |
 | 3 | **Snowed In: Day 1 to Day 180** | Never open the door after dark. Keep the stove burning. Never follow the footprints. | WOOD / FOOD / TEMP | Day 9: footprints lead up to the door. None lead away. | idea |
 | 4 | **The Endless Train: Stop 1 to Stop 365** | Never go back a car. Show your ticket only to the conductor. Never get off at a stop with no name. | CARS / FOOD / TICKETS | Stop 12: the train stops at a station with no name, and the doors open by themselves. | idea |

@@ -198,6 +198,9 @@ export const CAST = {
   hale: { hair: '#a7a7a7', style: 'flat', mustache: '#6d6d6d' },
   ortiz: { hair: '#1f1a17', style: 'curly' },
   mara: { hair: '#b8642c', style: 'pony' },
+  ines: { hair: '#1c1410', style: 'bob' },
+  okafor: { hair: '#222222', style: 'flat' }, // Mara's commander on side B
+  mom: { hair: '#b9b4ab', style: 'bob' }, // Sam's mother (the last part)
 };
 
 // absolute segment angles in degrees: 0 = straight down, +90 = forward (the way the figure faces)
@@ -221,7 +224,7 @@ export const pose = (a, b, u) => {
  * A stick figure. x, y = hips. s = scale. face: calm | worried | shock | sleep | serious | sad | scared.
  * floaty = zero-g sway amount (0 for standing/sitting). Returns joint positions (hands, head).
  */
-export function stick(g, { x, y, s = 1, who = 'sam', pose: p = 'float', face = 'calm', look = 0, t = 0, floaty = 1, dir = 1, phase = 0, blink = true }) {
+export function stick(g, { x, y, s = 1, who = 'sam', pose: p = 'float', face = 'calm', look = 0, t = 0, floaty = 1, dir = 1, phase = 0, blink = true, suit = null }) {
   const P = POSES[p] ?? p;
   const sw = (k, a) => floaty * a * Math.sin(t * (0.9 + 0.13 * k) + phase + k * 1.7);
   const a = P.a.map((v, i) => v + sw(i, 7));
@@ -241,7 +244,41 @@ export function stick(g, { x, y, s = 1, who = 'sam', pose: p = 'float', face = '
   const limbs = (o, ang, L1, L2) => { const m = add(o, d(ang[0]), L1); return [o, m, add(m, d(ang[1]), L2)]; };
   const armB = limbs(sh, a.slice(0, 2), UA, FA), armF = limbs(sh, a.slice(2), UA, FA);
   const legB = limbs(hip, l.slice(0, 2), UL, LL), legF = limbs(hip, l.slice(2), UL, LL);
-  g.strokeStyle = INK; g.lineCap = 'round'; g.lineJoin = 'round'; g.lineWidth = 3.4;
+  g.lineCap = 'round'; g.lineJoin = 'round';
+  if (suit) {
+    // a white spacesuit: outlined tubes, a backpack, a helmet (visor down = gold, up = face shows)
+    const tube = (pts, w) => {
+      for (const [col, lw] of [[INK, w + 4], [suit.color ?? '#f2f2ee', w]]) {
+        g.strokeStyle = col; g.lineWidth = lw; g.beginPath(); g.moveTo(...pts[0]); for (const q of pts.slice(1)) g.lineTo(...q); g.stroke();
+      }
+    };
+    const pack = [hip[0] - dir * 19, hip[1] - B * 0.95];
+    roundRect(g, Math.min(pack[0], pack[0] + dir * 14) - 2, pack[1], 18, B * 0.85, 5); g.fillStyle = '#c9c9c3'; g.fill(); g.strokeStyle = INK; g.lineWidth = 2.2; g.stroke();
+    tube(armB, 10); tube(legB, 11);
+    tube([hip, neck], 24);
+    tube(legF, 11); tube(armF, 10);
+    // name patch on the chest
+    const cx = (hip[0] + neck[0]) / 2 + dir * 2, cy = (hip[1] + neck[1]) / 2 - 6;
+    g.fillStyle = '#27407a'; g.fillRect(cx - 10, cy - 4, 20, 8);
+    if (suit.name) { g.fillStyle = '#fff'; g.font = `900 6px ${FONTS.display}`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(suit.name, cx, cy + 0.5); }
+    // helmet
+    g.fillStyle = '#f2f2ee'; g.strokeStyle = INK; g.lineWidth = 2.6; g.beginPath(); g.arc(head[0], head[1], R + 6, 0, 7); g.fill(); g.stroke();
+    if (suit.visor === 'up') {
+      g.save(); g.beginPath(); g.arc(head[0], head[1] + 1, R + 1, 0, 7); g.clip();
+      g.fillStyle = '#9fc4e8'; g.fillRect(head[0] - R - 2, head[1] - R - 2, 2 * R + 4, 2 * R + 4);
+      drawHead(g, head[0], head[1] + 3, R - 2, CAST[who] ?? CAST.sam, face, look, dir, t, blink, phase);
+      g.restore();
+    } else {
+      const gr = g.createLinearGradient(head[0] - R, head[1] - R, head[0] + R, head[1] + R);
+      gr.addColorStop(0, '#f6d77a'); gr.addColorStop(0.5, '#c8922f'); gr.addColorStop(1, '#6a4a14');
+      g.fillStyle = gr; g.beginPath(); g.ellipse(head[0] + dir * 2, head[1] + 2, R - 1, R - 4, 0, 0, 7); g.fill(); g.stroke();
+    }
+    g.fillStyle = 'rgba(255,255,255,0.55)'; g.beginPath(); g.ellipse(head[0] - 6, head[1] - 7, 5, 3, -0.6, 0, 7); g.fill();
+    g.restore();
+    const world = (pt) => [x + pt[0] * s, y + bob + pt[1] * s];
+    return { handF: world(armF[2]), handB: world(armB[2]), head: world(head), hip: [x, y + bob], chest: world([(hip[0] + neck[0]) / 2, (hip[1] + neck[1]) / 2 - 6]) };
+  }
+  g.strokeStyle = INK; g.lineWidth = 3.4;
   const seg = (pts) => { g.beginPath(); g.moveTo(...pts[0]); g.lineTo(...pts[1]); g.lineTo(...pts[2]); g.stroke(); };
   seg(armB); seg(legB);
   line(g, hip, neck);
@@ -299,6 +336,9 @@ function drawHead(g, hx, hy, R, c, face, look, dir, t, blink, phase) {
     }
   } else if (c.style === 'pony') {
     g.beginPath(); g.arc(hx, hy - 2, R + 1, Math.PI * 1.02, Math.PI * 1.98); g.quadraticCurveTo(hx, hy - R * 0.55, hx - R - 1, hy - 2); g.fill(); g.stroke();
+  } else if (c.style === 'bob') {
+    g.beginPath(); g.moveTo(hx - R - 3, hy + 9); g.lineTo(hx - R - 3, hy - 4); g.arc(hx, hy - 4, R + 3, Math.PI, 0); g.lineTo(hx + R + 3, hy + 9);
+    g.lineTo(hx + R - 4, hy + 9); g.quadraticCurveTo(hx + R - 6, hy - R * 0.5, hx, hy - R * 0.6); g.quadraticCurveTo(hx - R + 6, hy - R * 0.5, hx - R + 4, hy + 9); g.closePath(); g.fill(); g.stroke();
   }
   // face
   const ex = hx + dir * 2 + look * 3, ey = hy + 1;
@@ -567,9 +607,17 @@ export function capsule(g, x, y, s = 1, rot = 0, { burn = 0 } = {}) {
 }
 
 /** The station from outside: truss, solar arrays, modules. x, y = centre. */
-export function station(g, x, y, s = 1, t = 0, { rot = 0, arrays = 1, module3Light = 0, capsuleDocked = false, arrayJam = 0 } = {}) {
+export function station(g, x, y, s = 1, t = 0, { rot = 0, arrays = 1, module3Light = 0, capsuleDocked = false, arrayJam = 0, thrust = 0, frontCapsule = null } = {}) {
   g.save(); g.translate(x, y); g.rotate(rot); g.scale(s, s);
   g.lineJoin = 'round';
+  if (thrust > 0) {
+    // engines at the aft end (left) firing: flickering plume
+    const len = 170 * thrust * (0.85 + 0.15 * Math.sin(t * 40));
+    const gr = g.createLinearGradient(-130, 0, -130 - len, 0);
+    gr.addColorStop(0, 'rgba(255,255,235,0.95)'); gr.addColorStop(0.3, 'rgba(255,190,90,0.8)'); gr.addColorStop(1, 'rgba(255,120,40,0)');
+    g.fillStyle = gr;
+    for (const dy of [-12, 12]) { g.beginPath(); g.moveTo(-122, -9 + dy); g.lineTo(-130 - len, dy - 30); g.lineTo(-130 - len, dy + 30); g.lineTo(-122, 9 + dy); g.closePath(); g.fill(); }
+  }
   // truss
   poly(g, [[-230, -6], [230, -6], [230, 6], [-230, 6]], '#9a9a9a', INK, 1.8);
   g.strokeStyle = '#6d6d6d'; g.lineWidth = 1;
@@ -606,6 +654,7 @@ export function station(g, x, y, s = 1, t = 0, { rot = 0, arrays = 1, module3Lig
   g.fillStyle = module3Light ? `rgba(255,226,140,${0.4 + 0.6 * module3Light})` : '#2a3448';
   g.beginPath(); g.arc(80, -7, 4, 0, 7); g.fill(); g.strokeStyle = INK; g.lineWidth = 1.2; g.stroke();
   if (capsuleDocked) capsule(g, -146, -7, 0.6, Math.PI);
+  if (frontCapsule) capsule(g, 120 + 18 + frontCapsule.gap, -7, 0.6, Math.PI); // docking at the front port
   g.restore();
 }
 

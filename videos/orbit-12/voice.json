@@ -1,0 +1,1704 @@
+{
+ "voice": "bm_fable*0.6+am_michael*0.4",
+ "speed": 1.06,
+ "lines": [
+  {
+   "id": "cancel",
+   "at": 0.52,
+   "text": "Study compromised. Cancel return flight.",
+   "file": "voice/cancel.wav",
+   "duration": 3.093,
+   "words": [
+    {
+     "text": "Study",
+     "hl": false,
+     "start": 0.07,
+     "end": 0.353
+    },
+    {
+     "text": "compromised.",
+     "hl": false,
+     "start": 0.353,
+     "end": 1.06
+    },
+    {
+     "text": "Cancel",
+     "hl": false,
+     "start": 1.36,
+     "end": 1.753
+    },
+    {
+     "text": "return",
+     "hl": false,
+     "start": 1.753,
+     "end": 2.147
+    },
+    {
+     "text": "flight.",
+     "hl": false,
+     "start": 2.147,
+     "end": 2.54
+    }
+   ]
+  },
+  {
+   "id": "noone",
+   "at": 4.433,
+   "text": "No one was coming.",
+   "file": "voice/noone.wav",
+   "duration": 1.685,
+   "words": [
+    {
+     "text": "No",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.368
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 0.368,
+     "end": 0.606
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.606,
+     "end": 0.784
+    },
+    {
+     "text": "coming.",
+     "hl": true,
+     "start": 0.784,
+     "end": 1.2
+    }
+   ]
+  },
+  {
+   "id": "two",
+   "at": 6.838,
+   "text": "Two people. One person's supplies. And no ship.",
+   "file": "voice/two.wav",
+   "duration": 3.392,
+   "words": [
+    {
+     "text": "Two",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.74
+    },
+    {
+     "text": "people.",
+     "hl": false,
+     "start": 0.74,
+     "end": 2.02
+    },
+    {
+     "text": "One",
+     "hl": false,
+     "start": 2.27,
+     "end": 2.375
+    },
+    {
+     "text": "person's",
+     "hl": false,
+     "start": 2.375,
+     "end": 2.584
+    },
+    {
+     "text": "supplies.",
+     "hl": false,
+     "start": 2.584,
+     "end": 2.82
+    },
+    {
+     "text": "And",
+     "hl": false,
+     "start": 2.92,
+     "end": 2.922
+    },
+    {
+     "text": "no",
+     "hl": false,
+     "start": 2.922,
+     "end": 2.926
+    },
+    {
+     "text": "ship.",
+     "hl": false,
+     "start": 2.926,
+     "end": 2.93
+    }
+   ]
+  },
+  {
+   "id": "water",
+   "at": 10.45,
+   "text": "Water: thirty-one percent.",
+   "file": "voice/water.wav",
+   "duration": 2.091,
+   "words": [
+    {
+     "text": "Water:",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.52
+    },
+    {
+     "text": "thirty-one",
+     "hl": false,
+     "start": 0.64,
+     "end": 1.179
+    },
+    {
+     "text": "percent.",
+     "hl": false,
+     "start": 1.179,
+     "end": 1.61
+    }
+   ]
+  },
+  {
+   "id": "gone",
+   "at": 12.761,
+   "text": "At that rate, the water would be gone around day three sixty-five. Maybe before.",
+   "file": "voice/gone.wav",
+   "duration": 4.693,
+   "words": [
+    {
+     "text": "At",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.207
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 0.207,
+     "end": 0.38
+    },
+    {
+     "text": "rate,",
+     "hl": false,
+     "start": 0.38,
+     "end": 0.64
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.73,
+     "end": 0.822
+    },
+    {
+     "text": "water",
+     "hl": false,
+     "start": 0.822,
+     "end": 1.097
+    },
+    {
+     "text": "would",
+     "hl": false,
+     "start": 1.097,
+     "end": 1.281
+    },
+    {
+     "text": "be",
+     "hl": false,
+     "start": 1.281,
+     "end": 1.465
+    },
+    {
+     "text": "gone",
+     "hl": false,
+     "start": 1.465,
+     "end": 1.648
+    },
+    {
+     "text": "around",
+     "hl": false,
+     "start": 1.648,
+     "end": 1.97
+    },
+    {
+     "text": "day",
+     "hl": false,
+     "start": 1.97,
+     "end": 2.153
+    },
+    {
+     "text": "three",
+     "hl": false,
+     "start": 2.153,
+     "end": 2.383
+    },
+    {
+     "text": "sixty-five.",
+     "hl": false,
+     "start": 2.383,
+     "end": 2.98
+    },
+    {
+     "text": "Maybe",
+     "hl": false,
+     "start": 3.48,
+     "end": 3.816
+    },
+    {
+     "text": "before.",
+     "hl": false,
+     "start": 3.816,
+     "end": 4.2
+    }
+   ]
+  },
+  {
+   "id": "mara",
+   "at": 17.974,
+   "text": "Mara wanted to open envelope twelve. Now.",
+   "file": "voice/mara.wav",
+   "duration": 3.349,
+   "words": [
+    {
+     "text": "Mara",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.46
+    },
+    {
+     "text": "wanted",
+     "hl": false,
+     "start": 0.46,
+     "end": 0.8
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 0.8,
+     "end": 0.945
+    },
+    {
+     "text": "open",
+     "hl": false,
+     "start": 0.945,
+     "end": 1.236
+    },
+    {
+     "text": "envelope",
+     "hl": false,
+     "start": 1.236,
+     "end": 1.77
+    },
+    {
+     "text": "twelve.",
+     "hl": false,
+     "start": 1.77,
+     "end": 2.11
+    },
+    {
+     "text": "Now.",
+     "hl": false,
+     "start": 2.53,
+     "end": 2.88
+    }
+   ]
+  },
+  {
+   "id": "never",
+   "at": 21.543,
+   "text": "I said: never early.",
+   "file": "voice/never.wav",
+   "duration": 1.856,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.316
+    },
+    {
+     "text": "said:",
+     "hl": false,
+     "start": 0.316,
+     "end": 0.642
+    },
+    {
+     "text": "never",
+     "hl": false,
+     "start": 0.642,
+     "end": 0.968
+    },
+    {
+     "text": "early.",
+     "hl": false,
+     "start": 0.968,
+     "end": 1.36
+    }
+   ]
+  },
+  {
+   "id": "argued",
+   "at": 23.619,
+   "text": "We argued for days. Out loud. It felt strange to have someone to argue with.",
+   "file": "voice/argued.wav",
+   "duration": 5.013,
+   "words": [
+    {
+     "text": "We",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.245
+    },
+    {
+     "text": "argued",
+     "hl": false,
+     "start": 0.245,
+     "end": 0.678
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 0.678,
+     "end": 0.871
+    },
+    {
+     "text": "days.",
+     "hl": false,
+     "start": 0.871,
+     "end": 1.16
+    },
+    {
+     "text": "Out",
+     "hl": false,
+     "start": 1.42,
+     "end": 1.668
+    },
+    {
+     "text": "loud.",
+     "hl": false,
+     "start": 1.668,
+     "end": 2.04
+    },
+    {
+     "text": "It",
+     "hl": false,
+     "start": 2.47,
+     "end": 2.558
+    },
+    {
+     "text": "felt",
+     "hl": false,
+     "start": 2.558,
+     "end": 2.776
+    },
+    {
+     "text": "strange",
+     "hl": false,
+     "start": 2.776,
+     "end": 3.17
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 3.17,
+     "end": 3.302
+    },
+    {
+     "text": "have",
+     "hl": false,
+     "start": 3.302,
+     "end": 3.477
+    },
+    {
+     "text": "someone",
+     "hl": false,
+     "start": 3.477,
+     "end": 3.783
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 3.783,
+     "end": 3.915
+    },
+    {
+     "text": "argue",
+     "hl": false,
+     "start": 3.915,
+     "end": 4.265
+    },
+    {
+     "text": "with.",
+     "hl": false,
+     "start": 4.265,
+     "end": 4.44
+    }
+   ]
+  },
+  {
+   "id": "d270",
+   "at": 29.252,
+   "text": "Day two hundred seventy. Envelope nine.",
+   "file": "voice/d270.wav",
+   "duration": 3.008,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.335
+    },
+    {
+     "text": "two",
+     "hl": false,
+     "start": 0.335,
+     "end": 0.53
+    },
+    {
+     "text": "hundred",
+     "hl": false,
+     "start": 0.53,
+     "end": 0.921
+    },
+    {
+     "text": "seventy.",
+     "hl": false,
+     "start": 0.921,
+     "end": 1.36
+    },
+    {
+     "text": "Envelope",
+     "hl": false,
+     "start": 1.64,
+     "end": 2.196
+    },
+    {
+     "text": "nine.",
+     "hl": false,
+     "start": 2.196,
+     "end": 2.5
+    }
+   ]
+  },
+  {
+   "id": "env9",
+   "at": 32.48,
+   "text": "If they cancel the flight, open twelve. Don't wait.",
+   "file": "voice/env9.wav",
+   "duration": 3.413,
+   "words": [
+    {
+     "text": "If",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.199
+    },
+    {
+     "text": "they",
+     "hl": false,
+     "start": 0.199,
+     "end": 0.348
+    },
+    {
+     "text": "cancel",
+     "hl": false,
+     "start": 0.348,
+     "end": 0.694
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.694,
+     "end": 0.793
+    },
+    {
+     "text": "flight,",
+     "hl": false,
+     "start": 0.793,
+     "end": 1.14
+    },
+    {
+     "text": "open",
+     "hl": false,
+     "start": 1.27,
+     "end": 1.616
+    },
+    {
+     "text": "twelve.",
+     "hl": false,
+     "start": 1.616,
+     "end": 2.02
+    },
+    {
+     "text": "Don't",
+     "hl": false,
+     "start": 2.39,
+     "end": 2.67
+    },
+    {
+     "text": "wait.",
+     "hl": false,
+     "start": 2.67,
+     "end": 2.95
+    }
+   ]
+  },
+  {
+   "id": "saw",
+   "at": 36.113,
+   "text": "Hale saw it coming.",
+   "file": "voice/saw.wav",
+   "duration": 1.771,
+   "words": [
+    {
+     "text": "Hale",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.449
+    },
+    {
+     "text": "saw",
+     "hl": false,
+     "start": 0.449,
+     "end": 0.705
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 0.705,
+     "end": 0.833
+    },
+    {
+     "text": "coming.",
+     "hl": false,
+     "start": 0.833,
+     "end": 1.28
+    }
+   ]
+  },
+  {
+   "id": "leave",
+   "at": 38.104,
+   "text": "He knew they would leave us.",
+   "file": "voice/leave.wav",
+   "duration": 1.941,
+   "words": [
+    {
+     "text": "He",
+     "hl": false,
+     "start": 0.17,
+     "end": 0.343
+    },
+    {
+     "text": "knew",
+     "hl": false,
+     "start": 0.343,
+     "end": 0.575
+    },
+    {
+     "text": "they",
+     "hl": false,
+     "start": 0.575,
+     "end": 0.748
+    },
+    {
+     "text": "would",
+     "hl": false,
+     "start": 0.748,
+     "end": 0.98
+    },
+    {
+     "text": "leave",
+     "hl": false,
+     "start": 0.98,
+     "end": 1.269
+    },
+    {
+     "text": "us.",
+     "hl": false,
+     "start": 1.269,
+     "end": 1.5
+    }
+   ]
+  },
+  {
+   "id": "open12",
+   "at": 40.665,
+   "text": "So we opened envelope twelve.",
+   "file": "voice/open12.wav",
+   "duration": 2.283,
+   "words": [
+    {
+     "text": "So",
+     "hl": false,
+     "start": 0.08,
+     "end": 0.286
+    },
+    {
+     "text": "we",
+     "hl": false,
+     "start": 0.286,
+     "end": 0.441
+    },
+    {
+     "text": "opened",
+     "hl": false,
+     "start": 0.441,
+     "end": 0.802
+    },
+    {
+     "text": "envelope",
+     "hl": false,
+     "start": 0.802,
+     "end": 1.369
+    },
+    {
+     "text": "twelve.",
+     "hl": false,
+     "start": 1.369,
+     "end": 1.73
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "at": 43.568,
+   "text": "Sam, Mara. The leak was fake. The gauges are fake.",
+   "file": "voice/c1.wav",
+   "duration": 3.52,
+   "words": [
+    {
+     "text": "Sam,",
+     "hl": false,
+     "start": 0.07,
+     "end": 0.81
+    },
+    {
+     "text": "Mara.",
+     "hl": false,
+     "start": 0.9,
+     "end": 1.71
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 1.97,
+     "end": 2.085
+    },
+    {
+     "text": "leak",
+     "hl": false,
+     "start": 2.085,
+     "end": 2.373
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 2.373,
+     "end": 2.545
+    },
+    {
+     "text": "fake.",
+     "hl": false,
+     "start": 2.545,
+     "end": 2.89
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 3.0,
+     "end": 3.001
+    },
+    {
+     "text": "gauges",
+     "hl": false,
+     "start": 3.001,
+     "end": 3.005
+    },
+    {
+     "text": "are",
+     "hl": false,
+     "start": 3.005,
+     "end": 3.007
+    },
+    {
+     "text": "fake.",
+     "hl": false,
+     "start": 3.007,
+     "end": 3.01
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "at": 47.308,
+   "text": "Larkspur Orbital calls it Project SOLO. Two people, each told they're alone, for one year.",
+   "file": "voice/c2.wav",
+   "duration": 5.867,
+   "words": [
+    {
+     "text": "Larkspur",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.4
+    },
+    {
+     "text": "Orbital",
+     "hl": false,
+     "start": 0.4,
+     "end": 0.652
+    },
+    {
+     "text": "calls",
+     "hl": false,
+     "start": 0.652,
+     "end": 0.82
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 0.82,
+     "end": 0.876
+    },
+    {
+     "text": "Project",
+     "hl": false,
+     "start": 0.876,
+     "end": 1.156
+    },
+    {
+     "text": "SOLO.",
+     "hl": false,
+     "start": 1.156,
+     "end": 1.38
+    },
+    {
+     "text": "Two",
+     "hl": false,
+     "start": 1.46,
+     "end": 1.747
+    },
+    {
+     "text": "people,",
+     "hl": false,
+     "start": 1.747,
+     "end": 2.32
+    },
+    {
+     "text": "each",
+     "hl": false,
+     "start": 2.79,
+     "end": 2.926
+    },
+    {
+     "text": "told",
+     "hl": false,
+     "start": 2.926,
+     "end": 3.09
+    },
+    {
+     "text": "they're",
+     "hl": false,
+     "start": 3.09,
+     "end": 3.199
+    },
+    {
+     "text": "alone,",
+     "hl": false,
+     "start": 3.199,
+     "end": 3.39
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 3.6,
+     "end": 4.148
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 4.148,
+     "end": 4.695
+    },
+    {
+     "text": "year.",
+     "hl": false,
+     "start": 4.695,
+     "end": 5.38
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "at": 53.395,
+   "text": "I was ordered to write your rules. I wrote rule two so you'd find each other.",
+   "file": "voice/c3.wav",
+   "duration": 4.501,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.264
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.264,
+     "end": 0.408
+    },
+    {
+     "text": "ordered",
+     "hl": false,
+     "start": 0.408,
+     "end": 0.745
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 0.745,
+     "end": 0.889
+    },
+    {
+     "text": "write",
+     "hl": false,
+     "start": 0.889,
+     "end": 1.129
+    },
+    {
+     "text": "your",
+     "hl": false,
+     "start": 1.129,
+     "end": 1.274
+    },
+    {
+     "text": "rules.",
+     "hl": false,
+     "start": 1.274,
+     "end": 1.61
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 2.0,
+     "end": 2.146
+    },
+    {
+     "text": "wrote",
+     "hl": false,
+     "start": 2.146,
+     "end": 2.388
+    },
+    {
+     "text": "rule",
+     "hl": false,
+     "start": 2.388,
+     "end": 2.631
+    },
+    {
+     "text": "two",
+     "hl": false,
+     "start": 2.631,
+     "end": 2.825
+    },
+    {
+     "text": "so",
+     "hl": false,
+     "start": 2.825,
+     "end": 3.019
+    },
+    {
+     "text": "you'd",
+     "hl": false,
+     "start": 3.019,
+     "end": 3.213
+    },
+    {
+     "text": "find",
+     "hl": false,
+     "start": 3.213,
+     "end": 3.505
+    },
+    {
+     "text": "each",
+     "hl": false,
+     "start": 3.505,
+     "end": 3.747
+    },
+    {
+     "text": "other.",
+     "hl": false,
+     "start": 3.747,
+     "end": 3.99
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "at": 58.116,
+   "text": "If they leave you up there, call one-four-five point eight at night, when you pass over Chile. My daughter listens.",
+   "file": "voice/c4.wav",
+   "duration": 6.293,
+   "words": [
+    {
+     "text": "If",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.168
+    },
+    {
+     "text": "they",
+     "hl": false,
+     "start": 0.168,
+     "end": 0.255
+    },
+    {
+     "text": "leave",
+     "hl": false,
+     "start": 0.255,
+     "end": 0.4
+    },
+    {
+     "text": "you",
+     "hl": false,
+     "start": 0.4,
+     "end": 0.488
+    },
+    {
+     "text": "up",
+     "hl": false,
+     "start": 0.488,
+     "end": 0.575
+    },
+    {
+     "text": "there,",
+     "hl": false,
+     "start": 0.575,
+     "end": 0.72
+    },
+    {
+     "text": "call",
+     "hl": false,
+     "start": 0.86,
+     "end": 1.151
+    },
+    {
+     "text": "one-four-five",
+     "hl": false,
+     "start": 1.151,
+     "end": 1.964
+    },
+    {
+     "text": "point",
+     "hl": false,
+     "start": 1.964,
+     "end": 2.313
+    },
+    {
+     "text": "eight",
+     "hl": false,
+     "start": 2.313,
+     "end": 2.545
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 2.545,
+     "end": 2.661
+    },
+    {
+     "text": "night,",
+     "hl": false,
+     "start": 2.661,
+     "end": 3.01
+    },
+    {
+     "text": "when",
+     "hl": false,
+     "start": 3.28,
+     "end": 3.471
+    },
+    {
+     "text": "you",
+     "hl": false,
+     "start": 3.471,
+     "end": 3.615
+    },
+    {
+     "text": "pass",
+     "hl": false,
+     "start": 3.615,
+     "end": 3.806
+    },
+    {
+     "text": "over",
+     "hl": false,
+     "start": 3.806,
+     "end": 4.045
+    },
+    {
+     "text": "Chile.",
+     "hl": false,
+     "start": 4.045,
+     "end": 4.38
+    },
+    {
+     "text": "My",
+     "hl": false,
+     "start": 4.91,
+     "end": 5.121
+    },
+    {
+     "text": "daughter",
+     "hl": false,
+     "start": 5.121,
+     "end": 5.438
+    },
+    {
+     "text": "listens.",
+     "hl": false,
+     "start": 5.438,
+     "end": 5.86
+    }
+   ]
+  },
+  {
+   "id": "rig",
+   "at": 65.129,
+   "text": "We built an antenna from a cable and a handrail, and plugged it into the station's old ham radio.",
+   "file": "voice/rig.wav",
+   "duration": 5.696,
+   "words": [
+    {
+     "text": "We",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.249
+    },
+    {
+     "text": "built",
+     "hl": false,
+     "start": 0.249,
+     "end": 0.497
+    },
+    {
+     "text": "an",
+     "hl": false,
+     "start": 0.497,
+     "end": 0.596
+    },
+    {
+     "text": "antenna",
+     "hl": false,
+     "start": 0.596,
+     "end": 0.943
+    },
+    {
+     "text": "from",
+     "hl": false,
+     "start": 0.943,
+     "end": 1.141
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.141,
+     "end": 1.29
+    },
+    {
+     "text": "cable",
+     "hl": false,
+     "start": 1.29,
+     "end": 1.637
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 1.637,
+     "end": 1.786
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.786,
+     "end": 1.934
+    },
+    {
+     "text": "handrail,",
+     "hl": false,
+     "start": 1.934,
+     "end": 2.43
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 2.79,
+     "end": 2.944
+    },
+    {
+     "text": "plugged",
+     "hl": false,
+     "start": 2.944,
+     "end": 3.252
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 3.252,
+     "end": 3.354
+    },
+    {
+     "text": "into",
+     "hl": false,
+     "start": 3.354,
+     "end": 3.611
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 3.611,
+     "end": 3.713
+    },
+    {
+     "text": "station's",
+     "hl": false,
+     "start": 3.713,
+     "end": 4.175
+    },
+    {
+     "text": "old",
+     "hl": false,
+     "start": 4.175,
+     "end": 4.432
+    },
+    {
+     "text": "ham",
+     "hl": false,
+     "start": 4.432,
+     "end": 4.637
+    },
+    {
+     "text": "radio.",
+     "hl": false,
+     "start": 4.637,
+     "end": 5.15
+    }
+   ]
+  },
+  {
+   "id": "pass",
+   "at": 71.045,
+   "text": "We could only reach Chile for about ten minutes, when we flew over it.",
+   "file": "voice/pass.wav",
+   "duration": 4.011,
+   "words": [
+    {
+     "text": "We",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.266
+    },
+    {
+     "text": "could",
+     "hl": false,
+     "start": 0.266,
+     "end": 0.461
+    },
+    {
+     "text": "only",
+     "hl": false,
+     "start": 0.461,
+     "end": 0.753
+    },
+    {
+     "text": "reach",
+     "hl": false,
+     "start": 0.753,
+     "end": 1.046
+    },
+    {
+     "text": "Chile",
+     "hl": false,
+     "start": 1.046,
+     "end": 1.338
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 1.338,
+     "end": 1.533
+    },
+    {
+     "text": "about",
+     "hl": false,
+     "start": 1.533,
+     "end": 1.825
+    },
+    {
+     "text": "ten",
+     "hl": false,
+     "start": 1.825,
+     "end": 2.02
+    },
+    {
+     "text": "minutes,",
+     "hl": false,
+     "start": 2.02,
+     "end": 2.41
+    },
+    {
+     "text": "when",
+     "hl": false,
+     "start": 2.65,
+     "end": 2.802
+    },
+    {
+     "text": "we",
+     "hl": false,
+     "start": 2.802,
+     "end": 2.916
+    },
+    {
+     "text": "flew",
+     "hl": false,
+     "start": 2.916,
+     "end": 3.106
+    },
+    {
+     "text": "over",
+     "hl": false,
+     "start": 3.106,
+     "end": 3.296
+    },
+    {
+     "text": "it.",
+     "hl": false,
+     "start": 3.296,
+     "end": 3.41
+    }
+   ]
+  },
+  {
+   "id": "curve",
+   "at": 75.276,
+   "text": "Ten minutes. Then Chile slid behind the curve of the Earth, and we waited for the next pass.",
+   "file": "voice/curve.wav",
+   "duration": 5.333,
+   "words": [
+    {
+     "text": "Ten",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.313
+    },
+    {
+     "text": "minutes.",
+     "hl": false,
+     "start": 0.313,
+     "end": 0.74
+    },
+    {
+     "text": "Then",
+     "hl": false,
+     "start": 0.95,
+     "end": 1.152
+    },
+    {
+     "text": "Chile",
+     "hl": false,
+     "start": 1.152,
+     "end": 1.455
+    },
+    {
+     "text": "slid",
+     "hl": false,
+     "start": 1.455,
+     "end": 1.708
+    },
+    {
+     "text": "behind",
+     "hl": false,
+     "start": 1.708,
+     "end": 2.112
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.112,
+     "end": 2.213
+    },
+    {
+     "text": "curve",
+     "hl": false,
+     "start": 2.213,
+     "end": 2.465
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 2.465,
+     "end": 2.566
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.566,
+     "end": 2.667
+    },
+    {
+     "text": "Earth,",
+     "hl": false,
+     "start": 2.667,
+     "end": 2.92
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 3.38,
+     "end": 3.529
+    },
+    {
+     "text": "we",
+     "hl": false,
+     "start": 3.529,
+     "end": 3.678
+    },
+    {
+     "text": "waited",
+     "hl": false,
+     "start": 3.678,
+     "end": 4.026
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 4.026,
+     "end": 4.224
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 4.224,
+     "end": 4.324
+    },
+    {
+     "text": "next",
+     "hl": false,
+     "start": 4.324,
+     "end": 4.622
+    },
+    {
+     "text": "pass.",
+     "hl": false,
+     "start": 4.622,
+     "end": 4.87
+    }
+   ]
+  },
+  {
+   "id": "static",
+   "at": 80.829,
+   "text": "Pass after pass. Static.",
+   "file": "voice/static.wav",
+   "duration": 2.261,
+   "words": [
+    {
+     "text": "Pass",
+     "hl": false,
+     "start": 0.08,
+     "end": 0.374
+    },
+    {
+     "text": "after",
+     "hl": false,
+     "start": 0.374,
+     "end": 0.742
+    },
+    {
+     "text": "pass.",
+     "hl": false,
+     "start": 0.742,
+     "end": 1.11
+    },
+    {
+     "text": "Static.",
+     "hl": false,
+     "start": 1.25,
+     "end": 1.68
+    }
+   ]
+  },
+  {
+   "id": "thirty",
+   "at": 83.31,
+   "text": "Thirty passes. Nothing but static.",
+   "file": "voice/thirty.wav",
+   "duration": 2.517,
+   "words": [
+    {
+     "text": "Thirty",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.485
+    },
+    {
+     "text": "passes.",
+     "hl": false,
+     "start": 0.485,
+     "end": 0.9
+    },
+    {
+     "text": "Nothing",
+     "hl": false,
+     "start": 0.98,
+     "end": 1.293
+    },
+    {
+     "text": "but",
+     "hl": false,
+     "start": 1.293,
+     "end": 1.502
+    },
+    {
+     "text": "static.",
+     "hl": false,
+     "start": 1.502,
+     "end": 1.92
+    }
+   ]
+  },
+  {
+   "id": "d300",
+   "at": 86.447,
+   "text": "Day three hundred. The night pass over Chile.",
+   "file": "voice/d300.wav",
+   "duration": 3.072,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.318
+    },
+    {
+     "text": "three",
+     "hl": false,
+     "start": 0.318,
+     "end": 0.565
+    },
+    {
+     "text": "hundred.",
+     "hl": false,
+     "start": 0.565,
+     "end": 1.01
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 1.3,
+     "end": 1.41
+    },
+    {
+     "text": "night",
+     "hl": false,
+     "start": 1.41,
+     "end": 1.687
+    },
+    {
+     "text": "pass",
+     "hl": false,
+     "start": 1.687,
+     "end": 1.907
+    },
+    {
+     "text": "over",
+     "hl": false,
+     "start": 1.907,
+     "end": 2.183
+    },
+    {
+     "text": "Chile.",
+     "hl": false,
+     "start": 2.183,
+     "end": 2.57
+    }
+   ]
+  },
+  {
+   "id": "static2",
+   "at": 89.739,
+   "text": "Static. And then, a voice.",
+   "file": "voice/static2.wav",
+   "duration": 2.027,
+   "words": [
+    {
+     "text": "Static.",
+     "hl": false,
+     "start": 0.07,
+     "end": 0.544
+    },
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.544,
+     "end": 0.721
+    },
+    {
+     "text": "then,",
+     "hl": false,
+     "start": 0.721,
+     "end": 1.017
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.017,
+     "end": 1.195
+    },
+    {
+     "text": "voice.",
+     "hl": false,
+     "start": 1.195,
+     "end": 1.55
+    }
+   ]
+  },
+  {
+   "id": "ines",
+   "at": 92.486,
+   "text": "Larkspur? My father told me to listen for you.",
+   "file": "voice/ines.wav",
+   "duration": 2.944,
+   "words": [
+    {
+     "text": "Larkspur?",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.7
+    },
+    {
+     "text": "My",
+     "hl": false,
+     "start": 0.82,
+     "end": 0.993
+    },
+    {
+     "text": "father",
+     "hl": false,
+     "start": 0.993,
+     "end": 1.252
+    },
+    {
+     "text": "told",
+     "hl": false,
+     "start": 1.252,
+     "end": 1.512
+    },
+    {
+     "text": "me",
+     "hl": false,
+     "start": 1.512,
+     "end": 1.685
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 1.685,
+     "end": 1.815
+    },
+    {
+     "text": "listen",
+     "hl": false,
+     "start": 1.815,
+     "end": 2.074
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 2.074,
+     "end": 2.247
+    },
+    {
+     "text": "you.",
+     "hl": false,
+     "start": 2.247,
+     "end": 2.42
+    }
+   ]
+  },
+  {
+   "id": "empty",
+   "at": 95.95,
+   "text": "But that station is empty. It burns up in sixty days.",
+   "file": "voice/empty.wav",
+   "duration": 3.883,
+   "words": [
+    {
+     "text": "But",
+     "hl": false,
+     "start": 0.08,
+     "end": 0.31
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 0.31,
+     "end": 0.541
+    },
+    {
+     "text": "station",
+     "hl": false,
+     "start": 0.541,
+     "end": 1.002
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 1.002,
+     "end": 1.117
+    },
+    {
+     "text": "empty.",
+     "hl": false,
+     "start": 1.117,
+     "end": 1.52
+    },
+    {
+     "text": "It",
+     "hl": false,
+     "start": 1.83,
+     "end": 1.948
+    },
+    {
+     "text": "burns",
+     "hl": false,
+     "start": 1.948,
+     "end": 2.301
+    },
+    {
+     "text": "up",
+     "hl": false,
+     "start": 2.301,
+     "end": 2.478
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 2.478,
+     "end": 2.654
+    },
+    {
+     "text": "sixty",
+     "hl": false,
+     "start": 2.654,
+     "end": 3.067
+    },
+    {
+     "text": "days.",
+     "hl": false,
+     "start": 3.067,
+     "end": 3.42
+    }
+   ]
+  }
+ ]
+}

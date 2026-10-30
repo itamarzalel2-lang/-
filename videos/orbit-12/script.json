@@ -1,0 +1,33 @@
+{
+  "voice": "bm_fable*0.6+am_michael*0.4",
+  "speed": 1.06,
+  "gap": 0.22,
+  "lines": [
+    {"id": "cancel", "text": "Study compromised. Cancel return flight."},
+    {"id": "noone", "pause": 0.6, "text": "No one was *coming.*"},
+    {"id": "two", "pause": 0.5, "text": "Two people. One person's supplies. And no ship."},
+    {"id": "water", "text": "Water: thirty-one percent."},
+    {"id": "gone", "text": "At that rate, the water would be gone around day three sixty-five. Maybe before."},
+    {"id": "mara", "pause": 0.3, "text": "Mara wanted to open envelope twelve. Now."},
+    {"id": "never", "text": "I said: never early."},
+    {"id": "argued", "text": "We argued for days. Out loud. It felt strange to have someone to argue with."},
+    {"id": "d270", "pause": 0.4, "text": "Day two hundred seventy. Envelope nine."},
+    {"id": "env9", "text": "If they cancel the flight, open twelve. Don't wait."},
+    {"id": "saw", "text": "Hale saw it coming."},
+    {"id": "leave", "text": "He knew they would leave us."},
+    {"id": "open12", "pause": 0.4, "text": "So we opened envelope twelve."},
+    {"id": "c1", "pause": 0.4, "text": "Sam, Mara. The leak was fake. The gauges are fake."},
+    {"id": "c2", "text": "Larkspur Orbital calls it Project SOLO. Two people, each told they're alone, for one year."},
+    {"id": "c3", "text": "I was ordered to write your rules. I wrote rule two so you'd find each other."},
+    {"id": "c4", "text": "If they leave you up there, call one-four-five point eight at night, when you pass over Chile. My daughter listens."},
+    {"id": "rig", "pause": 0.5, "text": "We built an antenna from a cable and a handrail, and plugged it into the station's old ham radio."},
+    {"id": "pass", "text": "We could only reach Chile for about ten minutes, when we flew over it."},
+    {"id": "curve", "text": "Ten minutes. Then Chile slid behind the curve of the Earth, and we waited for the next pass."},
+    {"id": "static", "text": "Pass after pass. Static."},
+    {"id": "thirty", "text": "Thirty passes. Nothing but static."},
+    {"id": "d300", "pause": 0.4, "text": "Day three hundred. The night pass over Chile."},
+    {"id": "static2", "text": "Static. And then, a voice."},
+    {"id": "ines", "pause": 0.5, "fx": "radio", "text": "Larkspur? My father told me to listen for you."},
+    {"id": "empty", "pause": 0.3, "fx": "radio", "text": "But that station is empty. It burns up in sixty days."}
+  ]
+}

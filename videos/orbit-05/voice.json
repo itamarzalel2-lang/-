@@ -1,0 +1,1587 @@
+{
+ "voice": "bm_fable*0.6+am_michael*0.4",
+ "speed": 1.06,
+ "lines": [
+  {
+   "id": "voice",
+   "at": 0.52,
+   "text": "This is Ground. Open Hatch 3.",
+   "file": "voice/voice.wav",
+   "duration": 2.517,
+   "words": [
+    {
+     "text": "This",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.339
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 0.339,
+     "end": 0.443
+    },
+    {
+     "text": "Ground.",
+     "hl": false,
+     "start": 0.443,
+     "end": 0.86
+    },
+    {
+     "text": "Open",
+     "hl": true,
+     "start": 1.0,
+     "end": 1.353
+    },
+    {
+     "text": "Hatch",
+     "hl": true,
+     "start": 1.353,
+     "end": 1.647
+    },
+    {
+     "text": "3.",
+     "hl": true,
+     "start": 1.647,
+     "end": 2.0
+    }
+   ]
+  },
+  {
+   "id": "noans",
+   "at": 3.657,
+   "text": "I didn't answer. Rule three.",
+   "file": "voice/noans.wav",
+   "duration": 2.219,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.276
+    },
+    {
+     "text": "didn't",
+     "hl": false,
+     "start": 0.276,
+     "end": 0.588
+    },
+    {
+     "text": "answer.",
+     "hl": false,
+     "start": 0.588,
+     "end": 0.9
+    },
+    {
+     "text": "Rule",
+     "hl": false,
+     "start": 0.99,
+     "end": 1.322
+    },
+    {
+     "text": "three.",
+     "hl": false,
+     "start": 1.322,
+     "end": 1.72
+    }
+   ]
+  },
+  {
+   "id": "name",
+   "at": 6.396,
+   "text": "Then it said my name.",
+   "file": "voice/name.wav",
+   "duration": 1.835,
+   "words": [
+    {
+     "text": "Then",
+     "hl": false,
+     "start": 0.15,
+     "end": 0.39
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 0.39,
+     "end": 0.51
+    },
+    {
+     "text": "said",
+     "hl": false,
+     "start": 0.51,
+     "end": 0.75
+    },
+    {
+     "text": "my",
+     "hl": false,
+     "start": 0.75,
+     "end": 0.99
+    },
+    {
+     "text": "name.",
+     "hl": false,
+     "start": 0.99,
+     "end": 1.35
+    }
+   ]
+  },
+  {
+   "id": "cole",
+   "at": 8.751,
+   "text": "Cole. Open Hatch 3.",
+   "file": "voice/cole.wav",
+   "duration": 2.069,
+   "words": [
+    {
+     "text": "Cole.",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.49
+    },
+    {
+     "text": "Open",
+     "hl": false,
+     "start": 0.57,
+     "end": 0.919
+    },
+    {
+     "text": "Hatch",
+     "hl": false,
+     "start": 0.919,
+     "end": 1.211
+    },
+    {
+     "text": "3.",
+     "hl": false,
+     "start": 1.211,
+     "end": 1.56
+    }
+   ]
+  },
+  {
+   "id": "everyday",
+   "at": 11.44,
+   "text": "The next day, at seven, the same call. And the next. And the next.",
+   "file": "voice/everyday.wav",
+   "duration": 4.075,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.402
+    },
+    {
+     "text": "next",
+     "hl": false,
+     "start": 0.402,
+     "end": 1.246
+    },
+    {
+     "text": "day,",
+     "hl": false,
+     "start": 1.246,
+     "end": 1.95
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 2.24,
+     "end": 2.318
+    },
+    {
+     "text": "seven,",
+     "hl": false,
+     "start": 2.318,
+     "end": 2.59
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.68,
+     "end": 2.706
+    },
+    {
+     "text": "same",
+     "hl": false,
+     "start": 2.706,
+     "end": 2.772
+    },
+    {
+     "text": "call.",
+     "hl": false,
+     "start": 2.772,
+     "end": 2.85
+    },
+    {
+     "text": "And",
+     "hl": false,
+     "start": 3.02,
+     "end": 3.105
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 3.105,
+     "end": 3.162
+    },
+    {
+     "text": "next.",
+     "hl": false,
+     "start": 3.162,
+     "end": 3.36
+    },
+    {
+     "text": "And",
+     "hl": false,
+     "start": 3.46,
+     "end": 3.5
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 3.5,
+     "end": 3.527
+    },
+    {
+     "text": "next.",
+     "hl": false,
+     "start": 3.527,
+     "end": 3.62
+    }
+   ]
+  },
+  {
+   "id": "same",
+   "at": 15.735,
+   "text": "Always seven o'clock. Always the same words.",
+   "file": "voice/same.wav",
+   "duration": 3.371,
+   "words": [
+    {
+     "text": "Always",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.571
+    },
+    {
+     "text": "seven",
+     "hl": false,
+     "start": 0.571,
+     "end": 0.909
+    },
+    {
+     "text": "o'clock.",
+     "hl": false,
+     "start": 0.909,
+     "end": 1.36
+    },
+    {
+     "text": "Always",
+     "hl": false,
+     "start": 1.6,
+     "end": 2.073
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.073,
+     "end": 2.191
+    },
+    {
+     "text": "same",
+     "hl": false,
+     "start": 2.191,
+     "end": 2.486
+    },
+    {
+     "text": "words.",
+     "hl": false,
+     "start": 2.486,
+     "end": 2.9
+    }
+   ]
+  },
+  {
+   "id": "asked",
+   "at": 19.626,
+   "text": "I asked Ground on channel 4: did you call me on channel 9?",
+   "file": "voice/asked.wav",
+   "duration": 4.053,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.15,
+     "end": 0.313
+    },
+    {
+     "text": "asked",
+     "hl": false,
+     "start": 0.313,
+     "end": 0.584
+    },
+    {
+     "text": "Ground",
+     "hl": false,
+     "start": 0.584,
+     "end": 0.963
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.963,
+     "end": 1.125
+    },
+    {
+     "text": "channel",
+     "hl": false,
+     "start": 1.125,
+     "end": 1.505
+    },
+    {
+     "text": "4:",
+     "hl": false,
+     "start": 1.505,
+     "end": 1.83
+    },
+    {
+     "text": "did",
+     "hl": false,
+     "start": 2.13,
+     "end": 2.306
+    },
+    {
+     "text": "you",
+     "hl": false,
+     "start": 2.306,
+     "end": 2.438
+    },
+    {
+     "text": "call",
+     "hl": false,
+     "start": 2.438,
+     "end": 2.659
+    },
+    {
+     "text": "me",
+     "hl": false,
+     "start": 2.659,
+     "end": 2.835
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 2.835,
+     "end": 2.967
+    },
+    {
+     "text": "channel",
+     "hl": false,
+     "start": 2.967,
+     "end": 3.276
+    },
+    {
+     "text": "9?",
+     "hl": false,
+     "start": 3.276,
+     "end": 3.54
+    }
+   ]
+  },
+  {
+   "id": "copy",
+   "at": 23.899,
+   "text": "Ground copies. Continue.",
+   "file": "voice/copy.wav",
+   "duration": 2.133,
+   "words": [
+    {
+     "text": "Ground",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.518
+    },
+    {
+     "text": "copies.",
+     "hl": false,
+     "start": 0.518,
+     "end": 0.95
+    },
+    {
+     "text": "Continue.",
+     "hl": false,
+     "start": 1.05,
+     "end": 1.65
+    }
+   ]
+  },
+  {
+   "id": "manual",
+   "at": 26.552,
+   "text": "So I read the station manual.",
+   "file": "voice/manual.wav",
+   "duration": 2.24,
+   "words": [
+    {
+     "text": "So",
+     "hl": false,
+     "start": 0.09,
+     "end": 0.295
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.295,
+     "end": 0.449
+    },
+    {
+     "text": "read",
+     "hl": false,
+     "start": 0.449,
+     "end": 0.705
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.705,
+     "end": 0.807
+    },
+    {
+     "text": "station",
+     "hl": false,
+     "start": 0.807,
+     "end": 1.218
+    },
+    {
+     "text": "manual.",
+     "hl": false,
+     "start": 1.218,
+     "end": 1.73
+    }
+   ]
+  },
+  {
+   "id": "intercom",
+   "at": 29.012,
+   "text": "Channel 9 is the intercom between modules. It doesn't even reach the Earth.",
+   "file": "voice/intercom.wav",
+   "duration": 4.821,
+   "words": [
+    {
+     "text": "Channel",
+     "hl": false,
+     "start": 0.08,
+     "end": 0.475
+    },
+    {
+     "text": "9",
+     "hl": false,
+     "start": 0.475,
+     "end": 0.757
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 0.757,
+     "end": 0.87
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.87,
+     "end": 0.983
+    },
+    {
+     "text": "intercom",
+     "hl": false,
+     "start": 0.983,
+     "end": 1.548
+    },
+    {
+     "text": "between",
+     "hl": false,
+     "start": 1.548,
+     "end": 1.999
+    },
+    {
+     "text": "modules.",
+     "hl": false,
+     "start": 1.999,
+     "end": 2.62
+    },
+    {
+     "text": "It",
+     "hl": false,
+     "start": 2.98,
+     "end": 3.067
+    },
+    {
+     "text": "doesn't",
+     "hl": false,
+     "start": 3.067,
+     "end": 3.372
+    },
+    {
+     "text": "even",
+     "hl": false,
+     "start": 3.372,
+     "end": 3.634
+    },
+    {
+     "text": "reach",
+     "hl": false,
+     "start": 3.634,
+     "end": 3.895
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 3.895,
+     "end": 3.982
+    },
+    {
+     "text": "Earth.",
+     "hl": false,
+     "start": 3.982,
+     "end": 4.2
+    }
+   ]
+  },
+  {
+   "id": "wired",
+   "at": 34.053,
+   "text": "Whoever was calling me was wired into this station.",
+   "file": "voice/wired.wav",
+   "duration": 3.307,
+   "words": [
+    {
+     "text": "Whoever",
+     "hl": false,
+     "start": 0.15,
+     "end": 0.532
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.532,
+     "end": 0.696
+    },
+    {
+     "text": "calling",
+     "hl": false,
+     "start": 0.696,
+     "end": 1.078
+    },
+    {
+     "text": "me",
+     "hl": false,
+     "start": 1.078,
+     "end": 1.296
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 1.296,
+     "end": 1.46
+    },
+    {
+     "text": "wired",
+     "hl": false,
+     "start": 1.46,
+     "end": 1.788
+    },
+    {
+     "text": "into",
+     "hl": false,
+     "start": 1.788,
+     "end": 2.06
+    },
+    {
+     "text": "this",
+     "hl": false,
+     "start": 2.06,
+     "end": 2.279
+    },
+    {
+     "text": "station.",
+     "hl": false,
+     "start": 2.279,
+     "end": 2.77
+    }
+   ]
+  },
+  {
+   "id": "knew",
+   "at": 37.58,
+   "text": "Someone up here knew my name. And wanted that hatch open.",
+   "file": "voice/knew.wav",
+   "duration": 3.733,
+   "words": [
+    {
+     "text": "Someone",
+     "hl": false,
+     "start": 0.06,
+     "end": 0.432
+    },
+    {
+     "text": "up",
+     "hl": false,
+     "start": 0.432,
+     "end": 0.592
+    },
+    {
+     "text": "here",
+     "hl": false,
+     "start": 0.592,
+     "end": 0.805
+    },
+    {
+     "text": "knew",
+     "hl": false,
+     "start": 0.805,
+     "end": 1.018
+    },
+    {
+     "text": "my",
+     "hl": false,
+     "start": 1.018,
+     "end": 1.231
+    },
+    {
+     "text": "name.",
+     "hl": false,
+     "start": 1.231,
+     "end": 1.55
+    },
+    {
+     "text": "And",
+     "hl": false,
+     "start": 1.85,
+     "end": 2.008
+    },
+    {
+     "text": "wanted",
+     "hl": false,
+     "start": 2.008,
+     "end": 2.377
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 2.377,
+     "end": 2.588
+    },
+    {
+     "text": "hatch",
+     "hl": false,
+     "start": 2.588,
+     "end": 2.851
+    },
+    {
+     "text": "open.",
+     "hl": false,
+     "start": 2.851,
+     "end": 3.22
+    }
+   ]
+  },
+  {
+   "id": "d120",
+   "at": 41.933,
+   "text": "Day one hundred twenty. Envelope four.",
+   "file": "voice/d120.wav",
+   "duration": 2.987,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.345
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 0.345,
+     "end": 0.55
+    },
+    {
+     "text": "hundred",
+     "hl": false,
+     "start": 0.55,
+     "end": 0.96
+    },
+    {
+     "text": "twenty.",
+     "hl": false,
+     "start": 0.96,
+     "end": 1.37
+    },
+    {
+     "text": "Envelope",
+     "hl": false,
+     "start": 1.61,
+     "end": 2.166
+    },
+    {
+     "text": "four.",
+     "hl": false,
+     "start": 2.166,
+     "end": 2.47
+    }
+   ]
+  },
+  {
+   "id": "env4",
+   "at": 45.14,
+   "text": "Panel 12. The oxygen generator. You'll need it sooner than they told you.",
+   "file": "voice/env4.wav",
+   "duration": 4.757,
+   "words": [
+    {
+     "text": "Panel",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.46
+    },
+    {
+     "text": "12.",
+     "hl": false,
+     "start": 0.46,
+     "end": 0.88
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 1.11,
+     "end": 1.206
+    },
+    {
+     "text": "oxygen",
+     "hl": false,
+     "start": 1.206,
+     "end": 1.686
+    },
+    {
+     "text": "generator.",
+     "hl": false,
+     "start": 1.686,
+     "end": 2.31
+    },
+    {
+     "text": "You'll",
+     "hl": false,
+     "start": 2.66,
+     "end": 2.852
+    },
+    {
+     "text": "need",
+     "hl": false,
+     "start": 2.852,
+     "end": 3.091
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 3.091,
+     "end": 3.187
+    },
+    {
+     "text": "sooner",
+     "hl": false,
+     "start": 3.187,
+     "end": 3.474
+    },
+    {
+     "text": "than",
+     "hl": false,
+     "start": 3.474,
+     "end": 3.618
+    },
+    {
+     "text": "they",
+     "hl": false,
+     "start": 3.618,
+     "end": 3.761
+    },
+    {
+     "text": "told",
+     "hl": false,
+     "start": 3.761,
+     "end": 4.048
+    },
+    {
+     "text": "you.",
+     "hl": false,
+     "start": 4.048,
+     "end": 4.24
+    }
+   ]
+  },
+  {
+   "id": "panel",
+   "at": 50.117,
+   "text": "Behind panel 12 was a machine that splits water into oxygen.",
+   "file": "voice/panel.wav",
+   "duration": 4.523,
+   "words": [
+    {
+     "text": "Behind",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.572
+    },
+    {
+     "text": "panel",
+     "hl": false,
+     "start": 0.572,
+     "end": 0.925
+    },
+    {
+     "text": "12",
+     "hl": false,
+     "start": 0.925,
+     "end": 1.279
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 1.279,
+     "end": 1.456
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.456,
+     "end": 1.632
+    },
+    {
+     "text": "machine",
+     "hl": false,
+     "start": 1.632,
+     "end": 2.045
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 2.045,
+     "end": 2.281
+    },
+    {
+     "text": "splits",
+     "hl": false,
+     "start": 2.281,
+     "end": 2.693
+    },
+    {
+     "text": "water",
+     "hl": false,
+     "start": 2.693,
+     "end": 3.047
+    },
+    {
+     "text": "into",
+     "hl": false,
+     "start": 3.047,
+     "end": 3.342
+    },
+    {
+     "text": "oxygen.",
+     "hl": false,
+     "start": 3.342,
+     "end": 3.99
+    }
+   ]
+  },
+  {
+   "id": "on",
+   "at": 54.86,
+   "text": "I turned it on.",
+   "file": "voice/on.wav",
+   "duration": 1.536,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.324
+    },
+    {
+     "text": "turned",
+     "hl": false,
+     "start": 0.324,
+     "end": 0.692
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 0.692,
+     "end": 0.815
+    },
+    {
+     "text": "on.",
+     "hl": false,
+     "start": 0.815,
+     "end": 1.06
+    }
+   ]
+  },
+  {
+   "id": "stop",
+   "at": 56.616,
+   "text": "The oxygen stopped falling. The water started falling faster.",
+   "file": "voice/stop.wav",
+   "duration": 4.075,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.228
+    },
+    {
+     "text": "oxygen",
+     "hl": false,
+     "start": 0.228,
+     "end": 0.769
+    },
+    {
+     "text": "stopped",
+     "hl": false,
+     "start": 0.769,
+     "end": 1.147
+    },
+    {
+     "text": "falling.",
+     "hl": false,
+     "start": 1.147,
+     "end": 1.58
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 1.92,
+     "end": 2.027
+    },
+    {
+     "text": "water",
+     "hl": false,
+     "start": 2.027,
+     "end": 2.348
+    },
+    {
+     "text": "started",
+     "hl": false,
+     "start": 2.348,
+     "end": 2.83
+    },
+    {
+     "text": "falling",
+     "hl": false,
+     "start": 2.83,
+     "end": 3.205
+    },
+    {
+     "text": "faster.",
+     "hl": false,
+     "start": 3.205,
+     "end": 3.58
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "at": 60.911,
+   "text": "From now on, my water was also my air.",
+   "file": "voice/air.wav",
+   "duration": 2.987,
+   "words": [
+    {
+     "text": "From",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.33
+    },
+    {
+     "text": "now",
+     "hl": false,
+     "start": 0.33,
+     "end": 0.55
+    },
+    {
+     "text": "on,",
+     "hl": false,
+     "start": 0.55,
+     "end": 0.77
+    },
+    {
+     "text": "my",
+     "hl": false,
+     "start": 0.89,
+     "end": 1.107
+    },
+    {
+     "text": "water",
+     "hl": false,
+     "start": 1.107,
+     "end": 1.433
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 1.433,
+     "end": 1.596
+    },
+    {
+     "text": "also",
+     "hl": false,
+     "start": 1.596,
+     "end": 1.976
+    },
+    {
+     "text": "my",
+     "hl": false,
+     "start": 1.976,
+     "end": 2.193
+    },
+    {
+     "text": "air.",
+     "hl": false,
+     "start": 2.193,
+     "end": 2.41
+    }
+   ]
+  },
+  {
+   "id": "d150",
+   "at": 64.518,
+   "text": "Day one hundred fifty. Envelope five.",
+   "file": "voice/d150.wav",
+   "duration": 2.965,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.343
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 0.343,
+     "end": 0.547
+    },
+    {
+     "text": "hundred",
+     "hl": false,
+     "start": 0.547,
+     "end": 0.954
+    },
+    {
+     "text": "fifty.",
+     "hl": false,
+     "start": 0.954,
+     "end": 1.31
+    },
+    {
+     "text": "Envelope",
+     "hl": false,
+     "start": 1.54,
+     "end": 2.109
+    },
+    {
+     "text": "five.",
+     "hl": false,
+     "start": 2.109,
+     "end": 2.42
+    }
+   ]
+  },
+  {
+   "id": "env5",
+   "at": 67.703,
+   "text": "If the power ever fails: suit 2. It's the good one.",
+   "file": "voice/env5.wav",
+   "duration": 3.477,
+   "words": [
+    {
+     "text": "If",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.22
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.22,
+     "end": 0.34
+    },
+    {
+     "text": "power",
+     "hl": false,
+     "start": 0.34,
+     "end": 0.64
+    },
+    {
+     "text": "ever",
+     "hl": false,
+     "start": 0.64,
+     "end": 0.88
+    },
+    {
+     "text": "fails:",
+     "hl": false,
+     "start": 0.88,
+     "end": 1.3
+    },
+    {
+     "text": "suit",
+     "hl": false,
+     "start": 1.45,
+     "end": 1.785
+    },
+    {
+     "text": "2.",
+     "hl": false,
+     "start": 1.785,
+     "end": 2.12
+    },
+    {
+     "text": "It's",
+     "hl": false,
+     "start": 2.3,
+     "end": 2.446
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.446,
+     "end": 2.543
+    },
+    {
+     "text": "good",
+     "hl": false,
+     "start": 2.543,
+     "end": 2.737
+    },
+    {
+     "text": "one.",
+     "hl": false,
+     "start": 2.737,
+     "end": 2.98
+    }
+   ]
+  },
+  {
+   "id": "suit",
+   "at": 71.4,
+   "text": "I checked suit 2. Just in case.",
+   "file": "voice/suit.wav",
+   "duration": 2.624,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.271
+    },
+    {
+     "text": "checked",
+     "hl": false,
+     "start": 0.271,
+     "end": 0.612
+    },
+    {
+     "text": "suit",
+     "hl": false,
+     "start": 0.612,
+     "end": 0.896
+    },
+    {
+     "text": "2.",
+     "hl": false,
+     "start": 0.896,
+     "end": 1.18
+    },
+    {
+     "text": "Just",
+     "hl": false,
+     "start": 1.31,
+     "end": 1.646
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 1.646,
+     "end": 1.814
+    },
+    {
+     "text": "case.",
+     "hl": false,
+     "start": 1.814,
+     "end": 2.15
+    }
+   ]
+  },
+  {
+   "id": "d151",
+   "at": 74.644,
+   "text": "Day one hundred fifty-one. Six in the morning. The numbers.",
+   "file": "voice/d151.wav",
+   "duration": 3.861,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.323
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 0.323,
+     "end": 0.515
+    },
+    {
+     "text": "hundred",
+     "hl": false,
+     "start": 0.515,
+     "end": 0.9
+    },
+    {
+     "text": "fifty-one.",
+     "hl": false,
+     "start": 0.9,
+     "end": 1.43
+    },
+    {
+     "text": "Six",
+     "hl": false,
+     "start": 1.75,
+     "end": 2.005
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 2.005,
+     "end": 2.158
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.158,
+     "end": 2.261
+    },
+    {
+     "text": "morning.",
+     "hl": false,
+     "start": 2.261,
+     "end": 2.72
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 2.84,
+     "end": 2.952
+    },
+    {
+     "text": "numbers.",
+     "hl": false,
+     "start": 2.952,
+     "end": 3.4
+    }
+   ]
+  },
+  {
+   "id": "nums",
+   "at": 78.725,
+   "text": "Oxygen, 113. Water, 64. Power... 31 percent.",
+   "file": "voice/nums.wav",
+   "duration": 5.291,
+   "words": [
+    {
+     "text": "Oxygen,",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.783
+    },
+    {
+     "text": "113.",
+     "hl": false,
+     "start": 0.783,
+     "end": 2.048
+    },
+    {
+     "text": "Water,",
+     "hl": false,
+     "start": 2.048,
+     "end": 2.47
+    },
+    {
+     "text": "64.",
+     "hl": false,
+     "start": 2.47,
+     "end": 3.253
+    },
+    {
+     "text": "Power...",
+     "hl": false,
+     "start": 3.253,
+     "end": 3.735
+    },
+    {
+     "text": "31",
+     "hl": false,
+     "start": 3.735,
+     "end": 4.338
+    },
+    {
+     "text": "percent.",
+     "hl": false,
+     "start": 4.338,
+     "end": 4.82
+    }
+   ]
+  },
+  {
+   "id": "array",
+   "at": 84.236,
+   "text": "The main solar array had stopped turning.",
+   "file": "voice/array.wav",
+   "duration": 2.645,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.226
+    },
+    {
+     "text": "main",
+     "hl": false,
+     "start": 0.226,
+     "end": 0.493
+    },
+    {
+     "text": "solar",
+     "hl": false,
+     "start": 0.493,
+     "end": 0.812
+    },
+    {
+     "text": "array",
+     "hl": false,
+     "start": 0.812,
+     "end": 1.078
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 1.078,
+     "end": 1.291
+    },
+    {
+     "text": "stopped",
+     "hl": false,
+     "start": 1.291,
+     "end": 1.664
+    },
+    {
+     "text": "turning.",
+     "hl": false,
+     "start": 1.664,
+     "end": 2.09
+    }
+   ]
+  },
+  {
+   "id": "nogen",
+   "at": 87.101,
+   "text": "No power, no oxygen generator.",
+   "file": "voice/nogen.wav",
+   "duration": 2.795,
+   "words": [
+    {
+     "text": "No",
+     "hl": false,
+     "start": 0.15,
+     "end": 0.422
+    },
+    {
+     "text": "power,",
+     "hl": false,
+     "start": 0.422,
+     "end": 0.83
+    },
+    {
+     "text": "no",
+     "hl": false,
+     "start": 0.94,
+     "end": 1.14
+    },
+    {
+     "text": "oxygen",
+     "hl": false,
+     "start": 1.14,
+     "end": 1.64
+    },
+    {
+     "text": "generator.",
+     "hl": false,
+     "start": 1.64,
+     "end": 2.29
+    }
+   ]
+  },
+  {
+   "id": "last",
+   "at": 90.116,
+   "text": "Without the generator, the oxygen would last sixty-six days. The ship was two hundred fourteen days away.",
+   "file": "voice/last.wav",
+   "duration": 6.4,
+   "words": [
+    {
+     "text": "Without",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.377
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.377,
+     "end": 0.456
+    },
+    {
+     "text": "generator,",
+     "hl": false,
+     "start": 0.456,
+     "end": 0.97
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.11,
+     "end": 1.226
+    },
+    {
+     "text": "oxygen",
+     "hl": false,
+     "start": 1.226,
+     "end": 1.808
+    },
+    {
+     "text": "would",
+     "hl": false,
+     "start": 1.808,
+     "end": 2.041
+    },
+    {
+     "text": "last",
+     "hl": false,
+     "start": 2.041,
+     "end": 2.332
+    },
+    {
+     "text": "sixty-six",
+     "hl": false,
+     "start": 2.332,
+     "end": 3.031
+    },
+    {
+     "text": "days.",
+     "hl": false,
+     "start": 3.031,
+     "end": 3.38
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 3.88,
+     "end": 3.98
+    },
+    {
+     "text": "ship",
+     "hl": false,
+     "start": 3.98,
+     "end": 4.18
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 4.18,
+     "end": 4.33
+    },
+    {
+     "text": "two",
+     "hl": false,
+     "start": 4.33,
+     "end": 4.53
+    },
+    {
+     "text": "hundred",
+     "hl": false,
+     "start": 4.53,
+     "end": 4.93
+    },
+    {
+     "text": "fourteen",
+     "hl": false,
+     "start": 4.93,
+     "end": 5.38
+    },
+    {
+     "text": "days",
+     "hl": false,
+     "start": 5.38,
+     "end": 5.63
+    },
+    {
+     "text": "away.",
+     "hl": false,
+     "start": 5.63,
+     "end": 5.93
+    }
+   ]
+  },
+  {
+   "id": "out",
+   "at": 97.336,
+   "text": "Then the lights went out.",
+   "file": "voice/out.wav",
+   "duration": 1.856,
+   "words": [
+    {
+     "text": "Then",
+     "hl": false,
+     "start": 0.17,
+     "end": 0.392
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.392,
+     "end": 0.503
+    },
+    {
+     "text": "lights",
+     "hl": false,
+     "start": 0.503,
+     "end": 0.835
+    },
+    {
+     "text": "went",
+     "hl": false,
+     "start": 0.835,
+     "end": 1.113
+    },
+    {
+     "text": "out.",
+     "hl": true,
+     "start": 1.113,
+     "end": 1.39
+    }
+   ]
+  }
+ ]
+}

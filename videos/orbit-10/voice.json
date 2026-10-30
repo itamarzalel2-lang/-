@@ -1,0 +1,1596 @@
+{
+ "voice": "bm_fable*0.6+am_michael*0.4",
+ "speed": 1.06,
+ "lines": [
+  {
+   "id": "c",
+   "at": 0.52,
+   "text": "C.",
+   "file": "voice/c.wav",
+   "duration": 0.747,
+   "words": [
+    {
+     "text": "C.",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.48
+    }
+   ]
+  },
+  {
+   "id": "o",
+   "at": 2.387,
+   "text": "O.",
+   "file": "voice/o.wav",
+   "duration": 0.768,
+   "words": [
+    {
+     "text": "O.",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.47
+    }
+   ]
+  },
+  {
+   "id": "two2",
+   "at": 4.275,
+   "text": "2.",
+   "file": "voice/two2.wav",
+   "duration": 0.875,
+   "words": [
+    {
+     "text": "2.",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.54
+    }
+   ]
+  },
+  {
+   "id": "failed",
+   "at": 5.87,
+   "text": "Her scrubber had failed.",
+   "file": "voice/failed.wav",
+   "duration": 1.877,
+   "words": [
+    {
+     "text": "Her",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.306
+    },
+    {
+     "text": "scrubber",
+     "hl": false,
+     "start": 0.306,
+     "end": 0.716
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 0.716,
+     "end": 0.95
+    },
+    {
+     "text": "failed.",
+     "hl": true,
+     "start": 0.95,
+     "end": 1.36
+    }
+   ]
+  },
+  {
+   "id": "locker",
+   "at": 8.467,
+   "text": "The spare cartridges were in locker 7. On my side.",
+   "file": "voice/locker.wav",
+   "duration": 3.755,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.207
+    },
+    {
+     "text": "spare",
+     "hl": false,
+     "start": 0.207,
+     "end": 0.476
+    },
+    {
+     "text": "cartridges",
+     "hl": false,
+     "start": 0.476,
+     "end": 1.12
+    },
+    {
+     "text": "were",
+     "hl": false,
+     "start": 1.12,
+     "end": 1.281
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 1.281,
+     "end": 1.442
+    },
+    {
+     "text": "locker",
+     "hl": false,
+     "start": 1.442,
+     "end": 1.764
+    },
+    {
+     "text": "7.",
+     "hl": false,
+     "start": 1.764,
+     "end": 2.14
+    },
+    {
+     "text": "On",
+     "hl": false,
+     "start": 2.49,
+     "end": 2.672
+    },
+    {
+     "text": "my",
+     "hl": false,
+     "start": 2.672,
+     "end": 2.915
+    },
+    {
+     "text": "side.",
+     "hl": false,
+     "start": 2.915,
+     "end": 3.28
+    }
+   ]
+  },
+  {
+   "id": "white",
+   "at": 12.442,
+   "text": "I opened it. Two white cartridges. Exactly like Hale said.",
+   "file": "voice/white.wav",
+   "duration": 4.224,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.241
+    },
+    {
+     "text": "opened",
+     "hl": false,
+     "start": 0.241,
+     "end": 0.569
+    },
+    {
+     "text": "it.",
+     "hl": false,
+     "start": 0.569,
+     "end": 0.71
+    },
+    {
+     "text": "Two",
+     "hl": false,
+     "start": 0.88,
+     "end": 1.105
+    },
+    {
+     "text": "white",
+     "hl": false,
+     "start": 1.105,
+     "end": 1.387
+    },
+    {
+     "text": "cartridges.",
+     "hl": false,
+     "start": 1.387,
+     "end": 2.12
+    },
+    {
+     "text": "Exactly",
+     "hl": false,
+     "start": 2.4,
+     "end": 2.891
+    },
+    {
+     "text": "like",
+     "hl": false,
+     "start": 2.891,
+     "end": 3.164
+    },
+    {
+     "text": "Hale",
+     "hl": false,
+     "start": 3.164,
+     "end": 3.437
+    },
+    {
+     "text": "said.",
+     "hl": false,
+     "start": 3.437,
+     "end": 3.71
+    }
+   ]
+  },
+  {
+   "id": "open",
+   "at": 16.886,
+   "text": "To give her one, I had to open Hatch 3.",
+   "file": "voice/open.wav",
+   "duration": 2.859,
+   "words": [
+    {
+     "text": "To",
+     "hl": false,
+     "start": 0.09,
+     "end": 0.251
+    },
+    {
+     "text": "give",
+     "hl": false,
+     "start": 0.251,
+     "end": 0.465
+    },
+    {
+     "text": "her",
+     "hl": false,
+     "start": 0.465,
+     "end": 0.626
+    },
+    {
+     "text": "one,",
+     "hl": false,
+     "start": 0.626,
+     "end": 0.894
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.894,
+     "end": 1.054
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 1.054,
+     "end": 1.269
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 1.269,
+     "end": 1.429
+    },
+    {
+     "text": "open",
+     "hl": false,
+     "start": 1.429,
+     "end": 1.751
+    },
+    {
+     "text": "Hatch",
+     "hl": false,
+     "start": 1.751,
+     "end": 2.019
+    },
+    {
+     "text": "3.",
+     "hl": false,
+     "start": 2.019,
+     "end": 2.34
+    }
+   ]
+  },
+  {
+   "id": "rule",
+   "at": 19.965,
+   "text": "Rule one. Never open Hatch 3.",
+   "file": "voice/rule.wav",
+   "duration": 2.731,
+   "words": [
+    {
+     "text": "Rule",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.45
+    },
+    {
+     "text": "one.",
+     "hl": false,
+     "start": 0.45,
+     "end": 0.76
+    },
+    {
+     "text": "Never",
+     "hl": false,
+     "start": 0.85,
+     "end": 1.155
+    },
+    {
+     "text": "open",
+     "hl": false,
+     "start": 1.155,
+     "end": 1.52
+    },
+    {
+     "text": "Hatch",
+     "hl": false,
+     "start": 1.52,
+     "end": 1.825
+    },
+    {
+     "text": "3.",
+     "hl": false,
+     "start": 1.825,
+     "end": 2.19
+    }
+   ]
+  },
+  {
+   "id": "only",
+   "at": 22.916,
+   "text": "The only rule I had never broken.",
+   "file": "voice/only.wav",
+   "duration": 2.688,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.224
+    },
+    {
+     "text": "only",
+     "hl": false,
+     "start": 0.224,
+     "end": 0.594
+    },
+    {
+     "text": "rule",
+     "hl": false,
+     "start": 0.594,
+     "end": 0.903
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.903,
+     "end": 1.088
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 1.088,
+     "end": 1.335
+    },
+    {
+     "text": "never",
+     "hl": false,
+     "start": 1.335,
+     "end": 1.644
+    },
+    {
+     "text": "broken.",
+     "hl": false,
+     "start": 1.644,
+     "end": 2.2
+    }
+   ]
+  },
+  {
+   "id": "knock",
+   "at": 26.224,
+   "text": "I knocked.",
+   "file": "voice/knock.wav",
+   "duration": 1.173,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.15,
+     "end": 0.363
+    },
+    {
+     "text": "knocked.",
+     "hl": false,
+     "start": 0.363,
+     "end": 0.86
+    }
+   ]
+  },
+  {
+   "id": "noanswer",
+   "at": 28.817,
+   "text": "Nothing came back.",
+   "file": "voice/noanswer.wav",
+   "duration": 1.6,
+   "words": [
+    {
+     "text": "Nothing",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.494
+    },
+    {
+     "text": "came",
+     "hl": false,
+     "start": 0.494,
+     "end": 0.822
+    },
+    {
+     "text": "back.",
+     "hl": false,
+     "start": 0.822,
+     "end": 1.15
+    }
+   ]
+  },
+  {
+   "id": "mara",
+   "at": 30.637,
+   "text": "I said her name out loud. Mara?",
+   "file": "voice/mara.wav",
+   "duration": 2.667,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.296
+    },
+    {
+     "text": "said",
+     "hl": false,
+     "start": 0.296,
+     "end": 0.504
+    },
+    {
+     "text": "her",
+     "hl": false,
+     "start": 0.504,
+     "end": 0.66
+    },
+    {
+     "text": "name",
+     "hl": false,
+     "start": 0.66,
+     "end": 0.92
+    },
+    {
+     "text": "out",
+     "hl": false,
+     "start": 0.92,
+     "end": 1.128
+    },
+    {
+     "text": "loud.",
+     "hl": false,
+     "start": 1.128,
+     "end": 1.44
+    },
+    {
+     "text": "Mara?",
+     "hl": false,
+     "start": 1.71,
+     "end": 2.14
+    }
+   ]
+  },
+  {
+   "id": "nothing",
+   "at": 34.324,
+   "text": "Nothing.",
+   "file": "voice/nothing.wav",
+   "duration": 0.96,
+   "words": [
+    {
+     "text": "Nothing.",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.64
+    }
+   ]
+  },
+  {
+   "id": "scratch",
+   "at": 35.504,
+   "text": "Not a knock. Not a scratch.",
+   "file": "voice/scratch.wav",
+   "duration": 2.048,
+   "words": [
+    {
+     "text": "Not",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.569
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.569,
+     "end": 0.833
+    },
+    {
+     "text": "knock.",
+     "hl": false,
+     "start": 0.833,
+     "end": 1.36
+    },
+    {
+     "text": "Not",
+     "hl": false,
+     "start": 1.45,
+     "end": 1.488
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.488,
+     "end": 1.51
+    },
+    {
+     "text": "scratch.",
+     "hl": false,
+     "start": 1.51,
+     "end": 1.57
+    }
+   ]
+  },
+  {
+   "id": "lied",
+   "at": 38.172,
+   "text": "If the gauge lied about the air, it could lie about anything.",
+   "file": "voice/lied.wav",
+   "duration": 3.733,
+   "words": [
+    {
+     "text": "If",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.239
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.239,
+     "end": 0.359
+    },
+    {
+     "text": "gauge",
+     "hl": false,
+     "start": 0.359,
+     "end": 0.716
+    },
+    {
+     "text": "lied",
+     "hl": false,
+     "start": 0.716,
+     "end": 1.014
+    },
+    {
+     "text": "about",
+     "hl": false,
+     "start": 1.014,
+     "end": 1.372
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.372,
+     "end": 1.491
+    },
+    {
+     "text": "air,",
+     "hl": false,
+     "start": 1.491,
+     "end": 1.73
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 1.99,
+     "end": 2.088
+    },
+    {
+     "text": "could",
+     "hl": false,
+     "start": 2.088,
+     "end": 2.283
+    },
+    {
+     "text": "lie",
+     "hl": false,
+     "start": 2.283,
+     "end": 2.478
+    },
+    {
+     "text": "about",
+     "hl": false,
+     "start": 2.478,
+     "end": 2.771
+    },
+    {
+     "text": "anything.",
+     "hl": false,
+     "start": 2.771,
+     "end": 3.21
+    }
+   ]
+  },
+  {
+   "id": "vacuum",
+   "at": 42.125,
+   "text": "If that room really was vacuum, opening the hatch would kill us both.",
+   "file": "voice/vacuum.wav",
+   "duration": 4.352,
+   "words": [
+    {
+     "text": "If",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.229
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 0.229,
+     "end": 0.466
+    },
+    {
+     "text": "room",
+     "hl": false,
+     "start": 0.466,
+     "end": 0.762
+    },
+    {
+     "text": "really",
+     "hl": false,
+     "start": 0.762,
+     "end": 1.118
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 1.118,
+     "end": 1.296
+    },
+    {
+     "text": "vacuum,",
+     "hl": false,
+     "start": 1.296,
+     "end": 1.83
+    },
+    {
+     "text": "opening",
+     "hl": false,
+     "start": 2.16,
+     "end": 2.57
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.57,
+     "end": 2.673
+    },
+    {
+     "text": "hatch",
+     "hl": false,
+     "start": 2.673,
+     "end": 2.929
+    },
+    {
+     "text": "would",
+     "hl": false,
+     "start": 2.929,
+     "end": 3.134
+    },
+    {
+     "text": "kill",
+     "hl": false,
+     "start": 3.134,
+     "end": 3.339
+    },
+    {
+     "text": "us",
+     "hl": false,
+     "start": 3.339,
+     "end": 3.493
+    },
+    {
+     "text": "both.",
+     "hl": false,
+     "start": 3.493,
+     "end": 3.8
+    }
+   ]
+  },
+  {
+   "id": "waiting",
+   "at": 46.697,
+   "text": "Or I would be the one who killed her, by waiting.",
+   "file": "voice/waiting.wav",
+   "duration": 3.072,
+   "words": [
+    {
+     "text": "Or",
+     "hl": false,
+     "start": 0.15,
+     "end": 0.295
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.295,
+     "end": 0.441
+    },
+    {
+     "text": "would",
+     "hl": false,
+     "start": 0.441,
+     "end": 0.635
+    },
+    {
+     "text": "be",
+     "hl": false,
+     "start": 0.635,
+     "end": 0.829
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.829,
+     "end": 0.926
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 0.926,
+     "end": 1.12
+    },
+    {
+     "text": "who",
+     "hl": false,
+     "start": 1.12,
+     "end": 1.314
+    },
+    {
+     "text": "killed",
+     "hl": false,
+     "start": 1.314,
+     "end": 1.556
+    },
+    {
+     "text": "her,",
+     "hl": false,
+     "start": 1.556,
+     "end": 1.75
+    },
+    {
+     "text": "by",
+     "hl": false,
+     "start": 1.99,
+     "end": 2.173
+    },
+    {
+     "text": "waiting.",
+     "hl": false,
+     "start": 2.173,
+     "end": 2.54
+    }
+   ]
+  },
+  {
+   "id": "valve",
+   "at": 50.389,
+   "text": "Every hatch has a small valve. It lets air through slowly, to match the pressure before you open it.",
+   "file": "voice/valve.wav",
+   "duration": 5.931,
+   "words": [
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.386
+    },
+    {
+     "text": "hatch",
+     "hl": false,
+     "start": 0.386,
+     "end": 0.662
+    },
+    {
+     "text": "has",
+     "hl": false,
+     "start": 0.662,
+     "end": 0.882
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.882,
+     "end": 1.048
+    },
+    {
+     "text": "small",
+     "hl": false,
+     "start": 1.048,
+     "end": 1.379
+    },
+    {
+     "text": "valve.",
+     "hl": false,
+     "start": 1.379,
+     "end": 1.71
+    },
+    {
+     "text": "It",
+     "hl": false,
+     "start": 2.18,
+     "end": 2.303
+    },
+    {
+     "text": "lets",
+     "hl": false,
+     "start": 2.303,
+     "end": 2.612
+    },
+    {
+     "text": "air",
+     "hl": false,
+     "start": 2.612,
+     "end": 2.797
+    },
+    {
+     "text": "through",
+     "hl": false,
+     "start": 2.797,
+     "end": 3.106
+    },
+    {
+     "text": "slowly,",
+     "hl": false,
+     "start": 3.106,
+     "end": 3.6
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 3.79,
+     "end": 3.927
+    },
+    {
+     "text": "match",
+     "hl": false,
+     "start": 3.927,
+     "end": 4.156
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 4.156,
+     "end": 4.247
+    },
+    {
+     "text": "pressure",
+     "hl": false,
+     "start": 4.247,
+     "end": 4.521
+    },
+    {
+     "text": "before",
+     "hl": false,
+     "start": 4.521,
+     "end": 4.841
+    },
+    {
+     "text": "you",
+     "hl": false,
+     "start": 4.841,
+     "end": 4.979
+    },
+    {
+     "text": "open",
+     "hl": false,
+     "start": 4.979,
+     "end": 5.253
+    },
+    {
+     "text": "it.",
+     "hl": false,
+     "start": 5.253,
+     "end": 5.39
+    }
+   ]
+  },
+  {
+   "id": "roar",
+   "at": 56.54,
+   "text": "If there's vacuum on the other side, it roars. And you close it. Fast.",
+   "file": "voice/roar.wav",
+   "duration": 4.245,
+   "words": [
+    {
+     "text": "If",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.21
+    },
+    {
+     "text": "there's",
+     "hl": false,
+     "start": 0.21,
+     "end": 0.46
+    },
+    {
+     "text": "vacuum",
+     "hl": false,
+     "start": 0.46,
+     "end": 0.86
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.86,
+     "end": 1.01
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.01,
+     "end": 1.11
+    },
+    {
+     "text": "other",
+     "hl": false,
+     "start": 1.11,
+     "end": 1.31
+    },
+    {
+     "text": "side,",
+     "hl": false,
+     "start": 1.31,
+     "end": 1.61
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 1.68,
+     "end": 1.793
+    },
+    {
+     "text": "roars.",
+     "hl": false,
+     "start": 1.793,
+     "end": 2.19
+    },
+    {
+     "text": "And",
+     "hl": false,
+     "start": 2.5,
+     "end": 2.624
+    },
+    {
+     "text": "you",
+     "hl": false,
+     "start": 2.624,
+     "end": 2.748
+    },
+    {
+     "text": "close",
+     "hl": false,
+     "start": 2.748,
+     "end": 2.996
+    },
+    {
+     "text": "it.",
+     "hl": false,
+     "start": 2.996,
+     "end": 3.12
+    },
+    {
+     "text": "Fast.",
+     "hl": false,
+     "start": 3.4,
+     "end": 3.74
+    }
+   ]
+  },
+  {
+   "id": "long",
+   "at": 61.005,
+   "text": "My hand was on that valve for a long time.",
+   "file": "voice/long.wav",
+   "duration": 2.923,
+   "words": [
+    {
+     "text": "My",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.36
+    },
+    {
+     "text": "hand",
+     "hl": false,
+     "start": 0.36,
+     "end": 0.634
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.634,
+     "end": 0.799
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.799,
+     "end": 0.963
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 0.963,
+     "end": 1.183
+    },
+    {
+     "text": "valve",
+     "hl": false,
+     "start": 1.183,
+     "end": 1.457
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 1.457,
+     "end": 1.677
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.677,
+     "end": 1.841
+    },
+    {
+     "text": "long",
+     "hl": false,
+     "start": 1.841,
+     "end": 2.061
+    },
+    {
+     "text": "time.",
+     "hl": false,
+     "start": 2.061,
+     "end": 2.39
+    }
+   ]
+  },
+  {
+   "id": "turned",
+   "at": 64.548,
+   "text": "I turned it.",
+   "file": "voice/turned.wav",
+   "duration": 1.28,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.323
+    },
+    {
+     "text": "turned",
+     "hl": false,
+     "start": 0.323,
+     "end": 0.688
+    },
+    {
+     "text": "it.",
+     "hl": false,
+     "start": 0.688,
+     "end": 0.87
+    }
+   ]
+  },
+  {
+   "id": "hiss",
+   "at": 67.348,
+   "text": "A soft hiss.",
+   "file": "voice/hiss.wav",
+   "duration": 1.451,
+   "words": [
+    {
+     "text": "A",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.276
+    },
+    {
+     "text": "soft",
+     "hl": false,
+     "start": 0.276,
+     "end": 0.553
+    },
+    {
+     "text": "hiss.",
+     "hl": false,
+     "start": 0.553,
+     "end": 0.83
+    }
+   ]
+  },
+  {
+   "id": "then",
+   "at": 69.719,
+   "text": "Then nothing.",
+   "file": "voice/then.wav",
+   "duration": 1.216,
+   "words": [
+    {
+     "text": "Then",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.384
+    },
+    {
+     "text": "nothing.",
+     "hl": false,
+     "start": 0.384,
+     "end": 0.81
+    }
+   ]
+  },
+  {
+   "id": "equal",
+   "at": 71.155,
+   "text": "The pressure was equal. There was air on the other side.",
+   "file": "voice/equal.wav",
+   "duration": 3.328,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.09,
+     "end": 0.206
+    },
+    {
+     "text": "pressure",
+     "hl": false,
+     "start": 0.206,
+     "end": 0.553
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.553,
+     "end": 0.727
+    },
+    {
+     "text": "equal.",
+     "hl": false,
+     "start": 0.727,
+     "end": 1.19
+    },
+    {
+     "text": "There",
+     "hl": false,
+     "start": 1.46,
+     "end": 1.679
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 1.679,
+     "end": 1.844
+    },
+    {
+     "text": "air",
+     "hl": false,
+     "start": 1.844,
+     "end": 2.008
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 2.008,
+     "end": 2.172
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.172,
+     "end": 2.282
+    },
+    {
+     "text": "other",
+     "hl": false,
+     "start": 2.282,
+     "end": 2.501
+    },
+    {
+     "text": "side.",
+     "hl": false,
+     "start": 2.501,
+     "end": 2.83
+    }
+   ]
+  },
+  {
+   "id": "liar",
+   "at": 74.703,
+   "text": "The gauge had lied. Everyone had lied.",
+   "file": "voice/liar.wav",
+   "duration": 2.837,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.242
+    },
+    {
+     "text": "gauge",
+     "hl": false,
+     "start": 0.242,
+     "end": 0.579
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 0.579,
+     "end": 0.803
+    },
+    {
+     "text": "lied.",
+     "hl": false,
+     "start": 0.803,
+     "end": 1.14
+    },
+    {
+     "text": "Everyone",
+     "hl": false,
+     "start": 1.4,
+     "end": 1.845
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 1.845,
+     "end": 2.043
+    },
+    {
+     "text": "lied.",
+     "hl": false,
+     "start": 2.043,
+     "end": 2.34
+    }
+   ]
+  },
+  {
+   "id": "rule1",
+   "at": 78.26,
+   "text": "Rule one. Not for anyone. Not even for me.",
+   "file": "voice/rule1.wav",
+   "duration": 3.093,
+   "words": [
+    {
+     "text": "Rule",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.39
+    },
+    {
+     "text": "one.",
+     "hl": false,
+     "start": 0.39,
+     "end": 0.64
+    },
+    {
+     "text": "Not",
+     "hl": false,
+     "start": 0.64,
+     "end": 0.89
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 0.89,
+     "end": 1.09
+    },
+    {
+     "text": "anyone.",
+     "hl": false,
+     "start": 1.09,
+     "end": 1.54
+    },
+    {
+     "text": "Not",
+     "hl": false,
+     "start": 1.54,
+     "end": 1.79
+    },
+    {
+     "text": "even",
+     "hl": false,
+     "start": 1.79,
+     "end": 2.09
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 2.09,
+     "end": 2.29
+    },
+    {
+     "text": "me.",
+     "hl": false,
+     "start": 2.29,
+     "end": 2.54
+    }
+   ]
+  },
+  {
+   "id": "spun",
+   "at": 81.573,
+   "text": "I spun the wheel anyway.",
+   "file": "voice/spun.wav",
+   "duration": 1.984,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.29
+    },
+    {
+     "text": "spun",
+     "hl": false,
+     "start": 0.29,
+     "end": 0.573
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.573,
+     "end": 0.687
+    },
+    {
+     "text": "wheel",
+     "hl": false,
+     "start": 0.687,
+     "end": 0.97
+    },
+    {
+     "text": "anyway.",
+     "hl": false,
+     "start": 0.97,
+     "end": 1.48
+    }
+   ]
+  },
+  {
+   "id": "stiff",
+   "at": 83.777,
+   "text": "It was stiff. It hadn't turned in eight months.",
+   "file": "voice/stiff.wav",
+   "duration": 2.752,
+   "words": [
+    {
+     "text": "It",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.213
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.213,
+     "end": 0.352
+    },
+    {
+     "text": "stiff.",
+     "hl": false,
+     "start": 0.352,
+     "end": 0.63
+    },
+    {
+     "text": "It",
+     "hl": false,
+     "start": 0.89,
+     "end": 0.985
+    },
+    {
+     "text": "hadn't",
+     "hl": false,
+     "start": 0.985,
+     "end": 1.318
+    },
+    {
+     "text": "turned",
+     "hl": false,
+     "start": 1.318,
+     "end": 1.604
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 1.604,
+     "end": 1.747
+    },
+    {
+     "text": "eight",
+     "hl": false,
+     "start": 1.747,
+     "end": 1.937
+    },
+    {
+     "text": "months.",
+     "hl": false,
+     "start": 1.937,
+     "end": 2.27
+    }
+   ]
+  },
+  {
+   "id": "days",
+   "at": 86.749,
+   "text": "Two hundred forty days that door had been closed.",
+   "file": "voice/days.wav",
+   "duration": 3.221,
+   "words": [
+    {
+     "text": "Two",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.316
+    },
+    {
+     "text": "hundred",
+     "hl": false,
+     "start": 0.316,
+     "end": 0.749
+    },
+    {
+     "text": "forty",
+     "hl": false,
+     "start": 0.749,
+     "end": 1.128
+    },
+    {
+     "text": "days",
+     "hl": false,
+     "start": 1.128,
+     "end": 1.398
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 1.398,
+     "end": 1.614
+    },
+    {
+     "text": "door",
+     "hl": false,
+     "start": 1.614,
+     "end": 1.885
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 1.885,
+     "end": 2.101
+    },
+    {
+     "text": "been",
+     "hl": false,
+     "start": 2.101,
+     "end": 2.317
+    },
+    {
+     "text": "closed.",
+     "hl": false,
+     "start": 2.317,
+     "end": 2.75
+    }
+   ]
+  },
+  {
+   "id": "opened",
+   "at": 91.09,
+   "text": "The hatch opened.",
+   "file": "voice/opened.wav",
+   "duration": 1.557,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.254
+    },
+    {
+     "text": "hatch",
+     "hl": false,
+     "start": 0.254,
+     "end": 0.564
+    },
+    {
+     "text": "opened.",
+     "hl": false,
+     "start": 0.564,
+     "end": 1.06
+    }
+   ]
+  },
+  {
+   "id": "dark",
+   "at": 93.267,
+   "text": "It was dark inside.",
+   "file": "voice/dark.wav",
+   "duration": 1.835,
+   "words": [
+    {
+     "text": "It",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.232
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.232,
+     "end": 0.429
+    },
+    {
+     "text": "dark",
+     "hl": false,
+     "start": 0.429,
+     "end": 0.824
+    },
+    {
+     "text": "inside.",
+     "hl": false,
+     "start": 0.824,
+     "end": 1.35
+    }
+   ]
+  },
+  {
+   "id": "moving",
+   "at": 95.822,
+   "text": "And she wasn't moving.",
+   "file": "voice/moving.wav",
+   "duration": 1.707,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.283
+    },
+    {
+     "text": "she",
+     "hl": false,
+     "start": 0.283,
+     "end": 0.447
+    },
+    {
+     "text": "wasn't",
+     "hl": false,
+     "start": 0.447,
+     "end": 0.774
+    },
+    {
+     "text": "moving.",
+     "hl": true,
+     "start": 0.774,
+     "end": 1.21
+    }
+   ]
+  }
+ ]
+}

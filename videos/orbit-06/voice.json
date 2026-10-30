@@ -1,0 +1,1821 @@
+{
+ "voice": "bm_fable*0.6+am_michael*0.4",
+ "speed": 1.06,
+ "lines": [
+  {
+   "id": "out",
+   "at": 0.52,
+   "text": "Then the lights went out.",
+   "file": "voice/out.wav",
+   "duration": 1.856,
+   "words": [
+    {
+     "text": "Then",
+     "hl": false,
+     "start": 0.17,
+     "end": 0.392
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.392,
+     "end": 0.503
+    },
+    {
+     "text": "lights",
+     "hl": false,
+     "start": 0.503,
+     "end": 0.835
+    },
+    {
+     "text": "went",
+     "hl": false,
+     "start": 0.835,
+     "end": 1.113
+    },
+    {
+     "text": "out.",
+     "hl": true,
+     "start": 1.113,
+     "end": 1.39
+    }
+   ]
+  },
+  {
+   "id": "emerg",
+   "at": 3.096,
+   "text": "Emergency lights. The fans winding down.",
+   "file": "voice/emerg.wav",
+   "duration": 3.157,
+   "words": [
+    {
+     "text": "Emergency",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.76
+    },
+    {
+     "text": "lights.",
+     "hl": false,
+     "start": 0.76,
+     "end": 1.18
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 1.34,
+     "end": 1.464
+    },
+    {
+     "text": "fans",
+     "hl": false,
+     "start": 1.464,
+     "end": 1.773
+    },
+    {
+     "text": "winding",
+     "hl": false,
+     "start": 1.773,
+     "end": 2.269
+    },
+    {
+     "text": "down.",
+     "hl": false,
+     "start": 2.269,
+     "end": 2.64
+    }
+   ]
+  },
+  {
+   "id": "silence",
+   "at": 6.473,
+   "text": "On a space station, silence is the sound of something dying.",
+   "file": "voice/silence.wav",
+   "duration": 3.904,
+   "words": [
+    {
+     "text": "On",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.266
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.266,
+     "end": 0.411
+    },
+    {
+     "text": "space",
+     "hl": false,
+     "start": 0.411,
+     "end": 0.703
+    },
+    {
+     "text": "station,",
+     "hl": false,
+     "start": 0.703,
+     "end": 1.14
+    },
+    {
+     "text": "silence",
+     "hl": false,
+     "start": 1.35,
+     "end": 1.835
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 1.835,
+     "end": 1.956
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.956,
+     "end": 2.077
+    },
+    {
+     "text": "sound",
+     "hl": false,
+     "start": 2.077,
+     "end": 2.441
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 2.441,
+     "end": 2.562
+    },
+    {
+     "text": "something",
+     "hl": false,
+     "start": 2.562,
+     "end": 2.986
+    },
+    {
+     "text": "dying.",
+     "hl": false,
+     "start": 2.986,
+     "end": 3.41
+    }
+   ]
+  },
+  {
+   "id": "hum",
+   "at": 10.597,
+   "text": "No hum. No fans. Just my own breathing, and my heartbeat.",
+   "file": "voice/hum.wav",
+   "duration": 4.032,
+   "words": [
+    {
+     "text": "No",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.702
+    },
+    {
+     "text": "hum.",
+     "hl": false,
+     "start": 0.702,
+     "end": 1.43
+    },
+    {
+     "text": "No",
+     "hl": false,
+     "start": 1.69,
+     "end": 2.282
+    },
+    {
+     "text": "fans.",
+     "hl": false,
+     "start": 2.282,
+     "end": 3.17
+    },
+    {
+     "text": "Just",
+     "hl": false,
+     "start": 3.3,
+     "end": 3.337
+    },
+    {
+     "text": "my",
+     "hl": false,
+     "start": 3.337,
+     "end": 3.361
+    },
+    {
+     "text": "own",
+     "hl": false,
+     "start": 3.361,
+     "end": 3.385
+    },
+    {
+     "text": "breathing,",
+     "hl": false,
+     "start": 3.385,
+     "end": 3.44
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 3.52,
+     "end": 3.525
+    },
+    {
+     "text": "my",
+     "hl": false,
+     "start": 3.525,
+     "end": 3.532
+    },
+    {
+     "text": "heartbeat.",
+     "hl": false,
+     "start": 3.532,
+     "end": 3.55
+    }
+   ]
+  },
+  {
+   "id": "suit2",
+   "at": 15.149,
+   "text": "Suit 2. The good one. Hale knew.",
+   "file": "voice/suit2.wav",
+   "duration": 2.453,
+   "words": [
+    {
+     "text": "Suit",
+     "hl": false,
+     "start": 0.08,
+     "end": 0.195
+    },
+    {
+     "text": "2.",
+     "hl": false,
+     "start": 0.195,
+     "end": 0.31
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.4,
+     "end": 0.558
+    },
+    {
+     "text": "good",
+     "hl": false,
+     "start": 0.558,
+     "end": 0.875
+    },
+    {
+     "text": "one.",
+     "hl": false,
+     "start": 0.875,
+     "end": 1.27
+    },
+    {
+     "text": "Hale",
+     "hl": false,
+     "start": 1.45,
+     "end": 1.7
+    },
+    {
+     "text": "knew.",
+     "hl": false,
+     "start": 1.7,
+     "end": 1.95
+    }
+   ]
+  },
+  {
+   "id": "prebreathe",
+   "at": 17.822,
+   "text": "Before a spacewalk, you breathe pure oxygen for hours. Or the nitrogen in your blood fizzes, like a shaken soda.",
+   "file": "voice/prebreathe.wav",
+   "duration": 6.955,
+   "words": [
+    {
+     "text": "Before",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.393
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.393,
+     "end": 0.515
+    },
+    {
+     "text": "spacewalk,",
+     "hl": false,
+     "start": 0.515,
+     "end": 0.96
+    },
+    {
+     "text": "you",
+     "hl": false,
+     "start": 1.11,
+     "end": 1.281
+    },
+    {
+     "text": "breathe",
+     "hl": false,
+     "start": 1.281,
+     "end": 1.624
+    },
+    {
+     "text": "pure",
+     "hl": false,
+     "start": 1.624,
+     "end": 1.909
+    },
+    {
+     "text": "oxygen",
+     "hl": false,
+     "start": 1.909,
+     "end": 2.479
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 2.479,
+     "end": 2.708
+    },
+    {
+     "text": "hours.",
+     "hl": false,
+     "start": 2.708,
+     "end": 3.05
+    },
+    {
+     "text": "Or",
+     "hl": false,
+     "start": 3.5,
+     "end": 3.649
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 3.649,
+     "end": 3.749
+    },
+    {
+     "text": "nitrogen",
+     "hl": false,
+     "start": 3.749,
+     "end": 4.295
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 4.295,
+     "end": 4.444
+    },
+    {
+     "text": "your",
+     "hl": false,
+     "start": 4.444,
+     "end": 4.594
+    },
+    {
+     "text": "blood",
+     "hl": false,
+     "start": 4.594,
+     "end": 4.842
+    },
+    {
+     "text": "fizzes,",
+     "hl": false,
+     "start": 4.842,
+     "end": 5.19
+    },
+    {
+     "text": "like",
+     "hl": false,
+     "start": 5.4,
+     "end": 5.641
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 5.641,
+     "end": 5.785
+    },
+    {
+     "text": "shaken",
+     "hl": false,
+     "start": 5.785,
+     "end": 6.123
+    },
+    {
+     "text": "soda.",
+     "hl": false,
+     "start": 6.123,
+     "end": 6.46
+    }
+   ]
+  },
+  {
+   "id": "hours",
+   "at": 24.997,
+   "text": "I breathed pure oxygen for four hours, alone, in the dark, watching the oxygen fall.",
+   "file": "voice/hours.wav",
+   "duration": 5.653,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.28
+    },
+    {
+     "text": "breathed",
+     "hl": false,
+     "start": 0.28,
+     "end": 0.653
+    },
+    {
+     "text": "pure",
+     "hl": false,
+     "start": 0.653,
+     "end": 0.919
+    },
+    {
+     "text": "oxygen",
+     "hl": false,
+     "start": 0.919,
+     "end": 1.451
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 1.451,
+     "end": 1.664
+    },
+    {
+     "text": "four",
+     "hl": false,
+     "start": 1.664,
+     "end": 1.93
+    },
+    {
+     "text": "hours,",
+     "hl": false,
+     "start": 1.93,
+     "end": 2.25
+    },
+    {
+     "text": "alone,",
+     "hl": false,
+     "start": 2.5,
+     "end": 3.42
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 3.5,
+     "end": 3.505
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 3.505,
+     "end": 3.508
+    },
+    {
+     "text": "dark,",
+     "hl": false,
+     "start": 3.508,
+     "end": 3.52
+    },
+    {
+     "text": "watching",
+     "hl": false,
+     "start": 3.82,
+     "end": 4.223
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 4.223,
+     "end": 4.324
+    },
+    {
+     "text": "oxygen",
+     "hl": false,
+     "start": 4.324,
+     "end": 4.828
+    },
+    {
+     "text": "fall.",
+     "hl": false,
+     "start": 4.828,
+     "end": 5.13
+    }
+   ]
+  },
+  {
+   "id": "rule",
+   "at": 30.87,
+   "text": "And the first rule of spacewalking: never go out alone.",
+   "file": "voice/rule.wav",
+   "duration": 3.669,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.278
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.278,
+     "end": 0.391
+    },
+    {
+     "text": "first",
+     "hl": false,
+     "start": 0.391,
+     "end": 0.727
+    },
+    {
+     "text": "rule",
+     "hl": false,
+     "start": 0.727,
+     "end": 1.008
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 1.008,
+     "end": 1.12
+    },
+    {
+     "text": "spacewalking:",
+     "hl": false,
+     "start": 1.12,
+     "end": 1.85
+    },
+    {
+     "text": "never",
+     "hl": false,
+     "start": 2.13,
+     "end": 2.393
+    },
+    {
+     "text": "go",
+     "hl": false,
+     "start": 2.393,
+     "end": 2.603
+    },
+    {
+     "text": "out",
+     "hl": false,
+     "start": 2.603,
+     "end": 2.812
+    },
+    {
+     "text": "alone.",
+     "hl": false,
+     "start": 2.812,
+     "end": 3.18
+    }
+   ]
+  },
+  {
+   "id": "alone",
+   "at": 34.759,
+   "text": "I had no one to go out with.",
+   "file": "voice/alone.wav",
+   "duration": 2.112,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.15,
+     "end": 0.302
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 0.302,
+     "end": 0.505
+    },
+    {
+     "text": "no",
+     "hl": false,
+     "start": 0.505,
+     "end": 0.707
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 0.707,
+     "end": 0.91
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 0.91,
+     "end": 1.062
+    },
+    {
+     "text": "go",
+     "hl": false,
+     "start": 1.062,
+     "end": 1.265
+    },
+    {
+     "text": "out",
+     "hl": false,
+     "start": 1.265,
+     "end": 1.467
+    },
+    {
+     "text": "with.",
+     "hl": false,
+     "start": 1.467,
+     "end": 1.67
+    }
+   ]
+  },
+  {
+   "id": "wrong",
+   "at": 37.091,
+   "text": "If anything went wrong out there, no one would ever know what happened.",
+   "file": "voice/wrong.wav",
+   "duration": 4.117,
+   "words": [
+    {
+     "text": "If",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.227
+    },
+    {
+     "text": "anything",
+     "hl": false,
+     "start": 0.227,
+     "end": 0.656
+    },
+    {
+     "text": "went",
+     "hl": false,
+     "start": 0.656,
+     "end": 0.924
+    },
+    {
+     "text": "wrong",
+     "hl": false,
+     "start": 0.924,
+     "end": 1.138
+    },
+    {
+     "text": "out",
+     "hl": false,
+     "start": 1.138,
+     "end": 1.352
+    },
+    {
+     "text": "there,",
+     "hl": false,
+     "start": 1.352,
+     "end": 1.62
+    },
+    {
+     "text": "no",
+     "hl": false,
+     "start": 1.92,
+     "end": 2.136
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 2.136,
+     "end": 2.353
+    },
+    {
+     "text": "would",
+     "hl": false,
+     "start": 2.353,
+     "end": 2.569
+    },
+    {
+     "text": "ever",
+     "hl": false,
+     "start": 2.569,
+     "end": 2.785
+    },
+    {
+     "text": "know",
+     "hl": false,
+     "start": 2.785,
+     "end": 3.001
+    },
+    {
+     "text": "what",
+     "hl": false,
+     "start": 3.001,
+     "end": 3.218
+    },
+    {
+     "text": "happened.",
+     "hl": false,
+     "start": 3.218,
+     "end": 3.65
+    }
+   ]
+  },
+  {
+   "id": "airlock",
+   "at": 41.828,
+   "text": "The airlock. The hatch. And then, nothing under my feet but the Earth.",
+   "file": "voice/airlock.wav",
+   "duration": 4.16,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.296
+    },
+    {
+     "text": "airlock.",
+     "hl": false,
+     "start": 0.296,
+     "end": 1.04
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 1.14,
+     "end": 1.175
+    },
+    {
+     "text": "hatch.",
+     "hl": false,
+     "start": 1.175,
+     "end": 1.28
+    },
+    {
+     "text": "And",
+     "hl": false,
+     "start": 1.62,
+     "end": 2.123
+    },
+    {
+     "text": "then,",
+     "hl": false,
+     "start": 2.123,
+     "end": 2.96
+    },
+    {
+     "text": "nothing",
+     "hl": false,
+     "start": 3.09,
+     "end": 3.193
+    },
+    {
+     "text": "under",
+     "hl": false,
+     "start": 3.193,
+     "end": 3.278
+    },
+    {
+     "text": "my",
+     "hl": false,
+     "start": 3.278,
+     "end": 3.346
+    },
+    {
+     "text": "feet",
+     "hl": false,
+     "start": 3.346,
+     "end": 3.432
+    },
+    {
+     "text": "but",
+     "hl": false,
+     "start": 3.432,
+     "end": 3.5
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 3.5,
+     "end": 3.535
+    },
+    {
+     "text": "Earth.",
+     "hl": false,
+     "start": 3.535,
+     "end": 3.62
+    }
+   ]
+  },
+  {
+   "id": "tether",
+   "at": 46.208,
+   "text": "One tether. Hook, unhook, hook. Never both off.",
+   "file": "voice/tether.wav",
+   "duration": 3.115,
+   "words": [
+    {
+     "text": "One",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.353
+    },
+    {
+     "text": "tether.",
+     "hl": false,
+     "start": 0.353,
+     "end": 0.717
+    },
+    {
+     "text": "Hook,",
+     "hl": false,
+     "start": 0.717,
+     "end": 1.021
+    },
+    {
+     "text": "unhook,",
+     "hl": false,
+     "start": 1.021,
+     "end": 1.446
+    },
+    {
+     "text": "hook.",
+     "hl": false,
+     "start": 1.446,
+     "end": 1.75
+    },
+    {
+     "text": "Never",
+     "hl": false,
+     "start": 1.75,
+     "end": 2.053
+    },
+    {
+     "text": "both",
+     "hl": false,
+     "start": 2.053,
+     "end": 2.357
+    },
+    {
+     "text": "off.",
+     "hl": false,
+     "start": 2.357,
+     "end": 2.6
+    }
+   ]
+  },
+  {
+   "id": "speed",
+   "at": 49.543,
+   "text": "Below me, the Earth moved at almost eight kilometers a second. A whole world every ninety minutes.",
+   "file": "voice/speed.wav",
+   "duration": 5.803,
+   "words": [
+    {
+     "text": "Below",
+     "hl": false,
+     "start": 0.1,
+     "end": 1.747
+    },
+    {
+     "text": "me,",
+     "hl": false,
+     "start": 1.747,
+     "end": 3.12
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 3.65,
+     "end": 3.712
+    },
+    {
+     "text": "Earth",
+     "hl": false,
+     "start": 3.712,
+     "end": 3.835
+    },
+    {
+     "text": "moved",
+     "hl": false,
+     "start": 3.835,
+     "end": 4.02
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 4.02,
+     "end": 4.081
+    },
+    {
+     "text": "almost",
+     "hl": false,
+     "start": 4.081,
+     "end": 4.359
+    },
+    {
+     "text": "eight",
+     "hl": false,
+     "start": 4.359,
+     "end": 4.482
+    },
+    {
+     "text": "kilometers",
+     "hl": false,
+     "start": 4.482,
+     "end": 4.821
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 4.821,
+     "end": 4.913
+    },
+    {
+     "text": "second.",
+     "hl": false,
+     "start": 4.913,
+     "end": 5.16
+    },
+    {
+     "text": "A",
+     "hl": false,
+     "start": 5.28,
+     "end": 5.292
+    },
+    {
+     "text": "whole",
+     "hl": false,
+     "start": 5.292,
+     "end": 5.313
+    },
+    {
+     "text": "world",
+     "hl": false,
+     "start": 5.313,
+     "end": 5.338
+    },
+    {
+     "text": "every",
+     "hl": false,
+     "start": 5.338,
+     "end": 5.358
+    },
+    {
+     "text": "ninety",
+     "hl": false,
+     "start": 5.358,
+     "end": 5.387
+    },
+    {
+     "text": "minutes.",
+     "hl": false,
+     "start": 5.387,
+     "end": 5.42
+    }
+   ]
+  },
+  {
+   "id": "sunset",
+   "at": 55.866,
+   "text": "Halfway along the truss, the sun set.",
+   "file": "voice/sunset.wav",
+   "duration": 2.581,
+   "words": [
+    {
+     "text": "Halfway",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.543
+    },
+    {
+     "text": "along",
+     "hl": false,
+     "start": 0.543,
+     "end": 0.838
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.838,
+     "end": 0.956
+    },
+    {
+     "text": "truss,",
+     "hl": false,
+     "start": 0.956,
+     "end": 1.31
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.44,
+     "end": 1.549
+    },
+    {
+     "text": "sun",
+     "hl": false,
+     "start": 1.549,
+     "end": 1.767
+    },
+    {
+     "text": "set.",
+     "hl": false,
+     "start": 1.767,
+     "end": 2.04
+    }
+   ]
+  },
+  {
+   "id": "black",
+   "at": 58.667,
+   "text": "The Earth below me went black, except for the cities.",
+   "file": "voice/black.wav",
+   "duration": 3.243,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.205
+    },
+    {
+     "text": "Earth",
+     "hl": false,
+     "start": 0.205,
+     "end": 0.394
+    },
+    {
+     "text": "below",
+     "hl": false,
+     "start": 0.394,
+     "end": 0.679
+    },
+    {
+     "text": "me",
+     "hl": false,
+     "start": 0.679,
+     "end": 0.869
+    },
+    {
+     "text": "went",
+     "hl": false,
+     "start": 0.869,
+     "end": 1.106
+    },
+    {
+     "text": "black,",
+     "hl": false,
+     "start": 1.106,
+     "end": 1.39
+    },
+    {
+     "text": "except",
+     "hl": false,
+     "start": 1.7,
+     "end": 2.075
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 2.075,
+     "end": 2.288
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.288,
+     "end": 2.396
+    },
+    {
+     "text": "cities.",
+     "hl": false,
+     "start": 2.396,
+     "end": 2.77
+    }
+   ]
+  },
+  {
+   "id": "joint",
+   "at": 62.43,
+   "text": "The array's joint was jammed. A torn insulation blanket, wrapped around the gears.",
+   "file": "voice/joint.wav",
+   "duration": 5.12,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.237
+    },
+    {
+     "text": "array's",
+     "hl": false,
+     "start": 0.237,
+     "end": 0.587
+    },
+    {
+     "text": "joint",
+     "hl": false,
+     "start": 0.587,
+     "end": 0.996
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.996,
+     "end": 1.171
+    },
+    {
+     "text": "jammed.",
+     "hl": false,
+     "start": 1.171,
+     "end": 1.58
+    },
+    {
+     "text": "A",
+     "hl": false,
+     "start": 2.02,
+     "end": 2.157
+    },
+    {
+     "text": "torn",
+     "hl": false,
+     "start": 2.157,
+     "end": 2.431
+    },
+    {
+     "text": "insulation",
+     "hl": false,
+     "start": 2.431,
+     "end": 2.979
+    },
+    {
+     "text": "blanket,",
+     "hl": false,
+     "start": 2.979,
+     "end": 3.39
+    },
+    {
+     "text": "wrapped",
+     "hl": false,
+     "start": 3.56,
+     "end": 3.837
+    },
+    {
+     "text": "around",
+     "hl": false,
+     "start": 3.837,
+     "end": 4.226
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 4.226,
+     "end": 4.337
+    },
+    {
+     "text": "gears.",
+     "hl": false,
+     "start": 4.337,
+     "end": 4.67
+    }
+   ]
+  },
+  {
+   "id": "cut",
+   "at": 67.77,
+   "text": "I cut it free, piece by piece.",
+   "file": "voice/cut.wav",
+   "duration": 2.411,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.292
+    },
+    {
+     "text": "cut",
+     "hl": false,
+     "start": 0.292,
+     "end": 0.521
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 0.521,
+     "end": 0.636
+    },
+    {
+     "text": "free,",
+     "hl": false,
+     "start": 0.636,
+     "end": 0.98
+    },
+    {
+     "text": "piece",
+     "hl": false,
+     "start": 1.08,
+     "end": 1.367
+    },
+    {
+     "text": "by",
+     "hl": false,
+     "start": 1.367,
+     "end": 1.596
+    },
+    {
+     "text": "piece.",
+     "hl": false,
+     "start": 1.596,
+     "end": 1.94
+    }
+   ]
+  },
+  {
+   "id": "knife",
+   "at": 70.401,
+   "text": "One wrong move with the knife, and I would cut my own suit.",
+   "file": "voice/knife.wav",
+   "duration": 3.669,
+   "words": [
+    {
+     "text": "One",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.348
+    },
+    {
+     "text": "wrong",
+     "hl": false,
+     "start": 0.348,
+     "end": 0.557
+    },
+    {
+     "text": "move",
+     "hl": false,
+     "start": 0.557,
+     "end": 0.817
+    },
+    {
+     "text": "with",
+     "hl": false,
+     "start": 0.817,
+     "end": 0.973
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.973,
+     "end": 1.078
+    },
+    {
+     "text": "knife,",
+     "hl": false,
+     "start": 1.078,
+     "end": 1.39
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 1.78,
+     "end": 1.929
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 1.929,
+     "end": 2.078
+    },
+    {
+     "text": "would",
+     "hl": false,
+     "start": 2.078,
+     "end": 2.276
+    },
+    {
+     "text": "cut",
+     "hl": false,
+     "start": 2.276,
+     "end": 2.475
+    },
+    {
+     "text": "my",
+     "hl": false,
+     "start": 2.475,
+     "end": 2.674
+    },
+    {
+     "text": "own",
+     "hl": false,
+     "start": 2.674,
+     "end": 2.872
+    },
+    {
+     "text": "suit.",
+     "hl": false,
+     "start": 2.872,
+     "end": 3.17
+    }
+   ]
+  },
+  {
+   "id": "shaking",
+   "at": 74.29,
+   "text": "My hands were shaking. Not from the cold.",
+   "file": "voice/shaking.wav",
+   "duration": 2.816,
+   "words": [
+    {
+     "text": "My",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.312
+    },
+    {
+     "text": "hands",
+     "hl": false,
+     "start": 0.312,
+     "end": 0.615
+    },
+    {
+     "text": "were",
+     "hl": false,
+     "start": 0.615,
+     "end": 0.766
+    },
+    {
+     "text": "shaking.",
+     "hl": false,
+     "start": 0.766,
+     "end": 1.17
+    },
+    {
+     "text": "Not",
+     "hl": false,
+     "start": 1.36,
+     "end": 1.627
+    },
+    {
+     "text": "from",
+     "hl": false,
+     "start": 1.627,
+     "end": 1.84
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.84,
+     "end": 1.947
+    },
+    {
+     "text": "cold.",
+     "hl": false,
+     "start": 1.947,
+     "end": 2.32
+    }
+   ]
+  },
+  {
+   "id": "turn",
+   "at": 77.726,
+   "text": "And the array started to turn. Back toward the sun.",
+   "file": "voice/turn.wav",
+   "duration": 3.264,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.27
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.27,
+     "end": 0.37
+    },
+    {
+     "text": "array",
+     "hl": false,
+     "start": 0.37,
+     "end": 0.62
+    },
+    {
+     "text": "started",
+     "hl": false,
+     "start": 0.62,
+     "end": 1.07
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 1.07,
+     "end": 1.22
+    },
+    {
+     "text": "turn.",
+     "hl": false,
+     "start": 1.22,
+     "end": 1.52
+    },
+    {
+     "text": "Back",
+     "hl": false,
+     "start": 1.82,
+     "end": 2.016
+    },
+    {
+     "text": "toward",
+     "hl": false,
+     "start": 2.016,
+     "end": 2.407
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.407,
+     "end": 2.505
+    },
+    {
+     "text": "sun.",
+     "hl": false,
+     "start": 2.505,
+     "end": 2.75
+    }
+   ]
+  },
+  {
+   "id": "power",
+   "at": 81.21,
+   "text": "Power, 96 percent.",
+   "file": "voice/power.wav",
+   "duration": 2.048,
+   "words": [
+    {
+     "text": "Power,",
+     "hl": false,
+     "start": 0.1,
+     "end": 1.02
+    },
+    {
+     "text": "96",
+     "hl": false,
+     "start": 1.09,
+     "end": 1.354
+    },
+    {
+     "text": "percent.",
+     "hl": false,
+     "start": 1.354,
+     "end": 1.53
+    }
+   ]
+  },
+  {
+   "id": "breathed",
+   "at": 83.478,
+   "text": "I breathed out for the first time in an hour.",
+   "file": "voice/breathed.wav",
+   "duration": 2.837,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.289
+    },
+    {
+     "text": "breathed",
+     "hl": false,
+     "start": 0.289,
+     "end": 0.659
+    },
+    {
+     "text": "out",
+     "hl": false,
+     "start": 0.659,
+     "end": 0.871
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 0.871,
+     "end": 1.083
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.083,
+     "end": 1.189
+    },
+    {
+     "text": "first",
+     "hl": false,
+     "start": 1.189,
+     "end": 1.506
+    },
+    {
+     "text": "time",
+     "hl": false,
+     "start": 1.506,
+     "end": 1.771
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 1.771,
+     "end": 1.93
+    },
+    {
+     "text": "an",
+     "hl": false,
+     "start": 1.93,
+     "end": 2.035
+    },
+    {
+     "text": "hour.",
+     "hl": false,
+     "start": 2.035,
+     "end": 2.3
+    }
+   ]
+  },
+  {
+   "id": "back",
+   "at": 86.935,
+   "text": "On the way back, I passed Module 3's window.",
+   "file": "voice/back.wav",
+   "duration": 3.072,
+   "words": [
+    {
+     "text": "On",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.277
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.277,
+     "end": 0.369
+    },
+    {
+     "text": "way",
+     "hl": false,
+     "start": 0.369,
+     "end": 0.551
+    },
+    {
+     "text": "back,",
+     "hl": false,
+     "start": 0.551,
+     "end": 0.78
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 1.02,
+     "end": 1.167
+    },
+    {
+     "text": "passed",
+     "hl": false,
+     "start": 1.167,
+     "end": 1.412
+    },
+    {
+     "text": "Module",
+     "hl": false,
+     "start": 1.412,
+     "end": 1.854
+    },
+    {
+     "text": "3's",
+     "hl": false,
+     "start": 1.854,
+     "end": 2.148
+    },
+    {
+     "text": "window.",
+     "hl": false,
+     "start": 2.148,
+     "end": 2.54
+    }
+   ]
+  },
+  {
+   "id": "dark",
+   "at": 90.227,
+   "text": "It should have been dark.",
+   "file": "voice/dark.wav",
+   "duration": 1.664,
+   "words": [
+    {
+     "text": "It",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.21
+    },
+    {
+     "text": "should",
+     "hl": false,
+     "start": 0.21,
+     "end": 0.41
+    },
+    {
+     "text": "have",
+     "hl": false,
+     "start": 0.41,
+     "end": 0.61
+    },
+    {
+     "text": "been",
+     "hl": false,
+     "start": 0.61,
+     "end": 0.81
+    },
+    {
+     "text": "dark.",
+     "hl": false,
+     "start": 0.81,
+     "end": 1.16
+    }
+   ]
+  },
+  {
+   "id": "dead",
+   "at": 92.111,
+   "text": "Module 3 had been dead for a hundred and fifty days.",
+   "file": "voice/dead.wav",
+   "duration": 3.648,
+   "words": [
+    {
+     "text": "Module",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.625
+    },
+    {
+     "text": "3",
+     "hl": false,
+     "start": 0.625,
+     "end": 0.9
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 0.9,
+     "end": 1.12
+    },
+    {
+     "text": "been",
+     "hl": false,
+     "start": 1.12,
+     "end": 1.34
+    },
+    {
+     "text": "dead",
+     "hl": false,
+     "start": 1.34,
+     "end": 1.56
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 1.56,
+     "end": 1.78
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.78,
+     "end": 1.945
+    },
+    {
+     "text": "hundred",
+     "hl": false,
+     "start": 1.945,
+     "end": 2.385
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 2.385,
+     "end": 2.55
+    },
+    {
+     "text": "fifty",
+     "hl": false,
+     "start": 2.55,
+     "end": 2.88
+    },
+    {
+     "text": "days.",
+     "hl": false,
+     "start": 2.88,
+     "end": 3.21
+    }
+   ]
+  },
+  {
+   "id": "light",
+   "at": 96.579,
+   "text": "There was a light on in Module 3.",
+   "file": "voice/light.wav",
+   "duration": 2.432,
+   "words": [
+    {
+     "text": "There",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.317
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.317,
+     "end": 0.464
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.464,
+     "end": 0.612
+    },
+    {
+     "text": "light",
+     "hl": false,
+     "start": 0.612,
+     "end": 0.858
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.858,
+     "end": 1.005
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 1.005,
+     "end": 1.153
+    },
+    {
+     "text": "Module",
+     "hl": false,
+     "start": 1.153,
+     "end": 1.595
+    },
+    {
+     "text": "3.",
+     "hl": false,
+     "start": 1.595,
+     "end": 1.89
+    }
+   ]
+  },
+  {
+   "id": "shadow",
+   "at": 99.631,
+   "text": "And a shadow moved.",
+   "file": "voice/shadow.wav",
+   "duration": 1.685,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.301
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.301,
+     "end": 0.471
+    },
+    {
+     "text": "shadow",
+     "hl": false,
+     "start": 0.471,
+     "end": 0.812
+    },
+    {
+     "text": "moved.",
+     "hl": true,
+     "start": 0.812,
+     "end": 1.21
+    }
+   ]
+  }
+ ]
+}

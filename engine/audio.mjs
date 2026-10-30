@@ -39,6 +39,8 @@ const RECIPES = {
     { at: t, chain: ev('0.3*(sin(2*PI*420*t)+0.7*sin(2*PI*1133*t)+0.45*sin(2*PI*2391*t))*exp(-7*t)+0.6*sin(2*PI*70*t)*exp(-14*t)', 1.2) },
   ]),
   hiss: ({ at, d = 1.5 }) => [{ at, chain: `${noise('white', d, 0.6, 52)},highpass=f=2200,afade=t=in:d=0.05,afade=t=out:st=0.1:d=${(d - 0.1).toFixed(2)}:curve=exp,volume=0.5` }],
+  // breathing inside a helmet: slow filtered in/out
+  breath: ({ from, to, rate = 0.28, level = 1 }) => [{ at: from, chain: `${noise('pink', to - from, 0.6, 56)},bandpass=f=900:w=1400,volume='${(0.5 * level).toFixed(2)}*pow(max(0,sin(2*PI*${rate}*t)),2)':eval=frame,afade=t=in:d=0.5,afade=t=out:st=${Math.max(0, to - from - 0.5).toFixed(2)}:d=0.5` }],
   beep: ({ at }) => [].concat(at).map((t) => ({ at: t, chain: ev('0.22*sin(2*PI*1320*t)*lt(t,0.09)', 0.12) })),
   // radio: a short squelch of static and a two-tone chirp
   radio: ({ at }) => [].concat(at).flatMap((t) => [

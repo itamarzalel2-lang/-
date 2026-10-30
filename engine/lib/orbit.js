@@ -9,6 +9,7 @@ import {
   envelope, radio, sleepBag, beam, gaugeCavity, spotlight, pose,
 } from './toon.js';
 import { clamp, lerp, hash01, easeInOutCubic, easeOutCubic } from './util.js';
+import { plants as plantsRack } from './props2d.js';
 
 export const TITLE = ['Alone in Orbit Ep 01:', 'Day 1 to Day 365'];
 export const HATCH = { open: 0, wheel: 1.25 }; // Hatch 3 as Hale left it: closed, wheel locked
@@ -78,10 +79,10 @@ export const outside = (from, { cam, st = {}, shadow = 0, sun = 0, props } = {})
 });
 
 /** Hatch 3 at night with Sam's flashlight on it (beam from the left). */
-export const hatchNight = (from, { cam, kicks, pin, sam = null, light = 1, props } = {}) => ({
+export const hatchNight = (from, { cam, kicks, pin, sam = null, light = 1, props, hatch = HATCH } = {}) => ({
   from, cam, kicks, pin,
   draw: (g, t, lt) => {
-    interior(g, t, { back: 'hatch', hatch: HATCH, night: 1 });
+    interior(g, t, { back: 'hatch', hatch: val(hatch, t, lt), night: 1 });
     const figs = sam ? people(g, [sam], t, lt) : [];
     const l = val(light, t, lt);
     if (l > 0) beam(g, figs[0]?.handF[0] ?? -40, figs[0]?.handF[1] ?? 330, 270, 207, 120, 0.42 * l);
@@ -170,14 +171,14 @@ export const paperShot = (from, { lines = [], sheet = { x: 30, y: 22, w: 480, h:
 });
 
 /** Hale's envelopes in their box: envelopes n..12 left, envelope n rising out of it. */
-export const envelopesShot = (from, { n, cam } = {}) => ({
+export const envelopesShot = (from, { n, rise = n, cam } = {}) => ({
   from, cam: cam ?? [{ t: 0, x: 270, y: 217, z: 1.0 }, { t: 2.5, x: 270, y: 200, z: 1.1 }],
   draw: (g, t, lt) => {
     g.fillStyle = '#5a4a3a'; g.fillRect(-40, -40, 620, 520);
     roundRect(g, 70, 165, 420, 215, 10); g.fillStyle = '#8a6a4a'; g.fill(); g.strokeStyle = INK; g.lineWidth = 3; g.stroke();
     for (let i = 12; i >= n; i--) {
-      const up = i === n ? easeInOutCubic(clamp((lt - 0.8) / 1.0)) * 70 : 0;
-      envelope(g, 112 + (i - 1) * 30, 165 - up, 58, 92, { n: String(i), rot: i === n ? -0.1 * clamp(up / 70) : 0 });
+      const up = i === rise ? easeInOutCubic(clamp((lt - 0.8) / 1.0)) * 70 : 0;
+      envelope(g, 112 + (i - 1) * 30, 165 - up, 58, 92, { n: String(i), rot: i === rise ? -0.1 * clamp(up / 70) : 0 });
     }
     g.fillStyle = '#6e5238'; g.fillRect(70, 215, 420, 165);
     g.strokeStyle = INK; g.lineWidth = 3; g.strokeRect(70, 215, 420, 165);
@@ -185,11 +186,11 @@ export const envelopesShot = (from, { n, cam } = {}) => ({
 });
 
 /** An envelope's note: big handwriting, signed "— H.". lines = [{ text, at, underline }]. */
-export const noteShot = (from, { lines, sign, size = 30 } = {}) => paperShot(from, {
-  sheet: { x: 60, y: 70, w: 420, h: 290 }, rot: 0.02, lh: 44, top: 66, size,
+export const noteShot = (from, { lines, sign, size = 30, lh = 44, top = 66, y0 = 128 } = {}) => paperShot(from, {
+  sheet: { x: 60, y: 70, w: 420, h: 290 }, rot: 0.02, lh, top, size,
   cam: [{ t: 0, x: 270, y: 217, z: 1.05 }, { t: 4, x: 270, y: 210, z: 1.15 }],
   lines: [
-    ...lines.map((l, i) => ({ x: 92, y: 128 + i * 44, ...l })), // above the caption band
+    ...lines.map((l, i) => ({ x: 92, y: y0 + i * lh, ...l })), // above the caption band
     ...(sign ? [{ text: '— H.', at: sign, x: 360, y: 330, size: 26 }] : []),
   ],
 });
@@ -236,7 +237,7 @@ export const calendarShot = (from, { first, upTo, circle = [], cam } = {}) => ({
  * The station plan: our side | Hatch 3 | Module 3. open(t) 0..1 opens the hatch in the plan; with
  * vacuum on the far side the air streams out of our side (dots) and the pressure falls.
  */
-export const planShot = (from, { open = 0, red = false, leftKpa = true, rightText = '0 kPa ?', cam } = {}) => ({
+export const planShot = (from, { open = 0, red = false, redLeft = false, airRight = 0, labels = ['OUR SIDE', 'MODULE 3'], leftKpa = true, rightText = '0 kPa ?', cam } = {}) => ({
   from, cam: cam ?? CENTER,
   draw: (g, t, lt) => {
     g.fillStyle = '#0e2a4a'; g.fillRect(-40, -40, 620, 520);
@@ -248,8 +249,9 @@ export const planShot = (from, { open = 0, red = false, leftKpa = true, rightTex
       roundRect(g, x, 110, 200, 110, 46); g.fillStyle = fill; g.fill(); g.strokeStyle = '#d6e8ff'; g.lineWidth = 3; g.stroke();
       g.fillStyle = '#e8f2ff'; g.font = `900 21px ${FONTS.display}`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(label, x + 100, 90);
     };
-    half(40, 'OUR SIDE', 'rgba(140,190,255,0.12)');
-    half(300, 'MODULE 3', red ? 'rgba(230,40,40,0.35)' : 'rgba(0,0,0,0.45)');
+    const blink = 0.5 + 0.5 * Math.sin(t * 9);
+    half(40, labels[0], redLeft ? `rgba(230,40,40,${0.35 + 0.4 * blink})` : 'rgba(140,190,255,0.12)');
+    half(300, labels[1], red ? 'rgba(230,40,40,0.35)' : 'rgba(0,0,0,0.45)');
     // Hatch 3 between them: a door that swings open
     g.fillStyle = '#16365c'; g.fillRect(240, 140, 60, 50); g.strokeStyle = '#ffd34d'; g.lineWidth = 3; g.strokeRect(240, 140, 60, 50);
     g.save(); g.translate(270, 140); g.rotate(-u * 1.3); g.fillStyle = '#ffd34d'; g.fillRect(-3, 0, 6, 50); g.restore();
@@ -263,6 +265,12 @@ export const planShot = (from, { open = 0, red = false, leftKpa = true, rightTex
       const x = x0 + m * m * 260, y = lerp(y0, 165, clamp(m * 0.8));
       if (x > 520) continue;
       if (x < 236) left++;
+      g.fillStyle = 'rgba(160,215,255,0.85)'; g.beginPath(); g.arc(x + 2 * Math.sin(t * 2 + i), y + 2 * Math.cos(t * 1.7 + i), 3.2, 0, 7); g.fill();
+    }
+    // air on the far side too (it was never vacuum)
+    const ar = val(airRight, t, lt);
+    for (let i = 0; i < 70 * ar; i++) {
+      const x = 322 + hash01(i, 13) * 156, y = 126 + hash01(i, 14) * 78;
       g.fillStyle = 'rgba(160,215,255,0.85)'; g.beginPath(); g.arc(x + 2 * Math.sin(t * 2 + i), y + 2 * Math.cos(t * 1.7 + i), 3.2, 0, 7); g.fill();
     }
     g.font = `800 19px ${FONTS.mono}`; g.textAlign = 'center';
@@ -328,28 +336,72 @@ export const cavityShot = (from, { reveal = 1, cam } = {}) => ({
   },
 });
 
+/** Any custom picture: draw(g, t, lt). */
+export const shot = (from, cam, draw, extra = {}) => ({ from, cam, draw, ...extra });
+
+/** Both sides of Hatch 3 in section: Sam on the left, Mara on the right, the bulkhead between. */
+export const splitShot = (from, { sam = {}, mara = {}, night = 1, cam, pin, kicks, props } = {}) => ({
+  from, cam: cam ?? CENTER, pin, kicks,
+  draw: (g, t, lt) => {
+    g.fillStyle = '#d9d2c4'; g.fillRect(-60, -60, 330, 560);
+    g.fillStyle = '#cfd6d9'; g.fillRect(270, -60, 330, 560);
+    g.fillStyle = '#b7af9e'; g.fillRect(-60, 360, 660, 140);
+    for (const [x0, col] of [[20, '#c9c2b2'], [330, '#bcc5c9']]) for (let k = 0; k < 3; k++) { roundRect(g, x0 + k * 62, 60, 52, 90, 5); g.fillStyle = col; g.fill(); g.strokeStyle = 'rgba(0,0,0,0.25)'; g.lineWidth = 1.2; g.stroke(); }
+    // the bulkhead and Hatch 3 seen edge-on
+    g.fillStyle = '#8e897e'; g.fillRect(256, -60, 28, 560); g.strokeStyle = INK; g.lineWidth = 2.5; g.strokeRect(256, -60, 28, 560);
+    g.fillStyle = '#c9c3b6'; g.fillRect(252, 120, 36, 170); g.strokeRect(252, 120, 36, 170);
+    g.fillStyle = '#b8352c'; g.font = `900 22px ${FONTS.display}`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('3', 270, 205);
+    const n = val(night, t, lt);
+    if (n > 0) { g.fillStyle = `rgba(8,12,34,${0.6 * n})`; g.fillRect(-60, -60, 660, 560); }
+    stick(g, { t, x: 170, y: 300, s: 1.35, who: 'sam', pose: 'push', face: 'worried', floaty: 0.3, ...val(sam, t, lt) });
+    stick(g, { t, x: 370, y: 300, s: 1.35, who: 'mara', pose: 'push', face: 'worried', floaty: 0.3, dir: -1, phase: 2, ...val(mara, t, lt) });
+    props?.(g, t, lt);
+  },
+});
+
+/** Mara's half: the same module, cooler light, her plants. people = stick options. */
+export const maraRoom = (from, { back = 'wall', night = 0, alarm = 0, hatch = HATCH, people: ps, props, cam, pin, kicks, plantsAt } = {}) => ({
+  from, cam, pin, kicks,
+  draw: (g, t, lt) => {
+    interior(g, t, { back, night: 0, alarm: val(alarm, t, lt), seed: 9, hatch: val(hatch, t, lt) });
+    const [px, py] = plantsAt ?? (back === 'wall' ? [150, 220] : [330, 300]);
+    plantsRack(g, px, py, t, { w: back === 'wall' ? 240 : 160 });
+    g.fillStyle = 'rgba(120,170,220,0.12)'; g.fillRect(-400, -400, 1400, 1300);
+    const n = val(night, t, lt);
+    if (n > 0) { g.fillStyle = `rgba(8,12,34,${0.72 * n})`; g.fillRect(-400, -400, 1400, 1300); }
+    const figs = people(g, ps, t, lt);
+    props?.(g, t, lt, figs);
+  },
+});
+
 /** Morse marks appearing as the knocks land: marks = [{ at, sym: '.' | '-' }]; letters under groups. */
-export const morseMarks = (g, t, marks, { x = 270, y = 80, letters = [] } = {}) => {
-  const shown = marks.filter((m) => t >= m.at);
-  if (!shown.length) return;
-  const gap = 44, groupGap = 34;
-  let total = 0;
-  marks.forEach((m, i) => { total += gap + (m.group && i ? groupGap : 0); });
-  let cx = x - total / 2;
+export const morseMarks = (g, t, marks, { x = 270, y = 80, letters = [], gap = 44, groupGap = 34 } = {}) => {
+  if (!marks.some((m) => t >= m.at)) return;
+  // positions: marks flow left to right, an extra gap before each new group
+  const xs = [], groups = [];
+  let cx = 0;
+  marks.forEach((m, i) => {
+    cx += (i ? gap : 0) + (m.group && i ? groupGap : 0);
+    xs.push(cx);
+    if (!i || m.group) groups.push([]);
+    groups.at(-1).push(cx);
+  });
+  const shift = x - cx / 2;
   g.save();
   marks.forEach((m, i) => {
-    cx += gap + (m.group && i ? groupGap : 0);
     if (t < m.at) return;
-    const pop = easeOutCubic(clamp((t - m.at) / 0.15));
+    const px = xs[i] + shift, pop = easeOutCubic(clamp((t - m.at) / 0.15));
     g.lineCap = 'round';
     for (const [col, w] of [['rgba(0,0,0,0.75)', 17], [`rgba(255,236,170,${pop})`, 11]]) {
       g.fillStyle = col; g.strokeStyle = col; g.lineWidth = w;
-      if (m.sym === '.') { g.beginPath(); g.arc(cx, y, (w / 2 + 1) * pop, 0, 7); g.fill(); } else { g.beginPath(); g.moveTo(cx - 11 * pop, y); g.lineTo(cx + 11 * pop, y); g.stroke(); }
+      if (m.sym === '.') { g.beginPath(); g.arc(px, y, (w / 2 + 1) * pop, 0, 7); g.fill(); } else { const hl = Math.min(11, gap * 0.25); g.beginPath(); g.moveTo(px - hl * pop, y); g.lineTo(px + hl * pop, y); g.stroke(); }
     }
   });
+  // letters: under a group (group: k) or at an explicit x
   for (const l of letters) if (t >= l.at) {
+    const gx = l.group !== undefined ? (groups[l.group][0] + groups[l.group].at(-1)) / 2 + shift : l.x;
     g.fillStyle = '#ffec9a'; g.font = `900 38px ${FONTS.display}`; g.textAlign = 'center'; g.textBaseline = 'middle';
-    g.globalAlpha = clamp((t - l.at) / 0.2); g.fillText(l.text, l.x, y + 50); g.globalAlpha = 1;
+    g.globalAlpha = clamp((t - l.at) / 0.2); g.fillText(l.text, gx, y + 50); g.globalAlpha = 1;
   }
   g.restore();
 };

@@ -14,9 +14,10 @@ the series' reusable shots in `engine/lib/orbit.js`.
 - **Me: Sam Cole**, flight engineer, side A. Adult, calm, practical. Dark messy hair.
 - **Commander Hale**: station commander (both halves). Gray flat-top, mustache. Was ordered to run the study, hated it, wrote both letters, and hid the truth in his envelopes.
 - **Ortiz**: pilot, side A, curly hair. Leaves with Hale on Day 1. Believes the leak was real.
-- **Mara Lind**: mission specialist, side B (Module 3). Ponytail. Got the same story from the other side.
+- **Mara Lind**: mission specialist (a biologist; she grows plants in Module 3), side B. Ponytail. Got the same story from the other side.
+- **Okafor**: Mara's commander on side B. Sealed Hatch 3 from her side on Day 1.
 - **Larkspur Orbital**: the (fictional) company that owns Larkspur Station and runs Project SOLO.
-- **Inés Hale**: Hale's daughter, a radio amateur in Chile. Hale asked her to listen for Larkspur every night, without telling her why.
+- **Inés Hale**: Hale's daughter, eighteen, a radio amateur in Chile. Hale asked her to listen for Larkspur every night, without telling her why.
 
 ## The truth (all of it is revealed by Part 12; nothing before contradicts it)
 Larkspur Station has two halves joined at Hatch 3, three crew on each side. Larkspur Orbital is
@@ -71,7 +72,7 @@ Envelope 12 (read in Part 12):
 Each part lists what it opens on (the repeat of the previous part's last ~3 s), the beats with
 their key lines, and the exact last line.
 
-### Part 1 · Days 1–40 · made (`videos/orbit-01`)
+### Part 1 · Days 1–40 · made (`videos/orbit-01`; its notebook counts the tank from Day 1 = 312.0 kg, so its rows run 3.4 kg below later screens; left as delivered)
 Hook ("For one year, I lived alone on a space station. At least, that's what they told me.").
 Day 1 alarm, ammonia leak in Module 3, Hale seals Hatch 3 ("everyone on that side is gone"),
 the gauge drops to zero, the capsule's NO GO seat, "two could leave, one had to stay", next ship
@@ -176,7 +177,7 @@ someone else was breathing my air." Ground copies. Day 40, 3 a.m.: Knock. Knock.
 1. He pulls her through to his side, into fresh air, and pushes a cartridge into her scrubber.
 2. Long minutes. Then she breathes deeper. Opens her eyes. First words, out loud, after 240 days: "You're real."
 3. Her half is a mirror of his: the same sleeping bag, the same notebook, the same letter.
-4. They follow the camera cables behind a panel to a recorder: PROJECT SOLO. SUBJECT A: COLE. SUBJECT B: LIND. Channel 9 prompts logged: 48. Refused: 48.
+4. They follow the camera cables behind a panel to a recorder: PROJECT SOLO. SUBJECT A: COLE. SUBJECT B: LIND. Channel 9 calls: 136 (every day at 19:00 from Day 104). Answered: 0.
 5. A new line appears on the recorder while they watch: DAY 240: PROTOCOL BREACH.
 **Ends:** the screen: "STUDY COMPROMISED. CANCEL RETURN FLIGHT." "No one was coming."
 

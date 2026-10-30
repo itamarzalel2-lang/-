@@ -1,0 +1,1626 @@
+{
+ "voice": "bm_fable*0.6+am_michael*0.4",
+ "speed": 1.06,
+ "lines": [
+  {
+   "id": "ines",
+   "at": 0.52,
+   "text": "Larkspur? My father told me to listen for you.",
+   "file": "voice/ines.wav",
+   "duration": 2.944,
+   "words": [
+    {
+     "text": "Larkspur?",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.7
+    },
+    {
+     "text": "My",
+     "hl": false,
+     "start": 0.82,
+     "end": 0.993
+    },
+    {
+     "text": "father",
+     "hl": false,
+     "start": 0.993,
+     "end": 1.252
+    },
+    {
+     "text": "told",
+     "hl": false,
+     "start": 1.252,
+     "end": 1.512
+    },
+    {
+     "text": "me",
+     "hl": false,
+     "start": 1.512,
+     "end": 1.685
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 1.685,
+     "end": 1.815
+    },
+    {
+     "text": "listen",
+     "hl": false,
+     "start": 1.815,
+     "end": 2.074
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 2.074,
+     "end": 2.247
+    },
+    {
+     "text": "you.",
+     "hl": false,
+     "start": 2.247,
+     "end": 2.42
+    }
+   ]
+  },
+  {
+   "id": "empty",
+   "at": 3.984,
+   "text": "But that station is empty. It burns up in sixty days.",
+   "file": "voice/empty.wav",
+   "duration": 3.883,
+   "words": [
+    {
+     "text": "But",
+     "hl": false,
+     "start": 0.08,
+     "end": 0.31
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 0.31,
+     "end": 0.541
+    },
+    {
+     "text": "station",
+     "hl": false,
+     "start": 0.541,
+     "end": 1.002
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 1.002,
+     "end": 1.117
+    },
+    {
+     "text": "empty.",
+     "hl": false,
+     "start": 1.117,
+     "end": 1.52
+    },
+    {
+     "text": "It",
+     "hl": false,
+     "start": 1.83,
+     "end": 1.948
+    },
+    {
+     "text": "burns",
+     "hl": false,
+     "start": 1.948,
+     "end": 2.301
+    },
+    {
+     "text": "up",
+     "hl": false,
+     "start": 2.301,
+     "end": 2.478
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 2.478,
+     "end": 2.654
+    },
+    {
+     "text": "sixty",
+     "hl": false,
+     "start": 2.654,
+     "end": 3.067
+    },
+    {
+     "text": "days.",
+     "hl": false,
+     "start": 3.067,
+     "end": 3.42
+    }
+   ]
+  },
+  {
+   "id": "her",
+   "at": 8.587,
+   "text": "Her name was In\u00e9s. In\u00e9s Hale.",
+   "file": "voice/her.wav",
+   "duration": 3.221,
+   "words": [
+    {
+     "text": "Her",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.279
+    },
+    {
+     "text": "name",
+     "hl": false,
+     "start": 0.279,
+     "end": 0.561
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.561,
+     "end": 0.73
+    },
+    {
+     "text": "In\u00e9s.",
+     "hl": false,
+     "start": 0.73,
+     "end": 1.52
+    },
+    {
+     "text": "In\u00e9s",
+     "hl": false,
+     "start": 1.73,
+     "end": 2.407
+    },
+    {
+     "text": "Hale.",
+     "hl": false,
+     "start": 2.407,
+     "end": 2.72
+    }
+   ]
+  },
+  {
+   "id": "told",
+   "at": 12.028,
+   "text": "The company had told the world that Larkspur was empty. On day three sixty, they would bring it down. Into the ocean.",
+   "file": "voice/told.wav",
+   "duration": 6.784,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.09,
+     "end": 0.188
+    },
+    {
+     "text": "company",
+     "hl": false,
+     "start": 0.188,
+     "end": 0.582
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 0.582,
+     "end": 0.779
+    },
+    {
+     "text": "told",
+     "hl": false,
+     "start": 0.779,
+     "end": 1.075
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.075,
+     "end": 1.173
+    },
+    {
+     "text": "world",
+     "hl": false,
+     "start": 1.173,
+     "end": 1.468
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 1.468,
+     "end": 1.665
+    },
+    {
+     "text": "Larkspur",
+     "hl": false,
+     "start": 1.665,
+     "end": 2.158
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 2.158,
+     "end": 2.305
+    },
+    {
+     "text": "empty.",
+     "hl": false,
+     "start": 2.305,
+     "end": 2.65
+    },
+    {
+     "text": "On",
+     "hl": false,
+     "start": 3.19,
+     "end": 3.361
+    },
+    {
+     "text": "day",
+     "hl": false,
+     "start": 3.361,
+     "end": 3.589
+    },
+    {
+     "text": "three",
+     "hl": false,
+     "start": 3.589,
+     "end": 3.874
+    },
+    {
+     "text": "sixty,",
+     "hl": false,
+     "start": 3.874,
+     "end": 4.33
+    },
+    {
+     "text": "they",
+     "hl": false,
+     "start": 4.44,
+     "end": 4.571
+    },
+    {
+     "text": "would",
+     "hl": false,
+     "start": 4.571,
+     "end": 4.745
+    },
+    {
+     "text": "bring",
+     "hl": false,
+     "start": 4.745,
+     "end": 4.962
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 4.962,
+     "end": 5.049
+    },
+    {
+     "text": "down.",
+     "hl": false,
+     "start": 5.049,
+     "end": 5.31
+    },
+    {
+     "text": "Into",
+     "hl": false,
+     "start": 5.6,
+     "end": 5.857
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 5.857,
+     "end": 5.96
+    },
+    {
+     "text": "ocean.",
+     "hl": false,
+     "start": 5.96,
+     "end": 6.32
+    }
+   ]
+  },
+  {
+   "id": "us",
+   "at": 19.332,
+   "text": "With us on it.",
+   "file": "voice/us.wav",
+   "duration": 1.408,
+   "words": [
+    {
+     "text": "With",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.33
+    },
+    {
+     "text": "us",
+     "hl": false,
+     "start": 0.33,
+     "end": 0.54
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.54,
+     "end": 0.75
+    },
+    {
+     "text": "it.",
+     "hl": false,
+     "start": 0.75,
+     "end": 0.96
+    }
+   ]
+  },
+  {
+   "id": "gone",
+   "at": 20.96,
+   "text": "Two people, sixty days, and a company that wanted us gone.",
+   "file": "voice/gone.wav",
+   "duration": 3.947,
+   "words": [
+    {
+     "text": "Two",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.33
+    },
+    {
+     "text": "people,",
+     "hl": false,
+     "start": 0.33,
+     "end": 0.789
+    },
+    {
+     "text": "sixty",
+     "hl": false,
+     "start": 0.789,
+     "end": 1.191
+    },
+    {
+     "text": "days,",
+     "hl": false,
+     "start": 1.191,
+     "end": 1.535
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 1.535,
+     "end": 1.708
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.708,
+     "end": 1.88
+    },
+    {
+     "text": "company",
+     "hl": false,
+     "start": 1.88,
+     "end": 2.339
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 2.339,
+     "end": 2.569
+    },
+    {
+     "text": "wanted",
+     "hl": false,
+     "start": 2.569,
+     "end": 2.971
+    },
+    {
+     "text": "us",
+     "hl": false,
+     "start": 2.971,
+     "end": 3.143
+    },
+    {
+     "text": "gone.",
+     "hl": false,
+     "start": 3.143,
+     "end": 3.43
+    }
+   ]
+  },
+  {
+   "id": "env10",
+   "at": 25.527,
+   "text": "Day three hundred. Envelope ten. Keep talking to her. Every pass.",
+   "file": "voice/env10.wav",
+   "duration": 4.331,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.296
+    },
+    {
+     "text": "three",
+     "hl": false,
+     "start": 0.296,
+     "end": 0.515
+    },
+    {
+     "text": "hundred.",
+     "hl": false,
+     "start": 0.515,
+     "end": 0.91
+    },
+    {
+     "text": "Envelope",
+     "hl": false,
+     "start": 1.15,
+     "end": 1.397
+    },
+    {
+     "text": "ten.",
+     "hl": false,
+     "start": 1.397,
+     "end": 1.51
+    },
+    {
+     "text": "Keep",
+     "hl": false,
+     "start": 1.61,
+     "end": 1.707
+    },
+    {
+     "text": "talking",
+     "hl": false,
+     "start": 1.707,
+     "end": 1.844
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 1.844,
+     "end": 1.902
+    },
+    {
+     "text": "her.",
+     "hl": false,
+     "start": 1.902,
+     "end": 1.98
+    },
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 2.14,
+     "end": 3.02
+    },
+    {
+     "text": "pass.",
+     "hl": false,
+     "start": 3.02,
+     "end": 3.9
+    }
+   ]
+  },
+  {
+   "id": "every",
+   "at": 30.078,
+   "text": "So we did. Every pass, ten minutes. In\u00e9s recorded everything.",
+   "file": "voice/every.wav",
+   "duration": 4.736,
+   "words": [
+    {
+     "text": "So",
+     "hl": false,
+     "start": 0.07,
+     "end": 0.243
+    },
+    {
+     "text": "we",
+     "hl": false,
+     "start": 0.243,
+     "end": 0.373
+    },
+    {
+     "text": "did.",
+     "hl": false,
+     "start": 0.373,
+     "end": 0.59
+    },
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 0.7,
+     "end": 1.425
+    },
+    {
+     "text": "pass,",
+     "hl": false,
+     "start": 1.425,
+     "end": 2.15
+    },
+    {
+     "text": "ten",
+     "hl": false,
+     "start": 2.53,
+     "end": 3.017
+    },
+    {
+     "text": "minutes.",
+     "hl": false,
+     "start": 3.017,
+     "end": 3.99
+    },
+    {
+     "text": "In\u00e9s",
+     "hl": false,
+     "start": 4.07,
+     "end": 4.141
+    },
+    {
+     "text": "recorded",
+     "hl": false,
+     "start": 4.141,
+     "end": 4.195
+    },
+    {
+     "text": "everything.",
+     "hl": false,
+     "start": 4.195,
+     "end": 4.25
+    }
+   ]
+  },
+  {
+   "id": "eighteen",
+   "at": 35.034,
+   "text": "She was eighteen. She stayed up every night at her radio, waiting for us to fly over.",
+   "file": "voice/eighteen.wav",
+   "duration": 5.269,
+   "words": [
+    {
+     "text": "She",
+     "hl": false,
+     "start": 0.09,
+     "end": 0.261
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.261,
+     "end": 0.433
+    },
+    {
+     "text": "eighteen.",
+     "hl": false,
+     "start": 0.433,
+     "end": 0.89
+    },
+    {
+     "text": "She",
+     "hl": false,
+     "start": 1.28,
+     "end": 1.433
+    },
+    {
+     "text": "stayed",
+     "hl": false,
+     "start": 1.433,
+     "end": 1.74
+    },
+    {
+     "text": "up",
+     "hl": false,
+     "start": 1.74,
+     "end": 1.893
+    },
+    {
+     "text": "every",
+     "hl": false,
+     "start": 1.893,
+     "end": 2.148
+    },
+    {
+     "text": "night",
+     "hl": false,
+     "start": 2.148,
+     "end": 2.404
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 2.404,
+     "end": 2.506
+    },
+    {
+     "text": "her",
+     "hl": false,
+     "start": 2.506,
+     "end": 2.659
+    },
+    {
+     "text": "radio,",
+     "hl": false,
+     "start": 2.659,
+     "end": 3.17
+    },
+    {
+     "text": "waiting",
+     "hl": false,
+     "start": 3.33,
+     "end": 3.69
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 3.69,
+     "end": 3.896
+    },
+    {
+     "text": "us",
+     "hl": false,
+     "start": 3.896,
+     "end": 4.05
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 4.05,
+     "end": 4.204
+    },
+    {
+     "text": "fly",
+     "hl": false,
+     "start": 4.204,
+     "end": 4.461
+    },
+    {
+     "text": "over.",
+     "hl": false,
+     "start": 4.461,
+     "end": 4.77
+    }
+   ]
+  },
+  {
+   "id": "posted",
+   "at": 40.823,
+   "text": "She posted the recordings.",
+   "file": "voice/posted.wav",
+   "duration": 1.963,
+   "words": [
+    {
+     "text": "She",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.268
+    },
+    {
+     "text": "posted",
+     "hl": false,
+     "start": 0.268,
+     "end": 0.716
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.716,
+     "end": 0.828
+    },
+    {
+     "text": "recordings.",
+     "hl": false,
+     "start": 0.828,
+     "end": 1.5
+    }
+   ]
+  },
+  {
+   "id": "fake",
+   "at": 43.006,
+   "text": "People said they were fake.",
+   "file": "voice/fake.wav",
+   "duration": 1.877,
+   "words": [
+    {
+     "text": "People",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.487
+    },
+    {
+     "text": "said",
+     "hl": false,
+     "start": 0.487,
+     "end": 0.703
+    },
+    {
+     "text": "they",
+     "hl": false,
+     "start": 0.703,
+     "end": 0.865
+    },
+    {
+     "text": "were",
+     "hl": false,
+     "start": 0.865,
+     "end": 1.027
+    },
+    {
+     "text": "fake.",
+     "hl": false,
+     "start": 1.027,
+     "end": 1.35
+    }
+   ]
+  },
+  {
+   "id": "photo",
+   "at": 45.103,
+   "text": "Then an amateur astronomer photographed the station. Its lights were on.",
+   "file": "voice/photo.wav",
+   "duration": 4.501,
+   "words": [
+    {
+     "text": "Then",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.332
+    },
+    {
+     "text": "an",
+     "hl": false,
+     "start": 0.332,
+     "end": 0.438
+    },
+    {
+     "text": "amateur",
+     "hl": false,
+     "start": 0.438,
+     "end": 0.809
+    },
+    {
+     "text": "astronomer",
+     "hl": false,
+     "start": 0.809,
+     "end": 1.391
+    },
+    {
+     "text": "photographed",
+     "hl": false,
+     "start": 1.391,
+     "end": 2.027
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.027,
+     "end": 2.133
+    },
+    {
+     "text": "station.",
+     "hl": false,
+     "start": 2.133,
+     "end": 2.61
+    },
+    {
+     "text": "Its",
+     "hl": false,
+     "start": 3.04,
+     "end": 3.22
+    },
+    {
+     "text": "lights",
+     "hl": false,
+     "start": 3.22,
+     "end": 3.58
+    },
+    {
+     "text": "were",
+     "hl": false,
+     "start": 3.58,
+     "end": 3.76
+    },
+    {
+     "text": "on.",
+     "hl": false,
+     "start": 3.76,
+     "end": 4.0
+    }
+   ]
+  },
+  {
+   "id": "empty2",
+   "at": 49.824,
+   "text": "Empty stations don't turn their lights on.",
+   "file": "voice/empty2.wav",
+   "duration": 2.773,
+   "words": [
+    {
+     "text": "Empty",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.459
+    },
+    {
+     "text": "stations",
+     "hl": false,
+     "start": 0.459,
+     "end": 0.953
+    },
+    {
+     "text": "don't",
+     "hl": false,
+     "start": 0.953,
+     "end": 1.282
+    },
+    {
+     "text": "turn",
+     "hl": false,
+     "start": 1.282,
+     "end": 1.557
+    },
+    {
+     "text": "their",
+     "hl": false,
+     "start": 1.557,
+     "end": 1.721
+    },
+    {
+     "text": "lights",
+     "hl": false,
+     "start": 1.721,
+     "end": 2.051
+    },
+    {
+     "text": "on.",
+     "hl": false,
+     "start": 2.051,
+     "end": 2.27
+    }
+   ]
+  },
+  {
+   "id": "halepub",
+   "at": 53.117,
+   "text": "And then Hale went public.",
+   "file": "voice/halepub.wav",
+   "duration": 2.069,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.294
+    },
+    {
+     "text": "then",
+     "hl": false,
+     "start": 0.294,
+     "end": 0.526
+    },
+    {
+     "text": "Hale",
+     "hl": false,
+     "start": 0.526,
+     "end": 0.816
+    },
+    {
+     "text": "went",
+     "hl": false,
+     "start": 0.816,
+     "end": 1.106
+    },
+    {
+     "text": "public.",
+     "hl": false,
+     "start": 1.106,
+     "end": 1.57
+    }
+   ]
+  },
+  {
+   "id": "everything",
+   "at": 55.406,
+   "text": "He told them everything. The fake leak. The gauges. The two of us.",
+   "file": "voice/everything.wav",
+   "duration": 4.011,
+   "words": [
+    {
+     "text": "He",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.237
+    },
+    {
+     "text": "told",
+     "hl": false,
+     "start": 0.237,
+     "end": 0.49
+    },
+    {
+     "text": "them",
+     "hl": false,
+     "start": 0.49,
+     "end": 0.658
+    },
+    {
+     "text": "everything.",
+     "hl": false,
+     "start": 0.658,
+     "end": 1.08
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 1.19,
+     "end": 1.275
+    },
+    {
+     "text": "fake",
+     "hl": false,
+     "start": 1.275,
+     "end": 1.486
+    },
+    {
+     "text": "leak.",
+     "hl": false,
+     "start": 1.486,
+     "end": 1.74
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 1.82,
+     "end": 1.822
+    },
+    {
+     "text": "gauges.",
+     "hl": false,
+     "start": 1.822,
+     "end": 1.83
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 2.21,
+     "end": 2.435
+    },
+    {
+     "text": "two",
+     "hl": false,
+     "start": 2.435,
+     "end": 2.885
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 2.885,
+     "end": 3.11
+    },
+    {
+     "text": "us.",
+     "hl": false,
+     "start": 3.11,
+     "end": 3.56
+    }
+   ]
+  },
+  {
+   "id": "d330",
+   "at": 60.037,
+   "text": "Day three hundred thirty. Envelope eleven.",
+   "file": "voice/d330.wav",
+   "duration": 3.093,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.31
+    },
+    {
+     "text": "three",
+     "hl": false,
+     "start": 0.31,
+     "end": 0.56
+    },
+    {
+     "text": "hundred",
+     "hl": false,
+     "start": 0.56,
+     "end": 0.96
+    },
+    {
+     "text": "thirty.",
+     "hl": false,
+     "start": 0.96,
+     "end": 1.31
+    },
+    {
+     "text": "Envelope",
+     "hl": false,
+     "start": 1.59,
+     "end": 2.175
+    },
+    {
+     "text": "eleven.",
+     "hl": false,
+     "start": 2.175,
+     "end": 2.6
+    }
+   ]
+  },
+  {
+   "id": "env11",
+   "at": 63.35,
+   "text": "Two seats on the next ship. I made sure.",
+   "file": "voice/env11.wav",
+   "duration": 2.859,
+   "words": [
+    {
+     "text": "Two",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.305
+    },
+    {
+     "text": "seats",
+     "hl": false,
+     "start": 0.305,
+     "end": 0.612
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.612,
+     "end": 0.765
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.765,
+     "end": 0.867
+    },
+    {
+     "text": "next",
+     "hl": false,
+     "start": 0.867,
+     "end": 1.174
+    },
+    {
+     "text": "ship.",
+     "hl": false,
+     "start": 1.174,
+     "end": 1.43
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 1.66,
+     "end": 1.826
+    },
+    {
+     "text": "made",
+     "hl": false,
+     "start": 1.826,
+     "end": 2.103
+    },
+    {
+     "text": "sure.",
+     "hl": false,
+     "start": 2.103,
+     "end": 2.38
+    }
+   ]
+  },
+  {
+   "id": "seat",
+   "at": 66.429,
+   "text": "Two seats. Not one.",
+   "file": "voice/seat.wav",
+   "duration": 1.899,
+   "words": [
+    {
+     "text": "Two",
+     "hl": false,
+     "start": 0.09,
+     "end": 0.265
+    },
+    {
+     "text": "seats.",
+     "hl": false,
+     "start": 0.265,
+     "end": 0.57
+    },
+    {
+     "text": "Not",
+     "hl": false,
+     "start": 0.64,
+     "end": 1.02
+    },
+    {
+     "text": "one.",
+     "hl": false,
+     "start": 1.02,
+     "end": 1.4
+    }
+   ]
+  },
+  {
+   "id": "dayone",
+   "at": 68.548,
+   "text": "He had planned it from day one.",
+   "file": "voice/dayone.wav",
+   "duration": 2.133,
+   "words": [
+    {
+     "text": "He",
+     "hl": false,
+     "start": 0.15,
+     "end": 0.31
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 0.31,
+     "end": 0.523
+    },
+    {
+     "text": "planned",
+     "hl": false,
+     "start": 0.523,
+     "end": 0.842
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 0.842,
+     "end": 0.948
+    },
+    {
+     "text": "from",
+     "hl": false,
+     "start": 0.948,
+     "end": 1.161
+    },
+    {
+     "text": "day",
+     "hl": false,
+     "start": 1.161,
+     "end": 1.374
+    },
+    {
+     "text": "one.",
+     "hl": false,
+     "start": 1.374,
+     "end": 1.64
+    }
+   ]
+  },
+  {
+   "id": "water",
+   "at": 70.901,
+   "text": "Water: ten percent.",
+   "file": "voice/water.wav",
+   "duration": 1.749,
+   "words": [
+    {
+     "text": "Water:",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.554
+    },
+    {
+     "text": "ten",
+     "hl": false,
+     "start": 0.554,
+     "end": 0.796
+    },
+    {
+     "text": "percent.",
+     "hl": false,
+     "start": 0.796,
+     "end": 1.28
+    }
+   ]
+  },
+  {
+   "id": "d359",
+   "at": 73.27,
+   "text": "Day three fifty-nine. In\u00e9s, on the last pass: a rescue is launching. Five days.",
+   "file": "voice/d359.wav",
+   "duration": 5.867,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.331
+    },
+    {
+     "text": "three",
+     "hl": false,
+     "start": 0.331,
+     "end": 0.596
+    },
+    {
+     "text": "fifty-nine.",
+     "hl": false,
+     "start": 0.596,
+     "end": 1.23
+    },
+    {
+     "text": "In\u00e9s,",
+     "hl": false,
+     "start": 1.66,
+     "end": 2.88
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 2.95,
+     "end": 3.024
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 3.024,
+     "end": 3.073
+    },
+    {
+     "text": "last",
+     "hl": false,
+     "start": 3.073,
+     "end": 3.197
+    },
+    {
+     "text": "pass:",
+     "hl": false,
+     "start": 3.197,
+     "end": 3.32
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 3.42,
+     "end": 3.554
+    },
+    {
+     "text": "rescue",
+     "hl": false,
+     "start": 3.554,
+     "end": 3.913
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 3.913,
+     "end": 4.002
+    },
+    {
+     "text": "launching.",
+     "hl": false,
+     "start": 4.002,
+     "end": 4.45
+    },
+    {
+     "text": "Five",
+     "hl": false,
+     "start": 4.69,
+     "end": 5.013
+    },
+    {
+     "text": "days.",
+     "hl": false,
+     "start": 5.013,
+     "end": 5.4
+    }
+   ]
+  },
+  {
+   "id": "home",
+   "at": 79.357,
+   "text": "For the first time in a year, I let myself think about home.",
+   "file": "voice/home.wav",
+   "duration": 3.648,
+   "words": [
+    {
+     "text": "For",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.31
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.31,
+     "end": 0.395
+    },
+    {
+     "text": "first",
+     "hl": false,
+     "start": 0.395,
+     "end": 0.65
+    },
+    {
+     "text": "time",
+     "hl": false,
+     "start": 0.65,
+     "end": 0.863
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 0.863,
+     "end": 0.99
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.99,
+     "end": 1.117
+    },
+    {
+     "text": "year,",
+     "hl": false,
+     "start": 1.117,
+     "end": 1.33
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 1.57,
+     "end": 1.717
+    },
+    {
+     "text": "let",
+     "hl": false,
+     "start": 1.717,
+     "end": 1.913
+    },
+    {
+     "text": "myself",
+     "hl": false,
+     "start": 1.913,
+     "end": 2.306
+    },
+    {
+     "text": "think",
+     "hl": false,
+     "start": 2.306,
+     "end": 2.551
+    },
+    {
+     "text": "about",
+     "hl": false,
+     "start": 2.551,
+     "end": 2.846
+    },
+    {
+     "text": "home.",
+     "hl": false,
+     "start": 2.846,
+     "end": 3.14
+    }
+   ]
+  },
+  {
+   "id": "rain",
+   "at": 83.225,
+   "text": "Mara said she wanted to see rain.",
+   "file": "voice/rain.wav",
+   "duration": 2.411,
+   "words": [
+    {
+     "text": "Mara",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.502
+    },
+    {
+     "text": "said",
+     "hl": false,
+     "start": 0.502,
+     "end": 0.709
+    },
+    {
+     "text": "she",
+     "hl": false,
+     "start": 0.709,
+     "end": 0.865
+    },
+    {
+     "text": "wanted",
+     "hl": false,
+     "start": 0.865,
+     "end": 1.227
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 1.227,
+     "end": 1.382
+    },
+    {
+     "text": "see",
+     "hl": false,
+     "start": 1.382,
+     "end": 1.589
+    },
+    {
+     "text": "rain.",
+     "hl": false,
+     "start": 1.589,
+     "end": 1.9
+    }
+   ]
+  },
+  {
+   "id": "d360",
+   "at": 86.356,
+   "text": "Day three sixty.",
+   "file": "voice/d360.wav",
+   "duration": 1.792,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.42
+    },
+    {
+     "text": "three",
+     "hl": false,
+     "start": 0.42,
+     "end": 0.77
+    },
+    {
+     "text": "sixty.",
+     "hl": false,
+     "start": 0.77,
+     "end": 1.33
+    }
+   ]
+  },
+  {
+   "id": "shook",
+   "at": 88.368,
+   "text": "The station shook.",
+   "file": "voice/shook.wav",
+   "duration": 1.557,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.241
+    },
+    {
+     "text": "station",
+     "hl": false,
+     "start": 0.241,
+     "end": 0.763
+    },
+    {
+     "text": "shook.",
+     "hl": false,
+     "start": 0.763,
+     "end": 1.09
+    }
+   ]
+  },
+  {
+   "id": "fired",
+   "at": 90.145,
+   "text": "The engines fired. On their own.",
+   "file": "voice/fired.wav",
+   "duration": 2.411,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.254
+    },
+    {
+     "text": "engines",
+     "hl": false,
+     "start": 0.254,
+     "end": 0.711
+    },
+    {
+     "text": "fired.",
+     "hl": false,
+     "start": 0.711,
+     "end": 1.11
+    },
+    {
+     "text": "On",
+     "hl": false,
+     "start": 1.28,
+     "end": 1.449
+    },
+    {
+     "text": "their",
+     "hl": false,
+     "start": 1.449,
+     "end": 1.618
+    },
+    {
+     "text": "own.",
+     "hl": false,
+     "start": 1.618,
+     "end": 1.9
+    }
+   ]
+  },
+  {
+   "id": "deorbit",
+   "at": 92.776,
+   "text": "The deorbit burn.",
+   "file": "voice/deorbit.wav",
+   "duration": 1.643,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.237
+    },
+    {
+     "text": "deorbit",
+     "hl": false,
+     "start": 0.237,
+     "end": 0.82
+    },
+    {
+     "text": "burn.",
+     "hl": false,
+     "start": 0.82,
+     "end": 1.17
+    }
+   ]
+  },
+  {
+   "id": "down",
+   "at": 95.139,
+   "text": "We were coming down.",
+   "file": "voice/down.wav",
+   "duration": 1.6,
+   "words": [
+    {
+     "text": "We",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.302
+    },
+    {
+     "text": "were",
+     "hl": false,
+     "start": 0.302,
+     "end": 0.463
+    },
+    {
+     "text": "coming",
+     "hl": false,
+     "start": 0.463,
+     "end": 0.787
+    },
+    {
+     "text": "down.",
+     "hl": true,
+     "start": 0.787,
+     "end": 1.11
+    }
+   ]
+  }
+ ]
+}

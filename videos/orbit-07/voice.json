@@ -1,0 +1,1482 @@
+{
+ "voice": "bm_fable*0.6+am_michael*0.4",
+ "speed": 1.06,
+ "lines": [
+  {
+   "id": "light",
+   "at": 0.52,
+   "text": "There was a light on in Module 3.",
+   "file": "voice/light.wav",
+   "duration": 2.432,
+   "words": [
+    {
+     "text": "There",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.317
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.317,
+     "end": 0.464
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.464,
+     "end": 0.612
+    },
+    {
+     "text": "light",
+     "hl": false,
+     "start": 0.612,
+     "end": 0.858
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.858,
+     "end": 1.005
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 1.005,
+     "end": 1.153
+    },
+    {
+     "text": "Module",
+     "hl": false,
+     "start": 1.153,
+     "end": 1.595
+    },
+    {
+     "text": "3.",
+     "hl": false,
+     "start": 1.595,
+     "end": 1.89
+    }
+   ]
+  },
+  {
+   "id": "shadow",
+   "at": 3.572,
+   "text": "And a shadow moved.",
+   "file": "voice/shadow.wav",
+   "duration": 1.685,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.301
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.301,
+     "end": 0.471
+    },
+    {
+     "text": "shadow",
+     "hl": false,
+     "start": 0.471,
+     "end": 0.812
+    },
+    {
+     "text": "moved.",
+     "hl": true,
+     "start": 0.812,
+     "end": 1.21
+    }
+   ]
+  },
+  {
+   "id": "closer",
+   "at": 5.877,
+   "text": "I pulled myself to the window.",
+   "file": "voice/closer.wav",
+   "duration": 2.155,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.28
+    },
+    {
+     "text": "pulled",
+     "hl": false,
+     "start": 0.28,
+     "end": 0.548
+    },
+    {
+     "text": "myself",
+     "hl": false,
+     "start": 0.548,
+     "end": 0.975
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 0.975,
+     "end": 1.136
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.136,
+     "end": 1.242
+    },
+    {
+     "text": "window.",
+     "hl": false,
+     "start": 1.242,
+     "end": 1.67
+    }
+   ]
+  },
+  {
+   "id": "woman",
+   "at": 8.252,
+   "text": "Inside, floating, was a woman.",
+   "file": "voice/woman.wav",
+   "duration": 2.347,
+   "words": [
+    {
+     "text": "Inside,",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.62
+    },
+    {
+     "text": "floating,",
+     "hl": false,
+     "start": 0.69,
+     "end": 1.17
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 1.3,
+     "end": 1.427
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.427,
+     "end": 1.554
+    },
+    {
+     "text": "woman.",
+     "hl": false,
+     "start": 1.554,
+     "end": 1.85
+    }
+   ]
+  },
+  {
+   "id": "writing",
+   "at": 10.819,
+   "text": "She was writing in a notebook. Numbers. Like mine.",
+   "file": "voice/writing.wav",
+   "duration": 3.328,
+   "words": [
+    {
+     "text": "She",
+     "hl": false,
+     "start": 0.06,
+     "end": 0.164
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.164,
+     "end": 0.268
+    },
+    {
+     "text": "writing",
+     "hl": false,
+     "start": 0.268,
+     "end": 0.51
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 0.51,
+     "end": 0.614
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.614,
+     "end": 0.718
+    },
+    {
+     "text": "notebook.",
+     "hl": false,
+     "start": 0.718,
+     "end": 1.03
+    },
+    {
+     "text": "Numbers.",
+     "hl": false,
+     "start": 1.14,
+     "end": 1.33
+    },
+    {
+     "text": "Like",
+     "hl": false,
+     "start": 1.61,
+     "end": 2.16
+    },
+    {
+     "text": "mine.",
+     "hl": false,
+     "start": 2.16,
+     "end": 2.82
+    }
+   ]
+  },
+  {
+   "id": "thin",
+   "at": 14.367,
+   "text": "Her hair floated around her head. She looked thin. Tired.",
+   "file": "voice/thin.wav",
+   "duration": 3.541,
+   "words": [
+    {
+     "text": "Her",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.261
+    },
+    {
+     "text": "hair",
+     "hl": false,
+     "start": 0.261,
+     "end": 0.436
+    },
+    {
+     "text": "floated",
+     "hl": false,
+     "start": 0.436,
+     "end": 0.785
+    },
+    {
+     "text": "around",
+     "hl": false,
+     "start": 0.785,
+     "end": 1.091
+    },
+    {
+     "text": "her",
+     "hl": false,
+     "start": 1.091,
+     "end": 1.222
+    },
+    {
+     "text": "head.",
+     "hl": false,
+     "start": 1.222,
+     "end": 1.44
+    },
+    {
+     "text": "She",
+     "hl": false,
+     "start": 1.67,
+     "end": 1.845
+    },
+    {
+     "text": "looked",
+     "hl": false,
+     "start": 1.845,
+     "end": 2.138
+    },
+    {
+     "text": "thin.",
+     "hl": false,
+     "start": 2.138,
+     "end": 2.43
+    },
+    {
+     "text": "Tired.",
+     "hl": false,
+     "start": 2.58,
+     "end": 3.06
+    }
+   ]
+  },
+  {
+   "id": "looked",
+   "at": 18.428,
+   "text": "Then she looked up.",
+   "file": "voice/looked.wav",
+   "duration": 1.557,
+   "words": [
+    {
+     "text": "Then",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.378
+    },
+    {
+     "text": "she",
+     "hl": false,
+     "start": 0.378,
+     "end": 0.571
+    },
+    {
+     "text": "looked",
+     "hl": false,
+     "start": 0.571,
+     "end": 0.893
+    },
+    {
+     "text": "up.",
+     "hl": false,
+     "start": 0.893,
+     "end": 1.15
+    }
+   ]
+  },
+  {
+   "id": "saw",
+   "at": 20.205,
+   "text": "And saw a spacesuit at her window.",
+   "file": "voice/saw.wav",
+   "duration": 2.368,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.277
+    },
+    {
+     "text": "saw",
+     "hl": false,
+     "start": 0.277,
+     "end": 0.487
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.487,
+     "end": 0.644
+    },
+    {
+     "text": "spacesuit",
+     "hl": false,
+     "start": 0.644,
+     "end": 1.168
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 1.168,
+     "end": 1.273
+    },
+    {
+     "text": "her",
+     "hl": false,
+     "start": 1.273,
+     "end": 1.431
+    },
+    {
+     "text": "window.",
+     "hl": false,
+     "start": 1.431,
+     "end": 1.85
+    }
+   ]
+  },
+  {
+   "id": "froze",
+   "at": 22.793,
+   "text": "We both froze.",
+   "file": "voice/froze.wav",
+   "duration": 1.579,
+   "words": [
+    {
+     "text": "We",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.312
+    },
+    {
+     "text": "both",
+     "hl": false,
+     "start": 0.312,
+     "end": 0.649
+    },
+    {
+     "text": "froze.",
+     "hl": false,
+     "start": 0.649,
+     "end": 1.12
+    }
+   ]
+  },
+  {
+   "id": "apart",
+   "at": 24.592,
+   "text": "Two people, three feet apart, on a station where each of us was supposed to be alone.",
+   "file": "voice/apart.wav",
+   "duration": 5.248,
+   "words": [
+    {
+     "text": "Two",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.3
+    },
+    {
+     "text": "people,",
+     "hl": false,
+     "start": 0.3,
+     "end": 0.7
+    },
+    {
+     "text": "three",
+     "hl": false,
+     "start": 0.8,
+     "end": 1.033
+    },
+    {
+     "text": "feet",
+     "hl": false,
+     "start": 1.033,
+     "end": 1.267
+    },
+    {
+     "text": "apart,",
+     "hl": false,
+     "start": 1.267,
+     "end": 1.64
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 2.05,
+     "end": 2.203
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 2.203,
+     "end": 2.356
+    },
+    {
+     "text": "station",
+     "hl": false,
+     "start": 2.356,
+     "end": 2.763
+    },
+    {
+     "text": "where",
+     "hl": false,
+     "start": 2.763,
+     "end": 2.967
+    },
+    {
+     "text": "each",
+     "hl": false,
+     "start": 2.967,
+     "end": 3.222
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 3.222,
+     "end": 3.324
+    },
+    {
+     "text": "us",
+     "hl": false,
+     "start": 3.324,
+     "end": 3.476
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 3.476,
+     "end": 3.629
+    },
+    {
+     "text": "supposed",
+     "hl": false,
+     "start": 3.629,
+     "end": 4.037
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 4.037,
+     "end": 4.19
+    },
+    {
+     "text": "be",
+     "hl": false,
+     "start": 4.19,
+     "end": 4.393
+    },
+    {
+     "text": "alone.",
+     "hl": false,
+     "start": 4.393,
+     "end": 4.75
+    }
+   ]
+  },
+  {
+   "id": "hand",
+   "at": 30.06,
+   "text": "She put her hand on the glass.",
+   "file": "voice/hand.wav",
+   "duration": 2.069,
+   "words": [
+    {
+     "text": "She",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.275
+    },
+    {
+     "text": "put",
+     "hl": false,
+     "start": 0.275,
+     "end": 0.509
+    },
+    {
+     "text": "her",
+     "hl": false,
+     "start": 0.509,
+     "end": 0.685
+    },
+    {
+     "text": "hand",
+     "hl": false,
+     "start": 0.685,
+     "end": 0.977
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.977,
+     "end": 1.152
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.152,
+     "end": 1.269
+    },
+    {
+     "text": "glass.",
+     "hl": false,
+     "start": 1.269,
+     "end": 1.62
+    }
+   ]
+  },
+  {
+   "id": "page",
+   "at": 32.649,
+   "text": "She wrote something on a page, and held it up.",
+   "file": "voice/page.wav",
+   "duration": 2.795,
+   "words": [
+    {
+     "text": "She",
+     "hl": false,
+     "start": 0.09,
+     "end": 0.236
+    },
+    {
+     "text": "wrote",
+     "hl": false,
+     "start": 0.236,
+     "end": 0.479
+    },
+    {
+     "text": "something",
+     "hl": false,
+     "start": 0.479,
+     "end": 0.819
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.819,
+     "end": 0.964
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.964,
+     "end": 1.11
+    },
+    {
+     "text": "page,",
+     "hl": false,
+     "start": 1.11,
+     "end": 1.45
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 1.64,
+     "end": 1.784
+    },
+    {
+     "text": "held",
+     "hl": false,
+     "start": 1.784,
+     "end": 2.023
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 2.023,
+     "end": 2.119
+    },
+    {
+     "text": "up.",
+     "hl": false,
+     "start": 2.119,
+     "end": 2.31
+    }
+   ]
+  },
+  {
+   "id": "who",
+   "at": 35.664,
+   "text": "Who are you?",
+   "file": "voice/who.wav",
+   "duration": 1.28,
+   "words": [
+    {
+     "text": "Who",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.362
+    },
+    {
+     "text": "are",
+     "hl": false,
+     "start": 0.362,
+     "end": 0.558
+    },
+    {
+     "text": "you?",
+     "hl": false,
+     "start": 0.558,
+     "end": 0.82
+    }
+   ]
+  },
+  {
+   "id": "patch",
+   "at": 37.164,
+   "text": "I couldn't write in a spacesuit. So I pointed at the name on my chest.",
+   "file": "voice/patch.wav",
+   "duration": 4.139,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.246
+    },
+    {
+     "text": "couldn't",
+     "hl": false,
+     "start": 0.246,
+     "end": 0.539
+    },
+    {
+     "text": "write",
+     "hl": false,
+     "start": 0.539,
+     "end": 0.748
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 0.748,
+     "end": 0.874
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.874,
+     "end": 0.999
+    },
+    {
+     "text": "spacesuit.",
+     "hl": false,
+     "start": 0.999,
+     "end": 1.46
+    },
+    {
+     "text": "So",
+     "hl": false,
+     "start": 1.84,
+     "end": 2.024
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 2.024,
+     "end": 2.162
+    },
+    {
+     "text": "pointed",
+     "hl": false,
+     "start": 2.162,
+     "end": 2.531
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 2.531,
+     "end": 2.623
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.623,
+     "end": 2.715
+    },
+    {
+     "text": "name",
+     "hl": false,
+     "start": 2.715,
+     "end": 2.945
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 2.945,
+     "end": 3.083
+    },
+    {
+     "text": "my",
+     "hl": false,
+     "start": 3.083,
+     "end": 3.268
+    },
+    {
+     "text": "chest.",
+     "hl": false,
+     "start": 3.268,
+     "end": 3.59
+    }
+   ]
+  },
+  {
+   "id": "cole",
+   "at": 41.523,
+   "text": "Cole.",
+   "file": "voice/cole.wav",
+   "duration": 0.875,
+   "words": [
+    {
+     "text": "Cole.",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.6
+    }
+   ]
+  },
+  {
+   "id": "read",
+   "at": 42.618,
+   "text": "She read it. Her lips moved. Cole.",
+   "file": "voice/read.wav",
+   "duration": 2.539,
+   "words": [
+    {
+     "text": "She",
+     "hl": false,
+     "start": 0.08,
+     "end": 0.222
+    },
+    {
+     "text": "read",
+     "hl": false,
+     "start": 0.222,
+     "end": 0.458
+    },
+    {
+     "text": "it.",
+     "hl": false,
+     "start": 0.458,
+     "end": 0.6
+    },
+    {
+     "text": "Her",
+     "hl": false,
+     "start": 0.67,
+     "end": 0.836
+    },
+    {
+     "text": "lips",
+     "hl": false,
+     "start": 0.836,
+     "end": 1.113
+    },
+    {
+     "text": "moved.",
+     "hl": false,
+     "start": 1.113,
+     "end": 1.5
+    },
+    {
+     "text": "Cole.",
+     "hl": false,
+     "start": 1.66,
+     "end": 2.02
+    }
+   ]
+  },
+  {
+   "id": "sunset",
+   "at": 45.677,
+   "text": "Then the sun set, and her window went black.",
+   "file": "voice/sunset.wav",
+   "duration": 2.773,
+   "words": [
+    {
+     "text": "Then",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.327
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.327,
+     "end": 0.42
+    },
+    {
+     "text": "sun",
+     "hl": false,
+     "start": 0.42,
+     "end": 0.607
+    },
+    {
+     "text": "set,",
+     "hl": false,
+     "start": 0.607,
+     "end": 0.84
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 1.12,
+     "end": 1.264
+    },
+    {
+     "text": "her",
+     "hl": false,
+     "start": 1.264,
+     "end": 1.408
+    },
+    {
+     "text": "window",
+     "hl": false,
+     "start": 1.408,
+     "end": 1.743
+    },
+    {
+     "text": "went",
+     "hl": false,
+     "start": 1.743,
+     "end": 1.983
+    },
+    {
+     "text": "black.",
+     "hl": false,
+     "start": 1.983,
+     "end": 2.27
+    }
+   ]
+  },
+  {
+   "id": "inside",
+   "at": 49.07,
+   "text": "Back inside, I couldn't stop shaking.",
+   "file": "voice/inside.wav",
+   "duration": 2.56,
+   "words": [
+    {
+     "text": "Back",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.342
+    },
+    {
+     "text": "inside,",
+     "hl": false,
+     "start": 0.342,
+     "end": 0.767
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.767,
+     "end": 0.926
+    },
+    {
+     "text": "couldn't",
+     "hl": false,
+     "start": 0.926,
+     "end": 1.297
+    },
+    {
+     "text": "stop",
+     "hl": false,
+     "start": 1.297,
+     "end": 1.616
+    },
+    {
+     "text": "shaking.",
+     "hl": false,
+     "start": 1.616,
+     "end": 2.04
+    }
+   ]
+  },
+  {
+   "id": "real",
+   "at": 51.85,
+   "text": "She was real. She had been real for one hundred fifty-one days.",
+   "file": "voice/real.wav",
+   "duration": 4.032,
+   "words": [
+    {
+     "text": "She",
+     "hl": false,
+     "start": 0.09,
+     "end": 0.252
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.252,
+     "end": 0.413
+    },
+    {
+     "text": "real.",
+     "hl": false,
+     "start": 0.413,
+     "end": 0.79
+    },
+    {
+     "text": "She",
+     "hl": false,
+     "start": 1.06,
+     "end": 1.213
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 1.213,
+     "end": 1.417
+    },
+    {
+     "text": "been",
+     "hl": false,
+     "start": 1.417,
+     "end": 1.621
+    },
+    {
+     "text": "real",
+     "hl": false,
+     "start": 1.621,
+     "end": 1.927
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 1.927,
+     "end": 2.131
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 2.131,
+     "end": 2.336
+    },
+    {
+     "text": "hundred",
+     "hl": false,
+     "start": 2.336,
+     "end": 2.744
+    },
+    {
+     "text": "fifty-one",
+     "hl": false,
+     "start": 2.744,
+     "end": 3.254
+    },
+    {
+     "text": "days.",
+     "hl": false,
+     "start": 3.254,
+     "end": 3.56
+    }
+   ]
+  },
+  {
+   "id": "her",
+   "at": 56.102,
+   "text": "Every knock. Every S.O.S. That was her.",
+   "file": "voice/her.wav",
+   "duration": 3.093,
+   "words": [
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.403
+    },
+    {
+     "text": "knock.",
+     "hl": false,
+     "start": 0.403,
+     "end": 0.73
+    },
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 0.82,
+     "end": 0.991
+    },
+    {
+     "text": "S.O.S.",
+     "hl": false,
+     "start": 0.991,
+     "end": 1.4
+    },
+    {
+     "text": "That",
+     "hl": false,
+     "start": 1.49,
+     "end": 1.897
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 1.897,
+     "end": 2.203
+    },
+    {
+     "text": "her.",
+     "hl": false,
+     "start": 2.203,
+     "end": 2.61
+    }
+   ]
+  },
+  {
+   "id": "d152",
+   "at": 59.815,
+   "text": "Day one hundred fifty-two. Three in the morning.",
+   "file": "voice/d152.wav",
+   "duration": 3.2,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.15,
+     "end": 0.349
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 0.349,
+     "end": 0.547
+    },
+    {
+     "text": "hundred",
+     "hl": false,
+     "start": 0.547,
+     "end": 0.944
+    },
+    {
+     "text": "fifty-two.",
+     "hl": false,
+     "start": 0.944,
+     "end": 1.49
+    },
+    {
+     "text": "Three",
+     "hl": false,
+     "start": 1.73,
+     "end": 1.983
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 1.983,
+     "end": 2.134
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.134,
+     "end": 2.235
+    },
+    {
+     "text": "morning.",
+     "hl": false,
+     "start": 2.235,
+     "end": 2.69
+    }
+   ]
+  },
+  {
+   "id": "knocks",
+   "at": 64.635,
+   "text": "Three knocks.",
+   "file": "voice/knocks.wav",
+   "duration": 1.323,
+   "words": [
+    {
+     "text": "Three",
+     "hl": false,
+     "start": 0.16,
+     "end": 0.489
+    },
+    {
+     "text": "knocks.",
+     "hl": false,
+     "start": 0.489,
+     "end": 0.95
+    }
+   ]
+  },
+  {
+   "id": "back",
+   "at": 66.178,
+   "text": "This time, I knocked back. Three.",
+   "file": "voice/back.wav",
+   "duration": 2.368,
+   "words": [
+    {
+     "text": "This",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.42
+    },
+    {
+     "text": "time,",
+     "hl": false,
+     "start": 0.42,
+     "end": 0.87
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 1.01,
+     "end": 1.068
+    },
+    {
+     "text": "knocked",
+     "hl": false,
+     "start": 1.068,
+     "end": 1.184
+    },
+    {
+     "text": "back.",
+     "hl": false,
+     "start": 1.184,
+     "end": 1.28
+    },
+    {
+     "text": "Three.",
+     "hl": false,
+     "start": 1.49,
+     "end": 1.86
+    }
+   ]
+  },
+  {
+   "id": "shook",
+   "at": 68.766,
+   "text": "My hand was shaking.",
+   "file": "voice/shook.wav",
+   "duration": 1.899,
+   "words": [
+    {
+     "text": "My",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.384
+    },
+    {
+     "text": "hand",
+     "hl": false,
+     "start": 0.384,
+     "end": 0.702
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.702,
+     "end": 0.892
+    },
+    {
+     "text": "shaking.",
+     "hl": false,
+     "start": 0.892,
+     "end": 1.4
+    }
+   ]
+  },
+  {
+   "id": "silence",
+   "at": 72.085,
+   "text": "Silence.",
+   "file": "voice/silence.wav",
+   "duration": 1.088,
+   "words": [
+    {
+     "text": "Silence.",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.69
+    }
+   ]
+  },
+  {
+   "id": "long",
+   "at": 73.393,
+   "text": "For a long time, nothing.",
+   "file": "voice/long.wav",
+   "duration": 2.027,
+   "words": [
+    {
+     "text": "For",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.388
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.388,
+     "end": 0.596
+    },
+    {
+     "text": "long",
+     "hl": false,
+     "start": 0.596,
+     "end": 0.874
+    },
+    {
+     "text": "time,",
+     "hl": false,
+     "start": 0.874,
+     "end": 1.29
+    },
+    {
+     "text": "nothing.",
+     "hl": false,
+     "start": 1.37,
+     "end": 1.52
+    }
+   ]
+  },
+  {
+   "id": "morse",
+   "at": 76.24,
+   "text": "Then Morse. Slow. One letter at a time.",
+   "file": "voice/morse.wav",
+   "duration": 2.923,
+   "words": [
+    {
+     "text": "Then",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.364
+    },
+    {
+     "text": "Morse.",
+     "hl": false,
+     "start": 0.364,
+     "end": 0.792
+    },
+    {
+     "text": "Slow.",
+     "hl": false,
+     "start": 0.792,
+     "end": 1.158
+    },
+    {
+     "text": "One",
+     "hl": false,
+     "start": 1.158,
+     "end": 1.403
+    },
+    {
+     "text": "letter",
+     "hl": false,
+     "start": 1.403,
+     "end": 1.708
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 1.708,
+     "end": 1.83
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.83,
+     "end": 2.014
+    },
+    {
+     "text": "time.",
+     "hl": false,
+     "start": 2.014,
+     "end": 2.38
+    }
+   ]
+  },
+  {
+   "id": "wrote",
+   "at": 79.383,
+   "text": "I wrote each letter down.",
+   "file": "voice/wrote.wav",
+   "duration": 2.091,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.15,
+     "end": 0.331
+    },
+    {
+     "text": "wrote",
+     "hl": false,
+     "start": 0.331,
+     "end": 0.633
+    },
+    {
+     "text": "each",
+     "hl": false,
+     "start": 0.633,
+     "end": 0.935
+    },
+    {
+     "text": "letter",
+     "hl": false,
+     "start": 0.935,
+     "end": 1.238
+    },
+    {
+     "text": "down.",
+     "hl": false,
+     "start": 1.238,
+     "end": 1.6
+    }
+   ]
+  },
+  {
+   "id": "w1",
+   "at": 82.494,
+   "text": "They.",
+   "file": "voice/w1.wav",
+   "duration": 0.789,
+   "words": [
+    {
+     "text": "They.",
+     "hl": false,
+     "start": 0.07,
+     "end": 0.43
+    }
+   ]
+  },
+  {
+   "id": "w2",
+   "at": 84.303,
+   "text": "Told.",
+   "file": "voice/w2.wav",
+   "duration": 0.896,
+   "words": [
+    {
+     "text": "Told.",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.61
+    }
+   ]
+  },
+  {
+   "id": "w3",
+   "at": 86.219,
+   "text": "Me.",
+   "file": "voice/w3.wav",
+   "duration": 0.853,
+   "words": [
+    {
+     "text": "Me.",
+     "hl": false,
+     "start": 0.09,
+     "end": 0.51
+    }
+   ]
+  },
+  {
+   "id": "final",
+   "at": 88.292,
+   "text": "They told me you were dead.",
+   "file": "voice/final.wav",
+   "duration": 1.877,
+   "words": [
+    {
+     "text": "They",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.284
+    },
+    {
+     "text": "told",
+     "hl": false,
+     "start": 0.284,
+     "end": 0.591
+    },
+    {
+     "text": "me",
+     "hl": false,
+     "start": 0.591,
+     "end": 0.796
+    },
+    {
+     "text": "you",
+     "hl": false,
+     "start": 0.796,
+     "end": 0.95
+    },
+    {
+     "text": "were",
+     "hl": false,
+     "start": 0.95,
+     "end": 1.104
+    },
+    {
+     "text": "dead.",
+     "hl": true,
+     "start": 1.104,
+     "end": 1.36
+    }
+   ]
+  }
+ ]
+}

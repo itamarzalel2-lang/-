@@ -1,0 +1,1725 @@
+{
+ "voice": "bm_fable*0.6+am_michael*0.4",
+ "speed": 1.06,
+ "lines": [
+  {
+   "id": "final",
+   "at": 0.52,
+   "text": "They told me you were dead.",
+   "file": "voice/final.wav",
+   "duration": 1.877,
+   "words": [
+    {
+     "text": "They",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.284
+    },
+    {
+     "text": "told",
+     "hl": false,
+     "start": 0.284,
+     "end": 0.591
+    },
+    {
+     "text": "me",
+     "hl": false,
+     "start": 0.591,
+     "end": 0.796
+    },
+    {
+     "text": "you",
+     "hl": false,
+     "start": 0.796,
+     "end": 0.95
+    },
+    {
+     "text": "were",
+     "hl": false,
+     "start": 0.95,
+     "end": 1.104
+    },
+    {
+     "text": "dead.",
+     "hl": true,
+     "start": 1.104,
+     "end": 1.36
+    }
+   ]
+  },
+  {
+   "id": "every",
+   "at": 3.017,
+   "text": "Every night after that, we talked through the hatch. In Morse. One letter at a time.",
+   "file": "voice/every.wav",
+   "duration": 4.928,
+   "words": [
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.58
+    },
+    {
+     "text": "night",
+     "hl": false,
+     "start": 0.58,
+     "end": 1.05
+    },
+    {
+     "text": "after",
+     "hl": false,
+     "start": 1.05,
+     "end": 1.52
+    },
+    {
+     "text": "that,",
+     "hl": false,
+     "start": 1.52,
+     "end": 1.99
+    },
+    {
+     "text": "we",
+     "hl": false,
+     "start": 2.09,
+     "end": 2.106
+    },
+    {
+     "text": "talked",
+     "hl": false,
+     "start": 2.106,
+     "end": 2.139
+    },
+    {
+     "text": "through",
+     "hl": false,
+     "start": 2.139,
+     "end": 2.166
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.166,
+     "end": 2.177
+    },
+    {
+     "text": "hatch.",
+     "hl": false,
+     "start": 2.177,
+     "end": 2.21
+    },
+    {
+     "text": "In",
+     "hl": false,
+     "start": 2.56,
+     "end": 2.737
+    },
+    {
+     "text": "Morse.",
+     "hl": false,
+     "start": 2.737,
+     "end": 3.15
+    },
+    {
+     "text": "One",
+     "hl": false,
+     "start": 3.33,
+     "end": 3.542
+    },
+    {
+     "text": "letter",
+     "hl": false,
+     "start": 3.542,
+     "end": 3.807
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 3.807,
+     "end": 3.913
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 3.913,
+     "end": 4.072
+    },
+    {
+     "text": "time.",
+     "hl": false,
+     "start": 4.072,
+     "end": 4.39
+    }
+   ]
+  },
+  {
+   "id": "hour",
+   "at": 8.165,
+   "text": "It took an hour to say one sentence. We had all night.",
+   "file": "voice/hour.wav",
+   "duration": 3.648,
+   "words": [
+    {
+     "text": "It",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.222
+    },
+    {
+     "text": "took",
+     "hl": false,
+     "start": 0.222,
+     "end": 0.466
+    },
+    {
+     "text": "an",
+     "hl": false,
+     "start": 0.466,
+     "end": 0.587
+    },
+    {
+     "text": "hour",
+     "hl": false,
+     "start": 0.587,
+     "end": 0.831
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 0.831,
+     "end": 1.014
+    },
+    {
+     "text": "say",
+     "hl": false,
+     "start": 1.014,
+     "end": 1.258
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 1.258,
+     "end": 1.502
+    },
+    {
+     "text": "sentence.",
+     "hl": false,
+     "start": 1.502,
+     "end": 2.05
+    },
+    {
+     "text": "We",
+     "hl": false,
+     "start": 2.36,
+     "end": 2.484
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 2.484,
+     "end": 2.648
+    },
+    {
+     "text": "all",
+     "hl": false,
+     "start": 2.648,
+     "end": 2.813
+    },
+    {
+     "text": "night.",
+     "hl": false,
+     "start": 2.813,
+     "end": 3.06
+    }
+   ]
+  },
+  {
+   "id": "name",
+   "at": 12.033,
+   "text": "Her name was Mara Lind. Mission specialist.",
+   "file": "voice/name.wav",
+   "duration": 3.2,
+   "words": [
+    {
+     "text": "Her",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.266
+    },
+    {
+     "text": "name",
+     "hl": false,
+     "start": 0.266,
+     "end": 0.527
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.527,
+     "end": 0.683
+    },
+    {
+     "text": "Mara",
+     "hl": false,
+     "start": 0.683,
+     "end": 1.047
+    },
+    {
+     "text": "Lind.",
+     "hl": false,
+     "start": 1.047,
+     "end": 1.36
+    },
+    {
+     "text": "Mission",
+     "hl": false,
+     "start": 1.68,
+     "end": 2.017
+    },
+    {
+     "text": "specialist.",
+     "hl": false,
+     "start": 2.017,
+     "end": 2.69
+    }
+   ]
+  },
+  {
+   "id": "plants",
+   "at": 15.453,
+   "text": "A biologist. She had been growing plants in Module 3 when the alarm went off.",
+   "file": "voice/plants.wav",
+   "duration": 5.035,
+   "words": [
+    {
+     "text": "A",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.272
+    },
+    {
+     "text": "biologist.",
+     "hl": false,
+     "start": 0.272,
+     "end": 1.08
+    },
+    {
+     "text": "She",
+     "hl": false,
+     "start": 1.38,
+     "end": 1.522
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 1.522,
+     "end": 1.711
+    },
+    {
+     "text": "been",
+     "hl": false,
+     "start": 1.711,
+     "end": 1.901
+    },
+    {
+     "text": "growing",
+     "hl": false,
+     "start": 1.901,
+     "end": 2.232
+    },
+    {
+     "text": "plants",
+     "hl": false,
+     "start": 2.232,
+     "end": 2.564
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 2.564,
+     "end": 2.706
+    },
+    {
+     "text": "Module",
+     "hl": false,
+     "start": 2.706,
+     "end": 3.132
+    },
+    {
+     "text": "3",
+     "hl": false,
+     "start": 3.132,
+     "end": 3.368
+    },
+    {
+     "text": "when",
+     "hl": false,
+     "start": 3.368,
+     "end": 3.558
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 3.558,
+     "end": 3.653
+    },
+    {
+     "text": "alarm",
+     "hl": false,
+     "start": 3.653,
+     "end": 3.984
+    },
+    {
+     "text": "went",
+     "hl": false,
+     "start": 3.984,
+     "end": 4.221
+    },
+    {
+     "text": "off.",
+     "hl": false,
+     "start": 4.221,
+     "end": 4.41
+    }
+   ]
+  },
+  {
+   "id": "day1",
+   "at": 21.008,
+   "text": "Her day one sounded like mine. The same alarm. The same leak.",
+   "file": "voice/day1.wav",
+   "duration": 4.181,
+   "words": [
+    {
+     "text": "Her",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.288
+    },
+    {
+     "text": "day",
+     "hl": false,
+     "start": 0.288,
+     "end": 0.485
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 0.485,
+     "end": 0.683
+    },
+    {
+     "text": "sounded",
+     "hl": false,
+     "start": 0.683,
+     "end": 1.077
+    },
+    {
+     "text": "like",
+     "hl": false,
+     "start": 1.077,
+     "end": 1.324
+    },
+    {
+     "text": "mine.",
+     "hl": false,
+     "start": 1.324,
+     "end": 1.62
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 2.05,
+     "end": 2.165
+    },
+    {
+     "text": "same",
+     "hl": false,
+     "start": 2.165,
+     "end": 2.451
+    },
+    {
+     "text": "alarm.",
+     "hl": false,
+     "start": 2.451,
+     "end": 2.91
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 3.03,
+     "end": 3.133
+    },
+    {
+     "text": "same",
+     "hl": false,
+     "start": 3.133,
+     "end": 3.391
+    },
+    {
+     "text": "leak.",
+     "hl": false,
+     "start": 3.391,
+     "end": 3.7
+    }
+   ]
+  },
+  {
+   "id": "capsule",
+   "at": 25.409,
+   "text": "Her capsule had a seat with a red tag. No go.",
+   "file": "voice/capsule.wav",
+   "duration": 3.435,
+   "words": [
+    {
+     "text": "Her",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.248
+    },
+    {
+     "text": "capsule",
+     "hl": false,
+     "start": 0.248,
+     "end": 0.691
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 0.691,
+     "end": 0.888
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.888,
+     "end": 1.035
+    },
+    {
+     "text": "seat",
+     "hl": false,
+     "start": 1.035,
+     "end": 1.282
+    },
+    {
+     "text": "with",
+     "hl": false,
+     "start": 1.282,
+     "end": 1.429
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.429,
+     "end": 1.577
+    },
+    {
+     "text": "red",
+     "hl": false,
+     "start": 1.577,
+     "end": 1.774
+    },
+    {
+     "text": "tag.",
+     "hl": false,
+     "start": 1.774,
+     "end": 2.02
+    },
+    {
+     "text": "No",
+     "hl": false,
+     "start": 2.37,
+     "end": 2.619
+    },
+    {
+     "text": "go.",
+     "hl": false,
+     "start": 2.619,
+     "end": 2.93
+    }
+   ]
+  },
+  {
+   "id": "gone",
+   "at": 29.064,
+   "text": "And her commander said: everyone on that side is gone.",
+   "file": "voice/gone.wav",
+   "duration": 3.541,
+   "words": [
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.29
+    },
+    {
+     "text": "her",
+     "hl": false,
+     "start": 0.29,
+     "end": 0.44
+    },
+    {
+     "text": "commander",
+     "hl": false,
+     "start": 0.44,
+     "end": 0.84
+    },
+    {
+     "text": "said:",
+     "hl": false,
+     "start": 0.84,
+     "end": 1.09
+    },
+    {
+     "text": "everyone",
+     "hl": false,
+     "start": 1.42,
+     "end": 1.934
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 1.934,
+     "end": 2.106
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 2.106,
+     "end": 2.334
+    },
+    {
+     "text": "side",
+     "hl": false,
+     "start": 2.334,
+     "end": 2.62
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 2.62,
+     "end": 2.734
+    },
+    {
+     "text": "gone.",
+     "hl": false,
+     "start": 2.734,
+     "end": 3.02
+    }
+   ]
+  },
+  {
+   "id": "ours",
+   "at": 32.825,
+   "text": "On her side, our side was the one that leaked.",
+   "file": "voice/ours.wav",
+   "duration": 3.093,
+   "words": [
+    {
+     "text": "On",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.695
+    },
+    {
+     "text": "her",
+     "hl": false,
+     "start": 0.695,
+     "end": 1.27
+    },
+    {
+     "text": "side,",
+     "hl": false,
+     "start": 1.27,
+     "end": 2.42
+    },
+    {
+     "text": "our",
+     "hl": false,
+     "start": 2.59,
+     "end": 2.594
+    },
+    {
+     "text": "side",
+     "hl": false,
+     "start": 2.594,
+     "end": 2.599
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 2.599,
+     "end": 2.602
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.602,
+     "end": 2.604
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 2.604,
+     "end": 2.609
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 2.609,
+     "end": 2.613
+    },
+    {
+     "text": "leaked.",
+     "hl": false,
+     "start": 2.613,
+     "end": 2.62
+    }
+   ]
+  },
+  {
+   "id": "about",
+   "at": 36.138,
+   "text": "He meant me.",
+   "file": "voice/about.wav",
+   "duration": 1.301,
+   "words": [
+    {
+     "text": "He",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.302
+    },
+    {
+     "text": "meant",
+     "hl": false,
+     "start": 0.302,
+     "end": 0.571
+    },
+    {
+     "text": "me.",
+     "hl": false,
+     "start": 0.571,
+     "end": 0.84
+    }
+   ]
+  },
+  {
+   "id": "gauge",
+   "at": 37.659,
+   "text": "Her gauge read zero too.",
+   "file": "voice/gauge.wav",
+   "duration": 2.283,
+   "words": [
+    {
+     "text": "Her",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.303
+    },
+    {
+     "text": "gauge",
+     "hl": false,
+     "start": 0.303,
+     "end": 0.688
+    },
+    {
+     "text": "read",
+     "hl": false,
+     "start": 0.688,
+     "end": 1.009
+    },
+    {
+     "text": "zero",
+     "hl": false,
+     "start": 1.009,
+     "end": 1.459
+    },
+    {
+     "text": "too.",
+     "hl": false,
+     "start": 1.459,
+     "end": 1.78
+    }
+   ]
+  },
+  {
+   "id": "lying",
+   "at": 40.162,
+   "text": "Two gauges. Both pointing at zero. Both lying.",
+   "file": "voice/lying.wav",
+   "duration": 3.584,
+   "words": [
+    {
+     "text": "Two",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.325
+    },
+    {
+     "text": "gauges.",
+     "hl": false,
+     "start": 0.325,
+     "end": 0.83
+    },
+    {
+     "text": "Both",
+     "hl": false,
+     "start": 0.92,
+     "end": 1.181
+    },
+    {
+     "text": "pointing",
+     "hl": false,
+     "start": 1.181,
+     "end": 1.598
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 1.598,
+     "end": 1.703
+    },
+    {
+     "text": "zero.",
+     "hl": false,
+     "start": 1.703,
+     "end": 2.12
+    },
+    {
+     "text": "Both",
+     "hl": false,
+     "start": 2.4,
+     "end": 2.679
+    },
+    {
+     "text": "lying.",
+     "hl": false,
+     "start": 2.679,
+     "end": 3.07
+    }
+   ]
+  },
+  {
+   "id": "letter",
+   "at": 44.366,
+   "text": "Then she told me about her letter.",
+   "file": "voice/letter.wav",
+   "duration": 2.261,
+   "words": [
+    {
+     "text": "Then",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.339
+    },
+    {
+     "text": "she",
+     "hl": false,
+     "start": 0.339,
+     "end": 0.488
+    },
+    {
+     "text": "told",
+     "hl": false,
+     "start": 0.488,
+     "end": 0.786
+    },
+    {
+     "text": "me",
+     "hl": false,
+     "start": 0.786,
+     "end": 0.985
+    },
+    {
+     "text": "about",
+     "hl": false,
+     "start": 0.985,
+     "end": 1.283
+    },
+    {
+     "text": "her",
+     "hl": false,
+     "start": 1.283,
+     "end": 1.432
+    },
+    {
+     "text": "letter.",
+     "hl": false,
+     "start": 1.432,
+     "end": 1.73
+    }
+   ]
+  },
+  {
+   "id": "three",
+   "at": 46.847,
+   "text": "Three rules. Never open Hatch 3. Not for anyone.",
+   "file": "voice/three.wav",
+   "duration": 3.669,
+   "words": [
+    {
+     "text": "Three",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.413
+    },
+    {
+     "text": "rules.",
+     "hl": false,
+     "start": 0.413,
+     "end": 0.824
+    },
+    {
+     "text": "Never",
+     "hl": false,
+     "start": 0.824,
+     "end": 1.117
+    },
+    {
+     "text": "open",
+     "hl": false,
+     "start": 1.117,
+     "end": 1.469
+    },
+    {
+     "text": "Hatch",
+     "hl": false,
+     "start": 1.469,
+     "end": 1.762
+    },
+    {
+     "text": "3.",
+     "hl": false,
+     "start": 1.762,
+     "end": 2.114
+    },
+    {
+     "text": "Not",
+     "hl": false,
+     "start": 2.114,
+     "end": 2.408
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 2.408,
+     "end": 2.642
+    },
+    {
+     "text": "anyone.",
+     "hl": false,
+     "start": 2.642,
+     "end": 3.17
+    }
+   ]
+  },
+  {
+   "id": "same",
+   "at": 50.736,
+   "text": "Same words. Same handwriting.",
+   "file": "voice/same.wav",
+   "duration": 2.368,
+   "words": [
+    {
+     "text": "Same",
+     "hl": false,
+     "start": 0.09,
+     "end": 0.39
+    },
+    {
+     "text": "words.",
+     "hl": false,
+     "start": 0.39,
+     "end": 0.81
+    },
+    {
+     "text": "Same",
+     "hl": false,
+     "start": 0.88,
+     "end": 1.168
+    },
+    {
+     "text": "handwriting.",
+     "hl": false,
+     "start": 1.168,
+     "end": 1.86
+    }
+   ]
+  },
+  {
+   "id": "signed",
+   "at": 53.624,
+   "text": "Signed: Hale.",
+   "file": "voice/signed.wav",
+   "duration": 1.429,
+   "words": [
+    {
+     "text": "Signed:",
+     "hl": false,
+     "start": 0.08,
+     "end": 0.548
+    },
+    {
+     "text": "Hale.",
+     "hl": false,
+     "start": 0.548,
+     "end": 0.95
+    }
+   ]
+  },
+  {
+   "id": "man",
+   "at": 55.273,
+   "text": "The man who wrote my rules wrote hers.",
+   "file": "voice/man.wav",
+   "duration": 2.688,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.237
+    },
+    {
+     "text": "man",
+     "hl": false,
+     "start": 0.237,
+     "end": 0.47
+    },
+    {
+     "text": "who",
+     "hl": false,
+     "start": 0.47,
+     "end": 0.703
+    },
+    {
+     "text": "wrote",
+     "hl": false,
+     "start": 0.703,
+     "end": 0.995
+    },
+    {
+     "text": "my",
+     "hl": false,
+     "start": 0.995,
+     "end": 1.228
+    },
+    {
+     "text": "rules",
+     "hl": false,
+     "start": 1.228,
+     "end": 1.578
+    },
+    {
+     "text": "wrote",
+     "hl": false,
+     "start": 1.578,
+     "end": 1.87
+    },
+    {
+     "text": "hers.",
+     "hl": false,
+     "start": 1.87,
+     "end": 2.22
+    }
+   ]
+  },
+  {
+   "id": "thirty",
+   "at": 58.581,
+   "text": "She'd knocked for thirty nights. Nobody answered.",
+   "file": "voice/thirty.wav",
+   "duration": 3.136,
+   "words": [
+    {
+     "text": "She'd",
+     "hl": false,
+     "start": 0.08,
+     "end": 0.292
+    },
+    {
+     "text": "knocked",
+     "hl": false,
+     "start": 0.292,
+     "end": 0.61
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 0.61,
+     "end": 0.821
+    },
+    {
+     "text": "thirty",
+     "hl": false,
+     "start": 0.821,
+     "end": 1.139
+    },
+    {
+     "text": "nights.",
+     "hl": false,
+     "start": 1.139,
+     "end": 1.51
+    },
+    {
+     "text": "Nobody",
+     "hl": false,
+     "start": 1.71,
+     "end": 2.233
+    },
+    {
+     "text": "answered.",
+     "hl": false,
+     "start": 2.233,
+     "end": 2.64
+    }
+   ]
+  },
+  {
+   "id": "crazy",
+   "at": 61.937,
+   "text": "I thought I was going crazy, she said. So on day seventy, she stopped.",
+   "file": "voice/crazy.wav",
+   "duration": 4.267,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.284
+    },
+    {
+     "text": "thought",
+     "hl": false,
+     "start": 0.284,
+     "end": 0.557
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.557,
+     "end": 0.721
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.721,
+     "end": 0.885
+    },
+    {
+     "text": "going",
+     "hl": false,
+     "start": 0.885,
+     "end": 1.213
+    },
+    {
+     "text": "crazy,",
+     "hl": false,
+     "start": 1.213,
+     "end": 1.65
+    },
+    {
+     "text": "she",
+     "hl": false,
+     "start": 1.65,
+     "end": 1.813
+    },
+    {
+     "text": "said.",
+     "hl": false,
+     "start": 1.813,
+     "end": 2.087
+    },
+    {
+     "text": "So",
+     "hl": false,
+     "start": 2.087,
+     "end": 2.305
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 2.305,
+     "end": 2.469
+    },
+    {
+     "text": "day",
+     "hl": false,
+     "start": 2.469,
+     "end": 2.687
+    },
+    {
+     "text": "seventy,",
+     "hl": false,
+     "start": 2.687,
+     "end": 3.179
+    },
+    {
+     "text": "she",
+     "hl": false,
+     "start": 3.179,
+     "end": 3.343
+    },
+    {
+     "text": "stopped.",
+     "hl": false,
+     "start": 3.343,
+     "end": 3.78
+    }
+   ]
+  },
+  {
+   "id": "numbers",
+   "at": 66.424,
+   "text": "She'd done the same math as me. The same tank. The same 1.7 kilos.",
+   "file": "voice/numbers.wav",
+   "duration": 4.864,
+   "words": [
+    {
+     "text": "She'd",
+     "hl": false,
+     "start": 0.09,
+     "end": 0.305
+    },
+    {
+     "text": "done",
+     "hl": false,
+     "start": 0.305,
+     "end": 0.521
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.521,
+     "end": 0.628
+    },
+    {
+     "text": "same",
+     "hl": false,
+     "start": 0.628,
+     "end": 0.898
+    },
+    {
+     "text": "math",
+     "hl": false,
+     "start": 0.898,
+     "end": 1.113
+    },
+    {
+     "text": "as",
+     "hl": false,
+     "start": 1.113,
+     "end": 1.221
+    },
+    {
+     "text": "me.",
+     "hl": false,
+     "start": 1.221,
+     "end": 1.49
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 1.78,
+     "end": 1.889
+    },
+    {
+     "text": "same",
+     "hl": false,
+     "start": 1.889,
+     "end": 2.162
+    },
+    {
+     "text": "tank.",
+     "hl": false,
+     "start": 2.162,
+     "end": 2.49
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 2.68,
+     "end": 2.791
+    },
+    {
+     "text": "same",
+     "hl": false,
+     "start": 2.791,
+     "end": 3.068
+    },
+    {
+     "text": "1.7",
+     "hl": false,
+     "start": 3.068,
+     "end": 3.901
+    },
+    {
+     "text": "kilos.",
+     "hl": false,
+     "start": 3.901,
+     "end": 4.4
+    }
+   ]
+  },
+  {
+   "id": "ghost",
+   "at": 71.508,
+   "text": "Two people, breathing from one tank, each thinking the other was a ghost.",
+   "file": "voice/ghost.wav",
+   "duration": 4.331,
+   "words": [
+    {
+     "text": "Two",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.331
+    },
+    {
+     "text": "people,",
+     "hl": false,
+     "start": 0.331,
+     "end": 0.792
+    },
+    {
+     "text": "breathing",
+     "hl": false,
+     "start": 0.792,
+     "end": 1.254
+    },
+    {
+     "text": "from",
+     "hl": false,
+     "start": 1.254,
+     "end": 1.485
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 1.485,
+     "end": 1.715
+    },
+    {
+     "text": "tank,",
+     "hl": false,
+     "start": 1.715,
+     "end": 2.062
+    },
+    {
+     "text": "each",
+     "hl": false,
+     "start": 2.062,
+     "end": 2.35
+    },
+    {
+     "text": "thinking",
+     "hl": false,
+     "start": 2.35,
+     "end": 2.754
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.754,
+     "end": 2.869
+    },
+    {
+     "text": "other",
+     "hl": false,
+     "start": 2.869,
+     "end": 3.1
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 3.1,
+     "end": 3.273
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 3.273,
+     "end": 3.446
+    },
+    {
+     "text": "ghost.",
+     "hl": false,
+     "start": 3.446,
+     "end": 3.85
+    }
+   ]
+  },
+  {
+   "id": "d180",
+   "at": 76.459,
+   "text": "Day one hundred eighty. Envelope six.",
+   "file": "voice/d180.wav",
+   "duration": 2.795,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.324
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 0.324,
+     "end": 0.507
+    },
+    {
+     "text": "hundred",
+     "hl": false,
+     "start": 0.507,
+     "end": 0.875
+    },
+    {
+     "text": "eighty.",
+     "hl": false,
+     "start": 0.875,
+     "end": 1.15
+    },
+    {
+     "text": "Envelope",
+     "hl": false,
+     "start": 1.38,
+     "end": 2.001
+    },
+    {
+     "text": "six.",
+     "hl": false,
+     "start": 2.001,
+     "end": 2.34
+    }
+   ]
+  },
+  {
+   "id": "env6",
+   "at": 79.474,
+   "text": "If you've found each other, don't say it out loud. They're watching.",
+   "file": "voice/env6.wav",
+   "duration": 3.861,
+   "words": [
+    {
+     "text": "If",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.224
+    },
+    {
+     "text": "you've",
+     "hl": false,
+     "start": 0.224,
+     "end": 0.453
+    },
+    {
+     "text": "found",
+     "hl": false,
+     "start": 0.453,
+     "end": 0.796
+    },
+    {
+     "text": "each",
+     "hl": false,
+     "start": 0.796,
+     "end": 1.082
+    },
+    {
+     "text": "other,",
+     "hl": false,
+     "start": 1.082,
+     "end": 1.368
+    },
+    {
+     "text": "don't",
+     "hl": false,
+     "start": 1.368,
+     "end": 1.711
+    },
+    {
+     "text": "say",
+     "hl": false,
+     "start": 1.711,
+     "end": 1.94
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 1.94,
+     "end": 2.055
+    },
+    {
+     "text": "out",
+     "hl": false,
+     "start": 2.055,
+     "end": 2.283
+    },
+    {
+     "text": "loud.",
+     "hl": false,
+     "start": 2.283,
+     "end": 2.626
+    },
+    {
+     "text": "They're",
+     "hl": false,
+     "start": 2.626,
+     "end": 2.855
+    },
+    {
+     "text": "watching.",
+     "hl": false,
+     "start": 2.855,
+     "end": 3.37
+    }
+   ]
+  },
+  {
+   "id": "they",
+   "at": 83.855,
+   "text": "They.",
+   "file": "voice/they.wav",
+   "duration": 0.789,
+   "words": [
+    {
+     "text": "They.",
+     "hl": false,
+     "start": 0.07,
+     "end": 0.43
+    }
+   ]
+  },
+  {
+   "id": "whothey",
+   "at": 84.864,
+   "text": "Who were they?",
+   "file": "voice/whothey.wav",
+   "duration": 1.28,
+   "words": [
+    {
+     "text": "Who",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.369
+    },
+    {
+     "text": "were",
+     "hl": false,
+     "start": 0.369,
+     "end": 0.571
+    },
+    {
+     "text": "they?",
+     "hl": false,
+     "start": 0.571,
+     "end": 0.84
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "at": 86.764,
+   "text": "That night, Mara knocked a new message.",
+   "file": "voice/night.wav",
+   "duration": 2.667,
+   "words": [
+    {
+     "text": "That",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.308
+    },
+    {
+     "text": "night,",
+     "hl": false,
+     "start": 0.308,
+     "end": 0.56
+    },
+    {
+     "text": "Mara",
+     "hl": false,
+     "start": 0.71,
+     "end": 1.083
+    },
+    {
+     "text": "knocked",
+     "hl": false,
+     "start": 1.083,
+     "end": 1.402
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.402,
+     "end": 1.561
+    },
+    {
+     "text": "new",
+     "hl": false,
+     "start": 1.561,
+     "end": 1.774
+    },
+    {
+     "text": "message.",
+     "hl": false,
+     "start": 1.774,
+     "end": 2.2
+    }
+   ]
+  },
+  {
+   "id": "camera",
+   "at": 89.651,
+   "text": "There is a camera in my room.",
+   "file": "voice/camera.wav",
+   "duration": 2.069,
+   "words": [
+    {
+     "text": "There",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.324
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 0.324,
+     "end": 0.426
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.426,
+     "end": 0.58
+    },
+    {
+     "text": "camera",
+     "hl": false,
+     "start": 0.58,
+     "end": 0.886
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 0.886,
+     "end": 1.039
+    },
+    {
+     "text": "my",
+     "hl": false,
+     "start": 1.039,
+     "end": 1.244
+    },
+    {
+     "text": "room.",
+     "hl": false,
+     "start": 1.244,
+     "end": 1.55
+    }
+   ]
+  },
+  {
+   "id": "look",
+   "at": 92.44,
+   "text": "I looked up at the smoke detector over my bunk.",
+   "file": "voice/look.wav",
+   "duration": 3.051,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.295
+    },
+    {
+     "text": "looked",
+     "hl": false,
+     "start": 0.295,
+     "end": 0.57
+    },
+    {
+     "text": "up",
+     "hl": false,
+     "start": 0.57,
+     "end": 0.735
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 0.735,
+     "end": 0.845
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.845,
+     "end": 0.955
+    },
+    {
+     "text": "smoke",
+     "hl": false,
+     "start": 0.955,
+     "end": 1.285
+    },
+    {
+     "text": "detector",
+     "hl": false,
+     "start": 1.285,
+     "end": 1.725
+    },
+    {
+     "text": "over",
+     "hl": false,
+     "start": 1.725,
+     "end": 2.0
+    },
+    {
+     "text": "my",
+     "hl": false,
+     "start": 2.0,
+     "end": 2.22
+    },
+    {
+     "text": "bunk.",
+     "hl": false,
+     "start": 2.22,
+     "end": 2.55
+    }
+   ]
+  },
+  {
+   "id": "red",
+   "at": 96.311,
+   "text": "A tiny red light.",
+   "file": "voice/red.wav",
+   "duration": 1.771,
+   "words": [
+    {
+     "text": "A",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.309
+    },
+    {
+     "text": "tiny",
+     "hl": false,
+     "start": 0.309,
+     "end": 0.688
+    },
+    {
+     "text": "red",
+     "hl": false,
+     "start": 0.688,
+     "end": 0.941
+    },
+    {
+     "text": "light.",
+     "hl": true,
+     "start": 0.941,
+     "end": 1.32
+    }
+   ]
+  }
+ ]
+}
