@@ -16,9 +16,9 @@ function chunk(words, maxWords, maxChars) {
 }
 
 export class Subtitles {
-  constructor(root, voice, { top = 636, maxWords = 3, maxChars = 18, hide = [] } = {}) {
+  constructor(root, voice, { top = 636, maxWords = 3, maxChars = 18, hide = [], className = '' } = {}) {
     this.el = document.createElement('div');
-    this.el.className = 'ov-sub';
+    this.el.className = `ov-sub ${className}`.trim(); // e.g. 'one': the series' single white word
     this.el.style.top = `${top}px`;
     root.appendChild(this.el);
     this.hide = hide; // [[from, to]] ranges where subtitles step aside (e.g. full-screen cards)

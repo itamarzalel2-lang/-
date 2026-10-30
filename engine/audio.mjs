@@ -19,6 +19,34 @@ const RECIPES = {
     ];
   },
   tick: ({ at }) => [].concat(at).map((t) => ({ at: t, chain: ev('0.5*sin(2*PI*1760*t)*exp(-45*t)', 0.15) })),
+  // soft sustained chord under the whole narration (the series' bed); notes in Hz, slightly
+  // detuned pairs for width, slow swell
+  pad: ({ from, to, level = 1, notes = [130.81, 261.63, 329.63, 392.0, 523.25, 659.26] }) => {
+    const d = to - from;
+    const sines = notes.map((f, i) => `${(0.022 / (1 + i * 0.25)).toFixed(4)}*(sin(2*PI*${f}*t)+sin(2*PI*${(f * 1.0035).toFixed(3)}*t+${i}))`).join('+');
+    return [{ at: from, chain: `${ev(`(${sines})*(0.8+0.2*sin(2*PI*0.07*t))`, d)},lowpass=f=2400,volume=${level},afade=t=in:d=2,afade=t=out:st=${Math.max(0, d - 0.3)}:d=0.3` }];
+  },
+  klaxon: ({ from, to, level = 1 }) => {
+    const d = to - from;
+    return [{ at: from, chain: `${ev('0.16*(sin(2*PI*640*t)+0.5*sin(2*PI*1280*t)+0.3*sin(2*PI*1920*t))*lt(mod(t,0.8),0.5)', d)},lowpass=f=3200,volume=${level},afade=t=out:st=${Math.max(0, d - 0.8)}:d=0.8` }];
+  },
+  // a fist on a metal hatch: hollow low thud + short ring
+  knock: ({ at }) => [].concat(at).flatMap((t) => [
+    { at: t, chain: ev('0.95*sin(2*PI*92*t)*exp(-20*t)+0.45*sin(2*PI*247*t)*exp(-28*t)+0.16*sin(2*PI*611*t)*exp(-9*t)+0.08*sin(2*PI*1453*t)*exp(-14*t)', 0.9) },
+    { at: t, chain: `${noise('brown', 0.08, 0.9, 51)},lowpass=f=900,afade=t=out:st=0.01:d=0.07,volume=1.2` },
+  ]),
+  clank: ({ at }) => [].concat(at).flatMap((t) => [
+    { at: t, chain: ev('0.3*(sin(2*PI*420*t)+0.7*sin(2*PI*1133*t)+0.45*sin(2*PI*2391*t))*exp(-7*t)+0.6*sin(2*PI*70*t)*exp(-14*t)', 1.2) },
+  ]),
+  hiss: ({ at, d = 1.5 }) => [{ at, chain: `${noise('white', d, 0.6, 52)},highpass=f=2200,afade=t=in:d=0.05,afade=t=out:st=0.1:d=${(d - 0.1).toFixed(2)}:curve=exp,volume=0.5` }],
+  beep: ({ at }) => [].concat(at).map((t) => ({ at: t, chain: ev('0.22*sin(2*PI*1320*t)*lt(t,0.09)', 0.12) })),
+  // radio: a short squelch of static and a two-tone chirp
+  radio: ({ at }) => [].concat(at).flatMap((t) => [
+    { at: t, chain: `${noise('white', 0.45, 0.6, 53)},bandpass=f=1800:w=2200,tremolo=f=31:d=0.6,afade=t=out:st=0.25:d=0.2,volume=0.35` },
+    { at: t + 0.02, chain: ev('0.12*(sin(2*PI*1100*t)*lt(t,0.07)+sin(2*PI*1650*t)*gt(t,0.07)*lt(t,0.14))', 0.16) },
+  ]),
+  rustle: ({ at, d = 0.7 }) => [].concat(at).map((t) => ({ at: t, chain: `${noise('pink', d, 0.7, 54)},bandpass=f=3200:w=3000,tremolo=f=17:d=0.8,afade=t=in:d=0.05,afade=t=out:st=${(d * 0.5).toFixed(2)}:d=${(d * 0.5).toFixed(2)},volume=0.4` })),
+  scribble: ({ from, to }) => [{ at: from, chain: `${noise('white', to - from, 0.5, 55)},bandpass=f=4200:w=2500,tremolo=f=11:d=0.9,tremolo=f=3.1:d=0.6,afade=t=in:d=0.05,afade=t=out:st=${Math.max(0, to - from - 0.1).toFixed(2)}:d=0.1,volume=0.22` }],
   riser: ({ from, to }) => {
     const d = to - from;
     return [

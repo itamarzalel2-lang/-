@@ -6,6 +6,8 @@ script.json:
 
 *word* marks a word the subtitles always highlight (the asterisks are not spoken).
 A line may add "fx": "helium" (voice shifted up, same length).
+"at" is optional: a line without it starts "gap" seconds (script-level, default 0.25) after the
+previous line ends, plus its own "pause". "voice" may blend Kokoro voices: "bm_fable*0.6+am_michael*0.4".
 voice.json records each line's duration and per-word timings (seconds from the line start),
 which drive the subtitles in the player and the voice track in engine/audio.mjs.
 
@@ -112,15 +114,25 @@ def align_by_pauses(kokoro, words, audio, sr, lang):
     return spans
 
 
+def voice_style(kokoro, spec):
+    """A voice name, or a weighted blend of style vectors ("a*0.6+b*0.4"; plain "a+b" = equal)."""
+    if "+" not in spec and "*" not in spec:
+        return spec
+    parts = [p.split("*") for p in spec.split("+")]
+    weight = lambda p: float(p[1]) if len(p) > 1 else 1 / len(parts)
+    return sum(weight(p) * kokoro.get_voice_style(p[0]) for p in parts).astype(np.float32)
+
+
 def main(video_dir):
     script = json.load(open(os.path.join(video_dir, "script.json")))
     kokoro = Kokoro(os.path.join(MODEL_DIR, "kokoro-q8.onnx"), os.path.join(MODEL_DIR, "voices.npz"))
     voice, speed, lang = script.get("voice", "af_heart"), script.get("speed", 1.0), script.get("lang", "en-us")
     os.makedirs(os.path.join(video_dir, "voice"), exist_ok=True)
+    gap = script.get("gap", 0.25)
     lines = []
     for line in script["lines"]:
         spoken = line["text"].replace("*", "")
-        audio, sr, timings = kokoro.create_timed(spoken, voice=line.get("voice", voice), speed=line.get("speed", speed), lang=lang)
+        audio, sr, timings = kokoro.create_timed(spoken, voice=voice_style(kokoro, line.get("voice", voice)), speed=line.get("speed", speed), lang=lang)
         rel = f"voice/{line['id']}.wav"
         sf.write(os.path.join(video_dir, rel), audio, sr)
         if line.get("fx") == "helium":
@@ -132,11 +144,12 @@ def main(video_dir):
         duration = len(audio) / sr
         words = display_words(line["text"])
         spans = word_spans(kokoro, words, timings, audio, sr, lang)
+        at = line["at"] if "at" in line else round((lines[-1]["at"] + lines[-1]["duration"] if lines else 0.3) + gap + line.get("pause", 0), 3)
         lines.append({
-            "id": line["id"], "at": line["at"], "text": spoken, "file": rel, "duration": round(duration, 3),
+            "id": line["id"], "at": at, "text": spoken, "file": rel, "duration": round(duration, 3),
             "words": [{**w, "start": round(s, 3), "end": round(e, 3)} for w, (s, e) in zip(words, spans)],
         })
-        print(f"  {line['id']:<12} at {line['at']:6.2f}s  {duration:5.2f}s  {spoken[:60]}")
+        print(f"  {line['id']:<12} at {at:6.2f}s  {duration:5.2f}s  {spoken[:60]}")
     # warn about lines that run into the next one
     for a, b in zip(lines, lines[1:]):
         if a["at"] + a["duration"] > b["at"] - 0.1:

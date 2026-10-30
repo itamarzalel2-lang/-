@@ -53,6 +53,15 @@ When the user sends a one-line premise ("What if all X disappeared for 5 seconds
 - No real brands on billboards (`textures.js` generates made-up ones).
 - On-screen English uses US spelling ("tire").
 
+## Cliffhanger series (second format)
+A 14-part story series in the style of the reference "Bunker Survival Ep 01: Day 1 to Day 365" (2 uploads a day for a week). Format, voice and idea bank: `series/ideas.md`. The current series is **Alone in Orbit**: the story bible with every part's beats, cliffhanger and the closed ending is `series/alone-in-orbit/story.md`. Never contradict it; update it if a part changes the plan.
+- One part = `videos/orbit-NN/` (`script.json`, `scene.js`, `qa.md`). 1.5–2 min each. Part N+1 opens on the last ~3 seconds of part N (same lines, same shots), then continues.
+- Narrator: Kokoro voice 1, `"voice": "bm_fable*0.6+am_michael*0.4", "speed": 1.06, "gap": 0.22`. Lines don't need `at`: each starts after the previous one (`pause` adds a beat).
+- Scenes are flat 2D: `config.canvas = '2d'`, drawn with `engine/lib/toon.js` (frame, title band, Part tag, panel camera, stick figures, station interior/exterior, Earth, letters, screens). Shots are keyed to narration line ids through `narration(voice)`, so editing the script moves the pictures with it.
+- Captions: `export const subtitles = { top: 516, maxWords: 1, maxChars: 30, className: 'one' }` (one white word, like the reference). Keep key numbers and text out of the caption band (panel y ~235–280).
+- Sound: `pad` (the soft chord bed) under everything, plus `knock`, `klaxon`, `clank`, `hiss`, `radio`, `beep`, `rustle`, `scribble`, `heartbeat`, `riser`, `boom`. End on a hard cut to black.
+- Render, check and QA exactly as in steps 4–5 (`npm run check -- orbit-NN`, `npm run render -- orbit-NN`). Send part 1 for approval before making the rest.
+
 ## OpenMontage (connected toolkit)
 [OpenMontage](https://github.com/calesthio/OpenMontage) is connected as a second toolkit: an agentic video-production system (pipelines for explainers, documentary montages, cinematic trailers, clip factory, localization; Remotion + HyperFrames composition; 100+ tools).
 - At the start of a session that needs it, run `bash scripts/setup-openmontage.sh`. It clones it to `../openmontage-tools/OpenMontage` (never inside this repo), runs `make setup`, and points Remotion at the preinstalled Chromium.

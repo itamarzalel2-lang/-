@@ -1,0 +1,1929 @@
+{
+ "voice": "bm_fable*0.6+am_michael*0.4",
+ "speed": 1.06,
+ "lines": [
+  {
+   "id": "hook1",
+   "at": 0.52,
+   "text": "For one year, I lived alone on a space station.",
+   "file": "voice/hook1.wav",
+   "duration": 3.072,
+   "words": [
+    {
+     "text": "For",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.318
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 0.318,
+     "end": 0.497
+    },
+    {
+     "text": "year,",
+     "hl": false,
+     "start": 0.497,
+     "end": 0.72
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.84,
+     "end": 0.986
+    },
+    {
+     "text": "lived",
+     "hl": false,
+     "start": 0.986,
+     "end": 1.229
+    },
+    {
+     "text": "alone",
+     "hl": false,
+     "start": 1.229,
+     "end": 1.52
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 1.52,
+     "end": 1.666
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.666,
+     "end": 1.811
+    },
+    {
+     "text": "space",
+     "hl": false,
+     "start": 1.811,
+     "end": 2.103
+    },
+    {
+     "text": "station.",
+     "hl": false,
+     "start": 2.103,
+     "end": 2.54
+    }
+   ]
+  },
+  {
+   "id": "hook2",
+   "at": 3.812,
+   "text": "At least, that's what they told me.",
+   "file": "voice/hook2.wav",
+   "duration": 2.261,
+   "words": [
+    {
+     "text": "At",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.191
+    },
+    {
+     "text": "least,",
+     "hl": false,
+     "start": 0.191,
+     "end": 0.51
+    },
+    {
+     "text": "that's",
+     "hl": false,
+     "start": 0.62,
+     "end": 0.868
+    },
+    {
+     "text": "what",
+     "hl": false,
+     "start": 0.868,
+     "end": 1.066
+    },
+    {
+     "text": "they",
+     "hl": false,
+     "start": 1.066,
+     "end": 1.215
+    },
+    {
+     "text": "told",
+     "hl": false,
+     "start": 1.215,
+     "end": 1.512
+    },
+    {
+     "text": "me.",
+     "hl": false,
+     "start": 1.512,
+     "end": 1.76
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "at": 6.593,
+   "text": "Day one. 250 miles above the Earth, an alarm went off.",
+   "file": "voice/d1.wav",
+   "duration": 4.352,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.357
+    },
+    {
+     "text": "one.",
+     "hl": false,
+     "start": 0.357,
+     "end": 0.64
+    },
+    {
+     "text": "250",
+     "hl": false,
+     "start": 0.76,
+     "end": 1.665
+    },
+    {
+     "text": "miles",
+     "hl": false,
+     "start": 1.665,
+     "end": 1.967
+    },
+    {
+     "text": "above",
+     "hl": false,
+     "start": 1.967,
+     "end": 2.218
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.218,
+     "end": 2.319
+    },
+    {
+     "text": "Earth,",
+     "hl": false,
+     "start": 2.319,
+     "end": 2.57
+    },
+    {
+     "text": "an",
+     "hl": false,
+     "start": 2.93,
+     "end": 3.029
+    },
+    {
+     "text": "alarm",
+     "hl": false,
+     "start": 3.029,
+     "end": 3.375
+    },
+    {
+     "text": "went",
+     "hl": false,
+     "start": 3.375,
+     "end": 3.622
+    },
+    {
+     "text": "off.",
+     "hl": false,
+     "start": 3.622,
+     "end": 3.82
+    }
+   ]
+  },
+  {
+   "id": "leak",
+   "at": 11.165,
+   "text": "Ammonia leak. In Module 3, the other half of the station.",
+   "file": "voice/leak.wav",
+   "duration": 4.011,
+   "words": [
+    {
+     "text": "Ammonia",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.509
+    },
+    {
+     "text": "leak.",
+     "hl": false,
+     "start": 0.509,
+     "end": 0.8
+    },
+    {
+     "text": "In",
+     "hl": false,
+     "start": 0.9,
+     "end": 0.903
+    },
+    {
+     "text": "Module",
+     "hl": false,
+     "start": 0.903,
+     "end": 0.913
+    },
+    {
+     "text": "3,",
+     "hl": false,
+     "start": 0.913,
+     "end": 0.92
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.25,
+     "end": 1.445
+    },
+    {
+     "text": "other",
+     "hl": false,
+     "start": 1.445,
+     "end": 1.834
+    },
+    {
+     "text": "half",
+     "hl": false,
+     "start": 1.834,
+     "end": 2.224
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 2.224,
+     "end": 2.419
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.419,
+     "end": 2.613
+    },
+    {
+     "text": "station.",
+     "hl": false,
+     "start": 2.613,
+     "end": 3.49
+    }
+   ]
+  },
+  {
+   "id": "seal",
+   "at": 15.396,
+   "text": "Commander Hale sealed Hatch 3, and said: everyone on that side is gone.",
+   "file": "voice/seal.wav",
+   "duration": 4.544,
+   "words": [
+    {
+     "text": "Commander",
+     "hl": false,
+     "start": 0.08,
+     "end": 0.561
+    },
+    {
+     "text": "Hale",
+     "hl": false,
+     "start": 0.561,
+     "end": 0.862
+    },
+    {
+     "text": "sealed",
+     "hl": false,
+     "start": 0.862,
+     "end": 1.223
+    },
+    {
+     "text": "Hatch",
+     "hl": false,
+     "start": 1.223,
+     "end": 1.524
+    },
+    {
+     "text": "3,",
+     "hl": false,
+     "start": 1.524,
+     "end": 1.885
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 1.885,
+     "end": 2.065
+    },
+    {
+     "text": "said:",
+     "hl": false,
+     "start": 2.065,
+     "end": 2.366
+    },
+    {
+     "text": "everyone",
+     "hl": false,
+     "start": 2.366,
+     "end": 2.907
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 2.907,
+     "end": 3.088
+    },
+    {
+     "text": "that",
+     "hl": false,
+     "start": 3.088,
+     "end": 3.328
+    },
+    {
+     "text": "side",
+     "hl": false,
+     "start": 3.328,
+     "end": 3.629
+    },
+    {
+     "text": "is",
+     "hl": false,
+     "start": 3.629,
+     "end": 3.749
+    },
+    {
+     "text": "gone.",
+     "hl": false,
+     "start": 3.749,
+     "end": 4.05
+    }
+   ]
+  },
+  {
+   "id": "gauge",
+   "at": 20.16,
+   "text": "The gauge on the hatch dropped to zero. No air.",
+   "file": "voice/gauge.wav",
+   "duration": 3.349,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.222
+    },
+    {
+     "text": "gauge",
+     "hl": false,
+     "start": 0.222,
+     "end": 0.529
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.529,
+     "end": 0.682
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.682,
+     "end": 0.784
+    },
+    {
+     "text": "hatch",
+     "hl": false,
+     "start": 0.784,
+     "end": 1.04
+    },
+    {
+     "text": "dropped",
+     "hl": false,
+     "start": 1.04,
+     "end": 1.398
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 1.398,
+     "end": 1.551
+    },
+    {
+     "text": "zero.",
+     "hl": false,
+     "start": 1.551,
+     "end": 1.96
+    },
+    {
+     "text": "No",
+     "hl": false,
+     "start": 2.31,
+     "end": 2.575
+    },
+    {
+     "text": "air.",
+     "hl": false,
+     "start": 2.575,
+     "end": 2.84
+    }
+   ]
+  },
+  {
+   "id": "seats",
+   "at": 23.729,
+   "text": "Our escape capsule had three seats. One of them had a red tag. No go.",
+   "file": "voice/seats.wav",
+   "duration": 4.949,
+   "words": [
+    {
+     "text": "Our",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.319
+    },
+    {
+     "text": "escape",
+     "hl": false,
+     "start": 0.319,
+     "end": 0.702
+    },
+    {
+     "text": "capsule",
+     "hl": false,
+     "start": 0.702,
+     "end": 1.194
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 1.194,
+     "end": 1.413
+    },
+    {
+     "text": "three",
+     "hl": false,
+     "start": 1.413,
+     "end": 1.687
+    },
+    {
+     "text": "seats.",
+     "hl": false,
+     "start": 1.687,
+     "end": 2.07
+    },
+    {
+     "text": "One",
+     "hl": false,
+     "start": 2.44,
+     "end": 2.626
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 2.626,
+     "end": 2.719
+    },
+    {
+     "text": "them",
+     "hl": false,
+     "start": 2.719,
+     "end": 2.905
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 2.905,
+     "end": 3.092
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 3.092,
+     "end": 3.231
+    },
+    {
+     "text": "red",
+     "hl": false,
+     "start": 3.231,
+     "end": 3.417
+    },
+    {
+     "text": "tag.",
+     "hl": false,
+     "start": 3.417,
+     "end": 3.65
+    },
+    {
+     "text": "No",
+     "hl": false,
+     "start": 3.89,
+     "end": 4.139
+    },
+    {
+     "text": "go.",
+     "hl": false,
+     "start": 4.139,
+     "end": 4.45
+    }
+   ]
+  },
+  {
+   "id": "stay",
+   "at": 28.898,
+   "text": "So two could leave. And one had to stay.",
+   "file": "voice/stay.wav",
+   "duration": 2.667,
+   "words": [
+    {
+     "text": "So",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.307
+    },
+    {
+     "text": "two",
+     "hl": false,
+     "start": 0.307,
+     "end": 0.513
+    },
+    {
+     "text": "could",
+     "hl": false,
+     "start": 0.513,
+     "end": 0.72
+    },
+    {
+     "text": "leave.",
+     "hl": false,
+     "start": 0.72,
+     "end": 1.03
+    },
+    {
+     "text": "And",
+     "hl": false,
+     "start": 1.24,
+     "end": 1.375
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 1.375,
+     "end": 1.555
+    },
+    {
+     "text": "had",
+     "hl": false,
+     "start": 1.555,
+     "end": 1.735
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 1.735,
+     "end": 1.87
+    },
+    {
+     "text": "stay.",
+     "hl": false,
+     "start": 1.87,
+     "end": 2.14
+    }
+   ]
+  },
+  {
+   "id": "hale",
+   "at": 31.785,
+   "text": "Hale looked at me. The next ship comes in 365 days.",
+   "file": "voice/hale.wav",
+   "duration": 4.565,
+   "words": [
+    {
+     "text": "Hale",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.346
+    },
+    {
+     "text": "looked",
+     "hl": false,
+     "start": 0.346,
+     "end": 0.573
+    },
+    {
+     "text": "at",
+     "hl": false,
+     "start": 0.573,
+     "end": 0.664
+    },
+    {
+     "text": "me.",
+     "hl": false,
+     "start": 0.664,
+     "end": 0.89
+    },
+    {
+     "text": "The",
+     "hl": false,
+     "start": 1.3,
+     "end": 1.41
+    },
+    {
+     "text": "next",
+     "hl": false,
+     "start": 1.41,
+     "end": 1.739
+    },
+    {
+     "text": "ship",
+     "hl": false,
+     "start": 1.739,
+     "end": 1.959
+    },
+    {
+     "text": "comes",
+     "hl": false,
+     "start": 1.959,
+     "end": 2.233
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 2.233,
+     "end": 2.398
+    },
+    {
+     "text": "365",
+     "hl": false,
+     "start": 2.398,
+     "end": 3.771
+    },
+    {
+     "text": "days.",
+     "hl": false,
+     "start": 3.771,
+     "end": 4.1
+    }
+   ]
+  },
+  {
+   "id": "letter",
+   "at": 36.57,
+   "text": "Then he handed me a letter.",
+   "file": "voice/letter.wav",
+   "duration": 1.92,
+   "words": [
+    {
+     "text": "Then",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.325
+    },
+    {
+     "text": "he",
+     "hl": false,
+     "start": 0.325,
+     "end": 0.464
+    },
+    {
+     "text": "handed",
+     "hl": false,
+     "start": 0.464,
+     "end": 0.788
+    },
+    {
+     "text": "me",
+     "hl": false,
+     "start": 0.788,
+     "end": 0.973
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.973,
+     "end": 1.112
+    },
+    {
+     "text": "letter.",
+     "hl": false,
+     "start": 1.112,
+     "end": 1.39
+    }
+   ]
+  },
+  {
+   "id": "r0",
+   "at": 38.91,
+   "text": "Three rules.",
+   "file": "voice/r0.wav",
+   "duration": 1.387,
+   "words": [
+    {
+     "text": "Three",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.494
+    },
+    {
+     "text": "rules.",
+     "hl": false,
+     "start": 0.494,
+     "end": 0.99
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "at": 40.517,
+   "text": "One. Never open Hatch 3. Not for anyone.",
+   "file": "voice/r1.wav",
+   "duration": 3.243,
+   "words": [
+    {
+     "text": "One.",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.429
+    },
+    {
+     "text": "Never",
+     "hl": false,
+     "start": 0.429,
+     "end": 0.718
+    },
+    {
+     "text": "open",
+     "hl": false,
+     "start": 0.718,
+     "end": 1.064
+    },
+    {
+     "text": "Hatch",
+     "hl": false,
+     "start": 1.064,
+     "end": 1.353
+    },
+    {
+     "text": "3.",
+     "hl": false,
+     "start": 1.353,
+     "end": 1.7
+    },
+    {
+     "text": "Not",
+     "hl": false,
+     "start": 1.7,
+     "end": 1.989
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 1.989,
+     "end": 2.22
+    },
+    {
+     "text": "anyone.",
+     "hl": false,
+     "start": 2.22,
+     "end": 2.74
+    }
+   ]
+  },
+  {
+   "id": "r1b",
+   "at": 43.98,
+   "text": "Not even for me.",
+   "file": "voice/r1b.wav",
+   "duration": 1.707,
+   "words": [
+    {
+     "text": "Not",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.392
+    },
+    {
+     "text": "even",
+     "hl": false,
+     "start": 0.392,
+     "end": 0.707
+    },
+    {
+     "text": "for",
+     "hl": false,
+     "start": 0.707,
+     "end": 0.917
+    },
+    {
+     "text": "me.",
+     "hl": false,
+     "start": 0.917,
+     "end": 1.18
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "at": 45.907,
+   "text": "Two. Every morning, check three numbers. Oxygen. Water. Power.",
+   "file": "voice/r2.wav",
+   "duration": 4.416,
+   "words": [
+    {
+     "text": "Two.",
+     "hl": false,
+     "start": 0.09,
+     "end": 0.402
+    },
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 0.402,
+     "end": 0.715
+    },
+    {
+     "text": "morning,",
+     "hl": false,
+     "start": 0.715,
+     "end": 1.277
+    },
+    {
+     "text": "check",
+     "hl": false,
+     "start": 1.277,
+     "end": 1.589
+    },
+    {
+     "text": "three",
+     "hl": false,
+     "start": 1.589,
+     "end": 1.901
+    },
+    {
+     "text": "numbers.",
+     "hl": false,
+     "start": 1.901,
+     "end": 2.401
+    },
+    {
+     "text": "Oxygen.",
+     "hl": false,
+     "start": 2.401,
+     "end": 3.088
+    },
+    {
+     "text": "Water.",
+     "hl": false,
+     "start": 3.088,
+     "end": 3.525
+    },
+    {
+     "text": "Power.",
+     "hl": false,
+     "start": 3.525,
+     "end": 3.9
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "at": 50.543,
+   "text": "Three. Talk to Ground only on channel 4. If anything calls on channel 9, don't answer.",
+   "file": "voice/r3.wav",
+   "duration": 5.717,
+   "words": [
+    {
+     "text": "Three.",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.43
+    },
+    {
+     "text": "Talk",
+     "hl": false,
+     "start": 0.52,
+     "end": 0.542
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 0.542,
+     "end": 0.555
+    },
+    {
+     "text": "Ground",
+     "hl": false,
+     "start": 0.555,
+     "end": 0.585
+    },
+    {
+     "text": "only",
+     "hl": false,
+     "start": 0.585,
+     "end": 0.611
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 0.611,
+     "end": 0.624
+    },
+    {
+     "text": "channel",
+     "hl": false,
+     "start": 0.624,
+     "end": 0.654
+    },
+    {
+     "text": "4.",
+     "hl": false,
+     "start": 0.654,
+     "end": 0.68
+    },
+    {
+     "text": "If",
+     "hl": false,
+     "start": 0.78,
+     "end": 0.884
+    },
+    {
+     "text": "anything",
+     "hl": false,
+     "start": 0.884,
+     "end": 1.302
+    },
+    {
+     "text": "calls",
+     "hl": false,
+     "start": 1.302,
+     "end": 1.615
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 1.615,
+     "end": 1.772
+    },
+    {
+     "text": "channel",
+     "hl": false,
+     "start": 1.772,
+     "end": 2.137
+    },
+    {
+     "text": "9,",
+     "hl": false,
+     "start": 2.137,
+     "end": 2.45
+    },
+    {
+     "text": "don't",
+     "hl": false,
+     "start": 2.92,
+     "end": 4.06
+    },
+    {
+     "text": "answer.",
+     "hl": false,
+     "start": 4.06,
+     "end": 5.2
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "at": 56.48,
+   "text": "Twelve envelopes. One a month. Never early.",
+   "file": "voice/r4.wav",
+   "duration": 2.987,
+   "words": [
+    {
+     "text": "Twelve",
+     "hl": false,
+     "start": 0.09,
+     "end": 0.381
+    },
+    {
+     "text": "envelopes.",
+     "hl": false,
+     "start": 0.381,
+     "end": 1.01
+    },
+    {
+     "text": "One",
+     "hl": false,
+     "start": 1.09,
+     "end": 1.219
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 1.219,
+     "end": 1.316
+    },
+    {
+     "text": "month.",
+     "hl": false,
+     "start": 1.316,
+     "end": 1.51
+    },
+    {
+     "text": "Never",
+     "hl": false,
+     "start": 1.83,
+     "end": 2.121
+    },
+    {
+     "text": "early.",
+     "hl": false,
+     "start": 2.121,
+     "end": 2.47
+    }
+   ]
+  },
+  {
+   "id": "undock",
+   "at": 59.887,
+   "text": "Then the capsule undocked, and I watched it fall toward the Earth.",
+   "file": "voice/undock.wav",
+   "duration": 3.904,
+   "words": [
+    {
+     "text": "Then",
+     "hl": false,
+     "start": 0.15,
+     "end": 0.373
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.373,
+     "end": 0.485
+    },
+    {
+     "text": "capsule",
+     "hl": false,
+     "start": 0.485,
+     "end": 0.988
+    },
+    {
+     "text": "undocked,",
+     "hl": false,
+     "start": 0.988,
+     "end": 1.49
+    },
+    {
+     "text": "and",
+     "hl": false,
+     "start": 1.75,
+     "end": 1.881
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 1.881,
+     "end": 2.012
+    },
+    {
+     "text": "watched",
+     "hl": false,
+     "start": 2.012,
+     "end": 2.318
+    },
+    {
+     "text": "it",
+     "hl": false,
+     "start": 2.318,
+     "end": 2.406
+    },
+    {
+     "text": "fall",
+     "hl": false,
+     "start": 2.406,
+     "end": 2.624
+    },
+    {
+     "text": "toward",
+     "hl": false,
+     "start": 2.624,
+     "end": 2.974
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 2.974,
+     "end": 3.061
+    },
+    {
+     "text": "Earth.",
+     "hl": false,
+     "start": 3.061,
+     "end": 3.28
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "at": 64.211,
+   "text": "Day two. Ground called on channel 4.",
+   "file": "voice/d2.wav",
+   "duration": 2.816,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.347
+    },
+    {
+     "text": "two.",
+     "hl": false,
+     "start": 0.347,
+     "end": 0.63
+    },
+    {
+     "text": "Ground",
+     "hl": false,
+     "start": 0.78,
+     "end": 1.142
+    },
+    {
+     "text": "called",
+     "hl": false,
+     "start": 1.142,
+     "end": 1.452
+    },
+    {
+     "text": "on",
+     "hl": false,
+     "start": 1.452,
+     "end": 1.608
+    },
+    {
+     "text": "channel",
+     "hl": false,
+     "start": 1.608,
+     "end": 1.97
+    },
+    {
+     "text": "4.",
+     "hl": false,
+     "start": 1.97,
+     "end": 2.28
+    }
+   ]
+  },
+  {
+   "id": "copy",
+   "at": 67.247,
+   "text": "Ground copies. Continue.",
+   "file": "voice/copy.wav",
+   "duration": 2.133,
+   "words": [
+    {
+     "text": "Ground",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.518
+    },
+    {
+     "text": "copies.",
+     "hl": false,
+     "start": 0.518,
+     "end": 0.95
+    },
+    {
+     "text": "Continue.",
+     "hl": false,
+     "start": 1.05,
+     "end": 1.65
+    }
+   ]
+  },
+  {
+   "id": "routine",
+   "at": 69.6,
+   "text": "Every morning, I checked the numbers.",
+   "file": "voice/routine.wav",
+   "duration": 2.389,
+   "words": [
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.506
+    },
+    {
+     "text": "morning,",
+     "hl": false,
+     "start": 0.506,
+     "end": 1.2
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 1.34,
+     "end": 1.432
+    },
+    {
+     "text": "checked",
+     "hl": false,
+     "start": 1.432,
+     "end": 1.615
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.615,
+     "end": 1.676
+    },
+    {
+     "text": "numbers.",
+     "hl": false,
+     "start": 1.676,
+     "end": 1.92
+    }
+   ]
+  },
+  {
+   "id": "nums",
+   "at": 72.209,
+   "text": "Oxygen, 312 kilos. Water, 97 percent. Power, 100.",
+   "file": "voice/nums.wav",
+   "duration": 5.675,
+   "words": [
+    {
+     "text": "Oxygen,",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.78
+    },
+    {
+     "text": "312",
+     "hl": false,
+     "start": 0.78,
+     "end": 1.902
+    },
+    {
+     "text": "kilos.",
+     "hl": false,
+     "start": 1.902,
+     "end": 2.434
+    },
+    {
+     "text": "Water,",
+     "hl": false,
+     "start": 2.434,
+     "end": 2.847
+    },
+    {
+     "text": "97",
+     "hl": false,
+     "start": 2.847,
+     "end": 3.615
+    },
+    {
+     "text": "percent.",
+     "hl": false,
+     "start": 3.615,
+     "end": 4.088
+    },
+    {
+     "text": "Power,",
+     "hl": false,
+     "start": 4.088,
+     "end": 4.442
+    },
+    {
+     "text": "100.",
+     "hl": false,
+     "start": 4.442,
+     "end": 5.21
+    }
+   ]
+  },
+  {
+   "id": "d30",
+   "at": 78.304,
+   "text": "Day thirty. Envelope one.",
+   "file": "voice/d30.wav",
+   "duration": 2.155,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.328
+    },
+    {
+     "text": "thirty.",
+     "hl": false,
+     "start": 0.328,
+     "end": 0.71
+    },
+    {
+     "text": "Envelope",
+     "hl": false,
+     "start": 0.86,
+     "end": 1.417
+    },
+    {
+     "text": "one.",
+     "hl": false,
+     "start": 1.417,
+     "end": 1.67
+    }
+   ]
+  },
+  {
+   "id": "env1",
+   "at": 80.679,
+   "text": "Write the numbers down. By hand.",
+   "file": "voice/env1.wav",
+   "duration": 2.432,
+   "words": [
+    {
+     "text": "Write",
+     "hl": false,
+     "start": 0.15,
+     "end": 0.43
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 0.43,
+     "end": 0.542
+    },
+    {
+     "text": "numbers",
+     "hl": false,
+     "start": 0.542,
+     "end": 0.934
+    },
+    {
+     "text": "down.",
+     "hl": false,
+     "start": 0.934,
+     "end": 1.27
+    },
+    {
+     "text": "By",
+     "hl": false,
+     "start": 1.39,
+     "end": 1.61
+    },
+    {
+     "text": "hand.",
+     "hl": false,
+     "start": 1.61,
+     "end": 1.94
+    }
+   ]
+  },
+  {
+   "id": "saw",
+   "at": 83.331,
+   "text": "So I did. And that's when I saw it.",
+   "file": "voice/saw.wav",
+   "duration": 2.539,
+   "words": [
+    {
+     "text": "So",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.323
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.323,
+     "end": 0.491
+    },
+    {
+     "text": "did.",
+     "hl": false,
+     "start": 0.491,
+     "end": 0.77
+    },
+    {
+     "text": "And",
+     "hl": false,
+     "start": 0.91,
+     "end": 1.05
+    },
+    {
+     "text": "that's",
+     "hl": false,
+     "start": 1.05,
+     "end": 1.285
+    },
+    {
+     "text": "when",
+     "hl": false,
+     "start": 1.285,
+     "end": 1.472
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 1.472,
+     "end": 1.612
+    },
+    {
+     "text": "saw",
+     "hl": false,
+     "start": 1.612,
+     "end": 1.8
+    },
+    {
+     "text": "it.",
+     "hl": false,
+     "start": 1.8,
+     "end": 1.94
+    }
+   ]
+  },
+  {
+   "id": "math",
+   "at": 86.09,
+   "text": "One person breathes less than one kilo of oxygen a day.",
+   "file": "voice/math.wav",
+   "duration": 4.053,
+   "words": [
+    {
+     "text": "One",
+     "hl": false,
+     "start": 0.14,
+     "end": 0.379
+    },
+    {
+     "text": "person",
+     "hl": false,
+     "start": 0.379,
+     "end": 0.798
+    },
+    {
+     "text": "breathes",
+     "hl": false,
+     "start": 0.798,
+     "end": 1.217
+    },
+    {
+     "text": "less",
+     "hl": false,
+     "start": 1.217,
+     "end": 1.456
+    },
+    {
+     "text": "than",
+     "hl": false,
+     "start": 1.456,
+     "end": 1.636
+    },
+    {
+     "text": "one",
+     "hl": false,
+     "start": 1.636,
+     "end": 1.875
+    },
+    {
+     "text": "kilo",
+     "hl": false,
+     "start": 1.875,
+     "end": 2.294
+    },
+    {
+     "text": "of",
+     "hl": false,
+     "start": 2.294,
+     "end": 2.413
+    },
+    {
+     "text": "oxygen",
+     "hl": false,
+     "start": 2.413,
+     "end": 3.011
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 3.011,
+     "end": 3.191
+    },
+    {
+     "text": "day.",
+     "hl": false,
+     "start": 3.191,
+     "end": 3.49
+    }
+   ]
+  },
+  {
+   "id": "lose",
+   "at": 90.363,
+   "text": "The tank was losing 1.7 kilos. Every day.",
+   "file": "voice/lose.wav",
+   "duration": 3.797,
+   "words": [
+    {
+     "text": "The",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.211
+    },
+    {
+     "text": "tank",
+     "hl": false,
+     "start": 0.211,
+     "end": 0.489
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.489,
+     "end": 0.656
+    },
+    {
+     "text": "losing",
+     "hl": false,
+     "start": 0.656,
+     "end": 1.045
+    },
+    {
+     "text": "1.7",
+     "hl": false,
+     "start": 1.045,
+     "end": 1.88
+    },
+    {
+     "text": "kilos.",
+     "hl": false,
+     "start": 1.88,
+     "end": 2.38
+    },
+    {
+     "text": "Every",
+     "hl": false,
+     "start": 2.72,
+     "end": 3.01
+    },
+    {
+     "text": "day.",
+     "hl": false,
+     "start": 3.01,
+     "end": 3.3
+    }
+   ]
+  },
+  {
+   "id": "breath",
+   "at": 94.38,
+   "text": "As if someone else was breathing my air.",
+   "file": "voice/breath.wav",
+   "duration": 2.688,
+   "words": [
+    {
+     "text": "As",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.241
+    },
+    {
+     "text": "if",
+     "hl": false,
+     "start": 0.241,
+     "end": 0.361
+    },
+    {
+     "text": "someone",
+     "hl": false,
+     "start": 0.361,
+     "end": 0.783
+    },
+    {
+     "text": "else",
+     "hl": false,
+     "start": 0.783,
+     "end": 1.024
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 1.024,
+     "end": 1.205
+    },
+    {
+     "text": "breathing",
+     "hl": false,
+     "start": 1.205,
+     "end": 1.688
+    },
+    {
+     "text": "my",
+     "hl": false,
+     "start": 1.688,
+     "end": 1.929
+    },
+    {
+     "text": "air.",
+     "hl": false,
+     "start": 1.929,
+     "end": 2.17
+    }
+   ]
+  },
+  {
+   "id": "told",
+   "at": 97.288,
+   "text": "I told Ground. Ground copies. Continue.",
+   "file": "voice/told.wav",
+   "duration": 3.029,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.13,
+     "end": 0.297
+    },
+    {
+     "text": "told",
+     "hl": false,
+     "start": 0.297,
+     "end": 0.632
+    },
+    {
+     "text": "Ground.",
+     "hl": false,
+     "start": 0.632,
+     "end": 1.079
+    },
+    {
+     "text": "Ground",
+     "hl": false,
+     "start": 1.079,
+     "end": 1.47
+    },
+    {
+     "text": "copies.",
+     "hl": false,
+     "start": 1.47,
+     "end": 1.916
+    },
+    {
+     "text": "Continue.",
+     "hl": false,
+     "start": 1.916,
+     "end": 2.53
+    }
+   ]
+  },
+  {
+   "id": "d40",
+   "at": 100.837,
+   "text": "Day forty. Three in the morning.",
+   "file": "voice/d40.wav",
+   "duration": 2.347,
+   "words": [
+    {
+     "text": "Day",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.327
+    },
+    {
+     "text": "forty.",
+     "hl": false,
+     "start": 0.327,
+     "end": 0.74
+    },
+    {
+     "text": "Three",
+     "hl": false,
+     "start": 0.82,
+     "end": 1.086
+    },
+    {
+     "text": "in",
+     "hl": false,
+     "start": 1.086,
+     "end": 1.245
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.245,
+     "end": 1.352
+    },
+    {
+     "text": "morning.",
+     "hl": false,
+     "start": 1.352,
+     "end": 1.83
+    }
+   ]
+  },
+  {
+   "id": "sleep",
+   "at": 103.404,
+   "text": "I was asleep, strapped to the wall, when I heard it.",
+   "file": "voice/sleep.wav",
+   "duration": 3.051,
+   "words": [
+    {
+     "text": "I",
+     "hl": false,
+     "start": 0.12,
+     "end": 0.266
+    },
+    {
+     "text": "was",
+     "hl": false,
+     "start": 0.266,
+     "end": 0.411
+    },
+    {
+     "text": "asleep,",
+     "hl": false,
+     "start": 0.411,
+     "end": 0.8
+    },
+    {
+     "text": "strapped",
+     "hl": false,
+     "start": 0.89,
+     "end": 1.003
+    },
+    {
+     "text": "to",
+     "hl": false,
+     "start": 1.003,
+     "end": 1.051
+    },
+    {
+     "text": "the",
+     "hl": false,
+     "start": 1.051,
+     "end": 1.083
+    },
+    {
+     "text": "wall,",
+     "hl": false,
+     "start": 1.083,
+     "end": 1.18
+    },
+    {
+     "text": "when",
+     "hl": false,
+     "start": 1.29,
+     "end": 1.61
+    },
+    {
+     "text": "I",
+     "hl": false,
+     "start": 1.61,
+     "end": 1.85
+    },
+    {
+     "text": "heard",
+     "hl": false,
+     "start": 1.85,
+     "end": 2.25
+    },
+    {
+     "text": "it.",
+     "hl": false,
+     "start": 2.25,
+     "end": 2.49
+    }
+   ]
+  },
+  {
+   "id": "k1",
+   "at": 107.175,
+   "text": "Knock.",
+   "file": "voice/k1.wav",
+   "duration": 0.875,
+   "words": [
+    {
+     "text": "Knock.",
+     "hl": false,
+     "start": 0.08,
+     "end": 0.57
+    }
+   ]
+  },
+  {
+   "id": "k2",
+   "at": 108.72,
+   "text": "Knock.",
+   "file": "voice/k2.wav",
+   "duration": 0.875,
+   "words": [
+    {
+     "text": "Knock.",
+     "hl": false,
+     "start": 0.08,
+     "end": 0.57
+    }
+   ]
+  },
+  {
+   "id": "k3",
+   "at": 110.265,
+   "text": "Knock.",
+   "file": "voice/k3.wav",
+   "duration": 0.875,
+   "words": [
+    {
+     "text": "Knock.",
+     "hl": false,
+     "start": 0.08,
+     "end": 0.57
+    }
+   ]
+  },
+  {
+   "id": "from",
+   "at": 111.86,
+   "text": "It came from Hatch 3.",
+   "file": "voice/from.wav",
+   "duration": 1.856,
+   "words": [
+    {
+     "text": "It",
+     "hl": false,
+     "start": 0.11,
+     "end": 0.224
+    },
+    {
+     "text": "came",
+     "hl": false,
+     "start": 0.224,
+     "end": 0.508
+    },
+    {
+     "text": "from",
+     "hl": false,
+     "start": 0.508,
+     "end": 0.735
+    },
+    {
+     "text": "Hatch",
+     "hl": false,
+     "start": 0.735,
+     "end": 1.019
+    },
+    {
+     "text": "3.",
+     "hl": false,
+     "start": 1.019,
+     "end": 1.36
+    }
+   ]
+  },
+  {
+   "id": "noair",
+   "at": 113.936,
+   "text": "From a room with no air.",
+   "file": "voice/noair.wav",
+   "duration": 1.963,
+   "words": [
+    {
+     "text": "From",
+     "hl": false,
+     "start": 0.1,
+     "end": 0.335
+    },
+    {
+     "text": "a",
+     "hl": false,
+     "start": 0.335,
+     "end": 0.511
+    },
+    {
+     "text": "room",
+     "hl": false,
+     "start": 0.511,
+     "end": 0.804
+    },
+    {
+     "text": "with",
+     "hl": false,
+     "start": 0.804,
+     "end": 0.98
+    },
+    {
+     "text": "no",
+     "hl": true,
+     "start": 0.98,
+     "end": 1.215
+    },
+    {
+     "text": "air.",
+     "hl": true,
+     "start": 1.215,
+     "end": 1.45
+    }
+   ]
+  }
+ ]
+}
