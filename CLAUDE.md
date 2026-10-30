@@ -52,3 +52,10 @@ When the user sends a one-line premise ("What if all X disappeared for 5 seconds
 - Overlay layout is designed for a 540×960 stage (output is at 2×). The title is at the top. Keep the 3D action in the middle, and don't cover it with text.
 - No real brands on billboards (`textures.js` generates made-up ones).
 - On-screen English uses US spelling ("tire").
+
+## OpenMontage (connected toolkit)
+[OpenMontage](https://github.com/calesthio/OpenMontage) is connected as a second toolkit: an agentic video-production system (pipelines for explainers, documentary montages, cinematic trailers, clip factory, localization; Remotion + HyperFrames composition; 100+ tools).
+- At the start of a session that needs it, run `bash scripts/setup-openmontage.sh`. It clones it to `../openmontage-tools/OpenMontage` (never inside this repo), runs `make setup`, and points Remotion at the preinstalled Chromium.
+- When working inside it, follow **its** `AGENT_GUIDE.md` (Rule Zero: every production goes through a pipeline in `pipeline_defs/`, preflight first, read the stage director skill before each stage).
+- What works in this cloud environment with no API keys: Remotion, HyperFrames, FFmpeg, Three.js worlds, character animation, subtitles, `render_demo.py`. Blocked by the network policy: archive.org, NASA, Wikimedia, Pexels, Pixabay, HuggingFace (Piper voices) and the paid AI APIs. For narration use this repo's Kokoro voice (`engine/voice.py`).
+- Use this repo's own engine for the "What if X for 5 seconds?" series; use OpenMontage for other formats (explainers, montages, trailers, repurposing long videos into clips).
