@@ -13,3 +13,5 @@ out/*.mp4
 .venv/
 out/**/text/
 out/**/subs/
+out/*.zip
+out/what-if-videos/
